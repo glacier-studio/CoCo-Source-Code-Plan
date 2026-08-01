@@ -27,9 +27,6 @@ unpack({
             searchPath: /^react\/draggable$/,
             replace: "react-draggable"
         }, {
-            searchPath: /^(.*\/)?react\/three\/fiber$/,
-            replace: "@react-three/fiber"
-        }, {
             searchPath: /^react\/router(\/index)?$/,
             replace: "react-router"
         }, {
