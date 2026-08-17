@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -87,7 +87,7 @@ var jO = memo(function (e) {
   var v = e$getValue("trackImageFileId") || Module_149.g
   var b = e$getValue("backgroundImageDirection") || Module_77.b.HORIZONTAL
   var y = e$getValue("trackImageDirection") || Module_77.b.HORIZONTAL
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var O = useDispatch()
   var w = useState("")
   var C = Module_10.a(w, 2)
@@ -162,7 +162,7 @@ var jO = memo(function (e) {
     className: Classnames(Module_2231.formItemWrapper, Module_2231.sliderMode, "changeSliderType")
   }, React.createElement("div", {
     className: "coco-form-item coco-form-item-horizontal"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "slider.background"
   }), React.createElement("div", {
     className: Module_2231.sliderType
@@ -171,7 +171,7 @@ var jO = memo(function (e) {
       key: e.value,
       onClick: q.bind(null, e.value),
       className: Classnames(Module_2231.typeItem, s === e.value && Module_2231.active)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: e.label
     }))
   }))), s === Module_77.d.TEMPLATE && React.createElement("div", {
@@ -194,7 +194,7 @@ var jO = memo(function (e) {
     }, e.renderContent(l))
   }))), React.createElement("div", {
     className: Module_2231.templateColor
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "templateColor"
   })), React.createElement(mb, {
     width: 42,
@@ -246,7 +246,7 @@ var jO = memo(function (e) {
         trackImageDirection: y
       }))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "edit"
   })))))
 })
@@ -257,7 +257,7 @@ var NO = memo(function (e) {
   var o = e$getValue("minValue")
   var i = e$getValue("step")
   var a = e$getValue("value")
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   function c(e) {
     e$onChange("minValue", Number(e))
   }
@@ -273,13 +273,13 @@ var NO = memo(function (e) {
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_2231.formItemWrapper, Module_2231.sliderRangeFormItem, Module_2231.typeSelector, "changeSliderMode"),
     align: "vertical",
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "numberValue"
     })
   }, React.createElement("div", {
     className: Classnames(Module_2231.firstRow, Module_2231.row)
   }, React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "minValue"
     }),
     type: "number",
@@ -296,7 +296,7 @@ var NO = memo(function (e) {
   }), React.createElement("div", {
     className: Module_2231.space
   }), React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "maxValue"
     }),
     type: "number",
@@ -319,7 +319,7 @@ var NO = memo(function (e) {
   })), React.createElement("div", {
     className: Module_2231.row
   }, React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "gap"
     }),
     type: "number",
@@ -338,7 +338,7 @@ var NO = memo(function (e) {
   }), React.createElement("div", {
     className: Module_2231.space
   }), React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "initialValue"
     }),
     type: "number",
@@ -367,11 +367,11 @@ var RO = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var i = e$getValue(n) || Module_77.b.HORIZONTAL
   var a = e$getValue("size")
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.i, {
     align: "vertical",
     className: Classnames(Module_2231.formItemWrapper, Module_2231.sliderDirection, "changeSliderDirection"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "direction"
     })
   }, React.createElement(Src_shared_ui_components_index.s, {
@@ -408,7 +408,7 @@ var RO = memo(function (e) {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: i === Module_77.b.HORIZONTAL ? "icon-horizontal-active" : "icon-horizontal",
     className: Module_2231.alignIcon
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "horizontal"
   }))), React.createElement(Src_shared_ui_components_index.t, {
     value: Module_77.b.VERTICAL,
@@ -416,7 +416,7 @@ var RO = memo(function (e) {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: i === Module_77.b.VERTICAL ? "icon-vertical-active" : "icon-vertical",
     className: Module_2231.alignIcon
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "vertical"
   })))))
 })
@@ -431,7 +431,7 @@ var kO = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig$label = e$formConfig.label
   var /* [auto-meaningful-name] */e$formConfig$min = e$formConfig.min
   var /* [auto-meaningful-name] */e$formConfig$max = e$formConfig.max
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var p = e$getValue(n)
   p = Math.ceil(p * s)
   var f = function (e) {
@@ -442,7 +442,7 @@ var kO = memo(function (e) {
   }
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper, "changeFontSize"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: e$formConfig$label || "fontSize"
     })
   }, React.createElement(Src_shared_ui_components_index.n, {

@@ -4,7 +4,7 @@
  * 模块 ID：1704
  */
 
-var r = require(/* 86 */"../1662/86")
+var r = require(/* 86 */"../1650/86/index")
 var o = require(/* 476 */"../1282/476")
 var i = require(/* 240 */"../1282/240")
 r({

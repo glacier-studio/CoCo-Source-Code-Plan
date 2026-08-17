@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -72,7 +72,7 @@ var EE = memo(function (e) {
   var n = undefined === e$keyName ? "mode" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = e$getValue(n)
   var s = e$getValue("color")
   var c = Src_shared_tools_index.Z(s)
@@ -81,7 +81,7 @@ var EE = memo(function (e) {
     className: Classnames(Module_2021.formItemWrapper, Module_2021.typeSelector, Module_2021.inputModeSelector, {
       "coco-input-option-white": c
     }, "changeInputMode"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "style"
     })
   }, React.createElement(lb, {
@@ -138,14 +138,14 @@ var OE = memo(function (e) {
 var wE = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Classnames(Module_2021.formItemWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_2021.tipsWrapper
   }, React.createElement("div", {
     className: Module_2021.labelWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "ListViewerWidget.tips"
   }))), React.createElement("div", {
     className: Module_2021.content
@@ -167,7 +167,7 @@ var wE = memo(function (e) {
     className: Module_2021.valueWrapper
   }, React.createElement("div", {
     className: Module_2021.labelWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "ListViewerWidget.input"
   }))), React.createElement("div", {
     className: Module_2021.content

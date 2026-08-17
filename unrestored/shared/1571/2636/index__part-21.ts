@@ -8,7 +8,7 @@
 
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_566 from /* 566 */"./566"
 import /* [auto-meaningful-name] */Module_5661 from /* 566 */"./566"
 var gn = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   var n = useSelector(function (e) {
     return e.common.projectSaveProgressDialog
@@ -47,7 +47,7 @@ var gn = memo(function () {
     }
   }))), React.createElement("div", null, React.createElement("p", {
     className: Module_5661.text
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ProjectSaveProgressDialog.content"
   }))), React.createElement("div", {
     className: Module_5661.footer
@@ -57,7 +57,7 @@ var gn = memo(function () {
     onClick: function () {
       t(Src_editor_redux_common_actions.yf())
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ProjectSaveProgressDialog.cancelSave"
   })))))
 })

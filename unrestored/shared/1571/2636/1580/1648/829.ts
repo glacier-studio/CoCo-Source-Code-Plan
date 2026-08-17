@@ -4,7 +4,7 @@
  * 模块 ID：829
  */
 
-var r = require(/* 168 */"../1659/168")
+var r = require(/* 168 */"./168")
 var o = /#|\.prototype\./
 var i = function (e, t) {
   var n = s[a(e)]

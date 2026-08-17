@@ -20,7 +20,7 @@ import * as /* [auto-meaningful-name] */Module_313 from /* 313 */"./313"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../11"
 import * as /* [auto-meaningful-name] */Src_shared_widget_custom_storage from /* 96 */"../../../../../../src/shared/widget/custom/storage"
 import * as /* [auto-meaningful-name] */Src_shared_widget_custom_load from /* 34 */"../../../../../../src/shared/widget/custom/load"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../301/85"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../34/85"
 function fo(e) {
   var /* [auto-meaningful-name] */e$ruleKey = e.ruleKey
   var /* [auto-meaningful-name] */e$ruleOptions = e.ruleOptions

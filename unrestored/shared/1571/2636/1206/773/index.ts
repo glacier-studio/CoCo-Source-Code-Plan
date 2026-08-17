@@ -155,5 +155,5 @@ exports.createIframeApi = function (e, t, n) {
     }
   }
 }
-var i = require(/* 655 */"./655/index")
+var i = require(/* 655 */"./655")
 var a = require(/* 1185 */"../1185")

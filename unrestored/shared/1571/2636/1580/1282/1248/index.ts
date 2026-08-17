@@ -7,7 +7,7 @@
 "use strict"
 
 var /* [auto-meaningful-name] */require_1249_$_1249$IteratorPrototype = require(/* 1249 */"./1249").IteratorPrototype
-var o = require(/* 577 */"../577/index")
+var o = require(/* 577 */"../../1648/577")
 var i = require(/* 631 */"../631")
 var a = require(/* 534 */"../534")
 var s = require(/* 834 */"../../949/834")

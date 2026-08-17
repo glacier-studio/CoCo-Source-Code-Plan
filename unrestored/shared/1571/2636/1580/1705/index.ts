@@ -4,14 +4,14 @@
  * 模块 ID：1705
  */
 
-var r = require(/* 86 */"../1662/86")
+var r = require(/* 86 */"../1650/86/index")
 var o = require(/* 240 */"../1282/240")
 var i = require(/* 231 */"../1282/231")
 var a = require(/* 1270 */"./1270")
-var s = require(/* 168 */"../1659/168")
-var c = require(/* 300 */"../1662/300/index")
-var l = require(/* 386 */"../1581/386")
-var u = require(/* 497 */"../1625/497")
+var s = require(/* 168 */"../1648/168")
+var c = require(/* 300 */"../1648/300/index")
+var l = require(/* 386 */"../1648/386")
+var u = require(/* 497 */"./497")
 var d = require(/* 631 */"../1282/631")
 r({
   target: "Reflect",

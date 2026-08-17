@@ -8,7 +8,7 @@
 
 import * as /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import /* [auto-meaningful-name] */RegeneratorRuntime1 from /* 1 */"regenerator-runtime"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../47"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../7"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../../../src/editor/widget/built-in/types"

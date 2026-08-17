@@ -6,7 +6,7 @@
 
 var r = require(/* 2496 */"./2496/index")
 var i = require(/* 995 */"../../../995/index")
-var o = require(/* 1177 */"../../../../../../../../797/101/2538/2539/2540/999/1177")
+var o = require(/* 1177 */"../../1177/index")
 module.exports = function () {
   this.size = 0
   this.__data__ = {

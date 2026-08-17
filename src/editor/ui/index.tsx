@@ -21,7 +21,7 @@ if (["staging", "production", "prod"].includes(Shared_env.b())) {
 
 ReactDom.render(
   <Provider store={store}>
-    <App/>
+    <App />
   </Provider>,
   document.getElementById("root")
 )

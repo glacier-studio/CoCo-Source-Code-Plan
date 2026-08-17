@@ -22,7 +22,7 @@ var c = r(require(/* 1069 */"../../../13/780/1069/index"))
 var f = r(require(/* 50 */"../../../50/index"))
 var h = a(require(/* 0 */"react"))
 var p = r(require(/* 8 */"classnames"))
-var v = require(/* 2701 */"./2917/2701")
+var v = require(/* 2701 */"./2930/2701")
 var m = {
   actions: f.default.object,
   player: f.default.object,

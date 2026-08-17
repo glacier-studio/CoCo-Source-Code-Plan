@@ -10,7 +10,7 @@ export { s as d }
 export { c as b }
 export { l as c }
 export { u as a }
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../47"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../9"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Module_48 from /* 48 */"../../48/index"

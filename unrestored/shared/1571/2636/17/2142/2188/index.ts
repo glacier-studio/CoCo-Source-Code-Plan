@@ -209,5 +209,5 @@ var c = function (e) {
     }
   }
   return t = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 1127 */"./1127").Controller)
+}(require(/* 1127 */"../2187/1127").Controller)
 exports.AngleController = c

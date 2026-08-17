@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import * as Actions from "../../../redux/common/actions"
 import { IconFont } from "../../../../shared/ui/components"
 import * as /* [auto-meaningful-name] */Module_627 from /* 627 */"../../../../../unrestored/shared/1571/2636/627"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from "regenerator-runtime"
 import { useDispatch, useSelector } from "react-redux"
@@ -29,7 +29,7 @@ import * as /* [auto-meaningful-name] */Module_392 from /* 392 */"../../../../..
 export function OpenWork() {
 
   const dispatch = useDispatch()
-  const formatMessage = Module_710.a().formatMessage
+  const formatMessage = useIntl().formatMessage
   const courseList = useSelector((state) => state.common.courseList)
   const templateList = useSelector((state) => state.common.templateList)
   const hasWorkRef = React.useRef(false)

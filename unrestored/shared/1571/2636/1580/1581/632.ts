@@ -5,7 +5,7 @@
  */
 
 var r = require(/* 1234 */"../1648/1234/index")
-var o = require(/* 757 */"./757")
+var o = require(/* 757 */"../1648/757")
 module.exports = function (e) {
   var t = r(e, "string")
   return o(t) ? t : String(t)

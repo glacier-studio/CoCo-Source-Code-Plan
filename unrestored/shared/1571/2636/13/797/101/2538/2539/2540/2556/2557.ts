@@ -5,7 +5,7 @@
  */
 
 var r = require(/* 999 */"../999/index")
-var i = require(/* 538 */"../../../../2466/1436/538")
+var i = require(/* 538 */"../../../../2466/2467/538")
 module.exports = function (e) {
   return i(e) && "[object Set]" == r(e)
 }

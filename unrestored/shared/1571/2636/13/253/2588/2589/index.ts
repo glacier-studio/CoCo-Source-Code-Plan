@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
 })
 exports.isvalidColorString = exports.red = exports.getContrastingColor = exports.isValidHex = exports.toState = exports.simpleCheckForValidColor = undefined
 var r = o(require(/* 2590 */"./2590/index"))
-var i = o(require(/* 226 */"../../../226"))
+var i = o(require(/* 226 */"../../../../15/226"))
 function o(e) {
   return e && e.__esModule ? e : {
     default: e

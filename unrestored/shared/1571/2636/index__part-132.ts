@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -25,7 +25,7 @@ var Hw = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var r = e$getValue("content")
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var i = Src_shared_tools_index.p(function (e) {
     e$onChange("content", e)
   }, 60)
@@ -33,7 +33,7 @@ var Hw = memo(function (e) {
     className: Classnames(Module_7041.formItemWrapper, Module_7041.wrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_7041.labelWrapper
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "content"
   })), React.createElement(React.Fragment, null, React.createElement("div", null, React.createElement(Src_shared_ui_components_index.A, {
     defaultValue: r,

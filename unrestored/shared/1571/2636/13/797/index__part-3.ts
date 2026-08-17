@@ -7,7 +7,7 @@
 "use strict"
 
 import { Z, ee, te } from "./index__part-2"
-import * as /* [auto-meaningful-name] */Module_325 from /* 325 */"./325/index"
+import * as /* [auto-meaningful-name] */Module_325 from /* 325 */"./325"
 import * as /* [auto-meaningful-name] */Module_1505 from /* 1505 */"./1505"
 var /* [auto-meaningful-name] */Module_325$a$Uint8Array = Module_325.a.Uint8Array
 var Qe = function (e) {

@@ -14,8 +14,8 @@ import { Yj } from "./index__part-188"
 import { Xj } from "./index__part-189"
 import /* [auto-meaningful-name] */Module_164 from /* 164 */"./164"
 var Nj
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_dialog_index from /* 540 */"../../../../src/shared/ui/components/Dialog/index"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Dialog_index from /* 540 */"../../../../src/shared/ui/components/Dialog/index"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"./39"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
@@ -29,7 +29,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -196,17 +196,17 @@ var nN = memo(function (e) {
   var /* [auto-meaningful-name] */e$searchName = e.searchName
   var /* [auto-meaningful-name] */e$clearSearchHandler = e.clearSearchHandler
   var /* [auto-meaningful-name] */e$canShowMultiply = e.canShowMultiply
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
-  var l = Module_710$a$formatMessage({
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
+  var l = useIntl$formatMessage({
     id: "allType"
   })
-  var u = Module_710$a$formatMessage({
+  var u = useIntl$formatMessage({
     id: "Resource.Image"
   })
-  var d = Module_710$a$formatMessage({
+  var d = useIntl$formatMessage({
     id: "Resource.Icon"
   })
-  var p = Module_710$a$formatMessage({
+  var p = useIntl$formatMessage({
     id: "Resource.Sound"
   })
   var m = useState(e.sidebarType || Z(e.mode))
@@ -437,7 +437,7 @@ var nN = memo(function (e) {
     }, React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-".concat(e.name),
       className: Module_164.icon
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "Resource.".concat(e.name)
     }))
   }), React.createElement("a", {
@@ -445,7 +445,7 @@ var nN = memo(function (e) {
     href: "https://codemao-guide.yuque.com/bfiekm/sbo5kh/xgm6rd",
     target: "_blank",
     rel: "noopener noreferrer"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.HowFindMaterial"
   }))), React.createElement("div", {
     className: Classnames(Module_164.itemContent, e.mode === Module_68.c.ResourceLibrary && Module_164.sidebarShow)
@@ -486,7 +486,7 @@ var nN = memo(function (e) {
       marginTop: 224
     }
   }, React.createElement(we, {
-    text: Module_710$a$formatMessage({
+    text: useIntl$formatMessage({
       id: "material.materialNotFound"
     }),
     type: "image-text"
@@ -506,7 +506,7 @@ var rN = memo(function () {
   var /* [auto-meaningful-name] */e$mode = e.mode
   var /* [auto-meaningful-name] */e$sidebarType = e.sidebarType
   var /* [auto-meaningful-name] */e$setTab = e.setTab
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useDispatch()
   var l = function () {
     Q()
@@ -747,7 +747,7 @@ var rN = memo(function () {
     R([])
     l()
   }
-  return React.createElement(Src_shared_ui_components_dialog_index.a, {
+  return React.createElement(Src_shared_ui_components_Dialog_index.a, {
     withPortal: true,
     visible: e$visible,
     className: Classnames(Module_164.imageLibrary, e$mode === Module_68.c.ResourceLibrary && Module_164.mall),
@@ -757,13 +757,13 @@ var rN = memo(function () {
     className: Module_164.LibraryHeader
   }, React.createElement("div", {
     className: Module_164.title
-  }, e$mode === Module_68.c.ResourceLibrary ? Module_710$a$formatMessage({
+  }, e$mode === Module_68.c.ResourceLibrary ? useIntl$formatMessage({
     id: "Resource.ResourceMall"
-  }) : e$mode === Module_68.c.ImageLibrary ? Module_710$a$formatMessage({
+  }) : e$mode === Module_68.c.ImageLibrary ? useIntl$formatMessage({
     id: "Resource.ImageLibrary"
-  }) : e$mode === Module_68.c.SoundLibrary ? Module_710$a$formatMessage({
+  }) : e$mode === Module_68.c.SoundLibrary ? useIntl$formatMessage({
     id: "Resource.SoundLibrary"
-  }) : e$mode === Module_68.c.IconLibrary ? Module_710$a$formatMessage({
+  }) : e$mode === Module_68.c.IconLibrary ? useIntl$formatMessage({
     id: "Resource.IconLibrary"
   }) : ""), p && React.createElement("div", {
     className: Module_164.tab
@@ -776,7 +776,7 @@ var rN = memo(function () {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-project-resources",
     className: Module_164.icon
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "Resource.ProjectLibrary"
   })), React.createElement("div", {
     className: Classnames(Module_164.tabItem, w === Nj.Mall && Module_164.selected),
@@ -787,13 +787,13 @@ var rN = memo(function () {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-material-store",
     className: Module_164.icon
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "Resource.ResourceMall"
   }))), React.createElement(Src_shared_ui_components_index.k, {
     ref: U,
     onClearCallback: Q,
     className: Module_164.searchInput,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "Resource.search"
     }),
     onKeyDown: X,
@@ -879,12 +879,12 @@ var rN = memo(function () {
     onClick: function () {
       return re(false)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Clear"
   })), React.createElement("div", {
     className: Classnames(Module_164.btn, Module_164.btnConfirm),
     onClick: oe
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Add"
   }), "(", j.length, ")"))) : React.createElement("div", {
     className: Module_164.footer
@@ -895,12 +895,12 @@ var rN = memo(function () {
     onClick: function () {
       return re(true)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Cancel"
   })), React.createElement("div", {
     className: Classnames(Module_164.btn, Module_164.btnConfirm),
     onClick: oe
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Apply"
   })))))
 })

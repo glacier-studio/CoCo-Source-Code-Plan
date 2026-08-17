@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Module_20 from /* 20 */"./20/index"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Module_1221 from /* 1221 */"./1221"
 import * as /* [auto-meaningful-name] */Module_529 from /* 529 */"./529"
 import /* [auto-meaningful-name] */Module_5291 from /* 529 */"./529"
 var oB = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */useSelectorFunctionEReturnE$dataWatch$tableDataDialog$id = useSelector(function (e) {
     return e.dataWatch.tableDataDialog
   }).id
@@ -85,7 +85,7 @@ var oB = memo(function () {
         }, e.value)
       }
     },
-    overlayNoRowsTemplate: Module_710$a$formatMessage({
+    overlayNoRowsTemplate: useIntl$formatMessage({
       id: "noData"
     })
   }
@@ -122,7 +122,7 @@ var oB = memo(function () {
 })
 var iB = function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useState({
     x: document.body.clientWidth - 886,
     y: 100
@@ -290,7 +290,7 @@ var iB = function () {
   }, W ? "" : React.createElement(Module_748.a, {
     placement: "bottom",
     trigger: ["hover"],
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "resetData"
     })
   }, React.createElement("div", {

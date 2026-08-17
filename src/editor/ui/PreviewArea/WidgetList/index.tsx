@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import * as CommonActions from "../../../redux/common/actions"
 import { Button } from "../../../../shared/ui/components"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from "regenerator-runtime"
@@ -26,7 +26,7 @@ import /* [auto-meaningful-name] */Unrestored_shared_1571_2636_1514 from "../../
 
 const WidgetMallButton = React.memo((props) => {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const userInfo = useSelector((state) => state.common.userInfo)
   const dispatch = useDispatch()
 
@@ -75,7 +75,7 @@ const WidgetScrollExtension = React.memo(function (e) {
       o.push(a(e))
     }
   })
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   var c = React.useState(false)
   var l = Module_10.a(c, 2)
   var u = l[0]
@@ -170,7 +170,7 @@ enum ETab {
 }
 
 export const WidgetTabContainer = React.memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.uiConfig.widgetEditor
   }) === Module_18.j.ReadOnly
@@ -192,7 +192,7 @@ export const WidgetTabContainer = React.memo(function (e) {
           }}
           className={classNames(styles.tab, a === ETab.BASIC && styles.activeTab)}
         >
-          <div>{Module_710$a$formatMessage({ id: "Widget.basic" })}</div>
+          <div>{useIntl$formatMessage({ id: "Widget.basic" })}</div>
         </div>
         <div
           onClick={() => {
@@ -200,7 +200,7 @@ export const WidgetTabContainer = React.memo(function (e) {
           }}
           className={classNames(styles.tab, a === ETab.EXTENSION && styles.activeTab)}
         >
-          <div>{Module_710$a$formatMessage({ id: "Widget.extension" })}</div>
+          <div>{useIntl$formatMessage({ id: "Widget.extension" })}</div>
         </div>
       </div>
       <div className={styles.tabContent}>

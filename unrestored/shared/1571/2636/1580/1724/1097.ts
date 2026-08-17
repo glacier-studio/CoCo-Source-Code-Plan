@@ -4,7 +4,7 @@
  * 模块 ID：1097
  */
 
-var r = require(/* 246 */"../1282/246/index")("match")
+var r = require(/* 246 */"../1782/246/index")("match")
 module.exports = function (e) {
   var t = /./
   try {

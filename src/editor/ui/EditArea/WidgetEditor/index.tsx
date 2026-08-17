@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import { setWidgetAttributeVisibleAction } from "../../../redux/common/actions"
 import { IconFont } from "../../../../shared/ui/components"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import React, { memo } from "react"
 import { WidgetStyleForm } from "./WidgetStyleForm"
@@ -20,7 +20,7 @@ import { WidgetStyleForm } from "./WidgetStyleForm"
 export const WidgetEditor = memo(() => {
 
   const dispatch = useDispatch()
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
 
   const selectedWidgetId = useSelector((state) => state.project.selectedWidgetId)
   const widgetAttributeVisible = useSelector((state) => state.common.widgetAttributeVisible)

@@ -17,7 +17,7 @@ import * as Tools from "../../../../shared/tools"
 import * as /* [auto-meaningful-name] */Module_97 from /* 97 */"../../../../../unrestored/shared/1571/2636/97"
 import * as CommonActions from "../../../redux/common/actions"
 import { promisify, showCommonToastInfoAction } from "../../../redux/common/actions"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from "regenerator-runtime"
 import { useSelector, useDispatch } from "react-redux"
@@ -41,7 +41,7 @@ export function ShareMenuItem({ target }: { target: "community" | "others" }) {
 
   const [dialogType, setDialogType] = useState(EShareDialogType.NONE)
   const userInfo = useSelector((state) => state.common.userInfo)
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const id = useSelector((state) => state.project.id)
   const globalWidgetIds = useSelector((state) => state.project.globalWidgetIds)
   const dispatch = useDispatch()

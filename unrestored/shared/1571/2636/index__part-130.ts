@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Module_35 from /* 35 */"./35"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"./19"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { forwardRef, useContext, createElement, memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -82,14 +82,14 @@ var Pw = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig$unCheckedLabel = e$formConfig.unCheckedLabel
   var /* [auto-meaningful-name] */e$formConfig$convert = e$formConfig.convert
   var /* [auto-meaningful-name] */e$formConfig$reverse = e$formConfig.reverse
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
-  var f = Module_710$a$formatMessage({
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
+  var f = useIntl$formatMessage({
     id: s
   })
-  var m = e$formConfig$checkedLabel ? Module_710$a$formatMessage({
+  var m = e$formConfig$checkedLabel ? useIntl$formatMessage({
     id: e$formConfig$checkedLabel
   }) : ""
-  var g = e$formConfig$unCheckedLabel ? Module_710$a$formatMessage({
+  var g = e$formConfig$unCheckedLabel ? useIntl$formatMessage({
     id: e$formConfig$unCheckedLabel
   }) : ""
   var _ = e$getValue(n)

@@ -9,7 +9,7 @@
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -25,7 +25,7 @@ var Yw = memo(function (e) {
   var a = e$getValue(n)
   var s = e$getValue("title")
   var c = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   function u() {
     e$onChange("updatedAt", Date.now())
   }
@@ -35,17 +35,17 @@ var Yw = memo(function (e) {
     className: "coco-form-item coco-form-item-horizontal"
   }, React.createElement("div", {
     className: Module_5261.label
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "TableDataWidget.data"
   })), React.createElement("div", {
     className: Module_5261.data
   }, React.createElement("span", {
     className: Module_5261.length
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "column"
   }), ":", Object.keys(a.header).length), React.createElement("span", {
     className: Module_5261.length
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "row"
   }), ":", a.data.length))), React.createElement("div", {
     className: Module_5261.imageBox
@@ -66,7 +66,7 @@ var Yw = memo(function (e) {
         onClose: u
       }))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "edit"
   })))))
 })

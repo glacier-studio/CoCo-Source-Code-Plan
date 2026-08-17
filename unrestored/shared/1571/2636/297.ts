@@ -65,7 +65,7 @@ function _() {
     var /* [auto-meaningful-name] */t$bcmUrl
     var /* [auto-meaningful-name] */t$coverUrl
     var /* [auto-meaningful-name] */t$sourceTag
-    var /* [auto-meaningful-name] */u$data
+    var /* [auto-meaningful-name] */e$sent$data
     var /* [auto-meaningful-name] */e$sent
     var /* [auto-meaningful-name] */e$sent$data$data$work_id
     var /* [auto-meaningful-name] */e$t0$response
@@ -88,7 +88,7 @@ function _() {
               work_source_label: t$sourceTag
             })
           case 4:
-            if (!(null === (e$sent = e.sent) || undefined === e$sent || null === (u$data = e$sent.data) || undefined === u$data ? undefined : u$data.data)) {
+            if (!(null === (e$sent = e.sent) || undefined === e$sent || null === (e$sent$data = e$sent.data) || undefined === e$sent$data ? undefined : e$sent$data.data)) {
               e.next = 8
               break
             }
@@ -122,7 +122,7 @@ function b() {
     var /* [auto-meaningful-name] */t$bcmUrl
     var /* [auto-meaningful-name] */t$coverUrl
     var a
-    var /* [auto-meaningful-name] */u$data
+    var /* [auto-meaningful-name] */e$sent$data
     var /* [auto-meaningful-name] */e$sent
     var /* [auto-meaningful-name] */e$t0$response
     return RegeneratorRuntime1.wrap(function (e) {
@@ -144,7 +144,7 @@ function b() {
               save_type: t.saveType || Module_60.b.ByUser
             })
           case 4:
-            if (null === (e$sent = e.sent) || undefined === e$sent || null === (u$data = e$sent.data) || undefined === u$data ? undefined : u$data.data) {
+            if (null === (e$sent = e.sent) || undefined === e$sent || null === (e$sent$data = e$sent.data) || undefined === e$sent$data ? undefined : e$sent$data.data) {
               e.next = 7
               break
             }
@@ -237,7 +237,7 @@ function O(e, t) {
 }
 function w() {
   return (w = Module_7.a(RegeneratorRuntime1.mark(function e(t, n) {
-    var /* [auto-meaningful-name] */o$data
+    var /* [auto-meaningful-name] */e$sent$data
     var /* [auto-meaningful-name] */e$sent
     var a
     var s
@@ -255,7 +255,7 @@ function w() {
               }
             })
           case 2:
-            if (e$sent = e.sent, a = [], !(s = null === e$sent || undefined === e$sent || null === (o$data = e$sent.data) || undefined === o$data ? undefined : o$data.data)) {
+            if (e$sent = e.sent, a = [], !(s = null === e$sent || undefined === e$sent || null === (e$sent$data = e$sent.data) || undefined === e$sent$data ? undefined : e$sent$data.data)) {
               e.next = 10
               break
             }

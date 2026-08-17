@@ -6,7 +6,7 @@
 
 "use strict"
 
-var r = require(/* 257 */"./1758/257/index")
+var r = require(/* 257 */"./1754/257/index")
 var /* [auto-meaningful-name] */r$aTypedArray = r.aTypedArray
 var /* [auto-meaningful-name] */r$exportTypedArrayMethod = r.exportTypedArrayMethod
 var /* [auto-meaningful-name] */Math$floor = Math.floor

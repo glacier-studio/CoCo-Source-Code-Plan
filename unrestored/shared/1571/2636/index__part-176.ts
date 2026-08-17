@@ -11,12 +11,12 @@ import { DI } from "./index__part-175"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -28,7 +28,7 @@ var PI = function (e) {
   var t = useSelector(function (e) {
     return e.project.globalWidgetIds
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useRef(null)
   var o = useState(e.gridName)
   var i = Module_10.a(o, 2)
@@ -64,11 +64,11 @@ var PI = function (e) {
           return t.title === e
         })
       },
-      message: Module_710$a$formatMessage({
+      message: useIntl$formatMessage({
         id: "gridNameRepeat"
       })
     }
-  ].concat(Module_25.a(Sg(Module_710$a$formatMessage)))
+  ].concat(Module_25.a(Sg(useIntl$formatMessage)))
   return React.createElement("div", null, u ? React.createElement("div", {
     className: Module_6191.gridNameEditorContainer
   }, React.createElement("input", {
@@ -76,7 +76,7 @@ var PI = function (e) {
     maxLength: Module_53.j,
     ref: r,
     defaultValue: a,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "addGridNamePlaceholder"
     }),
     onChange: function (t) {
@@ -143,7 +143,7 @@ var BI = memo(function () {
   var /* [auto-meaningful-name] */e$grid = e.grid
   var /* [auto-meaningful-name] */e$onClose = e.onClose
   var /* [auto-meaningful-name] */e$isCreateNewGrid = e.isCreateNewGrid
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useDispatch()
   var s = useState(false)
   var c = Module_10.a(s, 2)
@@ -227,13 +227,13 @@ var BI = memo(function () {
         onConfirm: function () {
           D()
         },
-        allowText: Module_710$a$formatMessage({
+        allowText: useIntl$formatMessage({
           id: "giveUp"
         }),
-        title: Module_710$a$formatMessage({
+        title: useIntl$formatMessage({
           id: "giveUpTitle"
         }),
-        content: Module_710$a$formatMessage({
+        content: useIntl$formatMessage({
           id: "giveUpTips"
         })
       }))
@@ -242,7 +242,7 @@ var BI = memo(function () {
   var L = React.createElement("div", null, React.createElement(Src_shared_ui_components_index.d, {
     type: "default",
     onClick: M
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cancel"
   })), React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
@@ -286,7 +286,7 @@ var BI = memo(function () {
       }
       a(Src_editor_redux_common_actions.qh())
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "confirm"
   })))
   return React.createElement(Src_shared_ui_components_index.f, {

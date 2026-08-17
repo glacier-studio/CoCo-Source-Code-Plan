@@ -11,13 +11,13 @@ import { od, id } from "./index__part-29"
 import { ld } from "./index__part-30"
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
-import /* [auto-meaningful-name] */Src_editor_ui_previewArea_stage_style_css from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_styles_module_css from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector, batch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -257,24 +257,24 @@ var fd = React.memo(function (e) {
   })
 })
 var hd = React.memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   return React.createElement("div", {
-    className: Src_editor_ui_previewArea_stage_style_css.stageMask,
+    className: Src_editor_ui_PreviewArea_styles_module_css.stageMask,
     onDrop: function () {
-      var /* [auto-meaningful-name] */Src_editor_ui_previewArea_stage_style_css$canvasFlash = Src_editor_ui_previewArea_stage_style_css.canvasFlash
-      var r = Module_710$a$formatMessage({
+      var /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_styles_module_css$canvasFlash = Src_editor_ui_PreviewArea_styles_module_css.canvasFlash
+      var r = useIntl$formatMessage({
         id: "StageToast.addActorToCanvasTips"
       })
       t(Src_editor_redux_common_actions.xj(r))
       var o = document.querySelectorAll("[data-widget-type=\"CANVAS_WIDGET\"][data-role=\"WIDGET\"]")
       if (o) {
         o.forEach(function (e) {
-          if (!e.classList.contains(Src_editor_ui_previewArea_stage_style_css$canvasFlash)) {
-            e.classList.add(Src_editor_ui_previewArea_stage_style_css$canvasFlash)
+          if (!e.classList.contains(Src_editor_ui_PreviewArea_styles_module_css$canvasFlash)) {
+            e.classList.add(Src_editor_ui_PreviewArea_styles_module_css$canvasFlash)
             setTimeout(function () {
               try {
-                e.classList.remove(Src_editor_ui_previewArea_stage_style_css$canvasFlash)
+                e.classList.remove(Src_editor_ui_PreviewArea_styles_module_css$canvasFlash)
               } catch (t) {
                 console.error("Canvas widget remove flush class error")
               }
@@ -287,7 +287,7 @@ var hd = React.memo(function () {
 })
 var md = React.memo(function () {
   return React.createElement("div", {
-    className: Src_editor_ui_previewArea_stage_style_css.stageReadOnlyMask
+    className: Src_editor_ui_PreviewArea_styles_module_css.stageReadOnlyMask
   })
 })
 var gd = function (e, t, n, r) {

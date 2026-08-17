@@ -4,9 +4,9 @@
  * 模块 ID：1271
  */
 
-var r = require(/* 168 */"../1659/168")
-var /* [auto-meaningful-name] */require_194_$$_1785_194$RegExp = require(/* 194 */"../1785/194").RegExp
+var r = require(/* 168 */"../1648/168")
+var /* [auto-meaningful-name] */require_194_$$_1648_194$RegExp = require(/* 194 */"../1648/194").RegExp
 module.exports = r(function () {
-  var e = require_194_$$_1785_194$RegExp(".", "s")
+  var e = require_194_$$_1648_194$RegExp(".", "s")
   return !(e.dotAll && e.exec("\n") && "s" === e.flags)
 })

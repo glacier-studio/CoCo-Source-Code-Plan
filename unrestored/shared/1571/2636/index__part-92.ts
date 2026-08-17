@@ -9,13 +9,13 @@
 import /* [auto-meaningful-name] */Module_88 from /* 88 */"./88"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState } from /* 0 */"react"
@@ -29,7 +29,7 @@ var nb = memo(function (e) {
   var /* [auto-meaningful-name] */e$onDelete = e.onDelete
   var /* [auto-meaningful-name] */e$fileId = e.fileId
   var /* [auto-meaningful-name] */e$style = e.style
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useState(false)
   var l = Module_10.a(c, 2)
   var u = l[0]
@@ -63,7 +63,7 @@ var nb = memo(function (e) {
         type: "icon-upload"
       }), React.createElement("span", {
         className: Module_4191.contentTitle
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "Resource.upload"
       }))), React.createElement("div", {
         className: Module_4191.content,
@@ -72,7 +72,7 @@ var nb = memo(function (e) {
         type: "icon-open-resource-library"
       }), React.createElement("span", {
         className: Module_4191.contentTitle
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "Resource.ImageLibrary"
       })))),
       placement: "bottomLeft",
@@ -81,7 +81,7 @@ var nb = memo(function (e) {
       onVisibleChange: b
     }, React.createElement("div", {
       className: Module_4191.imageBtn
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "Resource.Replace"
     })))
   }
@@ -130,7 +130,7 @@ var rb = memo(function (e) {
   var /* [auto-meaningful-name] */e$maxWidth = e.maxWidth
   var /* [auto-meaningful-name] */e$onWidthChange = e.onWidthChange
   var /* [auto-meaningful-name] */e$onSizeTypeChange = e.onSizeTypeChange
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var u = !Lodash.isFunction(e$onWidthChange)
   var d = function (e) {
     return Src_shared_tools_index.p(function (e) {
@@ -147,7 +147,7 @@ var rb = memo(function (e) {
     className: Module_88.formInputNumberRow
   }, React.createElement("p", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "size"
   })), React.createElement(Src_shared_ui_components_index.i, {
     className: "changeWidth"
@@ -169,7 +169,7 @@ var rb = memo(function (e) {
       style: {
         color: "var(--dark-text-color-t5)"
       }
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "width"
     }))
   })), React.createElement(Src_shared_ui_components_index.i, null, React.createElement(Src_shared_ui_components_index.n, {
@@ -177,7 +177,7 @@ var rb = memo(function (e) {
     type: "number",
     value: e$height,
     className: Module_88.justifyInputContent,
-    before: React.createElement("span", null, Module_710$a$formatMessage({
+    before: React.createElement("span", null, useIntl$formatMessage({
       id: "height"
     }))
   }))), React.createElement("div", {
@@ -192,7 +192,7 @@ var rb = memo(function (e) {
     return React.createElement(Src_shared_ui_components_index.t, {
       value: e,
       key: e
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: e.toLocaleLowerCase() + "Size"
     }))
   }))))

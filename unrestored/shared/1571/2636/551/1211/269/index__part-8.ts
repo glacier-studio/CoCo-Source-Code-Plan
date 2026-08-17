@@ -8,12 +8,12 @@
 
 import { w, E } from "./index__part-1"
 import * as /* [auto-meaningful-name] */Module_154 from /* 154 */"../699/154/index"
-import * as /* [auto-meaningful-name] */Module_1065 from /* 1065 */"../789/1065"
+import * as /* [auto-meaningful-name] */Module_1065 from /* 1065 */"../699/1065"
 import * as /* [auto-meaningful-name] */Module_54 from /* 54 */"../../../54"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"../../../19"
 import * as /* [auto-meaningful-name] */Module_98 from /* 98 */"../98"
 import { forwardRef, createElement } from /* 0 */"react"
-import * as /* [auto-meaningful-name] */Module_2642 from /* 2642 */"../699/2642"
+import * as /* [auto-meaningful-name] */Module_2642 from /* 2642 */"../699/2642/index"
 var je = forwardRef(function (e, t) {
   var /* [auto-meaningful-name] */e$children = e.children
   var /* [auto-meaningful-name] */e$classes = e.classes

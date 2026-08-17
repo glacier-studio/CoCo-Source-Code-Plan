@@ -8,7 +8,7 @@
 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -20,12 +20,12 @@ var tw = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var i = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Classnames(Module_2081.formItemWrapper, Module_2081.httpBody)
   }, React.createElement("div", {
     className: Module_2081.title
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "HttpClientWidget.body"
   }))), React.createElement(Src_shared_ui_components_index.A, {
     onBlur: function (e, t) {

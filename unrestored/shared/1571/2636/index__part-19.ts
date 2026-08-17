@@ -8,7 +8,7 @@
 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"./188"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -25,7 +25,7 @@ var cn = memo(function (e) {
   var /* [auto-meaningful-name] */e$onRetry = e.onRetry
   var /* [auto-meaningful-name] */e$onCancelRetry = e.onCancelRetry
   var /* [auto-meaningful-name] */e$className = e.className
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.f, {
     title: o,
     className: Classnames(e$className, Module_9311.networkDialog),
@@ -42,12 +42,12 @@ var cn = memo(function (e) {
           e$onCancelRetry()
         }
       }
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "cancel"
     })), React.createElement(Src_shared_ui_components_index.d, {
       onClick: e$onRetry,
       type: "primary"
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "retry"
     })))
   }, e$networkErrorVisible && React.createElement(Module_188.a, null, React.createElement(Module_188.b, {

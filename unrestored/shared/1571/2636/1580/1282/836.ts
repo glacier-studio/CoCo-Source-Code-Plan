@@ -6,7 +6,7 @@
 
 var r = require(/* 1086 */"../1681/1086")
 var o = require(/* 714 */"../1648/714")
-var i = require(/* 246 */"./246/index")("toStringTag")
+var i = require(/* 246 */"../1782/246/index")("toStringTag")
 var a = "Arguments" == o(function () {
   return arguments
 }())

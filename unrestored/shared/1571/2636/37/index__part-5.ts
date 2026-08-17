@@ -11,18 +11,18 @@ import { Ce, Ie } from "./index__part-1"
 import { Pe } from "./index__part-2"
 import { We, et } from "./index__part-3"
 import { rt } from "./index__part-4"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Redux from /* 156 */"redux"
 import * as /* [auto-meaningful-name] */Module_162 from /* 162 */"../162"
-var it = Module_66.a.Record({
+var it = Immutable.Record({
   cloudDictList: [],
   cloudTableList: [],
-  initialRefDictIds: Module_66.a.Set(),
-  initialRefTableIds: Module_66.a.Set(),
+  initialRefDictIds: Immutable.Set(),
+  initialRefTableIds: Immutable.Set(),
   checkedTimeStamp: new Date().getTime(),
-  cloudDictKeysList: Module_66.a.List([]),
-  cloudTableColumnList: Module_66.a.List([]),
-  cloudTableDataList: Module_66.a.List([])
+  cloudDictKeysList: Immutable.List([]),
+  cloudTableColumnList: Immutable.List([]),
+  cloudTableDataList: Immutable.List([])
 })()
 function at(e, t) {
   return e.setIn(["cloudDictList"], t.payload)
@@ -35,11 +35,11 @@ function ct(e, t) {
   return e.setIn(["cloudTableList"], t.payload)
 }
 function lt(e, t) {
-  var n = Module_66.a.Set(t.payload)
+  var n = Immutable.Set(t.payload)
   return e.setIn(["initialRefDictIds"], n)
 }
 function ut(e, t) {
-  var n = Module_66.a.Set(t.payload)
+  var n = Immutable.Set(t.payload)
   return e.setIn(["initialRefTableIds"], n)
 }
 function dt(e, t) {

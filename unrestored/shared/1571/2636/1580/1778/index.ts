@@ -7,13 +7,13 @@
 "use strict"
 
 var r
-var o = require(/* 194 */"../1785/194")
+var o = require(/* 194 */"../1648/194")
 var i = require(/* 760 */"../1282/760")
 var a = require(/* 718 */"./718")
-var s = require(/* 951 */"./951")
-var c = require(/* 1279 */"./1279")
+var s = require(/* 951 */"../1779/951")
+var c = require(/* 1279 */"../1779/1279")
 var l = require(/* 231 */"../1282/231")
-var /* [auto-meaningful-name] */require_426_$$_1282_426_index$enforce = require(/* 426 */"../1282/426/index").enforce
+var /* [auto-meaningful-name] */require_426_$$_1282_426$enforce = require(/* 426 */"../1282/426").enforce
 var d = require(/* 1238 */"./1238")
 var p = !o.ActiveXObject && "ActiveXObject" in o
 var /* [auto-meaningful-name] */Object$isExtensible = Object.isExtensible
@@ -34,7 +34,7 @@ if (d && p) {
   i(m$prototype, {
     delete: function (e) {
       if (l(e) && !Object$isExtensible(e)) {
-        var t = require_426_$$_1282_426_index$enforce(this)
+        var t = require_426_$$_1282_426$enforce(this)
         if (!t.frozen) {
           t.frozen = new r()
         }
@@ -44,7 +44,7 @@ if (d && p) {
     },
     has: function (e) {
       if (l(e) && !Object$isExtensible(e)) {
-        var t = require_426_$$_1282_426_index$enforce(this)
+        var t = require_426_$$_1282_426$enforce(this)
         if (!t.frozen) {
           t.frozen = new r()
         }
@@ -54,7 +54,7 @@ if (d && p) {
     },
     get: function (e) {
       if (l(e) && !Object$isExtensible(e)) {
-        var t = require_426_$$_1282_426_index$enforce(this)
+        var t = require_426_$$_1282_426$enforce(this)
         if (!t.frozen) {
           t.frozen = new r()
         }
@@ -64,7 +64,7 @@ if (d && p) {
     },
     set: function (e, t) {
       if (l(e) && !Object$isExtensible(e)) {
-        var n = require_426_$$_1282_426_index$enforce(this)
+        var n = require_426_$$_1282_426$enforce(this)
         if (!n.frozen) {
           n.frozen = new r()
         }

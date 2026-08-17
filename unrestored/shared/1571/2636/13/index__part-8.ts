@@ -6,7 +6,7 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { createContext, memo, useState, useEffect, useCallback, useRef, useContext } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -87,7 +87,7 @@ memo(function (e) {
     className: Classnames("coco-tree-select-arrow", {
       active: y
     })
-  }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     type: "icon-up"
   }))), React.createElement("div", {
     className: Classnames("coco-tree-select-list", {
@@ -123,7 +123,7 @@ var ne = memo(function (e) {
     })
   }, React.createElement("span", null, e$title), React.createElement("i", {
     className: "coco-tree-node-arrows"
-  }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     type: "icon-right"
   }))), React.createElement("div", {
     className: Classnames("coco-tree-group-main", {

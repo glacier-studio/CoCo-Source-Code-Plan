@@ -25,7 +25,7 @@ var u = function (e) {
   var t
   var n
   var r = []
-  var /* [auto-meaningful-name] */EFunctionEForVarTN0RE$lengthNRVarOE$charCodeAtNIfO55296O56319NRVarIE$charCodeAtNIf5632064512IT$push1023O101023I65536ElseT$pushONElseT$pushOReturnTE$length = (e = function (e) {
+  var /* [auto-meaningful-name] */EFunctionEForVarTN0_AutoMeaningfulName_e$lengthE$lengthNE$lengthVarOE$charCodeAtNIfO55296O56319NE$lengthVarIE$charCodeAtNIf5632064512IT$push1023O101023I65536ElseT$pushONElseT$pushOReturnTE$length = (e = function (e) {
     for (var t = [], n = 0, /* [auto-meaningful-name] */e$length = e.length; n < e$length;) {
       var o = e.charCodeAt(n++)
       if (o >= 55296 && o <= 56319 && n < e$length) {
@@ -52,7 +52,7 @@ var u = function (e) {
   }
   var /* [auto-meaningful-name] */r$length = r.length
   var h = r$length
-  for (r$length && r.push("-"); h < EFunctionEForVarTN0RE$lengthNRVarOE$charCodeAtNIfO55296O56319NRVarIE$charCodeAtNIf5632064512IT$push1023O101023I65536ElseT$pushONElseT$pushOReturnTE$length;) {
+  for (r$length && r.push("-"); h < EFunctionEForVarTN0_AutoMeaningfulName_e$lengthE$lengthNE$lengthVarOE$charCodeAtNIfO55296O56319NE$lengthVarIE$charCodeAtNIf5632064512IT$push1023O101023I65536ElseT$pushONElseT$pushOReturnTE$length;) {
     var m = 2147483647
     for (t = 0; t < e.length; t++) {
       if ((n = e[t]) >= u && n < m) {

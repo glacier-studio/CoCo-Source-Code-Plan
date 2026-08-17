@@ -36,7 +36,7 @@ var u = function (e) {
     return n
   }
   t.prototype.analyze_local_operation = function (e) {
-    var /* [auto-meaningful-name] */f$source_block
+    var /* [auto-meaningful-name] */this$Blink$runtime_data$editing$source_block
     var n = new Set()
     var /* [auto-meaningful-name] */this$Blink$mainWorkspace$current_gesture_ = this.Blink.mainWorkspace.current_gesture_
     var o = null === this$Blink$mainWorkspace$current_gesture_ || undefined === this$Blink$mainWorkspace$current_gesture_ ? undefined : this$Blink$mainWorkspace$current_gesture_.target_block
@@ -78,7 +78,7 @@ var u = function (e) {
         if (!this$Blink$runtime_data$editing) {
           return
         }
-        if (this$Blink$runtime_data$editing.source_block === this$Blink$runtime_data$selected || (null === (f$source_block = this$Blink$runtime_data$editing.source_block) || undefined === f$source_block ? undefined : f$source_block.parent_block) === this$Blink$runtime_data$selected) {
+        if (this$Blink$runtime_data$editing.source_block === this$Blink$runtime_data$selected || (null === (this$Blink$runtime_data$editing$source_block = this$Blink$runtime_data$editing.source_block) || undefined === this$Blink$runtime_data$editing$source_block ? undefined : this$Blink$runtime_data$editing$source_block.parent_block) === this$Blink$runtime_data$selected) {
           return {
             type: r.EditField,
             target: this$Blink$runtime_data$editing

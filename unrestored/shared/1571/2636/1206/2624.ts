@@ -65,7 +65,7 @@ exports.getCodemaoLoginIframeUrl = function (e) {
 }
 var r = require(/* 772 */"./772")
 var o = require(/* 773 */"./773/index")
-var i = require(/* 885 */"./2618/885")
+var i = require(/* 885 */"./2620/885")
 var a = new r.ApiSpec("codemao-login", {})
 var s = new r.ApiSpec(a.namespace, {
   onEvent: new r.MethodType()

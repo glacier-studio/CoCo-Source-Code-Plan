@@ -32,7 +32,7 @@ import * as Components from "../../../shared/ui/components"
 import { Button, Dropdown, IconFont, Menu, MenuItem } from "../../../shared/ui/components"
 import * as /* [auto-meaningful-name] */Module_627 from /* 627 */"../../../../unrestored/shared/1571/2636/627"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import { a as Tooltip } from "../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../unrestored/shared/1571/2636/7"
@@ -45,7 +45,7 @@ import styles from "./styles.module.css"
 
 function CloudSpaceManager() {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
 
   const header = useSelector((state) => state.uiConfig.header)
   const cloudDictList = useSelector((state) => state.cloudSpace.cloudDictList)
@@ -138,7 +138,7 @@ function CloudSpaceManager() {
 
 export const Header = React.memo(({ children }: { children: JSX.Element }) => {
   const dispatch = useDispatch()
-  var formatMessage = Module_710.a().formatMessage
+  var formatMessage = useIntl().formatMessage
   var o = React.useState(false)
   var i = Module_10.a(o, 2)
   var a = i[0]
@@ -613,51 +613,26 @@ export const Header = React.memo(({ children }: { children: JSX.Element }) => {
   var Ae = function () {
     dispatch(CommonActions.Gi(true))
   }
-  var Ie = function () {
-    var e = Module_7.a(RegeneratorRuntime.mark(function e(t) {
-      var o
-      var /* [auto-meaningful-name] */e$sent
-      var /* [auto-meaningful-name] */e$sent$title
-      return RegeneratorRuntime.wrap(function (e) {
-        for (;;) {
-          switch (e.prev = e.next) {
-            case 0:
-              if (!(t && t.length > 0)) {
-                e.next = 13
-                break
-              }
-              o = t[0]
-              e.prev = 2
-              e.next = 5
-              return LoadCustomWidget.importCostumeWidgetFromBlob(o, false)
-            case 5:
-              e$sent = e.sent
-              e$sent$title = e$sent.title
-              dispatch(CommonActions.showCommonToastInfoAction({
-                message: formatMessage({
-                  id: "HeaderDropdown.importExtensionSuccess"
-                }, {
-                  title: e$sent$title
-                }),
-                type: "info"
-              }))
-              e.next = 13
-              break
-            case 10:
-              e.prev = 10
-              e.t0 = e.catch(2)
-              console.error(e.t0)
-            case 13:
-            case "end":
-              return e.stop()
-          }
-        }
-      }, e, null, [[2, 10]])
-    }))
-    return function (t) {
-      return e.apply(this, arguments)
+
+  async function handleImportCustomWidget(fileList: FileList) {
+    if (fileList && fileList.length > 0) {
+      const file = fileList[0]!
+      try {
+        const { title } = await LoadCustomWidget.importCostumeWidgetFromBlob(file, false)
+        dispatch(CommonActions.showCommonToastInfoAction({
+          message: formatMessage({
+            id: "HeaderDropdown.importExtensionSuccess"
+          }, {
+            title: title
+          }),
+          type: "info"
+        }))
+      } catch (error) {
+        console.error(error)
+      }
     }
-  }()
+  }
+
   var je = function (e) {
     if (!playing) {
       switch (e) {
@@ -774,7 +749,7 @@ export const Header = React.memo(({ children }: { children: JSX.Element }) => {
                   {!collWorkId && (
                     <MenuItem value="IMPORT_EXTENSION_WIDGET">
                       <Components.B
-                        onChange={Ie}
+                        onChange={handleImportCustomWidget}
                         accept=".js,.jsx"
                         className={classNames(styles.itemUploadButton)}
                       >

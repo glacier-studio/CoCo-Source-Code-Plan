@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -32,7 +32,7 @@ var Sw = memo(function (e) {
   var /* [auto-meaningful-name] */e$widgetId = e.widgetId
   var r = e$getValue("cloudDbId")
   var o = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = Module_9.Bb(e$widgetId)
   var s = useState(Tw)
   var c = Module_10.a(s, 2)
@@ -133,16 +133,16 @@ var Sw = memo(function (e) {
   }, React.createElement("img", {
     src: Module_15201,
     alt: "loading"
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "cloudDBWidget.loading"
   }))) : React.createElement(React.Fragment, null, React.createElement("div", {
     className: Module_4211.title
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "cloudDBWidget.data"
   }), React.createElement(Module_1213.a, {
     content: React.createElement("div", {
       className: Module_4211.btnContent
-    }, React.createElement("div", null, " ", Module_710$a$formatMessage({
+    }, React.createElement("div", null, " ", useIntl$formatMessage({
       id: "cloudDBWidget.tipsContent"
     }))),
     placement: "rightTop",

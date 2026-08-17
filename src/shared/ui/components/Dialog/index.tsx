@@ -41,7 +41,7 @@ export const Dialog = memo(({
 
   const elementRef = useRef<HTMLDivElement>(null)
   const contentElementRef = useRef<HTMLDivElement>(null)
-  const [, setIsAnimationFinished] = useState(false)
+  const [, setIsPlayingAnimation] = useState(false)
 
   let containerElement = document.getElementById("_cocoDialogContainer")
   if (!containerElement) {
@@ -75,7 +75,7 @@ export const Dialog = memo(({
 
   useEffect(() => {
     if (visible) {
-      setIsAnimationFinished(true)
+      setIsPlayingAnimation(true)
     }
   }, [visible])
 
@@ -98,7 +98,7 @@ export const Dialog = memo(({
         className={visible ? classNames("coco-dialog-wrapper", "show") : classNames("coco-dialog-wrapper", "hidden")}
         onAnimationEnd={() => {
           if (!visible) {
-            setIsAnimationFinished(false)
+            setIsPlayingAnimation(false)
           }
         }}
       >

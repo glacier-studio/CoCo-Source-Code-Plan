@@ -6,7 +6,7 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useLayoutEffect, useCallback, useMemo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -56,7 +56,7 @@ var oe = memo(function (e) {
         t = "coco-alert-info"
     }
     return {
-      icon: React.createElement(Src_shared_ui_components_iconfont_index.a, {
+      icon: React.createElement(Src_shared_ui_components_Iconfont_index.a, {
         type: e
       }),
       className: t
@@ -79,7 +79,7 @@ var oe = memo(function (e) {
   }, l && (e$icon || O.icon)), React.createElement("span", null, e$message)), d && React.createElement("div", {
     className: "coco-alert-close",
     onClick: w
-  }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     type: "icon-close"
   })))
 })

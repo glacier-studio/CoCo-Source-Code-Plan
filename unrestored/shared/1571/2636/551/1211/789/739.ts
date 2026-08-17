@@ -12,14 +12,14 @@ import /* 50 */"../../../50/index"
 import * as /* [auto-meaningful-name] */Module_278 from /* 278 */"../../278"
 import * as /* [auto-meaningful-name] */Module_98 from /* 98 */"../98"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"../../../19"
-import * as /* [auto-meaningful-name] */Module_1065 from /* 1065 */"./1065"
+import * as /* [auto-meaningful-name] */Module_1065 from /* 1065 */"../699/1065"
 import * as /* [auto-meaningful-name] */Module_709 from /* 709 */"../709/index"
 import /* 103 */"../../../103"
 import /* 106 */"../../../106"
 import /* 388 */"../../../388"
 import /* 362 */"../../../362"
 import /* 120 */"../../../120"
-import * as /* [auto-meaningful-name] */Module_366 from /* 366 */"../../../552/1214/366"
+import * as /* [auto-meaningful-name] */Module_366 from /* 366 */"../../../552/1214/366/index"
 var l = {
   0: [0, 40],
   1: [55, 19.6],

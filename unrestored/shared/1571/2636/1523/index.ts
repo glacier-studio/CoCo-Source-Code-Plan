@@ -14,7 +14,7 @@ import * as /* [auto-meaningful-name] */React from "react"
 import /* [auto-meaningful-name] */React1 from /* 0 */"react"
 import * as /* [auto-meaningful-name] */Module_557 from /* 557 */"../557"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import /* [auto-meaningful-name] */Classnames1 from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
@@ -23,7 +23,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_155 from /* 155 */"./155"
 import /* [auto-meaningful-name] */Module_1551 from /* 155 */"./155"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../64/index"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"../68"
@@ -56,7 +56,7 @@ _a = memo(function () {
   var /* [auto-meaningful-name] */e$data = e.data
   var /* [auto-meaningful-name] */e$onSave = e.onSave
   var j = null === e$widget || undefined === e$widget ? undefined : e$widget.type
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var R = useRef(-1)
   var k = useRef(-1)
   var x = useDispatch()
@@ -139,7 +139,7 @@ _a = memo(function () {
       P([e])
       x(Src_editor_redux_common_actions.mj({
         showPrefixIcon: false,
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "repeatKeyToastMsg"
         })
       }))
@@ -305,7 +305,7 @@ _a = memo(function () {
       })) {
         x(Src_editor_redux_common_actions.mj({
           showPrefixIcon: false,
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "repeatKeyToastMsg"
           })
         }))
@@ -318,7 +318,7 @@ _a = memo(function () {
   function Ue(e) {
     if (e$maxKeyLength && G.length >= e$maxKeyLength) {
       x(Src_editor_redux_common_actions.mj({
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "cloudDbOverTheMaxKeyTips"
         })
       }))
@@ -340,7 +340,7 @@ _a = memo(function () {
     })) {
       x(Src_editor_redux_common_actions.mj({
         showPrefixIcon: false,
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "repeatKeyToastMsg"
         })
       }))
@@ -373,7 +373,7 @@ _a = memo(function () {
     className: Module_1551.dialogTitle
   }, e$dbName, React1.createElement("span", {
     className: Module_1551.defaultData
-  }, "— ", Module_710$a$formatMessage({
+  }, "— ", useIntl$formatMessage({
     id: "StorageDialog.defaultData"
   }))), React1.createElement(Module_1524.a, ve), React1.createElement("div", {
     className: Module_1551.list
@@ -381,17 +381,17 @@ _a = memo(function () {
     className: Module_1551.summary
   }, React1.createElement("div", {
     className: Module_1551.count
-  }, React1.createElement("span", null, Module_710$a$formatMessage({
+  }, React1.createElement("span", null, useIntl$formatMessage({
     id: "keyValueTotal"
   }), "："), G.length || "0")), React1.createElement("div", {
     className: Module_1551.listHeader
   }, React1.createElement("div", {
     className: Module_1551.column1
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "key"
   })), React1.createElement("div", {
     className: Module_1551.column2
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "value"
   })), React1.createElement("div", {
     className: Module_1551.column3
@@ -454,27 +454,27 @@ _a = memo(function () {
         }, React1.createElement("div", {
           onMouseDown: Ge.bind(null, "key"),
           className: Module_1551.menuItem
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "copyGridData"
         })), React1.createElement("div", {
           onMouseDown: We.bind(null, "key"),
           className: Module_1551.menuItem
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "pasteGridData"
         })), React1.createElement("div", {
           onMouseDown: Ue.bind(null, "prev"),
           className: Classnames1(Module_1551.menuItem, Module_1551.borderTop)
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "insertPrevRow"
         })), React1.createElement("div", {
           onMouseDown: Ue.bind(null, "next"),
           className: Classnames1(Module_1551.menuItem, Module_1551.borderBottom)
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "insertNextRow"
         })), React1.createElement("div", {
           onMouseDown: He.bind(null, "key"),
           className: Classnames1(Module_1551.menuItem, Module_1551.deleteOption)
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "clearData"
         })))
       }, React1.createElement("div", {
@@ -504,27 +504,27 @@ _a = memo(function () {
         }, React1.createElement("div", {
           onMouseDown: Ge.bind(null, "value"),
           className: Module_1551.menuItem
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "copyGridData"
         })), React1.createElement("div", {
           onMouseDown: We.bind(null, "value"),
           className: Module_1551.menuItem
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "pasteGridData"
         })), React1.createElement("div", {
           onMouseDown: Ue.bind(null, "prev"),
           className: Classnames1(Module_1551.menuItem, Module_1551.borderTop)
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "insertPrevRow"
         })), React1.createElement("div", {
           onMouseDown: Ue.bind(null, "next"),
           className: Classnames1(Module_1551.menuItem, Module_1551.borderBottom)
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "insertNextRow"
         })), React1.createElement("div", {
           onMouseDown: He.bind(null, "value"),
           className: Classnames1(Module_1551.menuItem, Module_1551.deleteOption)
-        }, Module_710$a$formatMessage({
+        }, useIntl$formatMessage({
           id: "clearData"
         })))
       }, React1.createElement("div", {
@@ -563,7 +563,7 @@ _a = memo(function () {
         }, React1.createElement(Src_shared_ui_components_index.j, {
           type: "icon-Image",
           className: Module_1551.resourceMenuIcon
-        }), Module_710$a$formatMessage({
+        }), useIntl$formatMessage({
           id: "Resource.ImageLibrary"
         })), React1.createElement("div", {
           onMouseDown: Me,
@@ -571,7 +571,7 @@ _a = memo(function () {
         }, React1.createElement(Src_shared_ui_components_index.j, {
           type: "icon-Icon",
           className: Module_1551.resourceMenuIcon
-        }), Module_710$a$formatMessage({
+        }), useIntl$formatMessage({
           id: "Resource.IconLibrary"
         })), React1.createElement("div", {
           onMouseDown: Le,
@@ -579,7 +579,7 @@ _a = memo(function () {
         }, React1.createElement(Src_shared_ui_components_index.j, {
           type: "icon-Sound",
           className: Module_1551.resourceMenuIcon
-        }), Module_710$a$formatMessage({
+        }), useIntl$formatMessage({
           id: "Resource.SoundLibrary"
         })))
       }, React1.createElement("div", {
@@ -601,7 +601,7 @@ _a = memo(function () {
     onClick: function () {
       if (e$maxKeyLength && G.length >= e$maxKeyLength) {
         x(Src_editor_redux_common_actions.mj({
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "cloudDbOverTheMaxKeyTips"
           })
         }))
@@ -621,15 +621,15 @@ _a = memo(function () {
     onOk: Se
   }), React1.createElement("div", {
     className: Module_1551.footer
-  }, j && j === Src_editor_widget_builtIn_types.B ? React1.createElement("span", null, Module_710$a$formatMessage({
+  }, j && j === Src_editor_widget_builtIn_types.B ? React1.createElement("span", null, useIntl$formatMessage({
     id: "storageDialogTips"
-  })) : React1.createElement("span", null, Module_710$a$formatMessage({
+  })) : React1.createElement("span", null, useIntl$formatMessage({
     id: "deprecatedStorageDialogTips"
   })), React1.createElement(Src_shared_ui_components_index.d, {
     className: Classnames1(Module_1551.save, false),
     type: "primary",
     onClick: Se
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   }), false)))
 })

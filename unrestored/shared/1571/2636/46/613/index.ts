@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 })
 exports.JsonPythonGenerator = exports.load_json_js_generators_data = exports.load_json_js_generator_tell = exports.load_basic_blocks_json_js_generators = exports.JsonJavaScriptGenerator = undefined
-var r = require(/* 2218 */"./2218")
+var r = require(/* 2218 */"./2218/index")
 Object.defineProperty(exports, "JsonJavaScriptGenerator", {
   enumerable: true,
   get: function () {
@@ -47,7 +47,7 @@ Object.defineProperty(exports, "load_json_js_generators_data", {
     return d.load_json_js_generators_data
   }
 })
-var h = require(/* 2226 */"./2226/index")
+var h = require(/* 2226 */"./2226")
 Object.defineProperty(exports, "JsonPythonGenerator", {
   enumerable: true,
   get: function () {

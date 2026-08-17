@@ -7,7 +7,7 @@
 "use strict"
 
 export { i as a }
-import * as /* [auto-meaningful-name] */Module_104 from /* 104 */"./104"
+import * as /* [auto-meaningful-name] */Module_104 from /* 104 */"../488/104"
 function i(e) {
   Module_104.a(1, arguments)
   var t = Object.prototype.toString.call(e)

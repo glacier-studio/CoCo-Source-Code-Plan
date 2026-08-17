@@ -12,7 +12,7 @@ import /* [auto-meaningful-name] */Module_88 from /* 88 */"./88"
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -25,7 +25,7 @@ var BE = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
   var a = e$getValue(n)
-  var s = (0, Module_710.a().formatMessage)({
+  var s = (0, useIntl().formatMessage)({
     id: e$formConfig.label || "horizontalAlignment"
   })
   return React.createElement(Src_shared_ui_components_index.i, {
@@ -69,10 +69,10 @@ var GE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var i = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper, Module_10381.content, "changeVerticalAlign"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "verticalAlignment"
     }),
     align: "vertical"

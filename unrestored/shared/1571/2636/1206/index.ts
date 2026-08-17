@@ -37,7 +37,7 @@ Object.defineProperty(exports, "__esModule", {
 o(require(/* 772 */"./772"), exports)
 o(require(/* 773 */"./773/index"), exports)
 o(require(/* 1185 */"./1185"), exports)
-o(require(/* 2618 */"./2618/index"), exports)
+o(require(/* 2618 */"./2618"), exports)
 o(require(/* 2619 */"./2619"), exports)
 o(require(/* 2620 */"./2620/index"), exports)
 o(require(/* 2622 */"./2622/index"), exports)

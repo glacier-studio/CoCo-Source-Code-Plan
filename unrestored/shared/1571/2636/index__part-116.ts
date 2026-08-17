@@ -14,7 +14,7 @@ import * as /* [auto-meaningful-name] */Module_379 from /* 379 */"./379"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -42,10 +42,10 @@ var mO = memo(function (e) {
   var n = undefined === e$keyName ? "mode" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var o = (0, e.getValue)(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_8111.formItemWrapper, Module_8111.typeSelector, Module_8111.radioTypeSelector, "changeRadioResizeMode"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "style"
     })
   }, React.createElement(lb, {

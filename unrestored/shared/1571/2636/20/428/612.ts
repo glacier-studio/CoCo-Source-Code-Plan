@@ -240,7 +240,7 @@ var r
   A.squareRoot = A.sqrt = function () {
     var e
     var t
-    var /* [auto-meaningful-name] */l$precision
+    var /* [auto-meaningful-name] */u$constructor$precision
     var r
     var i
     var o
@@ -253,12 +253,12 @@ var r
       }
       throw Error(DecimalError + "NaN")
     }
-    for (e = w(u), s = false, 0 == (i = Math.sqrt(+u)) || i == 1 / 0 ? (((t = m(u.d)).length + e) % 2 == 0 && (t += "0"), i = Math.sqrt(t), e = Math$floor((e + 1) / 2) - (e < 0 || e % 2), r = new u$constructor(t = i == 1 / 0 ? "5e" + e : (t = i.toExponential()).slice(0, t.indexOf("e") + 1) + e)) : r = new u$constructor(i.toString()), i = a = (l$precision = u$constructor.precision) + 3;;) {
+    for (e = w(u), s = false, 0 == (i = Math.sqrt(+u)) || i == 1 / 0 ? (((t = m(u.d)).length + e) % 2 == 0 && (t += "0"), i = Math.sqrt(t), e = Math$floor((e + 1) / 2) - (e < 0 || e % 2), r = new u$constructor(t = i == 1 / 0 ? "5e" + e : (t = i.toExponential()).slice(0, t.indexOf("e") + 1) + e)) : r = new u$constructor(i.toString()), i = a = (u$constructor$precision = u$constructor.precision) + 3;;) {
       r = (o = r).plus(y(u, o, a + 2)).times(.5)
       if (m(o.d).slice(0, a) === (t = m(r.d)).slice(0, a)) {
         t = t.slice(a - 3, a + 1)
         if (i == a && "4999" == t) {
-          k(o, l$precision + 1, 0)
+          k(o, u$constructor$precision + 1, 0)
           if (o.times(o).eq(u)) {
             r = o
             break
@@ -270,7 +270,7 @@ var r
       }
     }
     s = true
-    return k(r, l$precision)
+    return k(r, u$constructor$precision)
   }
   A.times = A.mul = function (e) {
     var t
@@ -353,7 +353,7 @@ var r
   A.toPower = A.pow = function (e) {
     var t
     var n
-    var /* [auto-meaningful-name] */d$precision
+    var /* [auto-meaningful-name] */l$constructor$precision
     var i
     var a
     var u
@@ -372,19 +372,19 @@ var r
     if (l.eq(o)) {
       return l
     }
-    d$precision = l$constructor.precision
+    l$constructor$precision = l$constructor.precision
     if (e.eq(o)) {
-      return k(l, d$precision)
+      return k(l, l$constructor$precision)
     }
     u = (t = e.e) >= (n = e.d.length - 1)
     a = l.s
     if (u) {
       if ((n = h < 0 ? -h : h) <= 9007199254740991) {
-        for (i = new l$constructor(o), t = Math.ceil(d$precision / 7 + 4), s = false; n % 2 && B((i = i.times(l)).d, t), 0 !== (n = Math$floor(n / 2));) {
+        for (i = new l$constructor(o), t = Math.ceil(l$constructor$precision / 7 + 4), s = false; n % 2 && B((i = i.times(l)).d, t), 0 !== (n = Math$floor(n / 2));) {
           B((l = l.times(l)).d, t)
         }
         s = true
-        return e.s < 0 ? new l$constructor(o).div(i) : k(i, d$precision)
+        return e.s < 0 ? new l$constructor(o).div(i) : k(i, l$constructor$precision)
       }
     } else if (a < 0) {
       throw Error(DecimalError + "NaN")
@@ -392,7 +392,7 @@ var r
     a = a < 0 && 1 & e.d[Math.max(t, n)] ? -1 : 1
     l.s = 1
     s = false
-    i = e.times(C(l, d$precision + 12))
+    i = e.times(C(l, l$constructor$precision + 12))
     s = true;
     (i = b(i)).s = a
     return i

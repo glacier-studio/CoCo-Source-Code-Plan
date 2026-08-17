@@ -4,7 +4,7 @@
  * 模块 ID：1629
  */
 
-var r = require(/* 86 */"./1662/86")
+var r = require(/* 86 */"./1650/86/index")
 var o = require(/* 1259 */"./1641/1259")
 var /* [auto-meaningful-name] */Math$acosh = Math.acosh
 var /* [auto-meaningful-name] */Math$log = Math.log

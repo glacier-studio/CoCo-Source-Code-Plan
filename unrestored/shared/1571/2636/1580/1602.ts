@@ -6,8 +6,8 @@
 
 "use strict"
 
-var r = require(/* 86 */"./1662/86")
-var /* [auto-meaningful-name] */require_401_$_1758_401$findIndex = require(/* 401 */"./1758/401").findIndex
+var r = require(/* 86 */"./1650/86/index")
+var /* [auto-meaningful-name] */require_401_$_1754_401$findIndex = require(/* 401 */"./1754/401").findIndex
 var i = require(/* 637 */"./1598/637")
 var a = true
 if ("findIndex" in []) {
@@ -21,7 +21,7 @@ r({
   forced: a
 }, {
   findIndex: function (e) {
-    return require_401_$_1758_401$findIndex(this, e, arguments.length > 1 ? arguments[1] : undefined)
+    return require_401_$_1754_401$findIndex(this, e, arguments.length > 1 ? arguments[1] : undefined)
   }
 })
 i("findIndex")

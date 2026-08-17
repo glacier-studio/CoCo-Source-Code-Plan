@@ -2684,13 +2684,13 @@ U$prototype7.inGeneratorContext = function () {
   return false
 }
 U$prototype7.updateContext = function (e) {
-  var /* [auto-meaningful-name] */n$updateContext
+  var /* [auto-meaningful-name] */this$type$updateContext
   var /* [auto-meaningful-name] */this$type = this.type
   if (this$type.keyword && e === w.dot) {
     this.exprAllowed = false
   } else {
-    if (n$updateContext = this$type.updateContext) {
-      n$updateContext.call(this, e)
+    if (this$type$updateContext = this$type.updateContext) {
+      this$type$updateContext.call(this, e)
     } else {
       this.exprAllowed = this$type.beforeExpr
     }

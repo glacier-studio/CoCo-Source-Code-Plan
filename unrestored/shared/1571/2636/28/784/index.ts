@@ -4,9 +4,9 @@
  * 模块 ID：784
  */
 
-var r = require(/* 1333 */"./1333/index")
+var r = require(/* 1333 */"./1333")
 var i = require(/* 1336 */"./1336")
-var o = require(/* 2020 */"./2020")
+var o = require(/* 2020 */"./2020/index")
 function a(e, t) {
   return new o(t).process(e)
 }

@@ -14,9 +14,9 @@ import * as Tools from "../../../../../shared/tools"
 import * as /* [auto-meaningful-name] */Module_97 from /* 97 */"../../../../../../unrestored/shared/1571/2636/97"
 import * as CommonActions from "../../../../redux/common/actions"
 import * as Components from "../../../../../shared/ui/components"
-import { Dialog, IconFont } from "../../../../../shared/ui/components"
+import { Dialog, IconFont, Input } from "../../../../../shared/ui/components"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from "regenerator-runtime"
@@ -34,7 +34,7 @@ export function ShareQRDialog({ visible, onClose }: {
   const id = useSelector((state) => state.project.id)
   const userInfo = useSelector((state) => state.common.userInfo)
   const projectSource = useSelector((state) => state.project.projectSource)
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const dispatch = useDispatch()
   const [d, p] = useState(false)
   const [isLinkCopied, setIsLinkCopied] = useState(false)
@@ -254,7 +254,7 @@ export function ShareQRDialog({ visible, onClose }: {
               {formatMessage({ id: "Publish.shareTitle" })}
               <span className={styles.required}>*</span>
             </p>
-            <Components.k
+            <Input
               defaultValue={projectShareInfo.title}
               maxLength={20}
               placeholder={formatMessage({ id: "Publish.inputPublishName" })}

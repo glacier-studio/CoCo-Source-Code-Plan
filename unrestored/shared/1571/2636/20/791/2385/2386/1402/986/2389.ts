@@ -10,13 +10,13 @@ var r = require(/* 500 */"../../../../../../207/787/500")
 var i = require(/* 1 */"regenerator-runtime")
 var o = require(/* 180 */"../../../../../../207/787/180")
 var a = require(/* 204 */"../../../../../../207/787/204")
-var s = require(/* 311 */"../../1410/311")
+var s = require(/* 311 */"../311")
 var /* [auto-meaningful-name] */s$StringPrototypeSlice = s.StringPrototypeSlice
 var /* [auto-meaningful-name] */s$SymbolIterator = s.SymbolIterator
 var /* [auto-meaningful-name] */s$TypedArrayPrototypeSet = s.TypedArrayPrototypeSet
 var /* [auto-meaningful-name] */s$Uint8Array = s.Uint8Array
 var /* [auto-meaningful-name] */require_333_$$_333_index$Buffer = require(/* 333 */"../333/index").Buffer
-var /* [auto-meaningful-name] */require_427_$$_427$inspect = require(/* 427 */"../427").inspect
+var /* [auto-meaningful-name] */require_427_$$_427_index$inspect = require(/* 427 */"../427/index").inspect
 module.exports = function () {
   function e() {
     o(this, e)
@@ -206,7 +206,7 @@ module.exports = function () {
     }, {
       key: Symbol.for("nodejs.util.inspect.custom"),
       value: function (e, t) {
-        return require_427_$$_427$inspect(this, r(r({}, t), {}, {
+        return require_427_$$_427_index$inspect(this, r(r({}, t), {}, {
           depth: 0,
           customInspect: false
         }))

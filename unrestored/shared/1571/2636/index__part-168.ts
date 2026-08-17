@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"./18"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -41,7 +41,7 @@ var LA = memo(function () {
     return e.resource.resourceLibraryUpdateAt
   })
   var t = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useState("image")
   var o = Module_10.a(r, 2)
   var i = o[0]
@@ -59,7 +59,7 @@ var LA = memo(function () {
     className: Module_5271.header
   }, React.createElement("span", {
     className: Module_5271.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.ProjectLibrary"
   })), React.createElement("span", {
     className: Module_5271.closeBtn,
@@ -75,7 +75,7 @@ var LA = memo(function () {
       key: e,
       className: i === e ? Module_5271.selected : "",
       onClick: s.bind(null, e)
-    }, React.createElement("span", null, Module_710$a$formatMessage({
+    }, React.createElement("span", null, useIntl$formatMessage({
       id: e
     })))
   })), React.createElement("div", {
@@ -83,7 +83,7 @@ var LA = memo(function () {
     onClick: function () {
       t(Src_editor_redux_common_actions.wj(Module_68.c.ResourceLibrary, function () {}, false, "image" === i ? Module_68.d.IMAGE : "icon" === i ? Module_68.d.ICON : "sound" === i ? Module_68.d.SOUND : undefined, s))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.ResourceMall"
   }), React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-dropdown-down",

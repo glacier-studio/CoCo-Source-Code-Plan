@@ -7,7 +7,7 @@
 "use strict"
 
 var r = require(/* 1032 */"./1032")
-var i = require(/* 675 */"./675")
+var i = require(/* 675 */"./675/index")
 exports.a = function (e, t, n) {
   var o = (e = e || {}).random || (e.rng || r.a)()
   o[6] = 15 & o[6] | 64

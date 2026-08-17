@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -50,10 +50,10 @@ var EO = memo(function (e) {
   var n = undefined === e$keyName ? "mode" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var o = (0, e.getValue)(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_2541.formItemWrapper, Module_2541.typeSelector, Module_2541.switchType, "changeSwitchMode"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "style"
     })
   }, React.createElement(lb, {
@@ -125,7 +125,7 @@ var CO = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$widgetId = e.widgetId
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var i = e$getValue("color")
   var a = e$getValue("backgroundMode") || Module_163.a.TEMPLATE
   var s = e$getValue("mode") || Module_163.c.DEFAULT
@@ -140,7 +140,7 @@ var CO = memo(function (e) {
     className: Classnames(Module_2541.formItemWrapper, Module_2541.buttonWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_2541.backgroundLabel
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "background"
   })), React.createElement("div", {
     className: Module_2541.modeActionWrapper
@@ -149,14 +149,14 @@ var CO = memo(function (e) {
     onClick: function () {
       e$onChange("backgroundMode", Module_163.a.TEMPLATE)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "template"
   })), React.createElement("div", {
     className: Classnames(Module_2541.modeImage, a === Module_163.a.IMAGE && Module_2541.backgroundSelected),
     onClick: function () {
       e$onChange("backgroundMode", Module_163.a.IMAGE)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "image"
   })))), a === Module_163.a.TEMPLATE && React.createElement("div", {
     className: Module_2541.backgroundWrapper
@@ -176,7 +176,7 @@ var CO = memo(function (e) {
     }, e.renderContent(i))
   }))), React.createElement("div", {
     className: Module_2541.templateColor
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "templateColor"
   })), React.createElement(mb, {
     width: 43,
@@ -202,7 +202,7 @@ var CO = memo(function (e) {
         imageOpenFileId: c
       }))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "edit"
   })))), React.createElement("div", {
     style: {
@@ -219,13 +219,13 @@ var CO = memo(function (e) {
     value: Module_163.b.CONTAIN
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-contain"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "".concat(Module_163.b.CONTAIN)
   })), React.createElement(Src_shared_ui_components_index.t, {
     value: Module_163.b.STRETCH
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-stretch"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "".concat(Module_163.b.STRETCH)
   }))))))
 })

@@ -9,7 +9,7 @@
 export { l as c }
 export { d as b }
 export { p as a }
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
 import * as /* [auto-meaningful-name] */Module_95 from /* 95 */"../95"

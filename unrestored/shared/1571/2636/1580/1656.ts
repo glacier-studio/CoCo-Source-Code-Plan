@@ -4,7 +4,7 @@
  * 模块 ID：1656
  */
 
-require(/* 86 */"./1662/86")({
+require(/* 86 */"./1650/86/index")({
   target: "Number",
   stat: true
 }, {

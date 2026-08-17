@@ -28,14 +28,14 @@ var /* [auto-meaningful-name] */ObjectNODE_ENVProductionPUBLIC_URLWDS_SOCKET_HOS
   WDS_SOCKET_PATH: undefined,
   WDS_SOCKET_PORT: undefined
 }).JSON1_RELEASE_MODE
-var f = ObjectNODE_ENVProductionPUBLIC_URLWDS_SOCKET_HOSTUndefinedWDS_SOCKET_PATHUndefinedWDS_SOCKET_PORTUndefined$JSON1_RELEASE_MODE ? function () {} : require(/* 2355 */"./2355").default
+var f = ObjectNODE_ENVProductionPUBLIC_URLWDS_SOCKET_HOSTUndefinedWDS_SOCKET_PATHUndefinedWDS_SOCKET_PORTUndefined$JSON1_RELEASE_MODE ? function () {} : require(/* 2355 */"./2355/index").default
 function d(e, t) {
   if (ObjectNODE_ENVProductionPUBLIC_URLWDS_SOCKET_HOSTUndefinedWDS_SOCKET_PATHUndefinedWDS_SOCKET_PORTUndefined$JSON1_RELEASE_MODE) {
     if (!e) {
       throw new Error(t)
     }
   } else {
-    require(/* 573 */"./573/index")(e, t)
+    require(/* 573 */"./573")(e, t)
   }
 }
 var h = false

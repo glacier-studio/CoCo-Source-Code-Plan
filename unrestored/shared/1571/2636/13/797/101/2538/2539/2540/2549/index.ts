@@ -4,11 +4,11 @@
  * 模块 ID：2549
  */
 
-var r = require(/* 1182 */"../../../../../../253/2568/2569/2570/2571/1457/1182/index")
+var r = require(/* 1182 */"./1182/index")
 var i = require(/* 2550 */"./2550")
 var o = require(/* 2551 */"./2551")
 var a = require(/* 2552 */"./2552")
-var s = require(/* 1457 */"../../../../../../253/2568/2569/2570/2571/1457/index")
+var s = require(/* 1457 */"../../../../../../253/2568/2569/2570/2571/1457")
 module.exports = function (e, t, n) {
   var /* [auto-meaningful-name] */e$constructor = e.constructor
   switch (t) {

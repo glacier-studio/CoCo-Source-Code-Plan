@@ -7,9 +7,9 @@
 "use strict"
 
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../18"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
-import * as /* [auto-meaningful-name] */Module_343 from /* 343 */"../2/343"
-var nt = Module_66.a.Record({
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
+import * as /* [auto-meaningful-name] */Module_343 from /* 343 */"./343"
+var nt = Immutable.Record({
   header: {
     logo: Module_18.j.Show,
     file: {

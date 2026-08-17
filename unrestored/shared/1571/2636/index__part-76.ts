@@ -13,7 +13,7 @@ var Zm
 var Qm
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 var rg = Module_64.a("COLUMN")
 var og = Module_64.a("COLUMN")
 Qm = {}

@@ -6,12 +6,12 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_472 from /* 472 */"../../../../src/editor/ui/PreviewArea/ContextMenu/styles.module.css"
-import /* [auto-meaningful-name] */Module_4721 from /* 472 */"../../../../src/editor/ui/PreviewArea/ContextMenu/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_ContextMenu_styles_module_css from /* 472 */"../../../../src/editor/ui/PreviewArea/ContextMenu/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_ContextMenu_styles_module_css1 from /* 472 */"../../../../src/editor/ui/PreviewArea/ContextMenu/styles.module.css"
 var bh = memo(function (e) {
   var /* [auto-meaningful-name] */e$actorId = e.actorId
   var /* [auto-meaningful-name] */e$top = e.top
@@ -19,7 +19,7 @@ var bh = memo(function (e) {
   var /* [auto-meaningful-name] */e$stage = e.stage
   var /* [auto-meaningful-name] */e$onClose = e.onClose
   var a = useRef(null)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   useEffect(function () {
     var /* [auto-meaningful-name] */a$current = a.current
     var t = function (t) {
@@ -34,7 +34,7 @@ var bh = memo(function (e) {
   }, [e$onClose])
   return React.createElement("div", {
     ref: a,
-    className: Module_4721.wrapper,
+    className: Src_editor_ui_PreviewArea_ContextMenu_styles_module_css1.wrapper,
     style: {
       top: e$top,
       left: e$left,
@@ -42,7 +42,7 @@ var bh = memo(function (e) {
       height: "auto"
     }
   }, React.createElement("div", {
-    className: Module_4721.menuItem,
+    className: Src_editor_ui_PreviewArea_ContextMenu_styles_module_css1.menuItem,
     onClick: function () {
       var /* [auto-meaningful-name] */a$current
       var t
@@ -58,10 +58,10 @@ var bh = memo(function (e) {
       }
       e$onClose()
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "actor.setPivot"
   })), React.createElement("div", {
-    className: Module_4721.menuItem,
+    className: Src_editor_ui_PreviewArea_ContextMenu_styles_module_css1.menuItem,
     onClick: function () {
       var e = (null === e$stage || undefined === e$stage ? undefined : e$stage.actors.get_actor(e$actorId)) || {}
       var /* [auto-meaningful-name] */e$is_error = e.is_error
@@ -74,7 +74,7 @@ var bh = memo(function (e) {
         e$onClose()
       }
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "actor.resetPivot"
   })))
 })

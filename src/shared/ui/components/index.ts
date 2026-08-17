@@ -20,7 +20,7 @@ import { Ue } from "../../../../unrestored/shared/1571/2636/13/index__part-21"
 import "../../../../unrestored/shared/1571/2636/13/index__part-22"
 export { p as s }
 export { d as t }
-export { a as k } from "../../../../unrestored/shared/1571/2636/294/index"
+export { Input, Input as k } from "./Input"
 export { g as n }
 export { a as o } from "../../../../unrestored/shared/1571/2636/539"
 export { y as x }

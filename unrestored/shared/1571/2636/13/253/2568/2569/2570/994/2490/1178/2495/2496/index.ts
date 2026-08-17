@@ -6,9 +6,9 @@
 
 var r = require(/* 2497 */"./2497")
 var i = require(/* 2498 */"./2498")
-var o = require(/* 2499 */"./2499/index")
+var o = require(/* 2499 */"./2499")
 var a = require(/* 2500 */"./2500")
-var s = require(/* 2501 */"./2501")
+var s = require(/* 2501 */"./2501/index")
 function c(e) {
   var t = -1
   var n = null == e ? 0 : e.length

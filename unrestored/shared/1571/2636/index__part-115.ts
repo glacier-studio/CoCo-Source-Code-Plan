@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -31,7 +31,7 @@ var dO = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var i = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useRef({})
   var c = useSelector(function (e) {
     return e.common.widgetAttributeVisible
@@ -63,7 +63,7 @@ var dO = memo(function (e) {
     className: Classnames("changeOptions", Module_7031.optionsFormItem, Module_7031.formItemWrapper)
   }, React.createElement("div", {
     className: Module_7031.formTitle
-  }, React.createElement("p", null, Module_710$a$formatMessage({
+  }, React.createElement("p", null, useIntl$formatMessage({
     id: "radioOptionsContent"
   })), React.createElement("div", {
     className: Module_7031.count
@@ -76,7 +76,7 @@ var dO = memo(function (e) {
     className: Classnames(Module_11.a({}, Module_7031.disabled, 1 === i.length))
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-minus"
-  })), React.createElement("p", null, i.length, Module_710$a$formatMessage({
+  })), React.createElement("p", null, i.length, useIntl$formatMessage({
     id: "option"
   })), React.createElement("span", {
     onClick: function () {

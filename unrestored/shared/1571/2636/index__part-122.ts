@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -25,7 +25,7 @@ var JO = memo(function (e) {
   var /* [auto-meaningful-name] */e$widgetId = e.widgetId
   var i = e$getValue(n)
   var a = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = Module_9.Bb(e$widgetId)
   if (!c) {
     return React.createElement(React.Fragment, null)
@@ -34,7 +34,7 @@ var JO = memo(function (e) {
     className: Classnames(Module_6211.formItemWrapper, Module_6211.storageFields)
   }, React.createElement("div", {
     className: Module_6211.title
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "initialData"
   })), React.createElement("span", {
     className: Module_6211.fieldsLength
@@ -113,7 +113,7 @@ var JO = memo(function (e) {
         }
       }
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "edit"
   })))))
 })

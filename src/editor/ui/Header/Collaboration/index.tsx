@@ -20,7 +20,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import * as Actions from "../../../redux/common/actions"
 import { Button, Dialog, IconFont, Popover } from "../../../../shared/ui/components"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
@@ -35,7 +35,7 @@ var PermissionDialog = function (e) {
   var o = Module_10.a(r, 2)
   var i = o[0]
   var a = o[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = function () {
     a(false)
   }
@@ -57,7 +57,7 @@ var PermissionDialog = function (e) {
               type="icon-selected"
               className={classNames(styles.icon, e$permission === Module_18.c.Edit && styles.selected)}
             />
-            <span>{Module_710$a$formatMessage({ id: "OT.dialogCanEdit" })}</span>
+            <span>{useIntl$formatMessage({ id: "OT.dialogCanEdit" })}</span>
           </div>
           <div
             onClick={() => e.handleChangePermission(Module_18.c.ReadOnly, t, c)}
@@ -67,13 +67,13 @@ var PermissionDialog = function (e) {
               type="icon-selected"
               className={classNames(styles.icon, e$permission === Module_18.c.ReadOnly && styles.selected)}
             />
-            <span>{Module_710$a$formatMessage({ id: "OT.dialogReadOnly" })}</span>
+            <span>{useIntl$formatMessage({ id: "OT.dialogReadOnly" })}</span>
           </div>
           <div
             onClick={() => e.handleRemovePermission(t, c)}
             className={classNames(styles.item, styles.remove)}
           >
-            <span>{Module_710$a$formatMessage({ id: "OT.dialogRemove" })}</span>
+            <span>{useIntl$formatMessage({ id: "OT.dialogRemove" })}</span>
           </div>
         </div>
       ))}
@@ -84,8 +84,8 @@ var PermissionDialog = function (e) {
       <div className={styles.edit_role}>
         <span>
           {e.permission === Module_18.c.Edit
-            ? Module_710$a$formatMessage({ id: "OT.edit" })
-            : Module_710$a$formatMessage({ id: "OT.readonly" })}
+            ? useIntl$formatMessage({ id: "OT.edit" })
+            : useIntl$formatMessage({ id: "OT.readonly" })}
         </span>
         <div className={styles.icon}>
           <IconFont type="icon-dropdown-down" className={styles.icon} />
@@ -96,8 +96,8 @@ var PermissionDialog = function (e) {
     <div className={classNames(styles.edit_role, styles.disabled)}>
       <span>
         {e.permission === Module_18.c.Edit
-          ? Module_710$a$formatMessage({ id: "OT.edit" })
-          : Module_710$a$formatMessage({ id: "OT.readonly" })}
+          ? useIntl$formatMessage({ id: "OT.edit" })
+          : useIntl$formatMessage({ id: "OT.readonly" })}
       </span>
       <div className={styles.icon}>
         <IconFont type="icon-dropdown-down" className={styles.icon} />
@@ -126,7 +126,7 @@ var Ct = React.memo(function () {
   var collWorkId = useSelector(function (e) {
     return e.oTState.collWorkId
   })
-  var formatMessage = Module_710.a().formatMessage
+  var formatMessage = useIntl().formatMessage
   var isProjectModified = useSelector(function (e) {
     return e.common.isProjectModified
   })

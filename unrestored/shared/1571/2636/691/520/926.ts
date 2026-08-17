@@ -28,7 +28,7 @@ function a(e, t) {
 var s = "function" === typeof Object.is ? Object.is : function (e, t) {
   return e === t ? 0 !== e || 1 / e === 1 / t : e !== e && t !== t
 }
-var c = require(/* 394 */"../217/394")
+var c = require(/* 394 */"../523/394")
 var /* [auto-meaningful-name] */Object$prototype$toString = Object.prototype.toString
 var l = function () {
   return "[object Arguments]" === Object$prototype$toString.call(arguments) ? function (e) {

@@ -5,14 +5,14 @@
  */
 
 export { zh_CN as b }
-export { p as e }
+export { messages as e }
 export { f as a }
 export { format as c }
 export { g as f }
 export { _ as d }
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../unrestored/shared/1571/2636/6"
 import React from "react"
-import * as /* [auto-meaningful-name] */Module_2681 from /* 2681 */"../../../unrestored/shared/1571/2636/2681/index"
+import { createIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../unrestored/shared/1571/2636/10/index"
 var c = {
   mustToBeString: "{name} 必须是字符串",
@@ -1007,22 +1007,22 @@ export type Language = "zh-CN"
 
 export const zh_CN = "zh-CN"
 
-var p: Record<Language, unknown> = {
+export const messages: Record<Language, Record<string, string>> = {
   "zh-CN": u
 }
 
 function f(e) {
-  for (var t in e) if (p[t]) {
-    Object.assign(p[t], e[t])
+  for (var t in e) if (messages[t]) {
+    Object.assign(messages[t], e[t])
   }
 }
-var h = Module_2681.a({
+var h = createIntl({
   locale: zh_CN,
-  messages: p[zh_CN]
+  messages: messages[zh_CN]
 })
 
 export function format(language: Language, key: string, args?: Record<string, string>): string {
-  let result: string = p[language]?.[key] || p[zh_CN]?.[key]
+  let result: string = messages[language]?.[key] || messages[zh_CN]?.[key]
   if (typeof result === "string" && args) {
     result = result.replace(/{([^}]*)}/g, (__substring, key): string => {
       let value: string | undefined = args[key]

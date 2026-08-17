@@ -16,7 +16,7 @@ export { d as b }
 export { p as d }
 export { ACTOR_ACTION as a }
 export { h as j }
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
 import * as /* [auto-meaningful-name] */Module_550 from /* 550 */"./550"
 var /* [auto-meaningful-name] */STYLE_DEFAULT_STYLE_ID = "STYLE_DEFAULT_STYLE_ID"
 var a = {

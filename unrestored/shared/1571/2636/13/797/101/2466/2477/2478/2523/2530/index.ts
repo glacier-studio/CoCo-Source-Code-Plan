@@ -5,7 +5,7 @@
  */
 
 var r = require(/* 2531 */"./2531")
-var i = require(/* 2532 */"./2532/index")
+var i = require(/* 2532 */"./2532")
 module.exports = function (e, t) {
   return null != e && i(e, t, r)
 }

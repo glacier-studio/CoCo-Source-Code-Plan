@@ -9,11 +9,11 @@ var i = require(/* 449 */"../../../../449")
 var o = require(/* 180 */"../../../../../../207/787/180")
 var a = require(/* 283 */"../../../../../../1058/1393/1143/283/index")
 var s = require(/* 284 */"../../../../../../1058/1393/1143/284/index")
-var c = require(/* 984 */"../../1410/1159/984/index")
-var u = require(/* 985 */"../../1410/1159/985/index")
+var c = require(/* 984 */"../986/984/index")
+var u = require(/* 985 */"../986/985/index")
 var l = require(/* 298 */"process")
 var f = require(/* 333 */"../333/index")
-var d = require(/* 583 */"../../1410/583")
+var d = require(/* 583 */"../583")
 var /* [auto-meaningful-name] */d$isReadable = d.isReadable
 var /* [auto-meaningful-name] */d$isWritable = d.isWritable
 var /* [auto-meaningful-name] */d$isIterable = d.isIterable
@@ -23,8 +23,8 @@ var /* [auto-meaningful-name] */d$isWritableNodeStream = d.isWritableNodeStream
 var /* [auto-meaningful-name] */d$isDuplexNodeStream = d.isDuplexNodeStream
 var /* [auto-meaningful-name] */d$isReadableStream = d.isReadableStream
 var /* [auto-meaningful-name] */d$isWritableStream = d.isWritableStream
-var w = require(/* 650 */"../../1410/650")
-var E = require(/* 402 */"../402/index")
+var w = require(/* 650 */"../650")
+var E = require(/* 402 */"../402")
 var /* [auto-meaningful-name] */E$AbortError = E.AbortError
 var /* [auto-meaningful-name] */E$codes = E.codes
 var /* [auto-meaningful-name] */E$codes$ERR_INVALID_ARG_TYPE = E$codes.ERR_INVALID_ARG_TYPE
@@ -33,7 +33,7 @@ var /* [auto-meaningful-name] */require_769_$$_769$destroyer = require(/* 769 */
 var T = require(/* 584 */"./index")
 var B = require(/* 986 */"../986/index")
 var D = require(/* 1161 */"../1161")
-var /* [auto-meaningful-name] */require_427_$$_427$createDeferredPromise = require(/* 427 */"../427").createDeferredPromise
+var /* [auto-meaningful-name] */require_427_$$_427_index$createDeferredPromise = require(/* 427 */"../427/index").createDeferredPromise
 var R = require(/* 1407 */"../986/1407")
 var F = globalThis.Blob || f.Blob
 var P = "undefined" !== typeof F ? function (e) {
@@ -41,8 +41,8 @@ var P = "undefined" !== typeof F ? function (e) {
 } : function (e) {
   return false
 }
-var N = globalThis.AbortController || require(/* 857 */"../../1410/1159/857").AbortController
-var /* [auto-meaningful-name] */require_311_$$_$$_1410_311$FunctionPrototypeCall = require(/* 311 */"../../1410/311").FunctionPrototypeCall
+var N = globalThis.AbortController || require(/* 857 */"../1159/857").AbortController
+var /* [auto-meaningful-name] */require_311_$$_311$FunctionPrototypeCall = require(/* 311 */"../311").FunctionPrototypeCall
 var L = function (e) {
   "use strict"
 
@@ -207,7 +207,7 @@ module.exports = function e(t, n) {
   }
   if ("function" === typeof t) {
     var o = function (e) {
-      var t = require_427_$$_427$createDeferredPromise()
+      var t = require_427_$$_427_index$createDeferredPromise()
       var /* [auto-meaningful-name] */t$promise = t.promise
       var /* [auto-meaningful-name] */t$resolve = t.resolve
       var o = new N()
@@ -243,7 +243,7 @@ module.exports = function e(t, n) {
                     cause: o$signal.reason
                   })
                 case 14:
-                  d = require_427_$$_427$createDeferredPromise()
+                  d = require_427_$$_427_index$createDeferredPromise()
                   t$promise = d.promise
                   t$resolve = d.resolve
                   e.next = 19
@@ -298,7 +298,7 @@ module.exports = function e(t, n) {
     var h = null === o$value || undefined === o$value ? undefined : o$value.then
     if ("function" === typeof h) {
       var p
-      var w = require_311_$$_$$_1410_311$FunctionPrototypeCall(h, o$value, function (e) {
+      var w = require_311_$$_311$FunctionPrototypeCall(h, o$value, function (e) {
         if (null != e) {
           throw new E$codes$ERR_INVALID_RETURN_VALUE("nully", "body", e)
         }
@@ -360,7 +360,7 @@ module.exports = function e(t, n) {
   var E
   var C = null === t || undefined === t ? undefined : t.then
   if ("function" === typeof C) {
-    require_311_$$_$$_1410_311$FunctionPrototypeCall(C, t, function (e) {
+    require_311_$$_311$FunctionPrototypeCall(C, t, function (e) {
       if (null != e) {
         E.push(e)
       }

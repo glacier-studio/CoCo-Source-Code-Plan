@@ -408,7 +408,7 @@ exports.autoCreateWxJsIframeApi = function (e, t) {
 var i = require(/* 772 */"./772")
 var a = require(/* 773 */"./773/index")
 var s = require(/* 1185 */"./1185")
-var c = require(/* 885 */"./2618/885")
+var c = require(/* 885 */"./2620/885")
 var l = new i.ApiSpec("wxjs", {})
 var u = new i.ApiSpec(l.namespace, {
   captureImage: new i.MethodType(),

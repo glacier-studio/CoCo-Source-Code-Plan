@@ -8,7 +8,7 @@ import { memo, useRef, useState, useLayoutEffect, useEffect } from "react"
 import * as React from "react"
 import { useSelector, useDispatch } from "react-redux"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import { IconFont } from "../../../../shared/ui/components/index"
 import * as CommonActions from "../../../redux/common/actions"
 import { asyncCopyWidgetToScreenAction, asyncDeleteProjectWidgetAction, closeContextMenuAction, openConfirmDialogAction } from "../../../redux/common/actions"
@@ -43,7 +43,7 @@ export const ContextMenu = memo(() => {
     }
   }, [visible, position])
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const dispatch = useDispatch()
 
   useEffect(() => {

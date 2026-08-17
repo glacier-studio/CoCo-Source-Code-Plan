@@ -4,13 +4,13 @@
  * 模块 ID：1675
  */
 
-var r = require(/* 86 */"./1662/86")
-var o = require(/* 309 */"./1662/309")
+var r = require(/* 86 */"./1650/86/index")
+var o = require(/* 309 */"./1771/309")
 var i = require(/* 831 */"./1581/831/index")
 r({
   target: "Object",
   stat: true,
-  forced: require(/* 168 */"./1659/168")(function () {
+  forced: require(/* 168 */"./1648/168")(function () {
     i(1)
   })
 }, {

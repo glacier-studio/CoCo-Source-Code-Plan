@@ -6,4 +6,4 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_798 from /* 798 */"../../709/798"
+import * as /* [auto-meaningful-name] */Module_798 from /* 798 */"../../709/798/index"

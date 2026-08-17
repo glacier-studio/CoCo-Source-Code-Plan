@@ -6,11 +6,11 @@
 
 "use strict"
 
-var r = require(/* 86 */"./1662/86")
-var /* [auto-meaningful-name] */require_761_$_1648_761$start = require(/* 761 */"./1648/761").start
+var r = require(/* 86 */"./1650/86/index")
+var /* [auto-meaningful-name] */require_761_$_1648_761_index$start = require(/* 761 */"./1648/761/index").start
 var i = require(/* 1099 */"./1725/1099")("trimStart")
 var a = i ? function () {
-  return require_761_$_1648_761$start(this)
+  return require_761_$_1648_761_index$start(this)
 } : "".trimStart
 r({
   target: "String",

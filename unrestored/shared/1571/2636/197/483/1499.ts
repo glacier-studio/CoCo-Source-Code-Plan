@@ -938,7 +938,7 @@ module.exports = function (e) {
   }, function (e, t, n) {
     var r
     var i
-    var /* [auto-meaningful-name] */INewP$port2
+    var /* [auto-meaningful-name] */INewL$MessageChannel$port2
     var a = n(19)
     var s = n(75)
     var c = n(49)
@@ -987,9 +987,9 @@ module.exports = function (e) {
           }
         } else {
           if (l$MessageChannel) {
-            INewP$port2 = (i = new l$MessageChannel()).port2
+            INewL$MessageChannel$port2 = (i = new l$MessageChannel()).port2
             i.port1.onmessage = m
-            r = a(INewP$port2.postMessage, INewP$port2, 1)
+            r = a(INewL$MessageChannel$port2.postMessage, INewL$MessageChannel$port2, 1)
           } else {
             if (l.addEventListener && "function" == typeof postMessage && !l.importScripts) {
               r = function (e) {
@@ -2262,7 +2262,7 @@ module.exports = function (e) {
       u.ArrayBuffer.hash = function (e, n) {
         var i = a(function (e) {
           var n
-          var /* [auto-meaningful-name] */EN64UE$subarrayN64NewUint8Array0$length
+          var /* [auto-meaningful-name] */EN64E$lengthE$subarrayN64NewUint8Array0$length
           var o
           var a
           var s
@@ -2272,7 +2272,7 @@ module.exports = function (e) {
           for (n = 64; n <= e$length; n += 64) {
             t(l, r(e.subarray(n - 64, n)))
           }
-          for (EN64UE$subarrayN64NewUint8Array0$length = (e = n - 64 < e$length ? e.subarray(n - 64) : new Uint8Array(0)).length, o = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], n = 0; n < EN64UE$subarrayN64NewUint8Array0$length; n += 1) {
+          for (EN64E$lengthE$subarrayN64NewUint8Array0$length = (e = n - 64 < e$length ? e.subarray(n - 64) : new Uint8Array(0)).length, o = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], n = 0; n < EN64E$lengthE$subarrayN64NewUint8Array0$length; n += 1) {
             o[n >> 2] |= e[n] << (n % 4 << 3)
           }
           o[n >> 2] |= 128 << (n % 4 << 3)

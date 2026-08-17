@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Module_557 from /* 557 */"./557"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useEffect } from /* 0 */"react"
@@ -23,7 +23,7 @@ var eP = memo(function (e) {
   var n = Module_10.a(t, 2)
   var r = n[0]
   var o = n[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   useEffect(function () {
     var e = function e() {
       o(false)
@@ -62,7 +62,7 @@ var eP = memo(function (e) {
       }, React.createElement("div", {
         className: Classnames(Module_1601.menuItem, Module_1601.delete),
         onMouseDown: a
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "cloudDBManager.delete"
       })))
     }
@@ -82,16 +82,16 @@ var eP = memo(function (e) {
       t.stopPropagation()
     },
     className: Module_1601.import
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.import"
   })), !e.canImport && React.createElement("span", {
     className: Module_1601.hasImport
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.hasImport"
   }))))
 })
 var nP = memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$renderColumns = e.renderColumns
   var /* [auto-meaningful-name] */e$renderRows = e.renderRows
   var o = function (e) {
@@ -156,7 +156,7 @@ var nP = memo(function (e) {
     style: {
       marginRight: "8px"
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.usedCapacity"
   }), ":"), React.createElement("span", {
     style: {
@@ -174,12 +174,12 @@ var nP = memo(function (e) {
   }, React.createElement(Src_shared_ui_components_index.j, {
     className: Module_1601.icon,
     type: "icon-edit"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "cloudDBManager.editData"
   }))), e.isNoData ? function () {
-    var n = e.devMode ? Module_710$a$formatMessage({
+    var n = e.devMode ? useIntl$formatMessage({
       id: "cloudDBManager.noDataDev"
-    }) : Module_710$a$formatMessage({
+    }) : useIntl$formatMessage({
       id: "cloudDBManager.noDataProd"
     })
     return React.createElement("div", {

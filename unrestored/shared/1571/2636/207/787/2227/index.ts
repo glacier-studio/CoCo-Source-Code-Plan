@@ -6,18 +6,18 @@
 
 "use strict"
 
-var r = require(/* 573 */"../../../1058/1393/573/index")
+var r = require(/* 573 */"../../../1058/1393/573")
 var i = require(/* 2230 */"./2230")
 var o = require(/* 2233 */"./2233/index")
 var a = require(/* 1131 */"./1131")
 var s = require(/* 978 */"./978")
-var /* [auto-meaningful-name] */require_1358_$_1358_index$Scope = require(/* 1358 */"./1358/index").Scope
+var /* [auto-meaningful-name] */require_1358_$_1358$Scope = require(/* 1358 */"./1358").Scope
 var /* [auto-meaningful-name] */require_2237_$_2237$version = require(/* 2237 */"./2237").version
 module.exports = {
   version: require_2237_$_2237$version,
   Reference: a,
   Variable: s,
-  Scope: require_1358_$_1358_index$Scope,
+  Scope: require_1358_$_1358$Scope,
   ScopeManager: i,
   analyze: function (e, t) {
     var n = function e(t, n) {

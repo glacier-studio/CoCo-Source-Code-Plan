@@ -7,7 +7,7 @@
 "use strict"
 
 import { B, L, j, U, H, V } from "./index__part-1"
-import * as /* [auto-meaningful-name] */Module_325 from /* 325 */"./325/index"
+import * as /* [auto-meaningful-name] */Module_325 from /* 325 */"./325"
 var /* [auto-meaningful-name] */Module_325$a$Symbol = Module_325.a.Symbol
 var /* [auto-meaningful-name] */Object$prototype = Object.prototype
 var /* [auto-meaningful-name] */Object$prototype$hasOwnProperty = Object$prototype.hasOwnProperty

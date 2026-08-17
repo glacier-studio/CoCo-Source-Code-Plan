@@ -9,10 +9,10 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../.
 import * as CommonActions from "../../../../../redux/common/actions"
 import { showCreateDynamicDataDialogAction } from "../../../../../redux/common/actions"
 import * as Components from /* 13 */"../../../../../../shared/ui/components/index"
-import { IconFont } from "../../../../../../shared/ui/components/index"
+import { IconFont, Input } from "../../../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../../unrestored/shared/1571/2636/25/index"
 import classNames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../../../../shared/ui/language"
@@ -29,7 +29,7 @@ interface VariablePanelProps {
 export const VariablePanel = memo((props: VariablePanelProps) => {
 
   const{ variableType } = props
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const [hasVariable, setHasVariable] = useState(true)
   const [l, u] = useState("")
   const [m, g] = useState("")
@@ -302,7 +302,7 @@ export const VariablePanel = memo((props: VariablePanelProps) => {
   }
 
   var oe = function (e, t) {
-    return <Components.k
+    return <Input
       type="text"
       className={styles.valueInput}
       maxLength={20}
@@ -377,7 +377,7 @@ export const VariablePanel = memo((props: VariablePanelProps) => {
     >
       <div className={styles.item}>
         <div className={classNames(styles.name)}>
-          {m === e$item.id ? <Components.k
+          {m === e$item.id ? <Input
             type="text"
             className={classNames(styles.nameInput, "".concat("VARIABLE_ID_" + e$item.id))}
             maxLength={20}

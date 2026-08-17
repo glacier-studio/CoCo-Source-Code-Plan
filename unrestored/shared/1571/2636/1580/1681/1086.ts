@@ -5,5 +5,5 @@
  */
 
 var r = {}
-r[require(/* 246 */"../1282/246/index")("toStringTag")] = "z"
+r[require(/* 246 */"../1782/246/index")("toStringTag")] = "z"
 module.exports = "[object z]" === String(r)

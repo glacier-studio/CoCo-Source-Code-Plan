@@ -8,7 +8,7 @@
 
 var r = require(/* 500 */"../500")
 var i = require(/* 399 */"../399/index")
-var o = require(/* 573 */"../../../1058/1393/573/index")
+var o = require(/* 573 */"../../../1058/1393/573")
 var a = require(/* 2322 */"./2322")
 var s = require(/* 2323 */"./2323")
 function c() {

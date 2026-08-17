@@ -11,8 +11,8 @@ import * as /* [auto-meaningful-name] */Module_40 from /* 40 */"./40/index"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"./19"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import { useRef, useEffect, createElement, useMemo } from /* 0 */"react"
-import * as /* [auto-meaningful-name] */Module_1060 from /* 1060 */"../../../../src/editor/ui/EditArea/styles.module.css"
-import /* [auto-meaningful-name] */Module_10601 from /* 1060 */"../../../../src/editor/ui/EditArea/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_EditArea_styles_module_css from /* 1060 */"../../../../src/editor/ui/EditArea/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_EditArea_styles_module_css1 from /* 1060 */"../../../../src/editor/ui/EditArea/styles.module.css"
 var LT = {
   className: "",
   percent: 0,

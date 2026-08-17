@@ -9,18 +9,18 @@
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"./188"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_937 from /* 937 */"../../../../src/editor/ui/App/styles.module.css"
-import /* [auto-meaningful-name] */Module_9371 from /* 937 */"../../../../src/editor/ui/App/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_App_styles_module_css from /* 937 */"../../../../src/editor/ui/App/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_App_styles_module_css1 from /* 937 */"../../../../src/editor/ui/App/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_266 from /* 266 */"./266"
 import /* [auto-meaningful-name] */Module_2661 from /* 266 */"./266"
 var bI = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useSelector(function (e) {
     return e.common.confirmDialogInfo
   })
@@ -34,11 +34,11 @@ var bI = memo(function () {
   var /* [auto-meaningful-name] */t$onCancel = t.onCancel
   var /* [auto-meaningful-name] */t$isDangerous = t.isDangerous
   var /* [auto-meaningful-name] */t$cancelText = t.cancelText
-  var p = undefined === t$cancelText ? Module_710$a$formatMessage({
+  var p = undefined === t$cancelText ? useIntl$formatMessage({
     id: "cancel"
   }) : t$cancelText
   var /* [auto-meaningful-name] */t$allowText = t.allowText
-  var m = undefined === t$allowText ? Module_710$a$formatMessage({
+  var m = undefined === t$allowText ? useIntl$formatMessage({
     id: "confirm"
   }) : t$allowText
   var /* [auto-meaningful-name] */t$denyText = t.denyText

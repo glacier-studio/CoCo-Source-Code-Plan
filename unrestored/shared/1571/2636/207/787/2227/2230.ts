@@ -8,8 +8,8 @@
 
 var r = require(/* 180 */"../180")
 var i = require(/* 204 */"../204")
-var o = require(/* 1358 */"./1358/index")
-var a = require(/* 573 */"../../../1058/1393/573/index")
+var o = require(/* 1358 */"./1358")
+var a = require(/* 573 */"../../../1058/1393/573")
 var /* [auto-meaningful-name] */o$GlobalScope = o.GlobalScope
 var /* [auto-meaningful-name] */o$CatchScope = o.CatchScope
 var /* [auto-meaningful-name] */o$WithScope = o.WithScope

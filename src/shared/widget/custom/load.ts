@@ -33,14 +33,14 @@ import * as Language from "../../ui/language"
 import { oTHelper } from "../../../editor/collaboration/ot-helper"
 import * as ExternalModule from "./external-module"
 import * as Store from "../../../editor/redux/store"
-import * as CommonActions from "../../../editor/redux/common/actions"
+import { openConfirmDialogAction, updateExtensionWidgetListAction } from "../../../editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Tools from "../../tools"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../../../../unrestored/shared/1571/2636/53"
 import * as Shop from "./shop"
 import * as Restrict from "./restrict"
 import * as /* [auto-meaningful-name] */Module_20 from /* 20 */"../../../../unrestored/shared/1571/2636/20/index"
 import * as /* [auto-meaningful-name] */Module_55 from /* 55 */"../../../../unrestored/shared/1571/2636/55"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../unrestored/shared/1571/2636/301/85"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../unrestored/shared/1571/2636/34/85"
 import * as Type from "./type"
 
 import * as types from "./types"
@@ -628,7 +628,7 @@ export function registerCustomWidget(
   }
   if (Storage.getUnsafeExtension(type)) {
     const unprefixedType: string = Type.toUnprefixed(type, false)
-    Store.dispatch(CommonActions.openConfirmDialogAction({
+    Store.dispatch(openConfirmDialogAction({
       onConfirm: registered,
       onCancel,
       allowText: Language.format(Language.zh_CN, "ExtensionWidget.overwrite").toString(),
@@ -711,7 +711,7 @@ async function importCustomWidget(code: string, isFromWidgetShop: boolean): Prom
           Storage.addUnsafeExtension({ type, types, code })
           oTHelper.extensionWidget?.clientOp.addUnsafeExtensionWidget({ type, code })
         }
-        Store.dispatch(CommonActions.updateExtensionWidgetListAction())
+        Store.dispatch(updateExtensionWidgetListAction())
         resolve(types)
       },
       (): void => {
@@ -759,7 +759,7 @@ function checkKeyWords(code: string): void {
     }
   })
   if (includedKeyWords.length > 0) {
-    Store.dispatch(CommonActions.openConfirmDialogAction({
+    Store.dispatch(openConfirmDialogAction({
       allowText: Language.format(Language.zh_CN, "cloudDb.know").toString(),
       title: "error",
       content: "自定义控件存在问题，不支持导入",
@@ -799,7 +799,7 @@ export async function loadWidgetsFromFile(
   if (unsafeWidgets.length) {
     await Promise.all(unsafeWidgets.map(({ code }): Promise<void> => importWidget(code)))
   }
-  Store.dispatch(CommonActions.updateExtensionWidgetListAction())
+  Store.dispatch(updateExtensionWidgetListAction())
   const onlineSafeWidgets = safeWidgets.filter((widget) =>
     widget.cdnUrl.startsWith("https") && widget.id)
   if (!onlineSafeWidgets.length) {

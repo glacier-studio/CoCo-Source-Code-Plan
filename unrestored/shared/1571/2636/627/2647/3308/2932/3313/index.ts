@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 })
 exports.default = f
-var r = a(require(/* 2734 */"../2734"))
+var r = a(require(/* 2734 */"../../2918/2734"))
 var o = a(require(/* 2708 */"../../3309/2708"))
 var i = a(require(/* 50 */"../../../../../50/index"))
 var l = a(require(/* 0 */"react"))

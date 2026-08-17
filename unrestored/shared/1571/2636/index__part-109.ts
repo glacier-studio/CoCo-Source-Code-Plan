@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import /* [auto-meaningful-name] */Color from /* 51 */"color"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef } from /* 0 */"react"
@@ -47,7 +47,7 @@ var TE = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig$label = e$formConfig.label
   var /* [auto-meaningful-name] */e$formConfig$min = e$formConfig.min
   var /* [auto-meaningful-name] */e$formConfig$max = e$formConfig.max
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var g = Math.ceil(e$value * u)
   var _ = function (e) {
     return Src_shared_tools_index.p(function (e) {
@@ -56,7 +56,7 @@ var TE = memo(function (e) {
     }, e)
   }
   return React.createElement(Module_539.a, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: e$formConfig$label
     }),
     className: "coco-number-inputRow",
@@ -75,14 +75,14 @@ var TE = memo(function (e) {
 var SE = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Classnames(Module_202.formItemWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_202.labelWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "text"
-  }) + Module_710$a$formatMessage({
+  }) + useIntl$formatMessage({
     id: "setting"
   }))), React.createElement("div", {
     className: Module_202.fontWrapper
@@ -165,7 +165,7 @@ var IE = [
 var jE = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = e$getValue("backgroundColor") || Module_95.c
   var i = e$getValue("backgroundMode") || Module_76.a.TEMPLATE
   var a = e$getValue("templateMode") || Module_76.c.OUTLINED_NORMAL
@@ -178,7 +178,7 @@ var jE = memo(function (e) {
     className: Classnames(Module_202.formItemWrapper, Module_202.buttonWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_202.backgroundLabel
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "background"
   })), React.createElement("div", {
     className: Module_202.modeActionWrapper
@@ -187,14 +187,14 @@ var jE = memo(function (e) {
     onClick: function () {
       e$onChange("backgroundMode", Module_76.a.TEMPLATE)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "template"
   })), React.createElement("div", {
     className: Classnames(Module_202.modeImage, i === Module_76.a.IMAGE && Module_202.backgroundSelected),
     onClick: function () {
       e$onChange("backgroundMode", Module_76.a.IMAGE)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "image"
   })))), i === Module_76.a.TEMPLATE && React.createElement("div", {
     className: Module_202.backgroundWrapper
@@ -214,7 +214,7 @@ var jE = memo(function (e) {
     }, e.renderContent(o))
   }))), React.createElement("div", {
     className: Module_202.templateColor
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "templateColor"
   })), React.createElement(mb, {
     width: 43,
@@ -259,13 +259,13 @@ var jE = memo(function (e) {
     value: Module_76.b.CONTAIN
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-contain"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "".concat(Module_76.b.CONTAIN)
   })), React.createElement(Src_shared_ui_components_index.t, {
     value: Module_76.b.STRETCH
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-stretch"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "".concat(Module_76.b.STRETCH)
   }))))))
 })
@@ -275,7 +275,7 @@ var NE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$formConfig$stillImageShowResizeMode = e$formConfig.stillImageShowResizeMode
   var /* [auto-meaningful-name] */e$formConfig$label = e$formConfig.label
   var l = useSelector(function (e) {
@@ -290,7 +290,7 @@ var NE = memo(function (e) {
   return React.createElement(React.Fragment, null, React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_747.formItemWrapper, Module_747.changeImageWrapper),
     align: "vertical",
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: e$formConfig$label || "image"
     })
   }, React.createElement(nb, {
@@ -316,7 +316,7 @@ var NE = memo(function (e) {
     fileId: d
   })), g && React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_747.formItemWrapper, Module_747.imageResizeMode, "changeImageResizeMode"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "adapt"
     }),
     align: "vertical"
@@ -339,7 +339,7 @@ var RE = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig$label = e.formConfig.label
   var a = undefined === e$formConfig$label ? "coordinate" : e$formConfig$label
   var s = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = Module_6.a({}, s)
   var u = function (e) {
     return function (t, r) {
@@ -356,7 +356,7 @@ var RE = memo(function (e) {
     className: "".concat(Module_88.formItemWrapper, " ").concat(Module_88.formInputNumberRow)
   }, React.createElement("p", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: a || "coordinate"
   })), React.createElement("div", {
     className: Module_88.formInputNumberRow
@@ -408,10 +408,10 @@ var kE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useRef(null)
   var c = e$getValue(n)
-  var l = Module_710$a$formatMessage({
+  var l = useIntl$formatMessage({
     id: e$formConfig.label || "content"
   })
   var u = Src_shared_tools_index.p(function (e) {

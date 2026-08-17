@@ -13,7 +13,7 @@ import /* 16 */"react-redux"
 import /* 719 */"../719"
 import * as /* [auto-meaningful-name] */Redux from /* 156 */"redux"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../6"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"./66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Module_62 from /* 62 */"./62"
 import * as /* [auto-meaningful-name] */Module_70 from /* 70 */"./70"
 var d = function (e) {
@@ -77,7 +77,7 @@ var w = function (e) {
     }
   }
 }
-var C = Module_66.a.Record({
+var C = Immutable.Record({
   language: O,
   acceleration: {
     x: b.x,

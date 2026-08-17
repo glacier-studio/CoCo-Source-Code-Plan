@@ -19,15 +19,15 @@ import * as /* [auto-meaningful-name] */Module_40 from /* 40 */"./40/index"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"./19"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef, useEffect, createElement, useLayoutEffect, forwardRef, useState, useCallback, useMemo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_420 from /* 420 */"../../../../src/editor/ui/EditArea/WidgetEditor/styles.module.css"
-import /* [auto-meaningful-name] */Module_4201 from /* 420 */"../../../../src/editor/ui/EditArea/WidgetEditor/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_EditArea_WidgetEditor_styles_module_css from /* 420 */"../../../../src/editor/ui/EditArea/WidgetEditor/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_EditArea_WidgetEditor_styles_module_css1 from /* 420 */"../../../../src/editor/ui/EditArea/WidgetEditor/styles.module.css"
 var Sy = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
-  var n = (0, Module_710.a().formatMessage)({
+  var n = (0, useIntl().formatMessage)({
     id: e$formConfig.label || "content"
   })
   return React.createElement(Src_shared_ui_components_index.i, {

@@ -55,7 +55,7 @@ import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"../../../../
 import * as Actions from "../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Shared_ui_language from "../../../../shared/ui/language"
 import { useDispatch, useSelector } from "react-redux"
@@ -76,7 +76,7 @@ const ConfigItem = React.memo(({
 }) => {
   const currentScreen = Module_238.d()
   const dispatch = useDispatch()
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const [menuVisible, setMenuVisible] = React.useState(false)
   const [bigImageVisible, setBigImageVisible] = React.useState(false)
   const [isMouseIn, setIsMouseIn] = React.useState(false)
@@ -268,7 +268,7 @@ export const WidgetCategoryItem = React.memo<{
   title: string
   defaultExpanded: boolean
 }>(({ configList, title, defaultExpanded }) => {
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   var i = useSelector((state) => state.common.userInfo?.id)
   var a = React.useState(undefined === defaultExpanded || defaultExpanded)
   var s = Module_10.a(a, 2)

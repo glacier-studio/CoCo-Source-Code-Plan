@@ -6,11 +6,11 @@
 
 "use strict"
 
-var r = require(/* 311 */"../1410/311")
+var r = require(/* 311 */"./311")
 var /* [auto-meaningful-name] */r$MathFloor = r.MathFloor
 var /* [auto-meaningful-name] */r$NumberIsInteger = r.NumberIsInteger
-var /* [auto-meaningful-name] */require_858_$$_1410_1159_858$validateInteger = require(/* 858 */"../1410/1159/858").validateInteger
-var /* [auto-meaningful-name] */require_402_$_402_index$codes$ERR_INVALID_ARG_VALUE = require(/* 402 */"./402/index").codes.ERR_INVALID_ARG_VALUE
+var /* [auto-meaningful-name] */require_858_$_986_858$validateInteger = require(/* 858 */"./986/858").validateInteger
+var /* [auto-meaningful-name] */require_402_$_402$codes$ERR_INVALID_ARG_VALUE = require(/* 402 */"./402").codes.ERR_INVALID_ARG_VALUE
 var c = 16384
 var u = 16
 function l(e) {
@@ -24,7 +24,7 @@ module.exports = {
     if (null != a) {
       if (!r$NumberIsInteger(a) || a < 0) {
         var c = r ? "options.".concat(n) : "options.highWaterMark"
-        throw new require_402_$_402_index$codes$ERR_INVALID_ARG_VALUE(c, a)
+        throw new require_402_$_402$codes$ERR_INVALID_ARG_VALUE(c, a)
       }
       return r$MathFloor(a)
     }
@@ -32,7 +32,7 @@ module.exports = {
   },
   getDefaultHighWaterMark: l,
   setDefaultHighWaterMark: function (e, t) {
-    require_858_$$_1410_1159_858$validateInteger(t, "value", 0)
+    require_858_$_986_858$validateInteger(t, "value", 0)
     if (e) {
       u = t
     } else {

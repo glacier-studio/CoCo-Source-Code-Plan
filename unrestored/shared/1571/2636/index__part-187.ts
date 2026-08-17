@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Module_431 from /* 431 */"./431/index"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useEffect } from /* 0 */"react"
@@ -30,7 +30,7 @@ var Hj = memo(function (e) {
   var /* [auto-meaningful-name] */e$isPlaying = e.isPlaying
   var /* [auto-meaningful-name] */e$isSelect = e.isSelect
   var /* [auto-meaningful-name] */e$isAdded = e.isAdded
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var u = useState(0)
   var d = Module_10.a(u, 2)
   var p = d[0]
@@ -146,7 +146,7 @@ var Hj = memo(function (e) {
     className: Module_3081.nameArea
   }, e$name), e$isAdded ? React.createElement("div", {
     className: Module_3081.add
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Added"
   })) : React.createElement("div", {
     className: Classnames(Module_3081.btn, Module_3081.unselect)

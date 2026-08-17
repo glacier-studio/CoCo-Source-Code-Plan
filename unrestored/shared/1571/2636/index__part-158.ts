@@ -6,10 +6,10 @@
 
 "use strict"
 
-import { nI } from "../../../../src/editor/ui/EditArea"
+import { nI } from "../../../../src/editor/ui/EditArea/index"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { useRef } from /* 0 */"react"
@@ -35,7 +35,7 @@ var GS = function (e, t) {
   }, n) : n
 }
 var WS = React.memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useRef(null)
   var /* [auto-meaningful-name] */React$useContextNI$setBulkSelectVisible = React.useContext(nI).setBulkSelectVisible
   return React.createElement("div", {
@@ -56,7 +56,7 @@ var WS = React.memo(function () {
     type: "icon-add"
   })), React.createElement("div", {
     className: Classnames(Module_4741.addText)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "DataWatch.addData"
   }))))))
 })

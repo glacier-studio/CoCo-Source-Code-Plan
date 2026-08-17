@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -36,7 +36,7 @@ var iT = memo(function () {
   var i = useSelector(function (e) {
     return e.project.globalObjectList
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useRef(null)
   var c = Module_238.d()
   var l = useState(false)
@@ -184,7 +184,7 @@ var iT = memo(function () {
     onClose: F
   }, React.createElement("p", {
     className: Module_99.dialogTitle
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "object.editObjectList"
   })), React.createElement("div", {
     className: Module_99.summary
@@ -295,20 +295,20 @@ var iT = memo(function () {
     alt: ""
   }), React.createElement("div", {
     className: Module_99.label
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "variableListEmptyContentLabel"
   })))), React.createElement("div", {
     className: Module_4401.footer
   }, React.createElement("p", {
     className: Module_4401.tips
-  }, d ? Module_710$a$formatMessage({
+  }, d ? useIntl$formatMessage({
     id: "object.keyRepeat"
   }) : ""), React.createElement(Src_shared_ui_components_index.d, {
     className: Module_4401.save,
     type: "primary",
     onClick: G,
     disabled: d
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   })))) : null
 })

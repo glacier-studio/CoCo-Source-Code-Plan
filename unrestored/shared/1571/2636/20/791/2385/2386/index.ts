@@ -7,7 +7,7 @@
 "use strict"
 
 var r = require(/* 1402 */"./1402/index")
-var i = require(/* 1410 */"./1410/index")
+var i = require(/* 1410 */"./1410")
 var /* [auto-meaningful-name] */r$Readable$destroy = r.Readable.destroy
 module.exports = r.Readable
 module.exports._uint8ArrayToBuffer = r._uint8ArrayToBuffer

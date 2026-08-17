@@ -4,11 +4,11 @@
  * 模块 ID：15
  */
 
-import { i, a, s, c, l, u } from "../../../unrestored/shared/1571/2636/15__part-0"
-import { g, _, v, b, y, E, O, w, C, T, S, A } from "../../../unrestored/shared/1571/2636/15__part-1"
-import { j, N, R } from "../../../unrestored/shared/1571/2636/15__part-2"
-import { x, D } from "../../../unrestored/shared/1571/2636/15__part-3"
-import { B, F, W, U, H, V, z, Y, K } from "../../../unrestored/shared/1571/2636/15__part-4"
+import { i, a, s, c, l, u } from "../../../unrestored/shared/1571/2636/15/index__part-0"
+import { g, _, v, b, y, E, O, w, C, T, S, A } from "../../../unrestored/shared/1571/2636/15/index__part-1"
+import { j, N, R } from "../../../unrestored/shared/1571/2636/15/index__part-2"
+import { x, D } from "../../../unrestored/shared/1571/2636/15/index__part-3"
+import { B, F, W, U, H, V, z, Y, K } from "../../../unrestored/shared/1571/2636/15/index__part-4"
 import * as /* [auto-meaningful-name] */$_url from "./url"
 import * as /* [auto-meaningful-name] */Module_454 from /* 454 */"../../../unrestored/shared/1571/2636/454/index"
 export { i as eb }

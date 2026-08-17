@@ -950,7 +950,7 @@
     }, function (t, e, n) {
       var r
       var o
-      var /* [auto-meaningful-name] */ONewD$port2
+      var /* [auto-meaningful-name] */ONewF$MessageChannel$port2
       var a = n(19)
       var s = n(75)
       var u = n(49)
@@ -999,9 +999,9 @@
             }
           } else {
             if (f$MessageChannel) {
-              ONewD$port2 = (o = new f$MessageChannel()).port2
+              ONewF$MessageChannel$port2 = (o = new f$MessageChannel()).port2
               o.port1.onmessage = b
-              r = a(ONewD$port2.postMessage, ONewD$port2, 1)
+              r = a(ONewF$MessageChannel$port2.postMessage, ONewF$MessageChannel$port2, 1)
             } else {
               if (f.addEventListener && "function" == typeof postMessage && !f.importScripts) {
                 r = function (t) {
@@ -2287,7 +2287,7 @@
           c.ArrayBuffer.hash = function (t, n) {
             var o = a(function (t) {
               var n
-              var /* [auto-meaningful-name] */TN64CT$subarrayN64NewUint8Array0$length
+              var /* [auto-meaningful-name] */TN64T$lengthT$subarrayN64NewUint8Array0$length
               var i
               var a
               var s
@@ -2297,7 +2297,7 @@
               for (n = 64; n <= t$length; n += 64) {
                 e(f, r(t.subarray(n - 64, n)))
               }
-              for (TN64CT$subarrayN64NewUint8Array0$length = (t = n - 64 < t$length ? t.subarray(n - 64) : new Uint8Array(0)).length, i = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], n = 0; n < TN64CT$subarrayN64NewUint8Array0$length; n += 1) {
+              for (TN64T$lengthT$subarrayN64NewUint8Array0$length = (t = n - 64 < t$length ? t.subarray(n - 64) : new Uint8Array(0)).length, i = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], n = 0; n < TN64T$lengthT$subarrayN64NewUint8Array0$length; n += 1) {
                 i[n >> 2] |= t[n] << (n % 4 << 3)
               }
               i[n >> 2] |= 128 << (n % 4 << 3)

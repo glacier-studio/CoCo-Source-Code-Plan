@@ -8,13 +8,13 @@
 
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector, batch } from /* 16 */"react-redux"
@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
 import * as /* [auto-meaningful-name] */Module_381 from /* 381 */"./381"
 import /* [auto-meaningful-name] */Module_3811 from /* 381 */"./381"
 var $u = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   var n = useSelector(function (e) {
     return e.project.selectedWidgetId
@@ -43,7 +43,7 @@ var $u = memo(function () {
       }
     },
     accept: Module_133.f,
-    tooltip: Module_710$a$formatMessage({
+    tooltip: useIntl$formatMessage({
       id: "uploadFileByLocal"
     })
   }, React.createElement(Src_shared_ui_components_index.j, {
@@ -53,7 +53,7 @@ var $u = memo(function () {
     className: Module_3811.gap
   }), React.createElement(Module_748.a, {
     placement: "right",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "resourceLibrary"
     }),
     trigger: ["hover", "click"]
@@ -78,13 +78,13 @@ var $u = memo(function () {
 })
 var ed = memo(function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.common.widgetAttributeVisible
   })
   return React.createElement(Module_748.a, {
     placement: "right",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "edit"
     }),
     trigger: ["hover", "click"]
@@ -104,7 +104,7 @@ var ed = memo(function () {
   })))
 })
 var td = function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
@@ -127,7 +127,7 @@ var td = function () {
     "data-should-update-area": i
   }, React.createElement(Module_748.a, {
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "deleteOption"
     }),
     trigger: ["hover", "click"]
@@ -143,7 +143,7 @@ var td = function () {
     type: "icon-minus"
   }))), React.createElement(Module_748.a, {
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "addOption"
     }),
     trigger: ["hover", "click"]
@@ -165,13 +165,13 @@ var td = function () {
 }
 var nd = function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
   return React.createElement(Module_748.a, {
     placement: "right",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "refresh"
     }),
     trigger: ["hover", "click"]

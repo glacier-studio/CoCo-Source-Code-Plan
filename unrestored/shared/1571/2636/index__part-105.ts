@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -29,7 +29,7 @@ import /* [auto-meaningful-name] */Module_7471 from /* 747 */"./747"
 var wy = memo(function () {
   var e = useDispatch()
   var t = Module_238.b()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = Module_238.d()
   var o = useSelector(function (e) {
     return e.project.screens
@@ -68,7 +68,7 @@ var wy = memo(function () {
     }
   })), React.createElement("div", null, React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper, "changeBackgroundColor"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "color"
     })
   }, React.createElement(Module_1213.a, {
@@ -93,7 +93,7 @@ var wy = memo(function () {
   })))), React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper, Module_7471.changeImageWrapper),
     align: "vertical",
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "backgroundImage"
     })
   }, React.createElement(nb, {
@@ -118,7 +118,7 @@ var wy = memo(function () {
     fileId: r$backgroundImage
   })), g && React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "adapt"
     }),
     align: "vertical"

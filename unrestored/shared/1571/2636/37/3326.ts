@@ -9643,11 +9643,11 @@ i = function () {
               if (0 === this.length) {
                 return r$_node_modules_buffer_index$js$Buffer.alloc(0)
               }
-              for (var /* [auto-meaningful-name] */o$data, r, n, i = r$_node_modules_buffer_index$js$Buffer.allocUnsafe(t >>> 0), /* [auto-meaningful-name] */this$head = this.head, a = 0; this$head;) {
-                o$data = this$head.data
+              for (var /* [auto-meaningful-name] */this$head$data, r, n, i = r$_node_modules_buffer_index$js$Buffer.allocUnsafe(t >>> 0), /* [auto-meaningful-name] */this$head = this.head, a = 0; this$head;) {
+                this$head$data = this$head.data
                 r = i
                 n = a
-                r$_node_modules_buffer_index$js$Buffer.prototype.copy.call(o$data, r, n)
+                r$_node_modules_buffer_index$js$Buffer.prototype.copy.call(this$head$data, r, n)
                 a += this$head.data.length
                 this$head = this$head.next
               }
@@ -24125,11 +24125,11 @@ i = function () {
               if (0 === this.length) {
                 return r$_node_modules_buffer_index$js$Buffer.alloc(0)
               }
-              for (var /* [auto-meaningful-name] */o$data, r, n, i = r$_node_modules_buffer_index$js$Buffer.allocUnsafe(t >>> 0), /* [auto-meaningful-name] */this$head = this.head, a = 0; this$head;) {
-                o$data = this$head.data
+              for (var /* [auto-meaningful-name] */this$head$data, r, n, i = r$_node_modules_buffer_index$js$Buffer.allocUnsafe(t >>> 0), /* [auto-meaningful-name] */this$head = this.head, a = 0; this$head;) {
+                this$head$data = this$head.data
                 r = i
                 n = a
-                r$_node_modules_buffer_index$js$Buffer.prototype.copy.call(o$data, r, n)
+                r$_node_modules_buffer_index$js$Buffer.prototype.copy.call(this$head$data, r, n)
                 a += this$head.data.length
                 this$head = this$head.next
               }
@@ -32905,11 +32905,11 @@ i = function () {
           if (1 === this.length) {
             return this.head.data
           }
-          for (var /* [auto-meaningful-name] */s$data, r, i, o = r$_node_modules_safeBuffer_index$js$Buffer.allocUnsafe(t >>> 0), /* [auto-meaningful-name] */this$head = this.head, a = 0; this$head;) {
-            s$data = this$head.data
+          for (var /* [auto-meaningful-name] */this$head$data, r, i, o = r$_node_modules_safeBuffer_index$js$Buffer.allocUnsafe(t >>> 0), /* [auto-meaningful-name] */this$head = this.head, a = 0; this$head;) {
+            this$head$data = this$head.data
             r = o
             i = a
-            s$data.copy(r, i)
+            this$head$data.copy(r, i)
             a += this$head.data.length
             this$head = this$head.next
           }

@@ -6,9 +6,9 @@
 
 "use strict"
 
-var r = require(/* 309 */"../1662/309")
+var r = require(/* 309 */"../1771/309")
 var o = require(/* 715 */"../1775/715")
-var i = require(/* 256 */"../1771/256")
+var i = require(/* 256 */"../1775/256")
 var /* [auto-meaningful-name] */Math$min = Math.min
 module.exports = [].copyWithin || function (e, t) {
   var n = r(this)

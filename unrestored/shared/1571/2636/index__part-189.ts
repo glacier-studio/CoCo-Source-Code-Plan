@@ -9,7 +9,7 @@
 import { fj, hj } from "./index__part-181"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -22,7 +22,7 @@ var Xj = memo(function (e) {
   var /* [auto-meaningful-name] */e$cdnUrl = e.cdnUrl
   var /* [auto-meaningful-name] */e$isSelect = e.isSelect
   var /* [auto-meaningful-name] */e$isAdded = e.isAdded
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("li", {
     onClick: function (i) {
       if (!e$isAdded) {
@@ -49,7 +49,7 @@ var Xj = memo(function (e) {
     className: Module_6251.nameArea
   }, e$name), e$isAdded ? React.createElement("div", {
     className: Module_6251.add
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Added"
   })) : React.createElement("div", {
     className: Classnames(Module_6251.btn, Module_6251.unselect)

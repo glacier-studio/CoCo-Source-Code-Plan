@@ -30,7 +30,7 @@ import { asyncCreateProjectScreenAction, asyncRemoveProjectScreenAction, asyncSe
 import { IconFont, Popover } from "../../../../shared/ui/components"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import { batch, useDispatch, useSelector } from "react-redux"
 import * as /* [auto-meaningful-name] */ReactDom from "react-dom"
@@ -43,7 +43,7 @@ import type { IPopoverRef } from "../../../../shared/ui/components/Popover"
 
 const WidgetInput = React.forwardRef(function (e, t) {
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$checkValueIsRepeat = e.checkValueIsRepeat
   var /* [auto-meaningful-name] */e$renameInputValue = e.renameInputValue
@@ -158,7 +158,7 @@ const WidgetInput = React.forwardRef(function (e, t) {
         }
       } else {
         n(CommonActions.showCommonToastInfoAction({
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "blankInputValue"
           }),
           type: "error",
@@ -298,7 +298,7 @@ var Jr = React.memo(function (e) {
     return e.oTState.collWorkId
   })
   var /* [auto-meaningful-name] */e$screen$title = e$screen.title
-  const formatMessage = Module_710.a().formatMessage
+  const formatMessage = useIntl().formatMessage
   const dispatch = useDispatch()
   var g = React.useRef(null)
   var v = React.useRef(null)
@@ -1348,7 +1348,7 @@ var InnerScreenList = function (e) {
 
 export const ScreenList = React.memo(() => {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
 
   const popoverRef = React.useRef<IPopoverRef>(null)
 

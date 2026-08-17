@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_627 from /* 627 */"./627/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"./188"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -29,7 +29,7 @@ import * as /* [auto-meaningful-name] */Module_475 from /* 475 */"./475"
 import /* [auto-meaningful-name] */Module_4751 from /* 475 */"./475"
 var ZP = memo(function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.common.courseList
   })
@@ -237,7 +237,7 @@ var ZP = memo(function () {
     e(Src_editor_redux_common_actions.fi(false))
   }
   return React.createElement(Src_shared_ui_components_index.f, {
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "courseVideo"
     }),
     withPortal: true,
@@ -277,12 +277,12 @@ var ZP = memo(function () {
     className: Module_4751.moreImage
   }), React.createElement("div", {
     className: Module_4751.moreTips
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "moreCourseTips"
   })))))
 })
 var JP = memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useDispatch()
   var r = useSelector(function (e) {
     return e.common.projectSavePrompt
@@ -317,9 +317,9 @@ var JP = memo(function (e) {
     onClose: l,
     maskClosable: false,
     className: Classnames(Module_266.dialog, Module_266.dialogSecondary)
-  }, React.createElement("h3", null, Module_710$a$formatMessage({
+  }, React.createElement("h3", null, useIntl$formatMessage({
     id: WhetherKeepWorksTitle
-  })), React.createElement("span", null, Module_710$a$formatMessage({
+  })), React.createElement("span", null, useIntl$formatMessage({
     id: "whetherKeepWorksDescription"
   })), React.createElement(Module_188.a, null, React.createElement(Module_188.b, {
     keys: "enter",
@@ -329,7 +329,7 @@ var JP = memo(function (e) {
   }, React.createElement(Src_shared_ui_components_index.d, {
     onClick: l,
     className: Module_266.cancel
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cancel"
   })), React.createElement(Src_shared_ui_components_index.d, {
     onClick: function () {
@@ -339,12 +339,12 @@ var JP = memo(function (e) {
       l()
     },
     className: Module_266.denyButton
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "notSave"
   })), React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
     onClick: c
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   }))))
 })

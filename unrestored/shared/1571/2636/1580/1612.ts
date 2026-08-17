@@ -6,8 +6,8 @@
 
 "use strict"
 
-var r = require(/* 86 */"./1662/86")
-var o = require(/* 168 */"./1659/168")
+var r = require(/* 86 */"./1650/86/index")
+var o = require(/* 168 */"./1648/168")
 var i = require(/* 716 */"./1597/716")
 r({
   target: "Array",

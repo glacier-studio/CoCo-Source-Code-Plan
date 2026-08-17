@@ -13,8 +13,8 @@ import { getCommunityWorkUrl } from "../../../../../shared/tools"
 import * as /* [auto-meaningful-name] */Module_97 from /* 97 */"../../../../../../unrestored/shared/1571/2636/97"
 import * as CommonActions from "../../../../redux/common/actions"
 import * as Components from "../../../../../shared/ui/components"
-import { Button, Dialog, IconFont } from "../../../../../shared/ui/components"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { Button, Dialog, IconFont, Input } from "../../../../../shared/ui/components"
+import { useIntl } from "react-intl"
 import { useSelector, useDispatch } from "react-redux"
 import /* [auto-meaningful-name] */React from "react"
 import { memo, useState, useRef, useEffect } from "react"
@@ -40,7 +40,7 @@ export const ShareCommunityDialog = memo(({
   const title = useSelector((state) => state.project.title)
   const [isPublishing, setIsPublishing] = useState(false)
   const workCoverEditorRef = useRef(null)
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const dispatch = useDispatch()
   const [publishInfo, setPublishInfo] = useState<IPublishInfo>({
     name: title,
@@ -193,7 +193,7 @@ export const ShareCommunityDialog = memo(({
               {formatMessage({ id: "Publish.publishName" })}
               <span className={styles.required}>*</span>
             </p>
-            <Components.k
+            <Input
               defaultValue={publishInfo.name}
               maxLength={20}
               placeholder={formatMessage({ id: "Publish.inputPublishName" })}

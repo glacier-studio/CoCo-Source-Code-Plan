@@ -26,9 +26,9 @@ module.exports = function (e, t, n) {
   } else {
     i = c
   }
-  var /* [auto-meaningful-name] */w$compile
-  var /* [auto-meaningful-name] */w$inline
-  var /* [auto-meaningful-name] */w$macro
+  var /* [auto-meaningful-name] */this$definition$compile
+  var /* [auto-meaningful-name] */this$definition$inline
+  var /* [auto-meaningful-name] */this$definition$macro
   var m
   var y
   var b = "definition" + e$level
@@ -44,9 +44,9 @@ module.exports = function (e, t, n) {
     }
     i = "validate.schema" + u
     y = m.code
-    w$compile = this$definition.compile
-    w$inline = this$definition.inline
-    w$macro = this$definition.macro
+    this$definition$compile = this$definition.compile
+    this$definition$inline = this$definition.inline
+    this$definition$macro = this$definition.macro
   }
   var C = y + ".errors"
   var O = "i" + e$level
@@ -55,7 +55,7 @@ module.exports = function (e, t, n) {
   if (this$definition$async && !e.async) {
     throw new Error("async keyword in sync schema")
   }
-  if (!(w$inline || w$macro)) {
+  if (!(this$definition$inline || this$definition$macro)) {
     o += C + " = null;"
   }
   o += "var " + p + " = errors;var " + h + ";"
@@ -67,13 +67,13 @@ module.exports = function (e, t, n) {
       o += " " + h + " = " + b + ".validateSchema(" + i + "); if (" + h + ") { "
     }
   }
-  if (w$inline) {
+  if (this$definition$inline) {
     if (this$definition.statements) {
       o += " " + m.validate + " "
     } else {
       o += " " + h + " = " + m.validate + "; "
     }
-  } else if (w$macro) {
+  } else if (this$definition$macro) {
     var T = e.util.copy(e)
     E = ""
     T.level++
@@ -94,7 +94,7 @@ module.exports = function (e, t, n) {
     } else {
       o += "self"
     }
-    if (w$compile || false === this$definition.schema) {
+    if (this$definition$compile || false === this$definition.schema) {
       o += " , " + d + " "
     } else {
       o += " , " + i + " , " + d + " , validate.schema" + e.schemaPath + " "
@@ -130,7 +130,7 @@ module.exports = function (e, t, n) {
     o += " if ( "
     if (undefined === this$definition.valid) {
       o += " !"
-      o += w$macro ? "" + B : "" + h
+      o += this$definition$macro ? "" + B : "" + h
     } else {
       o += " " + !this$definition.valid + " "
     }
@@ -165,7 +165,7 @@ module.exports = function (e, t, n) {
     }
     var L = o
     o = N.pop()
-    if (w$inline) {
+    if (this$definition$inline) {
       if (this$definition.errors) {
         if ("full" != this$definition.errors) {
           o += "  for (var " + O + "=" + p + "; " + O + "<errors; " + O + "++) { var " + k + " = vErrors[" + O + "]; if (" + k + ".dataPath === undefined) " + k + ".dataPath = (dataPath || '') + " + e.errorPath + "; if (" + k + ".schemaPath === undefined) { " + k + ".schemaPath = \"" + l + "\"; } "
@@ -186,7 +186,7 @@ module.exports = function (e, t, n) {
         }
       }
     } else {
-      if (w$macro) {
+      if (this$definition$macro) {
         o += "   var err =   "
         if (false !== e.createErrors) {
           o += " { keyword: '" + (this$keyword || "custom") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(l) + " , params: { keyword: '" + this.keyword + "' } "

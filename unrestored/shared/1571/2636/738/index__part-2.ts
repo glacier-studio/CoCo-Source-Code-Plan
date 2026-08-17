@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../11"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 var W = {
   rotation: [
     {
@@ -105,7 +105,7 @@ var U = function (e) {
       key: e$prop
     }, React.createElement("div", {
       className: "emulator-sensor-item-title"
-    }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+    }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
       className: "emulator-icon",
       type: e$icon
     }), React.createElement("span", {
@@ -165,7 +165,7 @@ var H = function (e) {
     }
   }, React.createElement("div", {
     className: "emulator-shakeBtn"
-  }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     type: "icon-phone-shake-selected"
   }), React.createElement("p", {
     className: "emulator-shakeBtnName"

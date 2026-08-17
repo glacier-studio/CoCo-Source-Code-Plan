@@ -6,7 +6,7 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 import * as /* [auto-meaningful-name] */AgGridReact from /* 417 */"ag-grid-react"
 import /* 653 */"./653"
 import /* 654 */"./654"

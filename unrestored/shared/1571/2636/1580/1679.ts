@@ -4,11 +4,11 @@
  * 模块 ID：1679
  */
 
-var r = require(/* 86 */"./1662/86")
+var r = require(/* 86 */"./1650/86/index")
 var o = require(/* 231 */"./1282/231")
 var /* [auto-meaningful-name] */require_718_$_1778_718$onFreeze = require(/* 718 */"./1778/718").onFreeze
 var a = require(/* 837 */"./1704/837")
-var s = require(/* 168 */"./1659/168")
+var s = require(/* 168 */"./1648/168")
 var /* [auto-meaningful-name] */Object$seal = Object.seal
 r({
   target: "Object",

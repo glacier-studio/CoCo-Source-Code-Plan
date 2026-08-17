@@ -26,7 +26,7 @@ import { asyncDeleteProjectWidgetAction, promisify } from "../../../redux/common
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../../unrestored/shared/1571/2636/6"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"../../../../../unrestored/shared/1571/2636/188"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
@@ -37,7 +37,7 @@ import { useRef, useState, useEffect } from /* 0 */"react"
 import /* [auto-meaningful-name] */Module_932 from /* 932 */"../../../../../unrestored/shared/1571/2636/932"
 
 function SelectedWidget({ position }: { position: { x: number, y: number } }) {
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const selectedWidgetId = useSelector((state) => state.project.selectedWidgetId )
   var i = Module_238.d()
   if (!selectedWidgetId) {
@@ -196,7 +196,7 @@ export const Stage = React.memo(function () {
       dispatch(asyncDeleteProjectWidgetAction(a, r))
     }
   }
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return <div
     ref={t}
     className={Classnames(Styles_module_css.stage, Module_11.a({}, Styles_module_css.isActorDragging, c))}
@@ -268,7 +268,7 @@ export const Stage = React.memo(function () {
               return
             }
             var t = Module_9.Fb(a)
-            var n = Module_710$a$formatMessage({
+            var n = useIntl$formatMessage({
               id: "deleteWidget"
             }) + "“" + Module_190.f(t, 10) + "”?"
             var o = Module_26.z.checkFieldValueIsSelected("WIDGET_ID", a)
@@ -276,12 +276,12 @@ export const Stage = React.memo(function () {
             if (o || s) {
               dispatch(CommonActions.zh({
                 onConfirm: X,
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "delete"
                 }),
                 title: n,
                 isDangerous: true,
-                content: Module_710$a$formatMessage({
+                content: useIntl$formatMessage({
                   id: s ? "deleteParentWidgetTips" : "deleteWidgetTips"
                 })
               }))

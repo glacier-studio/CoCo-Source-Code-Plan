@@ -8,7 +8,7 @@ var r = require(/* 2024 */"./2024/index")
 r.prototype.toPostfix = function () {
   "use strict"
 
-  for (var e, t, n, /* [auto-meaningful-name] */ECU$pre, o, a = [], s = [
+  for (var e, t, n, /* [auto-meaningful-name] */EThis$valueU$pre, o, a = [], s = [
       {
         value: "(",
         type: 4,
@@ -32,13 +32,13 @@ r.prototype.toPostfix = function () {
       }
       s.push(t)
     } else {
-      ECU$pre = (e = this$value[u]).pre
+      EThis$valueU$pre = (e = this$value[u]).pre
       n = (o = s[s.length - 1]).pre
       var l = "Math.pow" == o.value && "Math.pow" == e.value
-      if (ECU$pre > n) {
+      if (EThis$valueU$pre > n) {
         s.push(e)
       } else {
-        for (; n >= ECU$pre && !l || l && ECU$pre < n;) {
+        for (; n >= EThis$valueU$pre && !l || l && EThis$valueU$pre < n;) {
           t = s.pop()
           o = s[s.length - 1]
           a.push(t)

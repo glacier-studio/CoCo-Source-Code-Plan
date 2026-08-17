@@ -917,7 +917,7 @@ var le = function (t) {
   }
 }
 var ce = function t(e, r) {
-  for (var /* [auto-meaningful-name] */n$_ease, /* [auto-meaningful-name] */e$_first = e._first; e$_first;) {
+  for (var /* [auto-meaningful-name] */e$_first$_ease, /* [auto-meaningful-name] */e$_first = e._first; e$_first;) {
     if (e$_first instanceof xe) {
       t(e$_first, r)
     } else {
@@ -925,9 +925,9 @@ var ce = function t(e, r) {
         if (e$_first.timeline) {
           t(e$_first.timeline, r)
         } else {
-          n$_ease = e$_first._ease
+          e$_first$_ease = e$_first._ease
           e$_first._ease = e$_first._yEase
-          e$_first._yEase = n$_ease
+          e$_first._yEase = e$_first$_ease
           e$_first._yoyo = r
         }
       }
@@ -1679,10 +1679,10 @@ var xe = function (t) {
     if (undefined === t) {
       t = true
     }
-    for (var /* [auto-meaningful-name] */r$_next, /* [auto-meaningful-name] */this$_first = this._first; this$_first;) {
-      r$_next = this$_first._next
+    for (var /* [auto-meaningful-name] */this$_first$_next, /* [auto-meaningful-name] */this$_first = this._first; this$_first;) {
+      this$_first$_next = this$_first._next
       this.remove(this$_first)
-      this$_first = r$_next
+      this$_first = this$_first$_next
     }
     this._time = this._tTime = this._pTime = 0
     if (t) {
@@ -1691,9 +1691,9 @@ var xe = function (t) {
     return vt(this)
   }
   e$prototype.totalDuration = function (t) {
-    var /* [auto-meaningful-name] */u$_prev
+    var /* [auto-meaningful-name] */o$_last$_prev
     var r
-    var /* [auto-meaningful-name] */u$_start
+    var /* [auto-meaningful-name] */o$_last$_start
     var /* [auto-meaningful-name] */o$parent
     var a = 0
     var o = this
@@ -1704,30 +1704,30 @@ var xe = function (t) {
     }
     if (o._dirty) {
       for (o$parent = o.parent; o$_last;) {
-        u$_prev = o$_last._prev
+        o$_last$_prev = o$_last._prev
         if (o$_last._dirty) {
           o$_last.totalDuration()
         }
-        if ((u$_start = o$_last._start) > h && o._sort && o$_last._ts && !o._lock) {
+        if ((o$_last$_start = o$_last._start) > h && o._sort && o$_last._ts && !o._lock) {
           o._lock = 1
-          Ot(o, o$_last, u$_start - o$_last._delay, 1)._lock = 0
+          Ot(o, o$_last, o$_last$_start - o$_last._delay, 1)._lock = 0
         } else {
-          h = u$_start
+          h = o$_last$_start
         }
-        if (u$_start < 0 && o$_last._ts) {
-          a -= u$_start
+        if (o$_last$_start < 0 && o$_last._ts) {
+          a -= o$_last$_start
           if (!o$parent && !o._dp || o$parent && o$parent.smoothChildTiming) {
-            o._start += u$_start / o._ts
-            o._time -= u$_start
-            o._tTime -= u$_start
+            o._start += o$_last$_start / o._ts
+            o._time -= o$_last$_start
+            o._tTime -= o$_last$_start
           }
-          o.shiftChildren(-u$_start, false, -Infinity)
+          o.shiftChildren(-o$_last$_start, false, -Infinity)
           h = 0
         }
         if ((r = bt(o$_last)) > a && o$_last._ts) {
           a = r
         }
-        o$_last = u$_prev
+        o$_last = o$_last$_prev
       }
       At(o, o === s && o._time > a ? o._time : a, 1)
       o._dirty = 0
@@ -2415,17 +2415,17 @@ var Ie = function (t, e) {
   }
 }
 var Ye = function (t, e, r, i) {
-  for (var /* [auto-meaningful-name] */s$_next, /* [auto-meaningful-name] */this$_pt = this._pt; this$_pt;) {
-    s$_next = this$_pt._next
+  for (var /* [auto-meaningful-name] */this$_pt$_next, /* [auto-meaningful-name] */this$_pt = this._pt; this$_pt;) {
+    this$_pt$_next = this$_pt._next
     if (this$_pt.p === i) {
       this$_pt.modifier(t, e, r)
     }
-    this$_pt = s$_next
+    this$_pt = this$_pt$_next
   }
 }
 var Ue = function (t) {
-  for (var e, /* [auto-meaningful-name] */i$_next, /* [auto-meaningful-name] */this$_pt = this._pt; this$_pt;) {
-    i$_next = this$_pt._next
+  for (var e, /* [auto-meaningful-name] */this$_pt$_next, /* [auto-meaningful-name] */this$_pt = this._pt; this$_pt;) {
+    this$_pt$_next = this$_pt._next
     if (this$_pt.p === t && !this$_pt.op || this$_pt.op === t) {
       mt(this, this$_pt, "_pt")
     } else {
@@ -2433,7 +2433,7 @@ var Ue = function (t) {
         e = 1
       }
     }
-    this$_pt = i$_next
+    this$_pt = this$_pt$_next
   }
   return !e
 }
@@ -2441,8 +2441,8 @@ var Xe = function (t, e, r, i) {
   i.mSet(t, e, i.m.call(i.tween, r, i.mt), i)
 }
 var Ne = function (t) {
-  for (var /* [auto-meaningful-name] */s$_next, r, i, n, /* [auto-meaningful-name] */t$_pt = t._pt; t$_pt;) {
-    for (s$_next = t$_pt._next, r = i; r && r.pr > t$_pt.pr;) {
+  for (var /* [auto-meaningful-name] */t$_pt$_next, r, i, n, /* [auto-meaningful-name] */t$_pt = t._pt; t$_pt;) {
+    for (t$_pt$_next = t$_pt._next, r = i; r && r.pr > t$_pt.pr;) {
       r = r._next
     }
     if (t$_pt._prev = r ? r._prev : n) {
@@ -2455,7 +2455,7 @@ var Ne = function (t) {
     } else {
       n = t$_pt
     }
-    t$_pt = s$_next
+    t$_pt = t$_pt$_next
   }
   t._pt = i
 }

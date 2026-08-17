@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Module_190 from /* 190 */"./190"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -23,7 +23,7 @@ var IA = memo(function (e) {
   var /* [auto-meaningful-name] */e$cdnUrl = e.cdnUrl
   var /* [auto-meaningful-name] */e$name = e.name
   var /* [auto-meaningful-name] */e$source = e.source
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useDispatch()
   var s = function (e) {
     a(Src_editor_redux_common_actions.mg(e))
@@ -38,15 +38,15 @@ var IA = memo(function (e) {
         a(Src_editor_redux_common_actions.zh({
           isDangerous: true,
           onConfirm: s.bind(null, t),
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "delete"
           }),
-          title: Module_710$a$formatMessage({
+          title: useIntl$formatMessage({
             id: "deleteIconFileTitle"
           }, {
             name: Module_190.f(e$name || "", 10)
           }),
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "deleteIconFileTips"
           })
         }))
@@ -80,7 +80,7 @@ var IA = memo(function (e) {
           r.target.value = e
           if (n !== e) {
             a(Src_editor_redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "renameFileNameRepeatTips"
               }),
               duration: 2e3

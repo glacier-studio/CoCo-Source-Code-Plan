@@ -5,7 +5,7 @@
  */
 
 var r = require(/* 1240 */"./1240")
-var o = require(/* 1081 */"../../1282/577/1081")
+var o = require(/* 1081 */"./1081")
 module.exports = Object.keys || function (e) {
   return r(e, o)
 }

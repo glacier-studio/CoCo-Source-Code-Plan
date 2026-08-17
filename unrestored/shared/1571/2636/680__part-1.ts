@@ -7,7 +7,7 @@
 "use strict"
 
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_33 from /* 33 */"./33"
 var c = {

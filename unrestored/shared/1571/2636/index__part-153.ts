@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"./18"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector } from /* 16 */"react-redux"
@@ -23,7 +23,7 @@ import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_320 from /* 320 */"./320"
 import /* [auto-meaningful-name] */Module_3201 from /* 320 */"./320"
 var QT = React.memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useState(Module_26.f)
   var n = Module_10.a(t, 2)
   var r = n[0]
@@ -122,7 +122,7 @@ var QT = React.memo(function () {
     className: Module_3201.undoRedoWrapper
   }, React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "BlockEditor.undo"
     }),
     trigger: ["hover", "click"]
@@ -136,7 +136,7 @@ var QT = React.memo(function () {
     className: Classnames(Module_3201.icon, Module_3201.undo, l.undo && Module_3201.disable)
   }))), React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "BlockEditor.redo"
     }),
     trigger: ["hover", "click"]
@@ -154,7 +154,7 @@ var QT = React.memo(function () {
     className: Module_3201.zoomWrapper
   }, React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "BlockEditor.dec"
     }),
     trigger: ["hover", "click"]
@@ -170,7 +170,7 @@ var QT = React.memo(function () {
     className: Classnames(Module_3201.icon, l.zoomOut && Module_3201.disable)
   }))), React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "BlockEditor.percent"
     }),
     trigger: ["hover", "click"]
@@ -183,7 +183,7 @@ var QT = React.memo(function () {
     }
   }, "".concat(Src_shared_tools_index.eb(r, Module_26.f, 0), "%"))), React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "BlockEditor.inc"
     }),
     trigger: ["hover", "click"]
@@ -206,7 +206,7 @@ var QT = React.memo(function () {
     }
   }, React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "BlockEditor.cleanup"
     }),
     trigger: ["hover", "click"]

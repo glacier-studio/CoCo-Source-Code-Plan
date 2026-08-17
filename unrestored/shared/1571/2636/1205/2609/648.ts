@@ -56,8 +56,8 @@ exports.cal_num_blocks = function (e) {
   }).length
 }
 exports.is_valid_context = function (e) {
-  var /* [auto-meaningful-name] */c$source_block$previous_connection
-  var /* [auto-meaningful-name] */c$source_block$output_connection
+  var /* [auto-meaningful-name] */a$target_connection$source_block$previous_connection
+  var /* [auto-meaningful-name] */a$target_connection$source_block$output_connection
   var a = e.previous_connection || e.output_connection
   if (!a || !a.target_connection || !s(e)) {
     return true
@@ -85,7 +85,7 @@ exports.is_valid_context = function (e) {
         value: true
       }
     }
-    a$target_connection = (null === (c$source_block$previous_connection = a$target_connection.source_block.previous_connection) || undefined === c$source_block$previous_connection ? undefined : c$source_block$previous_connection.target_connection) || (null === (c$source_block$output_connection = a$target_connection.source_block.output_connection) || undefined === c$source_block$output_connection ? undefined : c$source_block$output_connection.target_connection)
+    a$target_connection = (null === (a$target_connection$source_block$previous_connection = a$target_connection.source_block.previous_connection) || undefined === a$target_connection$source_block$previous_connection ? undefined : a$target_connection$source_block$previous_connection.target_connection) || (null === (a$target_connection$source_block$output_connection = a$target_connection.source_block.output_connection) || undefined === a$target_connection$source_block$output_connection ? undefined : a$target_connection$source_block$output_connection.target_connection)
   }; a$target_connection;) {
     var l = u()
     if ("object" === typeof l) {

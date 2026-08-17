@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -60,7 +60,7 @@ var nT = memo(function () {
   var u = l[0]
   var d = l[1]
   var p = useRef(1)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var g = useRef(null)
   var v = useRef(null)
   var b = useDispatch()
@@ -183,13 +183,13 @@ var nT = memo(function () {
     onClose: A
   }, React.createElement("p", {
     className: Module_99.dialogTitle
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "editVariableList"
   })), React.createElement("div", {
     className: Module_99.summary
   }, React.createElement("span", null, null === e$array || undefined === e$array ? undefined : e$array.name), React.createElement("div", {
     className: Module_99.count
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "itemCount"
   })), React.createElement(Src_shared_ui_components_index.k, {
     type: "number",
@@ -254,13 +254,13 @@ var nT = memo(function () {
     alt: ""
   }), React.createElement("div", {
     className: Module_99.label
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "variableListEmptyContentLabel"
   })))), React.createElement(Src_shared_ui_components_index.d, {
     className: Module_99.save,
     type: "primary",
     onClick: j
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   })))
 })

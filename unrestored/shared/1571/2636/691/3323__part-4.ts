@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Module_59 from /* 59 */"../59/index"
 import * as /* [auto-meaningful-name] */Module_58 from /* 58 */"../58/index"
 import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../39"
 import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../27"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 var Jn = function () {
   function t() {
     Module_27.a(this, t)

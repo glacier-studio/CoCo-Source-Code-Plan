@@ -8,7 +8,7 @@
 
 var r = require(/* 169 */"./169")
 var i = require(/* 109 */"./109")
-var o = require(/* 104 */"./104")
+var o = require(/* 104 */"../488/104")
 function a(e, t) {
   o.a(2, arguments)
   var n = i.a(e)
@@ -135,7 +135,7 @@ var h = {
     other: "almost {{count}} years"
   }
 }
-var p = require(/* 700 */"./700")
+var p = require(/* 700 */"../488/700")
 var _ = {
   date: p.a({
     formats: {
@@ -173,7 +173,7 @@ var A = {
   nextWeek: "eeee 'at' p",
   other: "P"
 }
-var g = require(/* 492 */"./492")
+var g = require(/* 492 */"../488/492")
 var v = {
   ordinalNumber: function (e, t) {
     var n = Number(e)
@@ -295,8 +295,8 @@ var v = {
     defaultFormattingWidth: "wide"
   })
 }
-var m = require(/* 1025 */"./1025")
-var y = require(/* 493 */"./493")
+var m = require(/* 1025 */"../488/1025")
+var y = require(/* 493 */"../488/493")
 var b = {
   code: "en-US",
   formatDistance: function (e, t, n) {
@@ -500,7 +500,7 @@ function T(e) {
   var n = O(t).getTime() - S(t).getTime()
   return Math.round(n / 6048e5) + 1
 }
-var B = require(/* 436 */"./436")
+var B = require(/* 436 */"../488/436")
 function D(e, t) {
   o.a(1, arguments)
   var n = i.a(e, t)

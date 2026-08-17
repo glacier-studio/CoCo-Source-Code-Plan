@@ -7,7 +7,7 @@
 "use strict"
 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState } from /* 0 */"react"
@@ -19,7 +19,7 @@ import /* [auto-meaningful-name] */Module_15301 from /* 1530 */"./1530"
 import * as /* [auto-meaningful-name] */Module_1531 from /* 1531 */"./1531"
 import /* [auto-meaningful-name] */Module_15311 from /* 1531 */"./1531"
 var bL = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useState(!function () {
     var e = navigator.userAgent.toLowerCase()
     return e.includes("chrome") && !e.includes("qqbrowser") && !e.includes("opr") && !e.includes("se") && !e.includes("metasr") && /Google Inc/.test(navigator.vendor)
@@ -37,7 +37,7 @@ var bL = memo(function () {
     alt: "codemao"
   }), React.createElement("span", {
     className: Module_7541.compatibility
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ChromeTips.compatibility"
   })), React.createElement("img", {
     src: Module_15311,
@@ -48,7 +48,7 @@ var bL = memo(function () {
     target: "_blank",
     rel: "noopener noreferrer",
     className: "coco-button coco-button-primary"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ChromeTips.download"
   })), React.createElement("span", {
     className: Module_7541.close,

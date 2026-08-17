@@ -5,7 +5,7 @@
  */
 
 import { getCustomWidgetBlockParamShadow, he } from "./utils"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../unrestored/shared/1571/2636/301/85"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../unrestored/shared/1571/2636/34/85"
 import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../../../../../unrestored/shared/1571/2636/118/index"
 import * as LoadCustomWidget from "../../../../shared/widget/custom/load"
 import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"

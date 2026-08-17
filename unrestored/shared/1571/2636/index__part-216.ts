@@ -10,7 +10,7 @@ import { nb } from "./index__part-92"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch, batch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -26,7 +26,7 @@ var qP = memo(function () {
   var /* [auto-meaningful-name] */e$widgetId = e.widgetId
   var /* [auto-meaningful-name] */e$imageOpenFileId = e.imageOpenFileId
   var /* [auto-meaningful-name] */e$imageCloseFileId = e.imageCloseFileId
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useState("")
   var s = Module_10.a(a, 2)
   var c = s[0]
@@ -72,7 +72,7 @@ var qP = memo(function () {
   return React.createElement(Src_shared_ui_components_index.f, {
     visible: e$visible,
     className: Module_7081.sliderImageDialog,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "switch.custom"
     }),
     onClose: function () {
@@ -91,7 +91,7 @@ var qP = memo(function () {
           }))
         })
       }
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "confirm"
     }))
   }, React.createElement("div", {
@@ -100,7 +100,7 @@ var qP = memo(function () {
     className: Module_7081.imageInfo
   }, React.createElement("span", {
     className: Module_7081.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "switch.replaceImage"
   })), React.createElement("div", {
     className: Module_7081.imageList
@@ -119,7 +119,7 @@ var qP = memo(function () {
       padding: "12px",
       marginBottom: "8px"
     }
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "switch.close"
   }))), React.createElement("div", {
     className: Module_7081.imageItem,
@@ -136,7 +136,7 @@ var qP = memo(function () {
       padding: "12px",
       marginBottom: "8px"
     }
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "switch.open"
   })))))))
 })
