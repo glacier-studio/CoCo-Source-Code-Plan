@@ -7,13 +7,13 @@
 "use strict"
 
 import { Ge } from "../../../../../unrestored/shared/1571/2636/index__part-9"
-import { Zt, Jt } from "./dialogs/community"
+import { Zt, Jt } from "./Dialogs/Community"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_restrict from /* 232 */"../../../../shared/widget/custom/restrict"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_storage from /* 96 */"../../../../shared/widget/custom/storage"
 import /* [auto-meaningful-name] */Module_1510 from /* 1510 */"../../../../../unrestored/shared/1571/2636/1510"
 import /* [auto-meaningful-name] */Module_1509 from /* 1509 */"../../../../../unrestored/shared/1571/2636/1509"
 import /* [auto-meaningful-name] */Module_1036 from /* 1036 */"../../../../../unrestored/shared/1571/2636/1036/index"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../../../unrestored/shared/1571/2636/133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../../../unrestored/shared/1571/2636/133/index"
 import * as /* [auto-meaningful-name] */Module_197 from /* 197 */"../../../../../unrestored/shared/1571/2636/197/index"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_type from /* 78 */"../../../../shared/widget/custom/type"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
@@ -25,7 +25,7 @@ import * as /* [auto-meaningful-name] */Module_97 from /* 97 */"../../../../../u
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -52,7 +52,7 @@ var rn = function (e) {
   var a = useSelector(function (e) {
     return e.project.projectSource
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useDispatch()
   var l = useState(false)
   var u = Module_10.a(l, 2)
@@ -129,7 +129,7 @@ var rn = function (e) {
             return e.abrupt("return")
           case 18:
             c(Redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "Publish.shareQRError"
               }).toString(),
               type: "error"
@@ -142,7 +142,7 @@ var rn = function (e) {
         }
       }
     }, e, null, [[2, 11]])
-  })), [c, Module_710$a$formatMessage, R, e$onClose, o, r, U, F])
+  })), [c, useIntl$formatMessage, R, e$onClose, o, r, U, F])
   function V() {
     return (V = Module_7.a(RegeneratorRuntime.mark(function e(t) {
       var n
@@ -183,7 +183,7 @@ var rn = function (e) {
               e.prev = 16
               e.t0 = e.catch(1)
               c(Redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "Publish.coverImageUploadFail"
                 }).toString(),
                 type: "error"
@@ -209,7 +209,7 @@ var rn = function (e) {
               if (Module_190.a(C)) {
                 b(true)
                 c(Redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "Publish.copyLinkSuccess"
                   }).toString(),
                   duration: 1e3,
@@ -217,7 +217,7 @@ var rn = function (e) {
                 }))
               } else {
                 c(Redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "Publish.copyLinkFailure"
                   }).toString(),
                   duration: 1e3,
@@ -249,7 +249,7 @@ var rn = function (e) {
   return React.createElement(Shared_ui_components_index.f, {
     onClose: e$onClose,
     className: Module_2811.shareToOthers,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "Publish.shareToOthers"
     }),
     withPortal: true,
@@ -270,7 +270,7 @@ var rn = function (e) {
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-refresh",
     className: Module_2811.refreshIcon
-  })) : React.createElement(Ge, null)), React.createElement("span", null, Module_710$a$formatMessage(M ? {
+  })) : React.createElement(Ge, null)), React.createElement("span", null, useIntl$formatMessage(M ? {
     id: "Publish.refreshQrCode"
   } : {
     id: "Publish.creatingQrCode"
@@ -287,7 +287,7 @@ var rn = function (e) {
     }
   })), React.createElement("div", {
     className: Module_2811.message
-  }, R || M ? "" : Module_710$a$formatMessage({
+  }, R || M ? "" : useIntl$formatMessage({
     id: "Publish.shareQrCode"
   })), React.createElement("div", {
     className: Module_2811.shareLinkWrapper
@@ -298,7 +298,7 @@ var rn = function (e) {
     onClick: function () {
       return K.apply(this, arguments)
     }
-  }, Module_710$a$formatMessage(v ? {
+  }, useIntl$formatMessage(v ? {
     id: "Publish.shareLinkCopied"
   } : {
     id: "Publish.copyShareLink"
@@ -311,7 +311,7 @@ var rn = function (e) {
     onClick: function () {
       return p(!d)
     }
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "Publish.moreSettings"
   })), React.createElement(Shared_ui_components_index.j, {
     type: "icon-dropdown-down",
@@ -324,14 +324,14 @@ var rn = function (e) {
     className: Module_2811.workInfo
   }, React.createElement("ul", null, React.createElement("li", null, React.createElement("p", {
     className: Module_2811.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Publish.shareTitle"
   }), React.createElement("span", {
     className: Module_2811.required
   }, "*")), React.createElement(Shared_ui_components_index.k, {
     defaultValue: r.title,
     maxLength: 20,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "Publish.inputPublishName"
     }),
     onBlur: function (e, t) {
@@ -349,12 +349,12 @@ var rn = function (e) {
     isTrimmed: true
   })), React.createElement("li", null, React.createElement("p", {
     className: Module_2811.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Publish.shareDescription"
   })), React.createElement(Shared_ui_components_index.A, {
     defaultValue: r.desc,
     maxLength: 25,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "Publish.inputShareDescription"
     }),
     rows: 3,
@@ -368,7 +368,7 @@ var rn = function (e) {
     }
   })))), React.createElement("div", null, React.createElement("p", {
     className: Module_2811.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Publish.workCover"
   })), React.createElement(Shared_ui_components_index.c, {
     width: 140,
@@ -381,7 +381,7 @@ var rn = function (e) {
       return V.apply(this, arguments)
     },
     accept: Module_133.f
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Publish.changeWorkCover"
   }))))))
 }
@@ -399,7 +399,7 @@ var on = function (e) {
   var s = useSelector(function (e) {
     return e.common.userInfo
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useSelector(function (e) {
     return e.project.id
   })
@@ -448,11 +448,11 @@ var on = function (e) {
                 break
               }
               d(Redux_common_actions.zh({
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "cloudDb.know"
                 }),
                 title: "error",
-                content: Module_710$a$formatMessage({
+                content: useIntl$formatMessage({
                   id: "Play.widgetNotSupportsForbiddenKeywords"
                 }, {
                   widgetTypeNames: Array.from(r).join("、"),
@@ -473,7 +473,7 @@ var on = function (e) {
                 break
               }
               d(Redux_common_actions.zh({
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "know"
                 }),
                 title: "",
@@ -531,7 +531,7 @@ var on = function (e) {
               e.t0 = e.catch(0)
               e.next = 12
               return d(Redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "Publish.projectSaveFail"
                 }),
                 type: "error"
@@ -560,7 +560,7 @@ var on = function (e) {
     className: Module_10521.shareIcon
   }), React.createElement("span", {
     className: Module_10521.shareMessage
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: n.message
   }))), React.createElement(Jt, {
     onClose: v,

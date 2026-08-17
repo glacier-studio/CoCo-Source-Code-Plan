@@ -212,7 +212,7 @@ var l = function (e) {
           var s = e.width + e.margin_right
           i.excute_after_next_reflow.push(function (t) {
             var n = t / i.workspace_.get_scale()
-            e.move_to(n - i$current_item_line$offset_right - s, a)
+            e.move_to(n - this$svg_group - s, a)
           })
           i.current_item_line.offset_right += s
         } else {
@@ -244,8 +244,8 @@ var l = function (e) {
     var t = this
     if (this.workspace_ && this.targetWorkspace_) {
       var /* [auto-meaningful-name] */this$targetWorkspace_$options$flyout = this.targetWorkspace_.options.flyout
-      var /* [auto-meaningful-name] */this$targetWorkspace_$options$flyout$max_width = this$targetWorkspace_$options$flyout.max_width
-      var i = this$targetWorkspace_$options$flyout.min_width || 0
+      var /* [auto-meaningful-name] */n$max_width = n.max_width
+      var i = n.min_width || 0
       if ("number" === typeof this.fixed_width) {
         i = this.fixed_width
       } else {
@@ -253,9 +253,9 @@ var l = function (e) {
           var a = e[o]
           var /* [auto-meaningful-name] */a$width = a.width
           if (a.is_starting_block()) {
-            a$width += this.targetWorkspace_.options.flyout.blocks.head_block_offset[0]
+            s += this.targetWorkspace_.options.flyout.blocks.head_block_offset[0]
           }
-          i = Math.max(i, a$width)
+          i = Math.max(i, s)
         }
         for (o = 0; o < this.buttons_.length; o++) {
           var c = this.buttons_[o]
@@ -267,8 +267,8 @@ var l = function (e) {
         var u = this.workspace_.get_scale()
         i += this.padding_left + this.padding_right
         i *= u
-        if (this$targetWorkspace_$options$flyout$max_width) {
-          i = Math.min(i, this$targetWorkspace_$options$flyout$max_width)
+        if (r) {
+          i = Math.min(i, r)
         }
       }
       this.width_ = i
@@ -319,10 +319,10 @@ var l = function (e) {
       e.preventDefault()
       e.stopPropagation()
       var /* [auto-meaningful-name] */e$deltaY = e.deltaY
-      if (e$deltaY && this.scrollbar_) {
+      if (t && this.scrollbar_) {
         var n = this.get_metrics()
         if (n) {
-          var r = n.viewTop + e$deltaY
+          var r = n.viewTop + t
           this.scrollbar_.set(r)
         } else {
           console.error("Cannot get metrics for wheel.")
@@ -354,7 +354,7 @@ var l = function (e) {
       var /* [auto-meaningful-name] */e$top = e.top
       var /* [auto-meaningful-name] */e$width = e.width
       var /* [auto-meaningful-name] */e$height = e.height
-      return new u.Rect(e$left - this$workspace_$get_options$delete_area_margin[3], e$top - this$workspace_$get_options$delete_area_margin[0], e$width + this$workspace_$get_options$delete_area_margin[1] + this$workspace_$get_options$delete_area_margin[3], e$height + this$workspace_$get_options$delete_area_margin[0] + this$workspace_$get_options$delete_area_margin[2])
+      return new u.Rect(n - t[3], r - t[0], i + t[1] + t[3], o + t[0] + t[2])
     }
   }
   t.prototype.reset_size = function () {
@@ -375,19 +375,19 @@ var l = function (e) {
           var /* [auto-meaningful-name] */e$absoluteTop = e.absoluteTop
           var /* [auto-meaningful-name] */e$absoluteLeft = e.absoluteLeft
           if (this.toolboxPosition_ === a.TOOLBOX_POSITION.RIGHT) {
-            e$absoluteLeft += e.viewWidth
+            r += e.viewWidth
             if (this.is_auto_close() && this.is_visible()) {
-              e$absoluteLeft -= this.width_
+              r -= this.width_
             }
-            e$absoluteLeft = Math.round(e$absoluteLeft + 1)
+            r = Math.round(r + 1)
           }
           if (this.toolboxPosition_ === a.TOOLBOX_POSITION.LEFT) {
             if (!(this.is_auto_close() && this.is_visible())) {
-              e$absoluteLeft -= this.width_
+              r -= this.width_
             }
-            e$absoluteLeft = Math.round(e$absoluteLeft - 1)
+            r = Math.round(r - 1)
           }
-          this.position_at(this.width_, this.height_, e$absoluteLeft, e$absoluteTop)
+          this.position_at(this.width_, this.height_, r, n)
         }
       } else {
         console.error("Trying to position flyout before initialization. ")

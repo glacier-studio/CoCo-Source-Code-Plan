@@ -14,7 +14,7 @@ export { A as f }
 export { j as d }
 import * as /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import /* [auto-meaningful-name] */RegeneratorRuntime1 from /* 1 */"regenerator-runtime"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../7"
 import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../27"
 import * as /* [auto-meaningful-name] */Module_58 from /* 58 */"../58/index"
@@ -22,7 +22,7 @@ import * as /* [auto-meaningful-name] */Module_59 from /* 59 */"../59/index"
 import * as /* [auto-meaningful-name] */Module_274 from /* 274 */"./274"
 import * as /* [auto-meaningful-name] */Module_483 from /* 483 */"./483/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../64/index"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Src_shared_env from /* 57 */"../../../../../src/shared/env"
 var g = new Module_483.a({

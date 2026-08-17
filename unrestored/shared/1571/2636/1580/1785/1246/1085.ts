@@ -4,7 +4,7 @@
  * 模块 ID：1085
  */
 
-var r = require(/* 246 */"../../1282/246/index")
+var r = require(/* 246 */"../../1782/246/index")
 var o = require(/* 834 */"../../949/834")
 var i = r("iterator")
 var /* [auto-meaningful-name] */Array$prototype = Array.prototype

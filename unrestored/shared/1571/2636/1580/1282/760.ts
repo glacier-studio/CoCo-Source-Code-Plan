@@ -4,7 +4,7 @@
  * 模块 ID：760
  */
 
-var r = require(/* 400 */"./400/index")
+var r = require(/* 400 */"../1648/400")
 module.exports = function (e, t, n) {
   for (var o in t) r(e, o, t[o], n)
   return e

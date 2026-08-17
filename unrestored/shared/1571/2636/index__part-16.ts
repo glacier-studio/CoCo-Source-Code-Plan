@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Module_356 from /* 356 */"./356"
 import /* [auto-meaningful-name] */Module_3561 from /* 356 */"./356"
 var Gt = memo(function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useState(false)
   var r = Module_10.a(n, 2)
   var o = r[0]
@@ -103,7 +103,7 @@ var Gt = memo(function () {
                 break
               }
               e(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "package.packagePending"
                 }),
                 type: "success"
@@ -148,7 +148,7 @@ var Gt = memo(function () {
     text: "com.codemao.coco.apk_".concat(A),
     onCopy: function () {
       e(Src_editor_redux_common_actions.mj({
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "package.appidCopied"
         }),
         showPrefixIcon: false
@@ -178,7 +178,7 @@ var Gt = memo(function () {
     onClick: k
   }, "二维码已过期", React.createElement("br", null), "若需扫码，请重新打包")), React.createElement("p", {
     className: Module_3561.apkText
-  }, " ", Module_710$a$formatMessage({
+  }, " ", useIntl$formatMessage({
     id: "package.apkText"
   })), g$packageInfo.expireTime && React.createElement("p", {
     className: Module_3561.apkText
@@ -210,7 +210,7 @@ var Gt = memo(function () {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-package-download",
     className: Module_3561.qrBtn
-  }), React.createElement("p", null, Module_710$a$formatMessage(o ? {
+  }), React.createElement("p", null, useIntl$formatMessage(o ? {
     id: "package.downloaded"
   } : {
     id: "package.download"

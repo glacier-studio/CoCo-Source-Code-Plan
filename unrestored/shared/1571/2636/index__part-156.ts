@@ -14,7 +14,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
@@ -42,7 +42,7 @@ var DS = memo(function (e) {
   var g = useSelector(function (e) {
     return e.project.playing
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var b = useDispatch()
   var y = useMemo(function () {
     return {
@@ -151,9 +151,9 @@ var DS = memo(function (e) {
       className: Module_3401.iconBox
     }, a.includes("error") && React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-selected"
-    })), Module_710$a$formatMessage({
+    })), useIntl$formatMessage({
       id: "show"
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "consoleError"
     })), React.createElement("div", {
       className: Module_3401.filterItem,
@@ -162,9 +162,9 @@ var DS = memo(function (e) {
       className: Module_3401.iconBox
     }, a.includes("warning") && React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-selected"
-    })), Module_710$a$formatMessage({
+    })), useIntl$formatMessage({
       id: "show"
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "consoleWarning"
     })), React.createElement("div", {
       className: Module_3401.filterItem,
@@ -173,9 +173,9 @@ var DS = memo(function (e) {
       className: Module_3401.iconBox
     }, a.includes("print") && React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-selected"
-    })), Module_710$a$formatMessage({
+    })), useIntl$formatMessage({
       id: "show"
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "consolePrint"
     })), React.createElement("div", {
       className: Module_3401.filterItem,
@@ -184,14 +184,14 @@ var DS = memo(function (e) {
       className: Module_3401.iconBox
     }, a.includes("log") && React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-selected"
-    })), Module_710$a$formatMessage({
+    })), useIntl$formatMessage({
       id: "show"
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "consoleLog"
     })))
   }, React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "consoleFilter"
     }),
     trigger: "hover"
@@ -204,7 +204,7 @@ var DS = memo(function (e) {
     type: "icon-filter"
   })))), React.createElement(Module_748.a, {
     placement: "top",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "consolClear"
     }),
     trigger: "hover"
@@ -231,7 +231,7 @@ var DS = memo(function (e) {
       className: Classnames(u === t && Module_3401.active),
       onClick: w.bind(null, e.toJSON(), t),
       "data-console-type": e.get("type")
-    }, React.createElement("p", null, (n = e.get("message"), ("print" === (r = e.get("type")) || "customError" === r || "customWarning" === r ? "<".concat(Module_710$a$formatMessage({
+    }, React.createElement("p", null, (n = e.get("message"), ("print" === (r = e.get("type")) || "customError" === r || "customWarning" === r ? "<".concat(useIntl$formatMessage({
       id: r
     }), ">") : "") + n))) : null
     var n

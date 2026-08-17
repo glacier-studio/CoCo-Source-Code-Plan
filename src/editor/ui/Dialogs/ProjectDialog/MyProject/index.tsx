@@ -16,12 +16,10 @@ import * as Tools from "../../../../../shared/tools"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"../../../../../../unrestored/shared/1571/2636/1213"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../../unrestored/shared/1571/2636/18"
 import { asyncGetProjectErrorAction, closeProjectDialogAction, openConfirmDialogAction, showCommonToastInfoAction, warpAsyncCreateProject } from "../../../../redux/common/actions"
-import * as Components from "../../../../../shared/ui/components"
 import { AdvancedText, IconFont, Menu, MenuItem, ScrollPaginate } from "../../../../../shared/ui/components"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
-import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Shared_ui_language from "../../../../../shared/ui/language"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from "regenerator-runtime"
@@ -68,7 +66,7 @@ function ProjectItem({
   project, onClick, onDelete, filterType, status
 }: IProjectItemProps) {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
 
   function menuItems() {
     const items = []
@@ -156,7 +154,7 @@ export const MyProject = React.memo(({ visible, importProjectJson }: IMyProjectP
   var A = React.useRef(1)
   var j = React.useRef(false)
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
 
   async function onClick(id, r, o) {
     try {

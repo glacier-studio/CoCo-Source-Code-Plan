@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
@@ -177,7 +177,7 @@ function cC() {
 var /* [auto-meaningful-name] */py$Option = py.Option
 var uC = memo(function (e) {
   var /* [auto-meaningful-name] */e$widgetId = e.widgetId
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useDispatch()
   var o = Module_9.Bb(e$widgetId)
   var i = useRef(null)
@@ -233,7 +233,7 @@ var uC = memo(function (e) {
         type: "icon-add"
       }), React.createElement("div", {
         className: Module_3681.newText
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "cloudSpace.newDict"
       })), React.createElement("div", {
         className: Module_3681.suffixIcon
@@ -245,7 +245,7 @@ var uC = memo(function (e) {
       var r = React.createElement(Src_shared_ui_components_index.d, {
         type: "primary",
         onClick: T
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "cloudSpace.needLogin"
       }))
       return React.createElement("div", {
@@ -259,7 +259,7 @@ var uC = memo(function (e) {
       a$bindDataSourceId(e || Module_9.i)
     },
     dropdownClassName: Module_3681.cloudSpaceAntSelectDropdown,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "cloudSpace.ChooseDataSource"
     })
   }, a$cloudDataSources.map(function (e) {
@@ -290,13 +290,13 @@ var uC = memo(function (e) {
     className: Classnames(Module_3681.formItemWrapper, Module_3681.dictFields)
   }, React.createElement("div", {
     className: Module_3681.title
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "cloudSpace.DataSource"
   }))), React.createElement("div", {
     className: Module_3681.bindSource
   }, m ? j : React.createElement(Module_748.a, {
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "cloudSpace.onlyAuthorCanEdit"
     })
   }, j)))

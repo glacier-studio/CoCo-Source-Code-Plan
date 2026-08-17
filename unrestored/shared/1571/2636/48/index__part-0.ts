@@ -6,7 +6,7 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Redux from /* 156 */"redux"
 import * as /* [auto-meaningful-name] */Module_489 from /* 489 */"./489"
 import * as /* [auto-meaningful-name] */Module_345 from /* 345 */"./345"
@@ -28,7 +28,7 @@ function d(e, t) {
 var p = window.localStorage.getItem("LANGUAGE") || navigator.language
 var f = Redux.combineReducers({
   widgetMap: function () {
-    var e = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : Module_66.a.Map({})
+    var e = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : Immutable.Map({})
     var t = arguments.length > 1 ? arguments[1] : undefined
     switch (t.type) {
       case Module_72.k:
@@ -40,7 +40,7 @@ var f = Redux.combineReducers({
     }
   },
   screenList: function () {
-    var e = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : Module_66.a.List([])
+    var e = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : Immutable.List([])
     var t = arguments.length > 1 ? arguments[1] : undefined
     switch (t.type) {
       case Module_72.l:

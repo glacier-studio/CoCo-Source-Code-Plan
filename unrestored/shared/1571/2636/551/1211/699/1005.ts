@@ -11,9 +11,9 @@ require(/* 50 */"../../../50/index")
 var i = require(/* 98 */"../98")
 var o = require(/* 19 */"../../../19")
 var a = require(/* 54 */"../../../54")
-var s = require(/* 1065 */"../789/1065")
+var s = require(/* 1065 */"./1065")
 var c = require(/* 709 */"../709/index")
-var u = require(/* 2642 */"./2642")
+var u = require(/* 2642 */"./2642/index")
 var l = c.a(function (e) {
   return {
     day: {

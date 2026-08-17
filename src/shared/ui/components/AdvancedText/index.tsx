@@ -8,7 +8,7 @@ import React, { useRef, useEffect } from "react"
 import classNames from "classnames"
 // 神秘导入，鬼知道导入 switch 组件是干什么用的
 import "../../../../../unrestored/shared/1571/2636/541/index"
-import /* [auto-meaningful-name] */Module_303 from /* 303 */"../../../../../unrestored/shared/1571/2636/13/303/index"
+import /* [auto-meaningful-name] */Module_303 from /* 303 */"../../../../../unrestored/shared/1571/2636/64/303/index"
 import "./styles.css"
 
 let tipElementId = "@__EMPTY_ADVANCE_TEXT_TIP_ID__@"

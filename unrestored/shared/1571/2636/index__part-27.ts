@@ -13,12 +13,12 @@ import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_1512 from /* 1512 */"../../../../src/editor/ui/PreviewArea/ContextMenu"
+import * as /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_ContextMenu_index from /* 1512 */"../../../../src/editor/ui/PreviewArea/ContextMenu/index"
 import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"./39"
 import * as /* [auto-meaningful-name] */Module_58 from /* 58 */"./58/index"
 import * as /* [auto-meaningful-name] */Module_59 from /* 59 */"./59/index"
-import * as /* [auto-meaningful-name] */Src_editor_ui_previewArea_stage_style_css from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
-import /* [auto-meaningful-name] */Src_editor_ui_previewArea_stage_style_css1 from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_styles_module_css from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_styles_module_css1 from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
 var co = function (e) {
   Module_58.a(n, e)
   var t = Module_59.a(n)
@@ -66,7 +66,7 @@ var co = function (e) {
       value: function () {
         var /* [auto-meaningful-name] */this$state$isDragging = this.state.isDragging
         return React.createElement("div", {
-          className: Classnames(Src_editor_ui_previewArea_stage_style_css1.dragBar, Module_11.a({}, Src_editor_ui_previewArea_stage_style_css1.active, this$state$isDragging)),
+          className: Classnames(Src_editor_ui_PreviewArea_styles_module_css1.dragBar, Module_11.a({}, Src_editor_ui_PreviewArea_styles_module_css1.active, this$state$isDragging)),
           onMouseEnter: this.props.onEnter,
           onMouseLeave: this.props.onLeave,
           onMouseDown: this.handleMouseDown

@@ -9,10 +9,10 @@
 import { ve } from "./index__part-18"
 import { ye } from "./index__part-19"
 import { Ee } from "./index__part-20"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */Module_71 from /* 71 */"./71"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_2681 from /* 2681 */"../../../../shared/1571/2636/2681/index"
+import { IntlProvider } from /* 2681 */"react-intl"
 var de
 var le
 import * as /* [auto-meaningful-name] */Src_shared_ui_language from /* 23 */"../../../../../src/shared/ui/language"
@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../shar
 import * as /* [auto-meaningful-name] */Module_360 from /* 360 */"../../../../shared/1571/2636/685/360"
 var je = memo(function () {
   var t = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (t) {
     return t.emulatorPhoneInfo
   })
@@ -70,14 +70,14 @@ var je = memo(function () {
     type: "icon-phone-nav-back"
   })), React.createElement("span", {
     className: Module_71.receiveUser
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emulator.smsReceiver"
   }))), React.createElement("div", {
     className: Module_71.numberBox
   }, React.createElement(Src_shared_ui_components_index.k, {
     className: Module_71.inputNumber,
     defaultValue: o,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "emulator.smsSendNumberPlaceHolder"
     }),
     onChange: function (t) {
@@ -102,7 +102,7 @@ var je = memo(function () {
     maxLength: 200,
     className: Module_71.contentTextArea,
     defaultValue: l,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "emulator.smsContentPlaceHolder"
     }),
     onChange: function (t) {
@@ -145,7 +145,7 @@ var je = memo(function () {
 })
 var Se = memo(function () {
   var t = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (t) {
     return t.emulatorPhoneInfo
   })
@@ -174,11 +174,11 @@ var Se = memo(function () {
     className: Module_71.smsIcon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-widget-sms-service"
-  })), React.createElement("span", null, Module_710$a$formatMessage({
+  })), React.createElement("span", null, useIntl$formatMessage({
     id: "emulator.sms"
   }))), React.createElement("div", {
     className: Module_71.smsTime
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emulator.now"
   }))), React.createElement("div", {
     className: Module_71.smsNumber
@@ -196,7 +196,7 @@ var ke = memo(function () {
   var t = useSelector(function (t) {
     return t.language
   })
-  return React.createElement(Module_2681.b, {
+  return React.createElement(IntlProvider, {
     locale: t,
     messages: Src_shared_ui_language.e[t] || Src_shared_ui_language.e[Src_shared_ui_language.b]
   }, React.createElement(ve, null), React.createElement(Ee, null), React.createElement(je, null), React.createElement(Se, null), React.createElement(ye, null), React.createElement(Ae, null))

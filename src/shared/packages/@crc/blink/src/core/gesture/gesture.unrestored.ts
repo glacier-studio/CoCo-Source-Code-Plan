@@ -13,12 +13,12 @@ exports.Gesture = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 258 */"@kitten-team/gl-matrix")
-var a = require(/* 195 */"../../123/195/index")
-var s = require(/* 125 */"../../1058/125")
-var c = require(/* 214 */"../../1022/214")
-var u = require(/* 1126 */"../499/1126")
-var l = require(/* 852 */"../499/852")
-var f = require(/* 478 */"../../123/478")
+var a = require(/* 195 */"../../../../../../../../unrestored/shared/1571/2636/123/195/index")
+var s = require(/* 125 */"../../../../../../../../unrestored/shared/1571/2636/1058/125")
+var c = require(/* 214 */"../../../../../../../../unrestored/shared/1571/2636/1022/214")
+var u = require(/* 1126 */"../../../../../../../../unrestored/shared/1571/2636/17/499/1126")
+var l = require(/* 852 */"../../../../../../../../unrestored/shared/1571/2636/17/499/852")
+var f = require(/* 478 */"../../../../../../../../unrestored/shared/1571/2636/123/478")
 var d = function () {
   function e(e) {
     this.mouse_down_xy = o.vec2.create()
@@ -167,7 +167,7 @@ var d = function () {
     if (f.is.mobile()) {
       var /* [auto-meaningful-name] */e$clientX = e.clientX
       var /* [auto-meaningful-name] */e$clientY = e.clientY
-      if (e$clientX <= this.PADDING || e$clientX >= this.body_width - this.PADDING || e$clientY <= this.PADDING || e$clientY >= this.body_height - this.PADDING) {
+      if (t <= this.PADDING || t >= this.body_width - this.PADDING || n <= this.PADDING || n >= this.body_height - this.PADDING) {
         return void this.handle_up(e)
       }
     }
@@ -316,13 +316,13 @@ var d = function () {
         var /* [auto-meaningful-name] */this$start_block$get_root_block$id = this.start_block.get_root_block().id
         this.events.fire(this.ui_event_factory({
           type: a.UIEventType.CLICK,
-          workspace_id: this$start_block$workspace$id,
-          block_id: this$start_block$id
+          workspace_id: r,
+          block_id: n
         }))
         this.events.fire(this.ui_event_factory({
           type: a.UIEventType.STACK_CLICK,
-          workspace_id: this$start_block$workspace$id,
-          block_id: this$start_block$get_root_block$id
+          workspace_id: r,
+          block_id: i
         }))
       }
       this.bring_block_to_front()

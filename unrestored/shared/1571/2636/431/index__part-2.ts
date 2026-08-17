@@ -11,14 +11,14 @@ import { u, f, h, _, A, g } from "./index__part-1"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_1503 from /* 1503 */"./1503"
 function m() {
-  var /* [auto-meaningful-name] */l$record_sample_rate
-  var /* [auto-meaningful-name] */l$target_sample_rate
-  var /* [auto-meaningful-name] */l$num_channels
+  var /* [auto-meaningful-name] */u$data$config$record_sample_rate
+  var /* [auto-meaningful-name] */u$data$config$target_sample_rate
+  var /* [auto-meaningful-name] */u$data$config$num_channels
   var r = 0
   var i = []
   var o = this
   function a() {
-    for (var e = 0; e < l$num_channels; e++) {
+    for (var e = 0; e < u$data$config$num_channels; e++) {
       i[e] = []
     }
   }
@@ -41,14 +41,14 @@ function m() {
         if (__DEV__) {
           console.log("WAV Encoding worker init:", u$data$config)
         }
-        l$record_sample_rate = u$data$config.record_sample_rate
-        l$num_channels = u$data$config.num_channels
-        l$target_sample_rate = u$data$config.target_sample_rate
+        u$data$config$record_sample_rate = u$data$config.record_sample_rate
+        u$data$config$num_channels = u$data$config.num_channels
+        u$data$config$target_sample_rate = u$data$config.target_sample_rate
         a()
         break
       case "record":
         !function (e) {
-          for (var t = 0; t < l$num_channels; t++) {
+          for (var t = 0; t < u$data$config$num_channels; t++) {
             i[t].push(e[t])
           }
           r += e[0].length
@@ -56,10 +56,10 @@ function m() {
         break
       case "exportWAV":
         !function (a) {
-          for (var u, l = [], f = 0; f < l$num_channels; f++) {
+          for (var u, l = [], f = 0; f < u$data$config$num_channels; f++) {
             l.push(s(i[f], r))
           }
-          u = 2 === l$num_channels ? function (e, t) {
+          u = 2 === u$data$config$num_channels ? function (e, t) {
             var n = e.length + t.length
             var r = new Float32Array(n)
             var i = 0
@@ -80,10 +80,10 @@ function m() {
             c(i, 12, "fmt ")
             i.setUint32(16, 16, true)
             i.setUint16(20, 1, true)
-            i.setUint16(22, l$num_channels, true)
-            i.setUint32(24, l$target_sample_rate, true)
-            i.setUint32(28, 4 * l$target_sample_rate, true)
-            i.setUint16(32, 2 * l$num_channels, true)
+            i.setUint16(22, u$data$config$num_channels, true)
+            i.setUint32(24, u$data$config$target_sample_rate, true)
+            i.setUint32(28, 4 * u$data$config$target_sample_rate, true)
+            i.setUint16(32, 2 * u$data$config$num_channels, true)
             i.setUint16(34, 16, true)
             c(i, 36, "data")
             i.setUint32(40, 2 * e.length, true);
@@ -95,13 +95,13 @@ function m() {
             })(i, 44, e)
             return i
           }(function (n) {
-            if (l$target_sample_rate == l$record_sample_rate) {
+            if (u$data$config$target_sample_rate == u$data$config$record_sample_rate) {
               return n
             }
-            if (l$target_sample_rate > l$record_sample_rate) {
+            if (u$data$config$target_sample_rate > u$data$config$record_sample_rate) {
               throw new Error("downsampling rate show be smaller than original sample rate")
             }
-            var r = l$record_sample_rate / l$target_sample_rate
+            var r = u$data$config$record_sample_rate / u$data$config$target_sample_rate
             var i = Math.round(n.length / r)
             var o = new Float32Array(i)
             var a = 0
@@ -128,7 +128,7 @@ function m() {
         break
       case "getBuffer":
         !function () {
-          for (var e = [], t = 0; t < l$num_channels; t++) {
+          for (var e = [], t = 0; t < u$data$config$num_channels; t++) {
             e.push(s(i[t], r))
           }
           o.postMessage({

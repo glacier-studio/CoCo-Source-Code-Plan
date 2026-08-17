@@ -13,10 +13,11 @@ import /* [auto-meaningful-name] */React1 from /* 0 */"react"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import * as /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import /* [auto-meaningful-name] */Classnames1 from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
-import /* [auto-meaningful-name] */Styles_module_css from /* 472 */"./styles.module.css"
+import * as /* [auto-meaningful-name] */Styles_module_css from /* 472 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css1 from /* 472 */"./styles.module.css"
 import * as /* [auto-meaningful-name] */Widget_builtIn_types from /* 5 */"../../../widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
 import * as /* [auto-meaningful-name] */Module_190 from /* 190 */"../../../../../unrestored/shared/1571/2636/190"
@@ -47,7 +48,7 @@ _a = memo(function () {
     var /* [auto-meaningful-name] */s$current = s.current
     if (w$visible && s$current) {
       var /* [auto-meaningful-name] */s$current$clientHeight = s$current.clientHeight
-      var n = window.innerHeight - (w$position.y + s$current$clientHeight)
+      var n = window.innerHeight - (w$position.y + t)
       if (n < 0) {
         w$position.y += n
       }
@@ -55,7 +56,7 @@ _a = memo(function () {
       s$current.style.left = w$position.x + "px"
     }
   }, [w$visible, w$position])
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var R = useDispatch()
   useEffect(function () {
     var t = function t() {
@@ -99,33 +100,33 @@ _a = memo(function () {
     }
   }, [y])
   return React1.createElement("div", {
-    className: Styles_module_css.wrapper,
+    className: Styles_module_css1.wrapper,
     ref: s,
     style: {
       display: w$visible ? "block" : "none"
     }
   }, React1.createElement("div", {
-    className: Classnames1(Styles_module_css.menuItem),
+    className: Classnames1(Styles_module_css1.menuItem),
     onMouseDown: function () {
       R(Redux_common_actions.Ef(Module_9.w(w$widgetId)))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "copyAndPaste"
   })), ![Widget_builtIn_types.a, Widget_builtIn_types.c].includes((null === A || undefined === A ? undefined : A.type) || "") && React1.createElement("div", {
-    className: Classnames1(Styles_module_css.menuItem, Styles_module_css.copyTo),
+    className: Classnames1(Styles_module_css1.menuItem, Styles_module_css1.copyTo),
     onMouseEnter: function () {
       E(true)
     },
     onMouseLeave: function () {
       E(false)
     }
-  }, React1.createElement("span", null, Module_710$a$formatMessage({
+  }, React1.createElement("span", null, useIntl$formatMessage({
     id: "copyTo"
   })), " ", React1.createElement(Shared_ui_components_index.j, {
     type: "icon-right"
   }), React1.createElement("ul", {
     ref: O,
-    className: Styles_module_css.screens,
+    className: Styles_module_css1.screens,
     style: {
       display: y ? "block" : "none"
     }
@@ -134,7 +135,7 @@ _a = memo(function () {
       key: e.get("id"),
       onMouseDown: k.bind(null, e.id)
     }, React1.createElement("span", null, "".concat(t + 1, ".")), React1.createElement("div", {
-      className: Styles_module_css.screenSnapshot
+      className: Styles_module_css1.screenSnapshot
     }, React1.createElement("img", {
       src: e.get("snapshot"),
       alt: ""
@@ -142,7 +143,7 @@ _a = memo(function () {
   }))), React1.createElement("div", {
     onMouseDown: function () {
       var e = Module_9.Fb(w$widgetId || "")
-      var t = Module_710$a$formatMessage({
+      var t = useIntl$formatMessage({
         id: "deleteWidget"
       }) + "“" + Module_190.f(e, 10) + "”?"
       var r = Module_26.z.checkFieldValueIsSelected("WIDGET_ID", w$widgetId)
@@ -152,12 +153,12 @@ _a = memo(function () {
         R(Redux_common_actions.zh({
           onConfirm: x,
           onClose: D,
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "delete"
           }),
           title: t,
           isDangerous: true,
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: o ? "deleteParentWidgetTips" : "deleteWidgetTips"
           })
         }))
@@ -167,8 +168,8 @@ _a = memo(function () {
         }
       }
     },
-    className: Classnames1(Styles_module_css.menuItem, Styles_module_css.delete)
-  }, Module_710$a$formatMessage({
+    className: Classnames1(Styles_module_css1.menuItem, Styles_module_css1.delete)
+  }, useIntl$formatMessage({
     id: "delete"
   })))
 })

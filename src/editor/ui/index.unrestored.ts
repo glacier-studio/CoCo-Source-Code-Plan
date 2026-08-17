@@ -7,7 +7,7 @@
 "use strict"
 
 import { v } from "../../../unrestored/shared/1571/2636/index__part-1"
-import { pB, fB, hB, mB } from "./app"
+import { pB, fB, hB, mB } from "./PreviewArea/Player/PermissionDialog/index"
 var /* [auto-meaningful-name] */navigator$serviceWorker
 import * as /* [auto-meaningful-name] */Module_37 from /* 37 */"../../../unrestored/shared/1571/2636/37/index"
 import * as /* [auto-meaningful-name] */Shared_env from /* 57 */"../../shared/env"

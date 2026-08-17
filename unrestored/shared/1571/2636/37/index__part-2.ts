@@ -7,12 +7,12 @@
 "use strict"
 
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../6"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
-var Ne = Module_66.a.Record({
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
+var Ne = Immutable.Record({
   configs: {},
-  variableList: Module_66.a.List([]),
+  variableList: Immutable.List([]),
   tableDataDialog: {
     visible: false
   },
@@ -24,7 +24,7 @@ function Re(e, t) {
   var /* [auto-meaningful-name] */t$payload = t.payload
   var /* [auto-meaningful-name] */t$payload$configs = t$payload.configs
   var /* [auto-meaningful-name] */t$payload$variableList = t$payload.variableList
-  return e.set("variableList", Module_66.a.List(t$payload$variableList)).set("configs", t$payload$configs)
+  return e.set("variableList", Immutable.List(t$payload$variableList)).set("configs", t$payload$configs)
 }
 function ke(e) {
   var t = ["PRIMITIVE", "DICT", "LIST"]
@@ -67,7 +67,7 @@ function Me(e, t) {
 }
 function Le(e, t) {
   if (t.payload) {
-    return e.setIn(["variableList"], Module_66.a.List())
+    return e.setIn(["variableList"], Immutable.List())
   }
   var n
   var r = e.get("variableList")

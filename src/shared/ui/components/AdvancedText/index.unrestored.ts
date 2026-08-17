@@ -12,9 +12,9 @@ import { useRef, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import /* 541 */"../../../../../unrestored/shared/1571/2636/541/index"
-import * as /* [auto-meaningful-name] */Module_303 from /* 303 */"../../../../../unrestored/shared/1571/2636/13/303/index"
-import /* [auto-meaningful-name] */Module_3031 from /* 303 */"../../../../../unrestored/shared/1571/2636/13/303/index"
-import /* 879 */"./879"
+import * as /* [auto-meaningful-name] */Module_303 from /* 303 */"../../../../../unrestored/shared/1571/2636/64/303/index"
+import /* [auto-meaningful-name] */Module_3031 from /* 303 */"../../../../../unrestored/shared/1571/2636/64/303/index"
+import /* 879 */"./styles.css"
 var /* [auto-meaningful-name] */__EMPTY_ADVANCE_TEXT_TIP_ID__ = "@__EMPTY_ADVANCE_TEXT_TIP_ID__@"
 var Le = function () {
   var e

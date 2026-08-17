@@ -12,7 +12,7 @@ var jj
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useRef } from /* 0 */"react"
@@ -29,7 +29,7 @@ var Yj = memo(function (e) {
   var /* [auto-meaningful-name] */e$frameMap = e.frameMap
   var /* [auto-meaningful-name] */e$urls = e.urls
   var /* [auto-meaningful-name] */e$canShowMultiply = e.canShowMultiply
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var d = useState(false)
   var p = Module_10.a(d, 2)
   var m = p[0]
@@ -138,7 +138,7 @@ var Yj = memo(function (e) {
     type: "icon-group"
   })), e$isAdded ? React.createElement("div", {
     className: Module_5281.add
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Added"
   })) : React.createElement("div", {
     className: Classnames(Module_5281.btn, Module_5281.unselect)

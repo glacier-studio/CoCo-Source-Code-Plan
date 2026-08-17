@@ -16,7 +16,7 @@ import /* [auto-meaningful-name] */React1 from /* 0 */"react"
 import * as /* [auto-meaningful-name] */ReactDom from /* 80 */"react-dom"
 import /* [auto-meaningful-name] */ReactDom1 from /* 80 */"react-dom"
 import /* 868 */"./styles.css"
-import * as /* [auto-meaningful-name] */Iconfont_index from /* 94 */"../iconfont/index"
+import * as /* [auto-meaningful-name] */Iconfont_index from /* 94 */"../Iconfont/index"
 var _a
 _a = memo(function (e) {
   var /* [auto-meaningful-name] */e$className = e.className

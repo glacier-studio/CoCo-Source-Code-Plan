@@ -19,10 +19,23 @@
         },
         "namedImported": true
     },
+    "710": {
+        "exportsNameMap": {
+            "a": "useIntl"
+        },
+        "namedImported": true
+    },
     "1532": {
         "write": false
     },
     "1571": {
         "write": false
+    },
+    "2681": {
+        "exportsNameMap": {
+            "a": "createIntl",
+            "b": "IntlProvider"
+        },
+        "namedImported": true
     }
 }

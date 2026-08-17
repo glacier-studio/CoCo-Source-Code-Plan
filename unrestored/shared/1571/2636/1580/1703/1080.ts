@@ -5,7 +5,7 @@
  */
 
 var r = require(/* 476 */"../1282/476")
-var o = require(/* 635 */"../1581/635")
+var o = require(/* 635 */"../1648/635")
 var i = require(/* 1082 */"../1581/1082")
 var a = require(/* 240 */"../1282/240")
 module.exports = r("Reflect", "ownKeys") || function (e) {

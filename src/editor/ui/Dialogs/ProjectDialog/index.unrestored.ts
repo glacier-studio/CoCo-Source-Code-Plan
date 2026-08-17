@@ -8,13 +8,13 @@
 
 import { Re } from "./MyProject/index"
 import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../../unrestored/shared/1571/2636/141/index"
-import /* [auto-meaningful-name] */Module_525 from /* 525 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css from /* 525 */"./styles.module.css"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../unrestored/shared/1571/2636/18"
-import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../redux/common/actions"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
+import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
+import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
@@ -23,8 +23,8 @@ import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Axios from /* 129 */"axios"
 import /* [auto-meaningful-name] */Axios1 from /* 129 */"axios"
-import * as /* [auto-meaningful-name] */Module_495 from /* 495 */"../../../../../unrestored/shared/1571/2636/495"
-import /* [auto-meaningful-name] */Module_4951 from /* 495 */"../../../../../unrestored/shared/1571/2636/495"
+import * as /* [auto-meaningful-name] */CreateProject_styles_module_css from /* 495 */"./CreateProject/styles.module.css"
+import /* [auto-meaningful-name] */CreateProject_styles_module_css1 from /* 495 */"./CreateProject/styles.module.css"
 var Le = memo(function (e) {
   var /* [auto-meaningful-name] */e$visible = e.visible
   var /* [auto-meaningful-name] */e$importProjectJson = e.importProjectJson
@@ -52,7 +52,7 @@ var Le = memo(function (e) {
                   sourceId: o
                 })
               }
-              r(Src_editor_redux_common_actions.Xg())
+              r(Redux_common_actions.Xg())
               Module_141.a("TemplateClick", {
                 templateName: o
               })
@@ -68,46 +68,46 @@ var Le = memo(function (e) {
     }
   }()
   return e$visible ? React.createElement("div", {
-    className: Module_4951.container
+    className: CreateProject_styles_module_css1.container
   }, React.createElement("div", {
-    className: Module_4951.itemContainer,
+    className: CreateProject_styles_module_css1.itemContainer,
     onClick: function () {
       e$importProjectJson()
-      r(Src_editor_redux_common_actions.Xg())
+      r(Redux_common_actions.Xg())
     }
   }, React.createElement("div", {
-    className: Classnames(Module_4951.emptyItem, Module_4951.item)
+    className: Classnames(CreateProject_styles_module_css1.emptyItem, CreateProject_styles_module_css1.item)
   }, React.createElement("div", {
-    className: Module_4951.emptyContent
+    className: CreateProject_styles_module_css1.emptyContent
   }, React.createElement("span", {
-    className: Module_4951.iconContainer
-  }, React.createElement(Src_shared_ui_components_index.j, {
+    className: CreateProject_styles_module_css1.iconContainer
+  }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-add",
-    className: Module_4951.icon
+    className: CreateProject_styles_module_css1.icon
   })), React.createElement("p", {
-    className: Module_4951.text
+    className: CreateProject_styles_module_css1.text
   }, "创建空白作品")))), o.length > 0 && o.map(function (e) {
     return React.createElement("div", {
-      className: Module_4951.itemContainer,
+      className: CreateProject_styles_module_css1.itemContainer,
       key: e.id,
       onClick: function () {
         i(e.bcmUrl, e.name)
       }
     }, React.createElement("div", {
-      className: Classnames(Module_4951.item),
+      className: Classnames(CreateProject_styles_module_css1.item),
       style: {
         backgroundImage: "url(".concat(e.image, ")")
       }
     }, React.createElement("img", {
       src: e.gif,
       alt: e.name,
-      className: Module_4951.gif
+      className: CreateProject_styles_module_css1.gif
     })))
   })) : null
 })
 var Pe = memo(function (e) {
   var /* [auto-meaningful-name] */e$importProjectJson = e.importProjectJson
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useDispatch()
   var o = useSelector(function (e) {
     return e.common.projectDialog
@@ -115,40 +115,40 @@ var Pe = memo(function (e) {
   var /* [auto-meaningful-name] */o$visible = o.visible
   var /* [auto-meaningful-name] */o$selected = o.selected
   var s = function (e) {
-    r(Src_editor_redux_common_actions.Ah(e))
+    r(Redux_common_actions.Ah(e))
   }
-  return o$visible ? React.createElement(Src_shared_ui_components_index.f, {
+  return o$visible ? React.createElement(Shared_ui_components_index.f, {
     visible: o$visible,
-    className: Module_525.container,
+    className: Styles_module_css.container,
     onClose: function () {
-      r(Src_editor_redux_common_actions.Xg())
+      r(Redux_common_actions.Xg())
     }
   }, React.createElement("div", {
-    className: Module_525.wrapper
+    className: Styles_module_css.wrapper
   }, React.createElement("header", {
-    className: Module_525.header
+    className: Styles_module_css.header
   }, React.createElement("div", {
-    className: Classnames(Module_525.tabItem, Module_11.a({}, Module_525.selected, o$selected === Module_18.f.CREATE_PROJECT)),
+    className: Classnames(Styles_module_css.tabItem, Module_11.a({}, Styles_module_css.selected, o$selected === Module_18.f.CREATE_PROJECT)),
     onClick: function () {
       s(Module_18.f.CREATE_PROJECT)
     }
-  }, React.createElement(Src_shared_ui_components_index.j, {
+  }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-new-project",
-    className: Module_525.icon
-  }), Module_710$a$formatMessage({
+    className: Styles_module_css.icon
+  }), useIntl$formatMessage({
     id: "projectDialog.newProject"
   })), React.createElement("div", {
-    className: Classnames(Module_525.tabItem, Module_11.a({}, Module_525.selected, o$selected === Module_18.f.MY_PROJECT)),
+    className: Classnames(Styles_module_css.tabItem, Module_11.a({}, Styles_module_css.selected, o$selected === Module_18.f.MY_PROJECT)),
     onClick: function () {
       s(Module_18.f.MY_PROJECT)
     }
-  }, React.createElement(Src_shared_ui_components_index.j, {
+  }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-my-project",
-    className: Module_525.icon
-  }), Module_710$a$formatMessage({
+    className: Styles_module_css.icon
+  }), useIntl$formatMessage({
     id: "projectDialog.myProject"
   }))), React.createElement("div", {
-    className: Module_525.content
+    className: Styles_module_css.content
   }, React.createElement(Le, {
     visible: o$selected === Module_18.f.CREATE_PROJECT,
     importProjectJson: e$importProjectJson

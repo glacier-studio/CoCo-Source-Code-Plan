@@ -7,11 +7,11 @@
 "use strict"
 
 var V
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import * as /* [auto-meaningful-name] */Module_97 from /* 97 */"./97/index"
-import * as /* [auto-meaningful-name] */Module_525 from /* 525 */"../../../../src/editor/ui/Dialogs/ProjectDialog/styles.module.css"
-import /* [auto-meaningful-name] */Module_5251 from /* 525 */"../../../../src/editor/ui/Dialogs/ProjectDialog/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_Dialogs_ProjectDialog_styles_module_css from /* 525 */"../../../../src/editor/ui/Dialogs/ProjectDialog/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_Dialogs_ProjectDialog_styles_module_css1 from /* 525 */"../../../../src/editor/ui/Dialogs/ProjectDialog/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
 !function (e) {
@@ -19,12 +19,12 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
   e[e.MY_PROJECT = 1] = "MY_PROJECT"
 }(V || (V = {}))
 var ne = React.memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$time = e.time
   var /* [auto-meaningful-name] */e$currentTime = e.currentTime
   var /* [auto-meaningful-name] */e$renderType = e.renderType
   var i = function (e) {
-    return Module_710$a$formatMessage({
+    return useIntl$formatMessage({
       id: e
     })
   }

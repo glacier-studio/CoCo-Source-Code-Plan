@@ -7,11 +7,11 @@
 "use strict"
 
 import { d, p, h, g } from "./index__part-0"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../710"
+import { useIntl } from /* 710 */"react-intl"
 var Y = [
   {
     type: "SHAKE",
@@ -51,16 +51,16 @@ var K = React.memo(function (e) {
   var /* [auto-meaningful-name] */e$icon = e.icon
   var /* [auto-meaningful-name] */e$selected = e.selected
   var /* [auto-meaningful-name] */e$name = e.name
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Classnames("emulator-channel-item", e$selected && "selected")
   }, React.createElement("div", {
     className: "emulator-icon"
-  }, e$icon && React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, e$icon && React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     type: e$icon
   })), React.createElement("div", {
     className: "emulator-text"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: e$name
   })))
 })

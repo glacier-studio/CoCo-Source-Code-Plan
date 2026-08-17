@@ -24,11 +24,26 @@ unpack({
     externals: [
         { key: 2, source: "react/jsx-runtime" },
         { key: 13, source: "react" },
-        { key: 48, source: "react-dom" }
+        { key: 30, source: "classnames" },
+        { key: 48, source: "react-dom" },
+        { key: 71, source: "react-intl" },
+        { key: 73, source: "react-intl" }
     ],
     modules: {
         13: {
             namedImported: true
+        },
+        71: {
+            namedImported: true,
+            exportsNameMap: {
+                a: "useIntl"
+            }
+        },
+        73: {
+            namedImported: true,
+            exportsNameMap: {
+                a: "IntlProvider"
+            }
         }
     },
     movedDirs: ["about"],

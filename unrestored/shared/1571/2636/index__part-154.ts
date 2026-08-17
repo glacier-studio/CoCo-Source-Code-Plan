@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */Module_40 from /* 40 */"./40/index"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"./19"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { useMemo, createContext, useContext, createElement, useState, forwardRef, useEffect, useRef } from /* 0 */"react"
@@ -25,7 +25,7 @@ import * as /* [auto-meaningful-name] */Module_812 from /* 812 */"./812"
 import /* [auto-meaningful-name] */Module_8121 from /* 812 */"./812"
 var $T = React.memo(function (e) {
   var /* [auto-meaningful-name] */e$onToggle = e.onToggle
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useSelector(function (e) {
     return e.common.consoleMessages
   })
@@ -61,7 +61,7 @@ var $T = React.memo(function (e) {
   }), i$warningCount)) : React.createElement(React.Fragment, null, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-console",
     className: Module_8121.iconConsole
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "consolePanel"
   })))
 })

@@ -5,9 +5,9 @@
  */
 
 var r = require(/* 231 */"../../1282/231")
-var o = require(/* 757 */"../../1581/757")
+var o = require(/* 757 */"../757")
 var i = require(/* 1236 */"./1236")
-var a = require(/* 246 */"../../1282/246/index")("toPrimitive")
+var a = require(/* 246 */"../../1782/246/index")("toPrimitive")
 module.exports = function (e, t) {
   if (!r(e) || o(e)) {
     return e

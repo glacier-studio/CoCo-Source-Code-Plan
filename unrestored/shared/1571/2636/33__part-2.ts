@@ -9,7 +9,7 @@
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../src/shared/packages/@crc/blink/src/index"
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"./301/85"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"./34/85"
 var z = ["Size", "Coordinate", "VisibleSwitch", "WidgetOpacity"]
 var Y = ["size", "position", "visible", "opacity"]
 var K = {

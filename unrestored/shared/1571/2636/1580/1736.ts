@@ -6,12 +6,12 @@
 
 "use strict"
 
-var r = require(/* 86 */"./1662/86")
-var o = require(/* 444 */"./1731/444")
+var r = require(/* 86 */"./1650/86/index")
+var o = require(/* 444 */"./1729/444")
 r({
   target: "String",
   proto: true,
-  forced: require(/* 445 */"./1731/445")("link")
+  forced: require(/* 445 */"./1729/445")("link")
 }, {
   link: function (e) {
     return o(this, "a", "href", e)

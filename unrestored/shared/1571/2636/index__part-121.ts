@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -31,7 +31,7 @@ var KO = memo(function (e) {
   var n = undefined === e$keyName ? "fileId" : e$keyName
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
@@ -145,14 +145,14 @@ var KO = memo(function (e) {
         accept: Module_135.h
       }, React.createElement(Src_shared_ui_components_index.j, {
         type: "icon-upload"
-      }), React.createElement("span", null, Module_710$a$formatMessage({
+      }), React.createElement("span", null, useIntl$formatMessage({
         id: "Resource.upload"
       }))), React.createElement("div", {
         className: Module_2131.content,
         onClick: k
       }, React.createElement(Src_shared_ui_components_index.j, {
         type: "icon-open-resource-library"
-      }), React.createElement("span", null, Module_710$a$formatMessage({
+      }), React.createElement("span", null, useIntl$formatMessage({
         id: "Resource.SoundLibrary"
       })))),
       placement: "bottomLeft",
@@ -161,7 +161,7 @@ var KO = memo(function (e) {
       onVisibleChange: D
     }, React.createElement("div", {
       className: Module_2131.soundBtn
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "Resource.Replace"
     })))
   }
@@ -169,7 +169,7 @@ var KO = memo(function (e) {
     className: Classnames(Module_2131.formItemWrapper, Module_2131.changeSoundFile)
   }, React.createElement("div", {
     className: Module_2131.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "AudioWidget.source"
   })), React.createElement("div", {
     className: Module_2131.soundBox
@@ -251,12 +251,12 @@ var qO = memo(function (e) {
   var n = undefined === e$keyName ? "audioVolume" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var o = (0, e.getValue)(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Classnames(Module_2131.formItemWrapper, "changeAudioVolume")
   }, React.createElement("div", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "AudioWidget.volume"
   })), React.createElement(Src_shared_ui_components_index.x, {
     className: Module_2131.volumeSlider,
@@ -276,12 +276,12 @@ var XO = memo(function (e) {
   var n = undefined === e$keyName ? "audioRate" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var o = (0, e.getValue)(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Classnames(Module_2131.formItemWrapper, "changeAudioVolume")
   }, React.createElement("div", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "AudioWidget.rate"
   })), React.createElement(Src_shared_ui_components_index.x, {
     className: Module_2131.volumeSlider,

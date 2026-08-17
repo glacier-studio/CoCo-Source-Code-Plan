@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -61,7 +61,7 @@ var ZL = memo(function () {
   var /* [auto-meaningful-name] */e$cloudDBId = e.cloudDBId
   var /* [auto-meaningful-name] */e$isProd = e.isProd
   var /* [auto-meaningful-name] */e$callback = e.callback
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useState()
   var c = Module_10.a(s, 2)
   var l = c[0]
@@ -230,9 +230,9 @@ var ZL = memo(function () {
           if (!(null === l || undefined === l)) {
             l.setDataValue(e$colDef$colId, "")
           }
-          XL(Module_710$a$formatMessage({
+          XL(useIntl$formatMessage({
             id: "cloudGrid.booleanCheckNotice"
-          }), Module_710$a$formatMessage({
+          }), useIntl$formatMessage({
             id: "cloudGrid.commonCheckNotice"
           }))
         }
@@ -244,9 +244,9 @@ var ZL = memo(function () {
               if (!(null === d || undefined === d)) {
                 d.setDataValue(e$colDef$colId, "")
               }
-              XL(Module_710$a$formatMessage({
+              XL(useIntl$formatMessage({
                 id: "cloudGrid.numberCheckNotice"
-              }), Module_710$a$formatMessage({
+              }), useIntl$formatMessage({
                 id: "cloudGrid.commonCheckNotice"
               }))
             }
@@ -357,7 +357,7 @@ var ZL = memo(function () {
                 break
               }
               be(Src_editor_redux_common_actions.zh({
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "cloudGrid.confirm"
                 }),
                 title: "错误",
@@ -517,7 +517,7 @@ var ZL = memo(function () {
   var je = React.createElement("div", null, React.createElement(Src_shared_ui_components_index.d, {
     type: "default",
     onClick: Ee
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudGrid.cancel"
   })), React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
@@ -558,13 +558,13 @@ var ZL = memo(function () {
       }
       if (t) {
         be(Src_editor_redux_common_actions.zh({
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "cloudGrid.confirm"
           }),
-          title: Module_710$a$formatMessage({
+          title: useIntl$formatMessage({
             id: "cloudGrid.uniqueColumnEmptyTitle"
           }),
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "cloudGrid.uniqueColumnEmptyContent"
           }),
           cancelBtnVisible: false
@@ -575,16 +575,16 @@ var ZL = memo(function () {
             onCancel: function () {
               Se(e, n)
             },
-            cancelText: Module_710$a$formatMessage({
+            cancelText: useIntl$formatMessage({
               id: "cloudGrid.continueSave"
             }),
-            allowText: Module_710$a$formatMessage({
+            allowText: useIntl$formatMessage({
               id: "cloudGrid.returnEdit"
             }),
-            title: Module_710$a$formatMessage({
+            title: useIntl$formatMessage({
               id: "cloudGrid.EmptyColumnTitle"
             }),
-            content: Module_710$a$formatMessage({
+            content: useIntl$formatMessage({
               id: "cloudGrid.EmptyColumnContent"
             })
           }))
@@ -593,7 +593,7 @@ var ZL = memo(function () {
         }
       }
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudGrid.save"
   })))
   var Ne = function (e) {
@@ -637,7 +637,7 @@ var ZL = memo(function () {
       X(false)
     } else {
       be(Src_editor_redux_common_actions.mj({
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "cloudGrid.uniqueColumnError"
         }),
         type: "error"
@@ -681,7 +681,7 @@ var ZL = memo(function () {
       className: Module_348.title
     }, e$widgetName), React.createElement("div", {
       className: Classnames(Module_348.titleBtn, e$isProd ? Module_348.prod : Module_348.dev)
-    }, Module_710$a$formatMessage(e$isProd ? {
+    }, useIntl$formatMessage(e$isProd ? {
       id: "cloudGrid.prodData"
     } : {
       id: "cloudGrid.testData"
@@ -695,13 +695,13 @@ var ZL = memo(function () {
           onConfirm: function () {
             Ee()
           },
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "cloudGrid.confirm"
           }),
-          title: Module_710$a$formatMessage({
+          title: useIntl$formatMessage({
             id: "cloudGrid.tips"
           }),
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "cloudGrid.unSaveNotice"
           })
         }))
@@ -715,7 +715,7 @@ var ZL = memo(function () {
   }, React.createElement("img", {
     src: Module_15331,
     alt: "loading"
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "cloudGrid.loading"
   }))) : function () {
     if (e$visible) {
@@ -723,12 +723,12 @@ var ZL = memo(function () {
         className: Module_348.gridInfo
       }, React.createElement("span", {
         className: Module_348.uniqueText
-      }, React.createElement("span", null, Module_710$a$formatMessage({
+      }, React.createElement("span", null, useIntl$formatMessage({
         id: "cloudGrid.uniqueColumn"
       })), React.createElement(Module_1213.a, {
         content: React.createElement("div", {
           className: Module_348.btnContent
-        }, React.createElement("div", null, Module_710$a$formatMessage({
+        }, React.createElement("div", null, useIntl$formatMessage({
           id: "cloudGrid.uniqueColumnTipsContent"
         }))),
         placement: "rightTop",
@@ -740,7 +740,7 @@ var ZL = memo(function () {
       }, React.createElement(py, {
         disabled: e$isProd,
         allowClear: true,
-        placeholder: Module_710$a$formatMessage({
+        placeholder: useIntl$formatMessage({
           id: "cloudGrid.selectPlaceholder"
         }),
         onChange: Ne,
@@ -765,11 +765,11 @@ var ZL = memo(function () {
       }, React.createElement(Module_1213.a, {
         content: React.createElement("div", {
           className: Module_348.importContent
-        }, React.createElement("div", null, Module_710$a$formatMessage({
+        }, React.createElement("div", null, useIntl$formatMessage({
           id: "cloudGrid.importTipsContent1"
-        })), React.createElement("div", null, Module_710$a$formatMessage({
+        })), React.createElement("div", null, useIntl$formatMessage({
           id: "cloudGrid.importTipsContent2"
-        })), React.createElement("div", null, Module_710$a$formatMessage({
+        })), React.createElement("div", null, useIntl$formatMessage({
           id: "cloudGrid.importTipsContent3"
         }))),
         placement: "leftTop",

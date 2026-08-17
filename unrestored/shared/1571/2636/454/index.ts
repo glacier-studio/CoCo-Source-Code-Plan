@@ -20,7 +20,7 @@ export { k as l }
 export { x as h }
 export { M as j }
 export { P as k }
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../10/index"
 import * as /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import /* [auto-meaningful-name] */RegeneratorRuntime1 from /* 1 */"regenerator-runtime"
@@ -28,7 +28,7 @@ import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../7"
 import * as c from /* 280 */"xlsx"
 import l from /* 280 */"xlsx"
 import * as /* [auto-meaningful-name] */Src_shared_ui_language from /* 23 */"../../../../../src/shared/ui/language"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../64/index"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../53"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
 import * as /* [auto-meaningful-name] */Src_shared_tools_url from /* 312 */"../../../../../src/shared/tools/url"

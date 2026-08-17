@@ -20,7 +20,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
@@ -38,7 +38,7 @@ var wt = function (e) {
   var o = Module_10.a(r, 2)
   var i = o[0]
   var a = o[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = function () {
     a(false)
   }
@@ -59,7 +59,7 @@ var wt = function (e) {
     }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-selected",
       className: Classnames(Module_136.icon, e$permission === Module_18.c.Edit && Module_136.selected)
-    }), React.createElement("span", null, Module_710$a$formatMessage({
+    }), React.createElement("span", null, useIntl$formatMessage({
       id: "OT.dialogCanEdit"
     }))), React.createElement("div", {
       onClick: function () {
@@ -69,14 +69,14 @@ var wt = function (e) {
     }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-selected",
       className: Classnames(Module_136.icon, e$permission === Module_18.c.ReadOnly && Module_136.selected)
-    }), React.createElement("span", null, Module_710$a$formatMessage({
+    }), React.createElement("span", null, useIntl$formatMessage({
       id: "OT.dialogReadOnly"
     }))), React.createElement("div", {
       onClick: function () {
         return e.handleRemovePermission(t, c)
       },
       className: Classnames(Module_136.item, Module_136.remove)
-    }, React.createElement("span", null, Module_710$a$formatMessage({
+    }, React.createElement("span", null, useIntl$formatMessage({
       id: "OT.dialogRemove"
     }))))),
     trigger: "click",
@@ -86,9 +86,9 @@ var wt = function (e) {
     }
   }, React.createElement("div", {
     className: Module_136.edit_role
-  }, React.createElement("span", null, e.permission === Module_18.c.Edit ? Module_710$a$formatMessage({
+  }, React.createElement("span", null, e.permission === Module_18.c.Edit ? useIntl$formatMessage({
     id: "OT.edit"
-  }) : Module_710$a$formatMessage({
+  }) : useIntl$formatMessage({
     id: "OT.readonly"
   })), React.createElement("div", {
     className: Module_136.icon
@@ -97,9 +97,9 @@ var wt = function (e) {
     className: Module_136.icon
   })))) : React.createElement("div", {
     className: Classnames(Module_136.edit_role, Module_136.disabled)
-  }, React.createElement("span", null, e.permission === Module_18.c.Edit ? Module_710$a$formatMessage({
+  }, React.createElement("span", null, e.permission === Module_18.c.Edit ? useIntl$formatMessage({
     id: "OT.edit"
-  }) : Module_710$a$formatMessage({
+  }) : useIntl$formatMessage({
     id: "OT.readonly"
   })), React.createElement("div", {
     className: Module_136.icon
@@ -129,7 +129,7 @@ var Ct = React.memo(function () {
   var s = useSelector(function (e) {
     return e.oTState.collWorkId
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useSelector(function (e) {
     return e.common.isProjectModified
   })
@@ -185,7 +185,7 @@ var Ct = React.memo(function () {
               }
               y(false)
               m(Redux_common_actions.zh({
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "know"
                 }),
                 title: "",
@@ -336,7 +336,7 @@ var Ct = React.memo(function () {
   }, React.createElement(Shared_ui_components_index.j, {
     className: Module_136.invitationIcon,
     type: "icon-ot-invitation"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "OT.inviteFriend"
   }))), React.createElement("ul", {
     className: Module_136.list
@@ -359,7 +359,7 @@ var Ct = React.memo(function () {
       className: Module_136.name
     }, React.createElement("p", null, e.nickname), React.createElement("span", null, e.id)), (n = e.id, e$is_author = e.is_author, e$edit_permission = e.edit_permission, e$is_author ? React.createElement("div", {
       className: Module_136.role
-    }, React.createElement("div", null, Module_710$a$formatMessage({
+    }, React.createElement("div", null, useIntl$formatMessage({
       id: "OT.creator"
     }))) : React.createElement(wt, {
       isAuthor: a,
@@ -438,7 +438,7 @@ var Ct = React.memo(function () {
   }, React.createElement(Module_748.a, {
     mouseLeaveDelay: 0,
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "OT.coll"
     }),
     trigger: ["hover", "click"],
@@ -454,7 +454,7 @@ var Ct = React.memo(function () {
   })))), React.createElement(Shared_ui_components_index.f, {
     className: Module_136.shareOtDialog,
     visible: b,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "OT.copyCollInvitationUrl"
     }),
     onClose: function () {
@@ -464,16 +464,16 @@ var Ct = React.memo(function () {
     className: Module_136.dialogMain
   }, React.createElement("div", {
     className: Module_136.text
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "OT.expiration"
   })), React.createElement("div", {
     onClick: function () {
       return W(Module_18.c.Edit)
     },
     className: Classnames(Module_136.tab, T === Module_18.c.Edit && Module_136.selected)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "OT.editor"
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "OT.editorRules"
   })), T === Module_18.c.Edit && React.createElement("div", {
     className: Module_136.icon
@@ -484,9 +484,9 @@ var Ct = React.memo(function () {
       return W(Module_18.c.ReadOnly)
     },
     className: Classnames(Module_136.tab, T === Module_18.c.ReadOnly && Module_136.selected)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "OT.reader"
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "OT.readerRules"
   })), T === Module_18.c.ReadOnly && React.createElement("div", {
     className: Module_136.icon
@@ -505,14 +505,14 @@ var Ct = React.memo(function () {
       document.body.removeChild(e)
       m(Redux_common_actions.mj({
         type: "success",
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "OT.copySuccess"
         }),
         showCloseIcon: false
       }))
       y(false)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "OT.copyLink"
   })) : React.createElement(Shared_ui_components_index.d, {
     className: Module_136.loadingBtn,

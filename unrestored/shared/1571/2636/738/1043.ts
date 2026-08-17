@@ -391,7 +391,7 @@ c.prototype.n = function () {
   var t
   var n
   var r
-  var /* [auto-meaningful-name] */ELT$length
+  var /* [auto-meaningful-name] */EThis$gT$length
   var a = 0
   var /* [auto-meaningful-name] */this$c = this.c
   var /* [auto-meaningful-name] */this$g = this.g
@@ -400,7 +400,7 @@ c.prototype.n = function () {
     return s ? this.c.subarray(32768, this.b) : this.c.slice(32768, this.b)
   }
   for (t = 0, n = this$g.length; t < n; ++t) {
-    for (r = 0, ELT$length = (e = this$g[t]).length; r < ELT$length; ++r) {
+    for (r = 0, EThis$gT$length = (e = this$g[t]).length; r < EThis$gT$length; ++r) {
       c[a++] = e[r]
     }
   }

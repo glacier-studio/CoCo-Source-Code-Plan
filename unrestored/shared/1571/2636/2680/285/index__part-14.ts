@@ -42,7 +42,7 @@ var Cn = function () {
   }
 }
 var On = function (e) {
-  var /* [auto-meaningful-name] */l$Form
+  var /* [auto-meaningful-name] */e$locale$Form
   var /* [auto-meaningful-name] */Module_609$a$Form
   var /* [auto-meaningful-name] */e$children = e.children
   var /* [auto-meaningful-name] */e$csp = e.csp
@@ -106,7 +106,7 @@ var On = function (e) {
   var E = e$children
   var x = {}
   if (e$locale) {
-    x = (null === (l$Form = e$locale.Form) || undefined === l$Form ? undefined : l$Form.defaultValidateMessages) || (null === (Module_609$a$Form = Module_609.a.Form) || undefined === Module_609$a$Form ? undefined : Module_609$a$Form.defaultValidateMessages) || {}
+    x = (null === (e$locale$Form = e$locale.Form) || undefined === e$locale$Form ? undefined : e$locale$Form.defaultValidateMessages) || (null === (Module_609$a$Form = Module_609.a.Form) || undefined === Module_609$a$Form ? undefined : Module_609$a$Form.defaultValidateMessages) || {}
   }
   if (e$form && e$form.validateMessages) {
     x = Module_19.a(Module_19.a({}, x), e$form.validateMessages)

@@ -23,7 +23,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -161,7 +161,7 @@ var fy = memo(function (e) {
   var /* [auto-meaningful-name] */e$keyName = e.keyName
   var /* [auto-meaningful-name] */e$fontFamily = e.fontFamily
   var /* [auto-meaningful-name] */e$onChange = e.onChange
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var i = useDispatch()
   var a = useState(Src_shared_tools_index.db)
   var s = Module_10.a(a, 2)
@@ -215,7 +215,7 @@ var fy = memo(function (e) {
                 break
               }
               i(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "download.offline"
                 }),
                 type: "error"
@@ -232,7 +232,7 @@ var fy = memo(function (e) {
               Src_shared_tools_index.db[n] = true
               l(Src_shared_tools_index.db)
               i(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "download.success"
                 }),
                 type: "success"

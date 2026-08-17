@@ -8,13 +8,13 @@
 
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../18"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../6"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../25/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"../60"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../53"
-var H = Module_66.a.Record({
+var H = Immutable.Record({
   position: {
     x: 0,
     y: 0
@@ -27,7 +27,7 @@ var V = {
   actorId: "",
   onSelect: undefined
 }
-var z = Module_66.a.Record({
+var z = Immutable.Record({
   currentScreenIndex: -1,
   id: Module_60.v,
   bcmUrl: "",
@@ -36,7 +36,7 @@ var z = Module_66.a.Record({
   version: Module_53.e,
   playing: false,
   playedAt: 0,
-  screens: Module_66.a.List([]),
+  screens: Immutable.List([]),
   selectedWidgetId: undefined,
   contextMenuInfo: H,
   styleDialog: V,
@@ -83,9 +83,9 @@ function K(e, t) {
   var /* [auto-meaningful-name] */t$payload$project$globalWidgetIds = t$payload$project.globalWidgetIds
   var /* [auto-meaningful-name] */t$payload$project$globalObjectList = t$payload$project.globalObjectList
   var u = t$payload$project$screens.map(function (e) {
-    return Module_66.a.Record(e)()
+    return Immutable.Record(e)()
   })
-  return e.set("screens", Module_66.a.List(u)).set("title", t$payload$project$title).set("selectedWidgetId", undefined).set("currentScreenIndex", -1).set("playing", false).set("globalVariableList", Lodash.cloneDeep(t$payload$project$globalVariableList)).set("globalArrayList", Lodash.cloneDeep(t$payload$project$globalArrayList)).set("globalWidgetIds", Lodash.cloneDeep(t$payload$project$globalWidgetIds)).set("globalObjectList", Lodash.cloneDeep(t$payload$project$globalObjectList))
+  return e.set("screens", Immutable.List(u)).set("title", t$payload$project$title).set("selectedWidgetId", undefined).set("currentScreenIndex", -1).set("playing", false).set("globalVariableList", Lodash.cloneDeep(t$payload$project$globalVariableList)).set("globalArrayList", Lodash.cloneDeep(t$payload$project$globalArrayList)).set("globalWidgetIds", Lodash.cloneDeep(t$payload$project$globalWidgetIds)).set("globalObjectList", Lodash.cloneDeep(t$payload$project$globalObjectList))
 }
 function q(e, t) {
   return e.set("id", t.payload.projectId)
@@ -94,7 +94,7 @@ function X(e, t) {
   var /* [auto-meaningful-name] */t$payload = t.payload
   var /* [auto-meaningful-name] */t$payload$screen = t$payload.screen
   var /* [auto-meaningful-name] */t$payload$index = t$payload.index
-  var i = Module_66.a.Record(t$payload$screen)()
+  var i = Immutable.Record(t$payload$screen)()
   var a = t$payload$index || e.screens.size
   return e.update("screens", function (e) {
     return e.splice(a, 0, i)
@@ -533,7 +533,7 @@ function ve(e, t) {
 }
 function be(e, t) {
   var /* [auto-meaningful-name] */t$payload = t.payload
-  return e.set("contextMenuInfo", Module_66.a.Record(t$payload)())
+  return e.set("contextMenuInfo", Immutable.Record(t$payload)())
 }
 function ye(e) {
   return e.set("contextMenuInfo", H)
@@ -674,7 +674,7 @@ var Te = {
   widget: null,
   dbName: ""
 }
-var Se = Module_66.a.Record({
+var Se = Immutable.Record({
   dropdown: {
     type: Module_18.a.DYNAMIC_DROPDOWN,
     visible: false,

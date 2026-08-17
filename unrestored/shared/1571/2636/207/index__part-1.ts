@@ -8,7 +8,7 @@
 
 import { I } from "./index__part-0"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../25/index"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 import * as /* [auto-meaningful-name] */Module_139 from /* 139 */"./139"
 import * as /* [auto-meaningful-name] */Module_209 from /* 209 */"./209/index"
 import * as /* [auto-meaningful-name] */Module_323 from /* 323 */"../323"

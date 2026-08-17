@@ -10,7 +10,7 @@ import * as LoadCustomWidget from "../../../../shared/widget/custom/load"
 import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../../unrestored/shared/1571/2636/141/index"
 import { appendMessageToConsoleAction, setIsOffLineAction, togglePermissionDialogAction, updateDataWatchVariablePropertyAction } from "../../../redux/common/actions"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as Language from /* 23 */"../../../../shared/ui/language"
 import { useSelector, useDispatch } from "react-redux"
 import React, { ReactNode, useState, useRef, useCallback, useEffect, useLayoutEffect } from "react"
@@ -46,7 +46,7 @@ export const Player = React.memo(() => {
   const language = useSelector((state) => state.common.language)
 
   const dispatch = useDispatch()
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
 
   const [isVibrating, setIsVibrating] = useState(false)
   const vibrateTimeoutHandle = useRef<number>()

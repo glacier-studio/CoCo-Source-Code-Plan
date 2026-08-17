@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector } from /* 16 */"react-redux"
@@ -32,7 +32,7 @@ var gt = function () {
   var n = useSelector(function (e) {
     return e.oTState.onlineCooperationUserColorRecord
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useState([])
   var i = Module_10.a(o, 2)
   var a = i[0]
@@ -113,7 +113,7 @@ var gt = function () {
     })
   }), React.createElement("span", {
     className: Module_1361.nickname
-  }, a.length, " ", Module_710$a$formatMessage({
+  }, a.length, " ", useIntl$formatMessage({
     id: "OT.collPeopleCount"
   }))) : React.createElement("div", {
     key: a[0].id,
@@ -171,25 +171,25 @@ var _t = React.memo(function () {
 var vt = function (e) {
   var /* [auto-meaningful-name] */e$visible = e.visible
   var /* [auto-meaningful-name] */e$onClose = e.onClose
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.f, {
     className: Module_1361.invalidUrlDialog,
     visible: e$visible,
     onClose: e$onClose
-  }, React.createElement("h3", null, Module_710$a$formatMessage({
+  }, React.createElement("h3", null, useIntl$formatMessage({
     id: "OT.urlIsInvalid"
-  })), React.createElement("p", null, Module_710$a$formatMessage({
+  })), React.createElement("p", null, useIntl$formatMessage({
     id: "OT.urlIsInvalidDetail"
   })), React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
     onClick: e$onClose
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "know"
   })))
 }
 var bt = function (e) {
   var /* [auto-meaningful-name] */e$visible = e.visible
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement(Src_shared_ui_components_index.f, {
     className: Module_1361.loadingDialog,
     visible: e$visible,
@@ -198,7 +198,7 @@ var bt = function (e) {
     className: Module_1361.icon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-loading2"
-  })), React.createElement("p", null, Module_710$a$formatMessage({
+  })), React.createElement("p", null, useIntl$formatMessage({
     id: "OT.isBuildingCollWork"
   })))
 }

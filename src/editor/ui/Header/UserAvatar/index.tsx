@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../..
 import { getAccountSettingUrl } from "../../../../shared/tools"
 import { asyncSetUserInfoAction, openSignInDialogAction } from "../../../redux/common/actions"
 import { Dropdown, Menu, MenuItem, SubMenuItem } from "../../../../shared/ui/components"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import { useDispatch, useSelector } from "react-redux"
 import styles from "../../../../../unrestored/shared/1571/2636/1051"
 
@@ -45,7 +45,7 @@ const serviceAgreementList = [
 
 export const UserInfo = React.memo((__props) => {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const dispatch = useDispatch()
 
   const userInfo = useSelector((state) => state.common.userInfo)

@@ -20,7 +20,7 @@ import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../../../shared/ui/language"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../../unrestored/shared/1571/2636/7"
@@ -61,7 +61,7 @@ function Ne(e) {
   var /* [auto-meaningful-name] */e$onDelete = e.onDelete
   var /* [auto-meaningful-name] */e$filterType = e.filterType
   var /* [auto-meaningful-name] */e$status = e.status
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   function c() {
     var e = []
     if (e$filterType === Oe.COLL) {
@@ -114,7 +114,7 @@ function Ne(e) {
       return React.createElement(Shared_ui_components_index.m, {
         value: e,
         key: t
-      }, React.createElement("span", null, Module_710$a$formatMessage({
+      }, React.createElement("span", null, useIntl$formatMessage({
         id: "MyProject." + e
       })))
     })))
@@ -156,7 +156,7 @@ var Re = memo(function (e) {
   var C = useRef(0)
   var A = useRef(1)
   var j = useRef(false)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var k = function () {
     var e = Module_7.a(RegeneratorRuntime.mark(function e(t, r, o) {
       var /* [auto-meaningful-name] */e$sent
@@ -181,7 +181,7 @@ var Re = memo(function (e) {
                 break
               }
               w(Redux_common_actions.zh({
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "know"
                 }),
                 title: "",
@@ -448,15 +448,15 @@ var Re = memo(function (e) {
     if (b === Oe.COLL) {
       w(Redux_common_actions.zh({
         onConfirm: G.bind(null, e),
-        allowText: Module_710$a$formatMessage({
+        allowText: useIntl$formatMessage({
           id: "MyProject.quitCollWorkConfirmText"
         }),
-        title: Module_710$a$formatMessage({
+        title: useIntl$formatMessage({
           id: "MyProject.quitCollWorkTitle"
         }, {
           name: Module_190.f(t)
         }),
-        content: Module_710$a$formatMessage({
+        content: useIntl$formatMessage({
           id: "MyProject.quitCollWorkDescription"
         }),
         isDangerous: true
@@ -490,13 +490,13 @@ var Re = memo(function (e) {
       key: e,
       onClick: U.bind(null, e),
       className: Classnames(Styles_module_css1.filterItem, b === e && Styles_module_css1.active)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "MyProject.".concat(e)
     }))
   })), React.createElement("div", {
     className: Styles_module_css1.container
   }, React.createElement(je, {
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: Ie[b]
     }),
     type: l

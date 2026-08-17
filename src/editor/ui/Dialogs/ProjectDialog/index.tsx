@@ -12,13 +12,13 @@ import { closeProjectDialogAction, openProjectDialogAction } from "../../../redu
 import { IconFont } from "../../../../shared/ui/components"
 import { Dialog } from "../../../../shared/ui/components"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import { useDispatch, useSelector } from "react-redux"
 import React, { memo } from "react"
 
 export const ProjectDialog = memo(({ importProjectJson }) => {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const dispatch = useDispatch()
 
   const { visible, selected } = useSelector((state) => state.common.projectDialog)

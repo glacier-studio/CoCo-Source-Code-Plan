@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */ResizeObserverPolyfill from /* 462 */"re
 import /* 860 */"./860"
 import { useSelector } from /* 16 */"react-redux"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../../../src/editor/widget/built-in/types"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../64/index"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../../../src/shared/tools/index"
 function u(e) {
   return e instanceof HTMLInputElement ? e.value : e.innerHTML || ""

@@ -6,7 +6,7 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../710"
+import { useIntl } from /* 710 */"react-intl"
 import /* 0 */"react"
 import * as /* [auto-meaningful-name] */React from "react"
 import /* [auto-meaningful-name] */React1 from /* 0 */"react"
@@ -21,7 +21,7 @@ _a = function (e) {
   var /* [auto-meaningful-name] */e$onSelect = e.onSelect
   var /* [auto-meaningful-name] */e$position = e.position
   var /* [auto-meaningful-name] */e$visible = e.visible
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   function d(e) {
     if (e$onSelect) {
       e$onSelect(e$index, e)
@@ -37,12 +37,12 @@ _a = function (e) {
   }, React1.createElement("div", {
     onClick: d.bind(null, "number"),
     className: Classnames1("number" === e$type && Module_1551.active)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "storageItemNumber"
   })), React1.createElement("div", {
     onClick: d.bind(null, "string"),
     className: Classnames1("string" === e$type && Module_1551.active)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "storageItemString"
   })))
 }

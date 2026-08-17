@@ -7,13 +7,13 @@
 "use strict"
 
 import { we } from "./index__part-6"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../src/shared/ui/components/Iconfont/index"
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
 import * as /* [auto-meaningful-name] */Module_177 from /* 177 */"./177"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
@@ -29,7 +29,7 @@ var SL = React.memo(function (e) {
   var o = r[0]
   var i = r[1]
   var a = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     className: Module_1931.item
   }, React.createElement("div", {
@@ -71,17 +71,17 @@ var SL = React.memo(function (e) {
       className: Classnames(Module_1931.text, Module_1931.name)
     }, t.saveInfo.name), React.createElement("div", {
       className: Classnames(Module_1931.save_text, Module_1931.save_type)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "History.save"
     }))) : React.createElement("div", {
       className: Classnames(Module_1931.save_text, Module_1931.save_type)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "History.autoSave"
     })))), React.createElement("div", {
       className: Module_1931.button_area
     }, React.createElement(Module_748.a, {
       placement: "bottom",
-      title: Module_710$a$formatMessage({
+      title: useIntl$formatMessage({
         id: "History.fallback"
       }),
       trigger: ["hover", "click"]
@@ -98,7 +98,7 @@ var SL = React.memo(function (e) {
       className: Module_1931.icon
     }))), React.createElement(Module_748.a, {
       placement: "bottom",
-      title: Module_710$a$formatMessage({
+      title: useIntl$formatMessage({
         id: "History.overview"
       }),
       trigger: ["hover", "click"]
@@ -133,7 +133,7 @@ var AL = React.memo(function () {
   var p = d[0]
   var m = d[1]
   var g = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var b = useState(undefined)
   var y = Module_10.a(b, 2)
   var E = y[0]
@@ -215,24 +215,24 @@ var AL = React.memo(function () {
         m([])
         r("")
         g(Src_editor_redux_common_actions.mj({
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "History.fetchError"
           }).toString(),
           type: "error"
         }))
       })
     }
-  }, [o, E, x, g, Module_710$a$formatMessage])
+  }, [o, E, x, g, useIntl$formatMessage])
   var D = function () {
     return React.createElement("div", {
       className: Classnames(Module_1931.historyBar, "" === n && Module_1931.fixedBar)
     }, React.createElement("div", {
       className: Module_1931.header
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "History.historyVersion"
     }), React.createElement("div", {
       onClick: R
-    }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+    }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
       className: Module_1931.icon,
       type: "icon-close"
     }))), React.createElement("div", {
@@ -241,7 +241,7 @@ var AL = React.memo(function () {
       className: Module_1931.empty
     }, React.createElement(we, {
       type: "image-text",
-      text: Module_710$a$formatMessage({
+      text: useIntl$formatMessage({
         id: "History.noVersion"
       })
     })) : React.createElement("ul", null, p.map(function (e) {
@@ -288,7 +288,7 @@ var AL = React.memo(function () {
         return r("")
       },
       className: Module_1931.close
-    }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+    }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
       type: "icon-close",
       className: Module_1931.icon
     }))), React.createElement("div", {

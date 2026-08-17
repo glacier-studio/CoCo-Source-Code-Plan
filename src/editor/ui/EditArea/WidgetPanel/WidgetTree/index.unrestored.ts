@@ -7,7 +7,7 @@
 "use strict"
 
 import { Mv } from "../../../../../../unrestored/shared/1571/2636/index__part-88"
-import * as /* [auto-meaningful-name] */Shared_ui_components_iconfont_index from /* 94 */"../../../../../shared/ui/components/iconfont/index"
+import * as /* [auto-meaningful-name] */Shared_ui_components_Iconfont_index from /* 94 */"../../../../../shared/ui/components/Iconfont/index"
 import * as /* [auto-meaningful-name] */Module_49 from /* 49 */"../../../../../../unrestored/shared/1571/2636/49"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../../unrestored/shared/1571/2636/238"
 import * as /* [auto-meaningful-name] */Widget_builtIn_types from /* 5 */"../../../../widget/built-in/types"
@@ -22,14 +22,14 @@ import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../../unrestored/shared/1571/2636/11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef, useState, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_150 from /* 150 */"../../../../../../unrestored/shared/1571/2636/150"
-import /* [auto-meaningful-name] */Module_1501 from /* 150 */"../../../../../../unrestored/shared/1571/2636/150"
+import * as /* [auto-meaningful-name] */Styles_module_css from /* 150 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css1 from /* 150 */"./styles.module.css"
 var Bv = memo(function (e) {
   var t
   var n = e.id
@@ -52,7 +52,7 @@ var Bv = memo(function (e) {
   var /* [auto-meaningful-name] */e$readonly = e.readonly
   var w = undefined !== e$readonly && e$readonly
   var /* [auto-meaningful-name] */e$isInvisibleWidget = e.isInvisibleWidget
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var A = useRef(null)
   var j = useSelector(function (e) {
     return e.block.flyoutVisible
@@ -96,7 +96,7 @@ var Bv = memo(function (e) {
     e$onCopyToCurrentScreen(n)
   }
   return React.createElement("div", {
-    className: Classnames(Module_1501.itemWrapper, E)
+    className: Classnames(Styles_module_css1.itemWrapper, E)
   }, React.createElement(Module_1213.a, {
     placement: "bottomLeft",
     trigger: "hover",
@@ -110,25 +110,25 @@ var Bv = memo(function (e) {
     overlayClassName: "popoverOverlay",
     content: function () {
       return React.createElement("div", {
-        className: Module_1501.popoverWrapper,
+        className: Styles_module_css1.popoverWrapper,
         onContextMenu: function (e) {
           return e.preventDefault()
         }
       }, !e$isInvisibleWidget && React.createElement("div", {
-        className: Module_1501.menuItem,
+        className: Styles_module_css1.menuItem,
         onMouseDown: W
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "copyAndPaste"
       })), React.createElement("div", {
-        className: Classnames(Module_1501.menuItem, Module_1501.delete),
+        className: Classnames(Styles_module_css1.menuItem, Styles_module_css1.delete),
         onMouseDown: G
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "delete"
       })))
     }
   }, React.createElement("div", {
     ref: A,
-    className: Classnames(Module_1501.item, (t = {}, Module_11.a(t, Module_1501.selected, e$selected && j), Module_11.a(t, Module_1501.selectedLight, e$selected && !j), Module_11.a(t, Module_1501.children, e$isChildren), Module_11.a(t, Module_1501.parent, !!e$children), Module_11.a(t, Module_1501.expanded, D), Module_11.a(t, Module_1501.notLast, !e$isLast && e$isChildren), t)),
+    className: Classnames(Styles_module_css1.item, (t = {}, Module_11.a(t, Styles_module_css1.selected, e$selected && j), Module_11.a(t, Styles_module_css1.selectedLight, e$selected && !j), Module_11.a(t, Styles_module_css1.children, e$isChildren), Module_11.a(t, Styles_module_css1.parent, !!e$children), Module_11.a(t, Styles_module_css1.expanded, D), Module_11.a(t, Styles_module_css1.notLast, !e$isLast && e$isChildren), t)),
     onContextMenu: function (e) {
       e.preventDefault()
       if (!(w || e$type !== Widget_builtIn_types.c && e$type !== Widget_builtIn_types.a && e$isChildren)) {
@@ -139,28 +139,28 @@ var Bv = memo(function (e) {
       e$onSelect(n)
     }
   }, React.createElement("div", {
-    className: Module_1501.left
+    className: Styles_module_css1.left
   }, React.createElement("span", {
-    className: Module_1501.foldIconContainer,
+    className: Styles_module_css1.foldIconContainer,
     onClick: function (e) {
       M(!D)
       e.stopPropagation()
     }
-  }, React.createElement(Shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: "icon-fold-left",
-    className: Module_1501.foldIcon
+    className: Styles_module_css1.foldIcon
   })), Shared_tools_index.X(e$icon) ? React.createElement("img", {
-    className: Classnames(Module_1501.widgetIcon, Module_1501.widgetUrlIcon),
+    className: Classnames(Styles_module_css1.widgetIcon, Styles_module_css1.widgetUrlIcon),
     src: e$icon,
     alt: e$title,
     draggable: false
-  }) : React.createElement(Shared_ui_components_iconfont_index.a, {
+  }) : React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: e$icon,
-    className: Module_1501.widgetIcon
+    className: Styles_module_css1.widgetIcon
   }), React.createElement("span", {
-    className: Classnames(Module_1501.label, !e$visible && Module_1501.labelGray)
+    className: Classnames(Styles_module_css1.label, !e$visible && Styles_module_css1.labelGray)
   }, e$title)), React.createElement("div", {
-    className: Module_1501.right
+    className: Styles_module_css1.right
   }, !e$isInvisibleWidget && e$type !== Widget_builtIn_types.c && React.createElement("div", {
     onClick: function (e) {
       e.stopPropagation()
@@ -170,23 +170,23 @@ var Bv = memo(function (e) {
         e$onHide(n)
       }
     },
-    className: Classnames(Module_1501.controlIcon, Module_1501.seeIcon)
-  }, React.createElement(Shared_ui_components_iconfont_index.a, {
+    className: Classnames(Styles_module_css1.controlIcon, Styles_module_css1.seeIcon)
+  }, React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: e$visible ? "icon-see" : "icon-see-disable"
   })), React.createElement("div", {
     onClick: function (e) {
       e.stopPropagation()
       e$toggleAttributeVisible(n)
     },
-    className: Module_1501.controlIcon
-  }, React.createElement(Shared_ui_components_iconfont_index.a, {
+    className: Styles_module_css1.controlIcon
+  }, React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: "icon-attribute"
   }))))), D && e$children)
 })
 var Fv = memo(function () {
   var /* [auto-meaningful-name] */u$invisibleWidgetIds
   var t
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useDispatch()
   var o = useRef()
   var i = useSelector(function (e) {
@@ -272,7 +272,7 @@ var Fv = memo(function () {
     var t = Module_9.Bb(e)
     if (t) {
       var i = Module_9.Fb(t.id || "")
-      var a = Module_710$a$formatMessage({
+      var a = useIntl$formatMessage({
         id: "deleteWidget"
       }) + "“" + Module_190.f(i, 10) + "”?"
       if (t.type === Widget_builtIn_types.h) {
@@ -280,12 +280,12 @@ var Fv = memo(function () {
         return void r(Redux_common_actions.zh({
           onConfirm: H,
           onClose: V,
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "delete"
           }),
           isDangerous: true,
           title: a,
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "cloudDB.DeleteWidgetsTips"
           })
         }))
@@ -297,12 +297,12 @@ var Fv = memo(function () {
         r(Redux_common_actions.zh({
           onConfirm: H,
           onClose: V,
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "delete"
           }),
           isDangerous: true,
           title: a,
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: c ? "deleteParentWidgetTips" : "deleteWidgetTips"
           })
         }))
@@ -350,16 +350,16 @@ var Fv = memo(function () {
         })
       }
       var /* [auto-meaningful-name] */t$type = t.type
-      if (t && !Z.includes(t$type)) {
+      if (t && !Z.includes(r)) {
         var o = Module_9.Db(t.type)
         if (o && o.hasAnyWidget) {
-          Z.push(t$type)
+          Z.push(r)
           Q.push({
-            type: "ANY_".concat(t$type),
+            type: "ANY_".concat(r),
             icon: o.icon,
-            title: Module_710$a$formatMessage({
+            title: useIntl$formatMessage({
               id: "anyWidgetAny"
-            }) + Module_710$a$formatMessage({
+            }) + useIntl$formatMessage({
               id: o.title || o.previewAreaWidgetTitle
             })
           })
@@ -455,11 +455,11 @@ var Fv = memo(function () {
               if (null === n || undefined === n ? undefined : n.parentId) {
                 var o = Module_9.Bb(null === n || undefined === n ? undefined : n.parentId)
                 var /* [auto-meaningful-name] */o$widgetIds = o.widgetIds
-                var a = o$widgetIds.length - e - 1
-                var s = o$widgetIds.length - t - 1
-                var c = o$widgetIds.splice(a, 1)
+                var a = i.length - e - 1
+                var s = i.length - t - 1
+                var c = i.splice(a, 1)
                 var l = Module_10.a(c, 1)[0]
-                var d = Module_25.a(o$widgetIds)
+                var d = Module_25.a(i)
                 d.splice(s, 0, l)
                 r(Redux_common_actions.Mg(u.id, o.id, d, true, true, true))
               } else {
@@ -470,14 +470,14 @@ var Fv = memo(function () {
                 var g = f[h]
                 var _ = f[m]
                 var /* [auto-meaningful-name] */u$widgetIds = u.widgetIds
-                var b = u$widgetIds.indexOf(_)
-                var y = u$widgetIds.indexOf(g)
+                var b = v.indexOf(_)
+                var y = v.indexOf(g)
                 if (b < 0 || y < 0) {
                   return
                 }
-                u$widgetIds.splice(y, 1)
-                u$widgetIds.splice(b, 0, g)
-                r(Redux_common_actions.Bj(u.id, Module_25.a(u$widgetIds), null === n || undefined === n ? undefined : n.isInvisibleWidget))
+                v.splice(y, 1)
+                v.splice(b, 0, g)
+                r(Redux_common_actions.Bj(u.id, Module_25.a(v), null === n || undefined === n ? undefined : n.isInvisibleWidget))
                 if (!(null === (Module_49$oTHelper$widget = Module_49.oTHelper.widget) || undefined === Module_49$oTHelper$widget)) {
                   Module_49$oTHelper$widget.clientOp.moveWidget(u.id, y, b)
                 }
@@ -486,26 +486,26 @@ var Fv = memo(function () {
           })(e, n, t)
         }
       },
-      lineClassName: Module_1501.dragLine
+      lineClassName: Styles_module_css1.dragLine
     }, ie(e, n, t))
   }
   return React.createElement("div", {
-    className: Module_1501.wrapper
+    className: Styles_module_css1.wrapper
   }, React.createElement("div", {
-    className: Module_1501.list,
+    className: Styles_module_css1.list,
     "data-updated-at": i
   }, React.createElement("div", {
-    className: Module_1501.widgetCategory,
+    className: Styles_module_css1.widgetCategory,
     onClick: function () {
       g(!m)
     }
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "components"
   })), React.createElement(Shared_ui_components_index.j, {
     type: "icon-fold",
-    className: m ? Module_1501.fold : Module_1501.unFold
+    className: m ? Styles_module_css1.fold : Styles_module_css1.unFold
   })), !m && ae(q), !m && React.createElement("div", {
-    className: Classnames(Module_1501.item, Module_1501.screenItem, (t = {}, Module_11.a(t, Module_1501.selected, !s && l), Module_11.a(t, Module_1501.selectedLight, !s && !l), t)),
+    className: Classnames(Styles_module_css1.item, Styles_module_css1.screenItem, (t = {}, Module_11.a(t, Styles_module_css1.selected, !s && l), Module_11.a(t, Styles_module_css1.selectedLight, !s && !l), t)),
     onContextMenu: function (e) {
       return e.preventDefault()
     },
@@ -527,14 +527,14 @@ var Fv = memo(function () {
       }
     }
   }, React.createElement("div", {
-    className: Module_1501.left
+    className: Styles_module_css1.left
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-screen",
-    className: Module_1501.widgetIcon
+    className: Styles_module_css1.widgetIcon
   }), React.createElement("span", {
-    className: Module_1501.label
+    className: Styles_module_css1.label
   }, u.title)), React.createElement("div", {
-    className: Module_1501.right
+    className: Styles_module_css1.right
   }, React.createElement("div", {
     onClick: function (e) {
       var t
@@ -543,48 +543,48 @@ var Fv = memo(function () {
       Module_26.g.setSelectedItem(null === (t = Module_26.g.getToolbox()) || undefined === t ? undefined : t.find_node_by_name(u.id))
       r(!s && a ? Redux_common_actions.fj(false) : Redux_common_actions.fj(true))
     },
-    className: Classnames(Module_1501.controlIcon, Module_1501.attributeIcon)
+    className: Classnames(Styles_module_css1.controlIcon, Styles_module_css1.attributeIcon)
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-attribute"
   })), React.createElement("div", {
-    className: Module_1501.screenBottomIcon
+    className: Styles_module_css1.screenBottomIcon
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-screen-bottom"
   })))), ee.length > 0 && React.createElement(React.Fragment, null, React.createElement("div", {
-    className: Module_1501.widgetCategory,
+    className: Styles_module_css1.widgetCategory,
     onClick: function () {
       E(!y)
     }
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "invisibleWidgetList"
   })), React.createElement(Shared_ui_components_index.j, {
     type: "icon-fold",
-    className: y ? Module_1501.fold : Module_1501.unFold
+    className: y ? Styles_module_css1.fold : Styles_module_css1.unFold
   })), !y && ae($, {
     isInvisibleWidget: true
   })), re.length > 0 && React.createElement(React.Fragment, null, React.createElement("div", {
-    className: Module_1501.widgetCategory,
+    className: Styles_module_css1.widgetCategory,
     onClick: function () {
       T(!C)
     }
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "globalWidgetList"
   })), React.createElement(Shared_ui_components_index.j, {
     type: "icon-fold",
-    className: C ? Module_1501.fold : Module_1501.unFold
+    className: C ? Styles_module_css1.fold : Styles_module_css1.unFold
   })), !C && ae(ne, {
     isGlobalWidget: true,
     isInvisibleWidget: true
   })), Q.length > 0 && React.createElement(React.Fragment, null, React.createElement("div", {
-    className: Module_1501.widgetCategory,
+    className: Styles_module_css1.widgetCategory,
     onClick: function () {
       D(!R)
     }
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "anyWidgetList"
   })), React.createElement(Shared_ui_components_index.j, {
     type: "icon-fold",
-    className: R ? Module_1501.fold : Module_1501.unFold
+    className: R ? Styles_module_css1.fold : Styles_module_css1.unFold
   })), !R && (oe = Q, React.createElement("div", {
     onContextMenu: function (e) {
       return e.preventDefault()
@@ -597,19 +597,19 @@ var Fv = memo(function () {
     return React.createElement("div", {
       onClick: U.bind(null, e$type),
       key: e$type,
-      className: Classnames(Module_1501.item, (t = {}, Module_11.a(t, Module_1501.selected, s === e$type && l), Module_11.a(t, Module_1501.selectedLight, s === e$type && !l), Module_11.a(t, Module_1501.parent, false), t))
+      className: Classnames(Styles_module_css1.item, (t = {}, Module_11.a(t, Styles_module_css1.selected, s === e$type && l), Module_11.a(t, Styles_module_css1.selectedLight, s === e$type && !l), Module_11.a(t, Styles_module_css1.parent, false), t))
     }, React.createElement("div", {
-      className: Classnames(Module_1501.left, Module_1501.anyWidget)
+      className: Classnames(Styles_module_css1.left, Styles_module_css1.anyWidget)
     }, Shared_tools_index.X(e$icon) ? React.createElement("img", {
-      className: Classnames(Module_1501.widgetIcon, Module_1501.widgetUrlIcon),
+      className: Classnames(Styles_module_css1.widgetIcon, Styles_module_css1.widgetUrlIcon),
       src: e$icon,
       alt: e$title,
       draggable: false
     }) : React.createElement(Shared_ui_components_index.j, {
       type: e$icon,
-      className: Module_1501.widgetIcon
+      className: Styles_module_css1.widgetIcon
     }), React.createElement("span", {
-      className: Classnames(Module_1501.label)
+      className: Classnames(Styles_module_css1.label)
     }, e$title)))
   }))))))
 })

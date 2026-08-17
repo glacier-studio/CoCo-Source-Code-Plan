@@ -43,7 +43,7 @@ import { Button, Dialog } from "../../../shared/ui/components"
 import /* [auto-meaningful-name] */Classnames from "classnames"
 import * as Language from "../../../shared/ui/language"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"../../../../unrestored/shared/1571/2636/188"
-import * as /* [auto-meaningful-name] */Module_2681 from /* 2681 */"../../../../unrestored/shared/1571/2636/2681/index"
+import { IntlProvider } from /* 2681 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from "regenerator-runtime"
 import { useSelector, useDispatch } from "react-redux"
@@ -111,7 +111,7 @@ export const App = React.memo(function () {
   const header = useSelector((state) => state.uiConfig.header)
   const hasArchiveId = parseURLSearchParamsToObject(window.location.href).archiveId !== undefined
 
-  return <Module_2681.b locale={language} messages={Language.e[language] || Language.e[Language.zh_CN]}>
+  return <IntlProvider locale={language} messages={Language.messages[language] || Language.messages[Language.zh_CN]}>
     <div className={styles.layout} onDragOver={lB} onDrop={uB}>
       {React.createElement(dB, null)}
       <Icons />
@@ -156,7 +156,7 @@ export const App = React.memo(function () {
       <JP/>
       {React.createElement(iB, null)}
     </div>
-  </Module_2681.b>
+  </IntlProvider>
 })
 
 var fB = function (e) {

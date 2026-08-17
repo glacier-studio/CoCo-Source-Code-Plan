@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../7"
 import * as /* [auto-meaningful-name] */Module_209 from /* 209 */"../207/209/index"
 import * as /* [auto-meaningful-name] */Module_37 from /* 37 */"../37/index"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../53"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 import * as /* [auto-meaningful-name] */Module_125 from /* 125 */"../1058/125"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
 !function (e) {

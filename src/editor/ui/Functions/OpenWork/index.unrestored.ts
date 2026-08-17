@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_627 from /* 627 */"../../../../../unrestored/shared/1571/2636/627/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
@@ -30,7 +30,7 @@ import * as /* [auto-meaningful-name] */Module_1529 from /* 1529 */"../../../../
 import * as /* [auto-meaningful-name] */Module_392 from /* 392 */"../../../../../unrestored/shared/1571/2636/392/index"
 var LM = function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.common.courseList
   })
@@ -106,7 +106,7 @@ var LM = function () {
                 onConfirm: function () {
                   e(Redux_common_actions.Gf())
                 },
-                allowText: Module_710$a$formatMessage({
+                allowText: useIntl$formatMessage({
                   id: "know"
                 }),
                 title: "",
@@ -151,7 +151,7 @@ var LM = function () {
     return function (e) {
       return n.apply(this, arguments)
     }
-  }(), [e, Module_710$a$formatMessage])
+  }(), [e, useIntl$formatMessage])
   var a = useCallback(function (n, r) {
     (function (e, t) {
       return me.apply(this, arguments)
@@ -188,13 +188,13 @@ var LM = function () {
             onConfirm: function () {
               e(Redux_common_actions.Gf())
             },
-            allowText: Module_710$a$formatMessage({
+            allowText: useIntl$formatMessage({
               id: "confirm"
             }),
-            title: Module_710$a$formatMessage({
+            title: useIntl$formatMessage({
               id: "OT.canNotFindProjectTitle"
             }),
-            content: Module_710$a$formatMessage({
+            content: useIntl$formatMessage({
               id: "OT.inviteLinkOverdueDescription"
             }),
             cancelBtnVisible: false
@@ -205,20 +205,20 @@ var LM = function () {
             onConfirm: function () {
               e(Redux_common_actions.Gf())
             },
-            allowText: Module_710$a$formatMessage({
+            allowText: useIntl$formatMessage({
               id: "confirm"
             }),
-            title: Module_710$a$formatMessage({
+            title: useIntl$formatMessage({
               id: "OT.canNotFindProjectTitle"
             }),
-            content: Module_710$a$formatMessage({
+            content: useIntl$formatMessage({
               id: "OT.canNotFindProjectDescription"
             }),
             cancelBtnVisible: false
           }))
       }
     })
-  }, [e, Module_710$a$formatMessage, i])
+  }, [e, useIntl$formatMessage, i])
   var s = useCallback(function () {
     e(Redux_common_actions.Gf("localhost" === window.location.hostname ? undefined : {
       json: Module_1529

@@ -4,7 +4,7 @@
  * 模块 ID：1638
  */
 
-var r = require(/* 86 */"./1662/86")
+var r = require(/* 86 */"./1650/86/index")
 var /* [auto-meaningful-name] */Math$hypot = Math.hypot
 var /* [auto-meaningful-name] */Math$abs = Math.abs
 var /* [auto-meaningful-name] */Math$sqrt = Math.sqrt

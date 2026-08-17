@@ -12,12 +12,12 @@ import { yM } from "./index__part-193"
 import /* [auto-meaningful-name] */Module_137 from /* 137 */"./137"
 import * as /* [auto-meaningful-name] */Module_796 from /* 796 */"./796/index"
 import /* [auto-meaningful-name] */Module_1039 from /* 1039 */"./1039"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 import * as /* [auto-meaningful-name] */Module_144 from /* 144 */"./144"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"./26/index"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
@@ -25,7 +25,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -172,7 +172,7 @@ var SM = memo(function (e) {
   var /* [auto-meaningful-name] */e$actionInterval = e.actionInterval
   var /* [auto-meaningful-name] */e$onIntervalChange = e.onIntervalChange
   var /* [auto-meaningful-name] */e$setEditingStyleId = e.setEditingStyleId
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useState(e$actionInterval.toString() || "200")
   var l = Module_10.a(c, 2)
   var u = l[0]
@@ -224,7 +224,7 @@ var SM = memo(function (e) {
     type: _ ? "icon-pause" : "icon-play"
   })), React.createElement("div", {
     className: Module_137.intervalContainer
-  }, React.createElement("label", null, Module_710$a$formatMessage({
+  }, React.createElement("label", null, useIntl$formatMessage({
     id: "actor.interval"
   })), React.createElement("input", {
     type: "number",
@@ -441,7 +441,7 @@ function RM(e) {
 var kM = memo(function () {
   var e
   var t = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useRef(true)
   var o = useRef(undefined)
   var i = useState(false)
@@ -737,7 +737,7 @@ var kM = memo(function () {
     }
   }, React.createElement("h3", {
     className: Module_137.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ActorStyleDialog.dialogTitle"
   })), React.createElement("div", {
     className: Module_137.content
@@ -798,7 +798,7 @@ var kM = memo(function () {
     className: Module_137.addAction,
     onClick: function () {
       var e = Module_64.a(Module_144.a)
-      var t = Module_710$a$formatMessage({
+      var t = useIntl$formatMessage({
         id: "ActorStyleDialog.actionName"
       })
       var r = T.map(function (e) {
@@ -818,7 +818,7 @@ var kM = memo(function () {
     className: Module_137.addActionIcon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-add"
-  })), React.createElement("span", null, Module_710$a$formatMessage({
+  })), React.createElement("span", null, useIntl$formatMessage({
     id: "ActorStyleDialog.addAction"
   })))), React.createElement("div", {
     className: Module_137.main
@@ -848,7 +848,7 @@ var kM = memo(function () {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-style-selected",
     className: Module_137.selectedIcon
-  })), Module_710$a$formatMessage({
+  })), useIntl$formatMessage({
     id: "ActorStyleDialog.defaultStyle"
   })) : React.createElement("button", {
     onClick: function () {
@@ -856,7 +856,7 @@ var kM = memo(function () {
     }
   }, React.createElement("div", {
     className: Module_137.checkbox
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "ActorStyleDialog.defaultStyle"
   })) : null))))), React.createElement("div", {
     className: Module_137.styleContainer
@@ -971,14 +971,14 @@ var kM = memo(function () {
     }, React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-upload-image",
       className: Module_137.btnIcon
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "uploadImageFile"
     }))), React.createElement(Src_shared_ui_components_index.m, {
       value: jM.OPEN_RESOURCE_LIBRARY
     }, React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-image-library",
       className: Module_137.btnIcon
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "resourceLibrary"
     })))
   }, React.createElement("div", {
@@ -986,14 +986,14 @@ var kM = memo(function () {
   }, React.createElement(Src_shared_ui_components_index.j, {
     className: Module_137.addIcon,
     type: "icon-add"
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "ActorStyleDialog.addStyle"
   })))))))), React.createElement("footer", {
     className: Module_137.footer
   }, React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
     onClick: te
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   }))), s && React.createElement(Module_796.a, {
     onCancel: ne,

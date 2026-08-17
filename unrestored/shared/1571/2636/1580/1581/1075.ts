@@ -5,7 +5,7 @@
  */
 
 var r = require(/* 633 */"../1774/633")
-var o = require(/* 168 */"../1659/168")
+var o = require(/* 168 */"../1648/168")
 module.exports = !!Object.getOwnPropertySymbols && !o(function () {
   var e = Symbol()
   return !String(e) || !(Object(e) instanceof Symbol) || !Symbol.sham && r && r < 41

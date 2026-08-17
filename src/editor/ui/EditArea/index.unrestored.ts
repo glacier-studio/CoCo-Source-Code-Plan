@@ -7,7 +7,7 @@
 "use strict"
 
 import { Yv } from "./WidgetPanel/index"
-import { HC } from "../../../../unrestored/shared/1571/2636/index__part-142"
+import { HC } from "./WidgetEditor/WidgetStyleForm/index"
 import { tT } from "../../../../unrestored/shared/1571/2636/index__part-144"
 import { xT } from "../../../../unrestored/shared/1571/2636/index__part-150"
 import { KT } from "../../../../unrestored/shared/1571/2636/index__part-152"
@@ -18,7 +18,7 @@ import { PS } from "../../../../unrestored/shared/1571/2636/index__part-157"
 import { cA } from "../../../../unrestored/shared/1571/2636/index__part-161"
 import { LA } from "../../../../unrestored/shared/1571/2636/index__part-168"
 import { $A } from "../../../../unrestored/shared/1571/2636/index__part-169"
-import /* [auto-meaningful-name] */Module_1060 from /* 1060 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css from /* 1060 */"./styles.module.css"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../unrestored/shared/1571/2636/18"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../unrestored/shared/1571/2636/10/index"
@@ -136,10 +136,10 @@ var iI = React.memo(function () {
     }
   }, [r, u])
   return React.createElement("div", {
-    className: Module_1060.wrapper,
+    className: Styles_module_css.wrapper,
     "data-html2canvas-ignore": "true"
   }, React.createElement(Yv, null), React.createElement(HC, null), React.createElement("div", {
-    className: Classnames(Module_1060.toolboxMask, !e && Module_1060.hide)
+    className: Classnames(Styles_module_css.toolboxMask, !e && Styles_module_css.hide)
   }), React.createElement(xT, null), React.createElement(oI, null), t && React.createElement(KT, null), React.createElement(PS, null), React.createElement($T, {
     onToggle: function () {
       s(!a)

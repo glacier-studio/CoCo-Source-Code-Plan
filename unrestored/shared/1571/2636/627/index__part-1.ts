@@ -9,9 +9,9 @@
 var i
 var r
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"../19"
-import * as /* [auto-meaningful-name] */Module_326 from /* 326 */"../1543/326"
-import * as /* [auto-meaningful-name] */Module_216 from /* 216 */"../1543/216"
-import /* [auto-meaningful-name] */Module_2161 from /* 216 */"../1543/216"
+import * as /* [auto-meaningful-name] */Module_326 from /* 326 */"./326"
+import * as /* [auto-meaningful-name] */Module_216 from /* 216 */"./216"
+import /* [auto-meaningful-name] */Module_2161 from /* 216 */"./216"
 import /* 0 */"react"
 import * as /* [auto-meaningful-name] */React from "react"
 import /* [auto-meaningful-name] */React1 from /* 0 */"react"

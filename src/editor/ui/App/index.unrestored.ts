@@ -43,7 +43,7 @@ import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../shared/ui/language"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"../../../../unrestored/shared/1571/2636/188"
-import * as /* [auto-meaningful-name] */Module_2681 from /* 2681 */"../../../../unrestored/shared/1571/2636/2681/index"
+import { IntlProvider } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
@@ -176,7 +176,7 @@ var pB = React.memo(function () {
     return e.uiConfig.header
   })
   var r = undefined !== Shared_tools_index.N(window.location.href).archiveId
-  return React.createElement(Module_2681.b, {
+  return React.createElement(IntlProvider, {
     locale: e,
     messages: Shared_ui_language.e[e] || Shared_ui_language.e[Shared_ui_language.b]
   }, React.createElement("div", {

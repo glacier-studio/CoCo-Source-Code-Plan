@@ -14,7 +14,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -39,7 +39,7 @@ function JA(e, t) {
   return [].concat(Module_25.a(r), Module_25.a(o))
 }
 var $A = React.memo(React.forwardRef(function (e, t) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useDispatch()
   var /* [auto-meaningful-name] */e$visible = e.visible
   var /* [auto-meaningful-name] */e$setVisible = e.setVisible
@@ -116,7 +116,7 @@ var $A = React.memo(React.forwardRef(function (e, t) {
       type: r.class
     })), React.createElement("span", {
       className: Module_2371.text
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: r.text
     }))), o) : undefined
   }
@@ -196,7 +196,7 @@ var $A = React.memo(React.forwardRef(function (e, t) {
     onClearCallback: function () {
       d("")
     },
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "DataWatch.search"
     }),
     onChange: function (e) {
@@ -210,7 +210,7 @@ var $A = React.memo(React.forwardRef(function (e, t) {
     if (0 === s$variableList.size) {
       return React.createElement("div", {
         className: Module_2371.empty
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "DataWatch.noData"
       }))
     }
@@ -225,7 +225,7 @@ var $A = React.memo(React.forwardRef(function (e, t) {
         className: Module_2371.renderSelectBox
       }, e, t, r, o, i) : React.createElement("div", {
         className: Module_2371.empty
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "DataWatch.searchEmpty"
       }))
   }()), React.createElement("div", {
@@ -289,7 +289,7 @@ var $A = React.memo(React.forwardRef(function (e, t) {
       marginRight: "14px"
     },
     onClick: j
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "DataWatch.cancel"
   })), React.createElement(Src_shared_ui_components_index.d, {
     style: {
@@ -302,7 +302,7 @@ var $A = React.memo(React.forwardRef(function (e, t) {
       })
       e$setVisible(false)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "DataWatch.confirm"
   })))))
 }))

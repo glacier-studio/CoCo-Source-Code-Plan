@@ -7,7 +7,7 @@
 "use strict"
 
 import { Ge } from "../../../../../../unrestored/shared/1571/2636/index__part-9"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../../../../unrestored/shared/1571/2636/133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../../../../unrestored/shared/1571/2636/133/index"
 import * as /* [auto-meaningful-name] */Module_197 from /* 197 */"../../../../../../unrestored/shared/1571/2636/197/index"
 import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../../../unrestored/shared/1571/2636/141/index"
 import * as /* [auto-meaningful-name] */Shared_tools_index from /* 15 */"../../../../../shared/tools/index"
@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Module_97 from /* 97 */"../../../../../.
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../../../unrestored/shared/1571/2636/6"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -49,7 +49,7 @@ var Jt = memo(function (e) {
   var c = s[0]
   var l = s[1]
   var u = useRef(null)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var p = useDispatch()
   var m = useState({
     name: i,
@@ -158,7 +158,7 @@ var Jt = memo(function (e) {
               e$sent1 = e.sent
               p(Redux_common_actions.mj({
                 type: "success",
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "Publish.publishSuccess"
                 }),
                 showCloseIcon: false
@@ -183,7 +183,7 @@ var Jt = memo(function (e) {
             case 36:
               p(Redux_common_actions.mj({
                 type: "error",
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "Publish.publishFail"
                 }),
                 showCloseIcon: false
@@ -239,7 +239,7 @@ var Jt = memo(function (e) {
     className: Module_9301.publishDialog,
     visible: e$visible,
     withPortal: true,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "Publish.publish"
     })
   }, React.createElement("main", null, React.createElement("div", null, React.createElement(Shared_ui_components_index.c, {
@@ -256,18 +256,18 @@ var Jt = memo(function (e) {
     accept: Module_133.f
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-player-upload-file"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "Publish.changeWorkCover"
   })))), React.createElement("div", {
     className: Module_9301.right
-  }, React.createElement("ul", null, React.createElement("li", null, React.createElement("p", null, Module_710$a$formatMessage({
+  }, React.createElement("ul", null, React.createElement("li", null, React.createElement("p", null, useIntl$formatMessage({
     id: "Publish.publishName"
   }), React.createElement("span", {
     className: Module_9301.required
   }, "*")), React.createElement(Shared_ui_components_index.k, {
     defaultValue: v.name,
     maxLength: 20,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "Publish.inputPublishName"
     }),
     onChange: function (e, t) {
@@ -276,12 +276,12 @@ var Jt = memo(function (e) {
       }))
     },
     isTrimmed: true
-  })), React.createElement("li", null, React.createElement("p", null, Module_710$a$formatMessage({
+  })), React.createElement("li", null, React.createElement("p", null, useIntl$formatMessage({
     id: "Publish.publishDescription"
   })), React.createElement(Shared_ui_components_index.A, {
     defaultValue: v.description,
     maxLength: 200,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "Publish.inputPublishDescription"
     }),
     rows: 5,
@@ -290,12 +290,12 @@ var Jt = memo(function (e) {
         description: e.target.value
       }))
     }
-  })), React.createElement("li", null, React.createElement("p", null, Module_710$a$formatMessage({
+  })), React.createElement("li", null, React.createElement("p", null, useIntl$formatMessage({
     id: "Publish.publishOperation"
   })), React.createElement(Shared_ui_components_index.A, {
     defaultValue: v.operation,
     maxLength: 200,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "Publish.inputPublishOperation"
     }),
     rows: 5,
@@ -310,7 +310,7 @@ var Jt = memo(function (e) {
       return L.apply(this, arguments)
     },
     disabled: !v.name
-  }, c ? React.createElement(Ge, null) : Module_710$a$formatMessage({
+  }, c ? React.createElement(Ge, null) : useIntl$formatMessage({
     id: "Publish.publish"
   }))))
 })

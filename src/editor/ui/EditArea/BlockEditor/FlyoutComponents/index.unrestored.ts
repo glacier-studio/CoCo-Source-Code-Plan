@@ -7,7 +7,7 @@
 "use strict"
 
 import { Sg } from "../../../../../../unrestored/shared/1571/2636/index__part-79"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../../../unrestored/shared/1571/2636/64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../../../unrestored/shared/1571/2636/64/index"
 import * as /* [auto-meaningful-name] */Shared_packages_Crc_blink_src_index from /* 17 */"../../../../../shared/packages/@crc/blink/src/index"
 import * as /* [auto-meaningful-name] */Module_49 from /* 49 */"../../../../../../unrestored/shared/1571/2636/49"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../../unrestored/shared/1571/2636/238"
@@ -18,7 +18,7 @@ import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../../../shared/ui/language"
@@ -28,11 +28,11 @@ import { memo, useState, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_1525 from /* 1525 */"../../../../../../unrestored/shared/1571/2636/1525"
 import /* [auto-meaningful-name] */Module_15251 from /* 1525 */"../../../../../../unrestored/shared/1571/2636/1525"
-import * as /* [auto-meaningful-name] */Styles_module_css from /* 236 */"./styles.module.css"
-import /* [auto-meaningful-name] */Styles_module_css1 from /* 236 */"./styles.module.css"
+import * as /* [auto-meaningful-name] */VariablePanel_styles_module_css from /* 236 */"./VariablePanel/styles.module.css"
+import /* [auto-meaningful-name] */VariablePanel_styles_module_css1 from /* 236 */"./VariablePanel/styles.module.css"
 var RT = memo(function (e) {
   var /* [auto-meaningful-name] */e$variableType = e.variableType
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useState(true)
   var o = Module_10.a(r, 2)
   var i = o[0]
@@ -113,7 +113,7 @@ var RT = memo(function (e) {
         var e = Module_64.a("VARIABLE")
         V(Redux_common_actions.nj({
           title: "addPrimitiveVariableName",
-          placeholder: Module_710$a$formatMessage({
+          placeholder: useIntl$formatMessage({
             id: "addPrimitiveVariableNamePlaceholder"
           }),
           onConfirm: function (t, n) {
@@ -132,17 +132,17 @@ var RT = memo(function (e) {
                   return t.name === e
                 })
               },
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "primitiveVariableNameRepeat"
               })
             }
-          ].concat(Module_25.a(Sg(Module_710$a$formatMessage)))
+          ].concat(Module_25.a(Sg(useIntl$formatMessage)))
         }))
       } else if (e$variableType === Module_18.b.ARRAY) {
         var r = Module_64.a("ARRAY")
         V(Redux_common_actions.nj({
           title: "addArrayVariableName",
-          placeholder: Module_710$a$formatMessage({
+          placeholder: useIntl$formatMessage({
             id: "addArrayVariableNamePlaceholder"
           }),
           onConfirm: function (e, t) {
@@ -161,17 +161,17 @@ var RT = memo(function (e) {
                   return t.name === e
                 })
               },
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "arrayVariableNameRepeat"
               })
             }
-          ].concat(Module_25.a(Sg(Module_710$a$formatMessage)))
+          ].concat(Module_25.a(Sg(useIntl$formatMessage)))
         }))
       } else if (e$variableType === Module_18.b.OBJECT) {
         var o = Module_64.a("OBJECT")
         V(Redux_common_actions.nj({
           title: "object.createNewObject",
-          placeholder: Module_710$a$formatMessage({
+          placeholder: useIntl$formatMessage({
             id: "object.createNewObjectNamePlaceholder"
           }),
           onConfirm: function (e, t) {
@@ -197,11 +197,11 @@ var RT = memo(function (e) {
                   return t.name === e
                 })
               },
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "object.nameRepeat"
               })
             }
-          ].concat(Module_25.a(Sg(Module_710$a$formatMessage)))
+          ].concat(Module_25.a(Sg(useIntl$formatMessage)))
         }))
       }
     }
@@ -241,7 +241,7 @@ var RT = memo(function (e) {
     if (q) {
       var /* [auto-meaningful-name] */e$name = e.name
       g("")
-      if (r !== e$name) {
+      if (r !== i) {
         if (!Shared_tools_index.j(r)) {
           if ("" !== r && r[0].match(/[0-9_]/)) {
             V(Redux_common_actions.mj({
@@ -330,7 +330,7 @@ var RT = memo(function (e) {
   var oe = function (e, t) {
     return React.createElement(Shared_ui_components_index.k, {
       type: "text",
-      className: Styles_module_css1.valueInput,
+      className: VariablePanel_styles_module_css1.valueInput,
       maxLength: 20,
       defaultValue: e.defaultValue,
       onFocus: function (e) {
@@ -388,7 +388,7 @@ var RT = memo(function (e) {
       return React.createElement("div", null)
     }
     return React.createElement("div", {
-      className: Classnames(Styles_module_css1.itemWrap, y === e$item.id && Styles_module_css1.select),
+      className: Classnames(VariablePanel_styles_module_css1.itemWrap, y === e$item.id && VariablePanel_styles_module_css1.select),
       id: e$item.id,
       key: e$item.id,
       onClick: function () {
@@ -400,51 +400,51 @@ var RT = memo(function (e) {
         }
       }
     }, React.createElement("div", {
-      className: Styles_module_css1.item
+      className: VariablePanel_styles_module_css1.item
     }, React.createElement("div", {
-      className: Classnames(Styles_module_css1.name)
+      className: Classnames(VariablePanel_styles_module_css1.name)
     }, m === e$item.id ? React.createElement(Shared_ui_components_index.k, {
       type: "text",
-      className: Classnames(Styles_module_css1.nameInput, "".concat("VARIABLE_ID_" + e$item.id)),
+      className: Classnames(VariablePanel_styles_module_css1.nameInput, "".concat("VARIABLE_ID_" + e$item.id)),
       maxLength: 20,
       defaultValue: e$item.name,
       onBlur: re.bind(null, e$item, e$type),
       onKeyDown: ie
     }) : React.createElement("div", {
-      className: Classnames(Styles_module_css1.nameInputWrapper)
+      className: Classnames(VariablePanel_styles_module_css1.nameInputWrapper)
     }, React.createElement("div", {
       onClick: ae.bind(null, e$item.id),
-      className: Classnames(Styles_module_css1.noEditing)
+      className: Classnames(VariablePanel_styles_module_css1.noEditing)
     }, e$item.name), React.createElement("div", {
-      className: Classnames(Styles_module_css1.itemBtn, Styles_module_css1.delete),
+      className: Classnames(VariablePanel_styles_module_css1.itemBtn, VariablePanel_styles_module_css1.delete),
       onClick: se.bind(null, e$item, e$type)
     }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-close"
     })), React.createElement(Module_748.a, {
       placement: "bottom",
       trigger: ["hover", "click"],
-      title: Module_710$a$formatMessage({
+      title: useIntl$formatMessage({
         id: e$variableType === Module_18.b.PRIMITIVE ? "editDefaultValue" : "edit"
       })
     }, React.createElement("div", {
-      className: Styles_module_css1.itemBtn,
+      className: VariablePanel_styles_module_css1.itemBtn,
       onClick: ne.bind(null, e$item.id, e$type)
     }, e$variableType === Module_18.b.PRIMITIVE && React.createElement(Shared_ui_components_index.j, {
       type: "icon-fold-left",
-      className: Classnames(Styles_module_css1.itemExpand, l === e$item.id && Styles_module_css1.active)
+      className: Classnames(VariablePanel_styles_module_css1.itemExpand, l === e$item.id && VariablePanel_styles_module_css1.active)
     }), e$variableType === Module_18.b.ARRAY && React.createElement(Shared_ui_components_index.j, {
       type: "icon-list"
     }), e$variableType === Module_18.b.OBJECT && React.createElement(Shared_ui_components_index.j, {
       type: "icon-list"
     })))))), e$variableType === Module_18.b.PRIMITIVE && y === e$item.id && l === e$item.id && React.createElement("div", {
-      className: Styles_module_css1.detail
-    }, Module_710$a$formatMessage({
+      className: VariablePanel_styles_module_css1.detail
+    }, useIntl$formatMessage({
       id: "initValue"
     }), oe(e$item, e$type)))
   }
   return React.createElement("div", {
     id: e.labelType,
-    className: Styles_module_css1.wrapper
+    className: VariablePanel_styles_module_css1.wrapper
   }, function () {
     var e
     switch (e$variableType) {
@@ -458,21 +458,21 @@ var RT = memo(function (e) {
         e = "list"
     }
     return React.createElement("div", {
-      className: Styles_module_css1.addBtn,
+      className: VariablePanel_styles_module_css1.addBtn,
       onClick: ee
     }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-add",
-      className: Styles_module_css1.addIcon
-    }), Module_710$a$formatMessage({
+      className: VariablePanel_styles_module_css1.addIcon
+    }), useIntl$formatMessage({
       id: e
     }))
   }(), !i && React.createElement("div", {
-    className: Styles_module_css1.line
+    className: VariablePanel_styles_module_css1.line
   }), !C && (e$variableType === Module_18.b.PRIMITIVE ? React.createElement("div", {
-    className: Styles_module_css1.content
+    className: VariablePanel_styles_module_css1.content
   }, Q.length ? React.createElement("div", {
-    className: Styles_module_css1.variableTitle
-  }, Module_710$a$formatMessage({
+    className: VariablePanel_styles_module_css1.variableTitle
+  }, useIntl$formatMessage({
     id: "globalVariable"
   })) : null, Q.map(function (e) {
     return React.createElement(ce, {
@@ -481,8 +481,8 @@ var RT = memo(function (e) {
       type: Module_18.i.GLOBAL
     })
   }), D.length > 0 ? React.createElement("div", {
-    className: Styles_module_css1.variableTitle
-  }, Module_710$a$formatMessage({
+    className: VariablePanel_styles_module_css1.variableTitle
+  }, useIntl$formatMessage({
     id: "screenVariable"
   })) : null, D.map(function (e) {
     return React.createElement(ce, {
@@ -491,10 +491,10 @@ var RT = memo(function (e) {
       type: Module_18.i.SCREEN
     })
   })) : e$variableType === Module_18.b.ARRAY ? React.createElement("div", {
-    className: Styles_module_css1.content
+    className: VariablePanel_styles_module_css1.content
   }, Z.length > 0 ? React.createElement("div", {
-    className: Styles_module_css1.variableTitle
-  }, Module_710$a$formatMessage({
+    className: VariablePanel_styles_module_css1.variableTitle
+  }, useIntl$formatMessage({
     id: "globalArray"
   })) : null, Z.map(function (e) {
     return React.createElement(ce, {
@@ -503,8 +503,8 @@ var RT = memo(function (e) {
       type: Module_18.i.GLOBAL
     })
   }), B.length > 0 ? React.createElement("div", {
-    className: Styles_module_css1.variableTitle
-  }, Module_710$a$formatMessage({
+    className: VariablePanel_styles_module_css1.variableTitle
+  }, useIntl$formatMessage({
     id: "screenArray"
   })) : null, B.map(function (e) {
     return React.createElement(ce, {
@@ -513,10 +513,10 @@ var RT = memo(function (e) {
       type: Module_18.i.SCREEN
     })
   })) : e$variableType === Module_18.b.OBJECT ? React.createElement("div", {
-    className: Styles_module_css1.content
+    className: VariablePanel_styles_module_css1.content
   }, J.length > 0 ? React.createElement("div", {
-    className: Styles_module_css1.variableTitle
-  }, Module_710$a$formatMessage({
+    className: VariablePanel_styles_module_css1.variableTitle
+  }, useIntl$formatMessage({
     id: "object.globalObject"
   })) : null, J.map(function (e) {
     return React.createElement(ce, {
@@ -525,8 +525,8 @@ var RT = memo(function (e) {
       type: Module_18.i.GLOBAL
     })
   }), U.length > 0 ? React.createElement("div", {
-    className: Styles_module_css1.variableTitle
-  }, Module_710$a$formatMessage({
+    className: VariablePanel_styles_module_css1.variableTitle
+  }, useIntl$formatMessage({
     id: "object.screenObject"
   })) : null, U.map(function (e) {
     return React.createElement(ce, {
@@ -535,19 +535,19 @@ var RT = memo(function (e) {
       type: Module_18.i.SCREEN
     })
   })) : undefined), i && React.createElement("div", {
-    className: Styles_module_css1.footer
+    className: VariablePanel_styles_module_css1.footer
   }, C && React.createElement("div", {
-    className: Styles_module_css1.ellipse
+    className: VariablePanel_styles_module_css1.ellipse
   }, "..."), React.createElement("div", {
-    className: Styles_module_css1.expand
+    className: VariablePanel_styles_module_css1.expand
   }, React.createElement("div", {
-    className: Styles_module_css1.foldBtn,
+    className: VariablePanel_styles_module_css1.foldBtn,
     onClick: function () {
       return j(!C)
     }
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-fold",
-    className: C ? Styles_module_css1.expandIcon : Styles_module_css1.foldIcon
+    className: C ? VariablePanel_styles_module_css1.expandIcon : VariablePanel_styles_module_css1.foldIcon
   })))))
 })
 var kT = memo(function () {

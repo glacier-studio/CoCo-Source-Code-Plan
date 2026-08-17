@@ -27,7 +27,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -101,7 +101,7 @@ var tO = memo(function (e) {
   var n = undefined === e$keyName ? "mode" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = e$getValue(n)
   var s = e$getValue("sizeType")
   var c = e$getValue("color")
@@ -135,7 +135,7 @@ var tO = memo(function (e) {
   }
   return React.createElement(React.Fragment, null, React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_1751.formItemWrapper, Module_1751.typeSelector, Module_1751.buttonModeSelector, "changeButtonMode"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "mode"
     })
   }, React.createElement(lb, {
@@ -160,7 +160,7 @@ var tO = memo(function (e) {
     }, e.renderContent(c, v))
   }))), d === Module_83.a.TEXT ? React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_1751.formItemWrapper, Module_1751.cocoInputTitleContent),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "content"
     })
   }, React.createElement(Src_shared_ui_components_index.k, {
@@ -171,7 +171,7 @@ var tO = memo(function (e) {
     defaultValue: u
   })) : React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_1751.formItemWrapper, Module_1751.typeSelector, "changeIcon"),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "icon"
     })
   }, React.createElement("div", {
@@ -223,13 +223,13 @@ var nO = memo(function (e) {
 var rO = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = e$getValue("textVisible")
   return React.createElement(React.Fragment, null, React.createElement("div", {
     className: Classnames(Module_1751.formItemWrapper, Module_1751.buttonWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_1751.labelWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "text"
   })), React.createElement("div", {
     className: Module_1751.actionWrapper,
@@ -287,13 +287,13 @@ var rO = memo(function (e) {
 var oO = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = e$getValue("iconVisible")
   return React.createElement(React.Fragment, null, React.createElement("div", {
     className: Classnames(Module_1751.formItemWrapper, Module_1751.buttonWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_1751.labelWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "icon"
   })), React.createElement("div", {
     className: Module_1751.actionWrapper,
@@ -365,7 +365,7 @@ var aO = [
 var sO = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = e$getValue("backgroundColor")
   var i = e$getValue("backgroundMode")
   var a = useSelector(function (e) {
@@ -377,7 +377,7 @@ var sO = memo(function (e) {
     className: Classnames(Module_1751.formItemWrapper, Module_1751.buttonWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_1751.labelWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "background"
   })), React.createElement("div", {
     className: Module_1751.modeActionWrapper
@@ -386,14 +386,14 @@ var sO = memo(function (e) {
     onClick: function () {
       e$onChange("backgroundMode", Module_114.a.TEMPLATE)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "template"
   })), React.createElement("div", {
     className: Classnames(Module_1751.modeImage, i === Module_114.a.IMAGE && Module_1751.backgroundSelected),
     onClick: function () {
       e$onChange("backgroundMode", Module_114.a.IMAGE)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "image"
   })))), i === Module_114.a.TEMPLATE && React.createElement("div", {
     className: Module_1751.backgroundWrapper
@@ -413,7 +413,7 @@ var sO = memo(function (e) {
     }, e.renderContent(o))
   }))), React.createElement("div", {
     className: Module_1751.templateColor
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "templateColor"
   })), React.createElement(mb, {
     width: 43,
@@ -458,13 +458,13 @@ var sO = memo(function (e) {
     value: Module_114.c.CONTAIN
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-contain"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "".concat(Module_114.c.CONTAIN)
   })), React.createElement(Src_shared_ui_components_index.t, {
     value: Module_114.c.STRETCH
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-stretch"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "".concat(Module_114.c.STRETCH)
   }))))))
 })

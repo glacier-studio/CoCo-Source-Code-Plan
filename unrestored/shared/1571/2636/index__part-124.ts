@@ -9,7 +9,7 @@
 import /* [auto-meaningful-name] */Module_208 from /* 208 */"./208"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef, useState, useEffect } from /* 0 */"react"
@@ -22,7 +22,7 @@ var ow = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var i = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useRef(-1)
   var c = useState([])
   var l = Module_10.a(c, 2)
@@ -72,7 +72,7 @@ var ow = memo(function (e) {
     className: Classnames(Module_208.formItemWrapper, Module_208.httpHeader)
   }, React.createElement("div", {
     className: Module_208.title
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "HttpClientWidget.header"
   }))), React.createElement("div", {
     className: Module_208.list
@@ -80,11 +80,11 @@ var ow = memo(function (e) {
     className: Module_208.listHeader
   }, React.createElement("div", {
     className: Module_208.column1
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "key"
   })), React.createElement("div", {
     className: Module_208.column2
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "value"
   })), React.createElement("div", {
     className: Module_208.column3
@@ -190,7 +190,7 @@ var iw = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var i = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useRef(-1)
   var c = useState([])
   var l = Module_10.a(c, 2)
@@ -240,7 +240,7 @@ var iw = memo(function (e) {
     className: Classnames(Module_208.formItemWrapper, Module_208.httpParams)
   }, React.createElement("div", {
     className: Module_208.title
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "HttpClientWidget.params"
   }))), React.createElement("div", {
     className: Module_208.list
@@ -248,11 +248,11 @@ var iw = memo(function (e) {
     className: Module_208.listHeader
   }, React.createElement("div", {
     className: Module_208.column1
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "key"
   })), React.createElement("div", {
     className: Module_208.column2
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "value"
   })), React.createElement("div", {
     className: Module_208.column3

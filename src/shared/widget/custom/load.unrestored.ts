@@ -61,7 +61,7 @@ import * as /* [auto-meaningful-name] */Restrict from /* 232 */"./restrict"
 import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../../../../unrestored/shared/1571/2636/39"
 import * as /* [auto-meaningful-name] */Module_20 from /* 20 */"../../../../unrestored/shared/1571/2636/20/index"
 import * as /* [auto-meaningful-name] */Module_55 from /* 55 */"../../../../unrestored/shared/1571/2636/55"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../unrestored/shared/1571/2636/301/85"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../unrestored/shared/1571/2636/34/85"
 import * as D from /* 78 */"./type"
 var M = function () {
   function e(t) {
@@ -543,7 +543,7 @@ function G(e, t) {
     var /* [auto-meaningful-name] */e$docs$url = e.docs.url
     f.push({
       type: "HelpUrl",
-      url: e$docs$url
+      url: v
     })
   }
   var b = Module_85.c(e$type)

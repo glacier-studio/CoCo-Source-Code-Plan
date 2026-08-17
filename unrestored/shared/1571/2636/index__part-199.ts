@@ -33,7 +33,7 @@ var JM = createContext({
   inlineCollapsed: false
 })
 var $M = function (e) {
-  var /* [auto-meaningful-name] */o$props
+  var /* [auto-meaningful-name] */e$icon$props
   var n
   var /* [auto-meaningful-name] */e$popupClassName = e.popupClassName
   var /* [auto-meaningful-name] */e$icon = e.icon
@@ -46,7 +46,7 @@ var $M = function (e) {
   if (e$icon) {
     var d = Module_315.b(e$title) && "span" === e$title.type
     n = createElement(Fragment, null, Module_315.a(e$icon, {
-      className: Classnames(Module_315.b(e$icon) ? null === (o$props = e$icon.props) || undefined === o$props ? undefined : o$props.className : "", "".concat(a$prefixCls, "-item-icon"))
+      className: Classnames(Module_315.b(e$icon) ? null === (e$icon$props = e$icon.props) || undefined === e$icon$props ? undefined : e$icon$props.className : "", "".concat(a$prefixCls, "-item-icon"))
     }), d ? e$title : createElement("span", {
       className: "".concat(a$prefixCls, "-title-content")
     }, e$title))
@@ -110,7 +110,7 @@ var nL = function (e) {
     Module_103.a(this, n);
     (e = t.apply(this, arguments)).renderItem = function (t) {
       var n
-      var /* [auto-meaningful-name] */g$props
+      var /* [auto-meaningful-name] */e$props1$icon$props
       var /* [auto-meaningful-name] */t$siderCollapsed = t.siderCollapsed
       var /* [auto-meaningful-name] */e$context = e.context
       var /* [auto-meaningful-name] */e$context$prefixCls = e$context.prefixCls
@@ -148,7 +148,7 @@ var nL = function (e) {
         className: Classnames((n = {}, Module_35.a(n, "".concat(e$context$prefixCls, "-item-danger"), e$props1$danger), Module_35.a(n, "".concat(e$context$prefixCls, "-item-only-child"), 1 === (e$props1$icon ? eLE$props$children$length + 1 : eLE$props$children$length)), n), e$props$className),
         title: "string" === typeof e$props1$title ? e$props1$title : undefined
       }), Module_315.a(e$props1$icon, {
-        className: Classnames(Module_315.b(e$props1$icon) ? null === (g$props = e$props1$icon.props) || undefined === g$props ? undefined : g$props.className : "", "".concat(e$context$prefixCls, "-item-icon"))
+        className: Classnames(Module_315.b(e$props1$icon) ? null === (e$props1$icon$props = e$props1$icon.props) || undefined === e$props1$icon$props ? undefined : e$props1$icon$props.className : "", "".concat(e$context$prefixCls, "-item-icon"))
       }), e.renderItemChildren(e$context$inlineCollapsed)))
     }
     return e

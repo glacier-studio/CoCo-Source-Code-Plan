@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_language from /* 23 */"../../../../../src/shared/ui/language"
 import * as /* [auto-meaningful-name] */Module_390 from /* 390 */"../390"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */OtJson1 from /* 31 */"ot-json1"
 import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../39"
 import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../27"
@@ -451,7 +451,7 @@ var Z = function () {
       key: "_updateUserFocusInfoList",
       value: function (e) {
         var t = Module_43.d()
-        Module_37.a(Module_100.v(Module_66.a.List(t.filter(function (t) {
+        Module_37.a(Module_100.v(Immutable.List(t.filter(function (t) {
           return e.some(function (e) {
             return e.id === t.userId
           })

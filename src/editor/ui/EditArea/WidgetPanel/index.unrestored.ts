@@ -6,19 +6,19 @@
 
 "use strict"
 
-import { Fv } from "./widget-tree/index"
+import { Fv } from "./WidgetTree/index"
 import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"../../../../../unrestored/shared/1571/2636/26/index"
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useEffect, useRef } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_329 from /* 329 */"../../../../../unrestored/shared/1571/2636/329"
-import /* [auto-meaningful-name] */Module_3291 from /* 329 */"../../../../../unrestored/shared/1571/2636/329"
+import * as /* [auto-meaningful-name] */Styles_module_css from /* 329 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css1 from /* 329 */"./styles.module.css"
 var Uv = memo(function (e) {
   var t = e.id
   var /* [auto-meaningful-name] */e$icon = e.icon
@@ -26,7 +26,7 @@ var Uv = memo(function (e) {
   var /* [auto-meaningful-name] */e$color = e.color
   var /* [auto-meaningful-name] */e$bgColor = e.bgColor
   var a = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
@@ -46,7 +46,7 @@ var Uv = memo(function (e) {
   }, [c, t, l, p, e$color, e$bgColor])
   return React.createElement("div", {
     key: t,
-    className: Classnames(Module_3291.itemBlock, c === t && l && Module_3291.itemSelected),
+    className: Classnames(Styles_module_css1.itemBlock, c === t && l && Styles_module_css1.itemSelected),
     style: {
       backgroundColor: b
     },
@@ -71,13 +71,13 @@ var Uv = memo(function (e) {
       m(false)
     }
   }, React.createElement("div", {
-    className: Module_3291.itemBlockIcon,
+    className: Styles_module_css1.itemBlockIcon,
     style: {
       color: e$color
     }
   }, React.createElement(Shared_ui_components_index.j, {
     type: e$icon
-  })), React.createElement("span", null, Module_710$a$formatMessage({
+  })), React.createElement("span", null, useIntl$formatMessage({
     id: e$label
   })))
 })
@@ -133,41 +133,41 @@ var Hv = [
   }
 ]
 var Vv = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
-    className: Module_3291.basicBlockBox
+    className: Styles_module_css1.basicBlockBox
   }, React.createElement("div", {
-    className: Module_3291.categoryTitle
-  }, Module_710$a$formatMessage({
+    className: Styles_module_css1.categoryTitle
+  }, useIntl$formatMessage({
     id: "basicBlock"
   })), React.createElement("div", {
-    className: Module_3291.blockList
+    className: Styles_module_css1.blockList
   }, Hv.map(function (e) {
     return React.createElement(Uv, Object.assign({
       key: e.id
     }, e))
   })), React.createElement("div", {
-    className: Module_3291.spaceLine
+    className: Styles_module_css1.spaceLine
   }))
 })
 var zv = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useSelector(function (e) {
     return e.block.isBlockDragDeleteArea
   })
   return React.createElement("div", {
-    className: Module_3291.deleteBlockBox
+    className: Styles_module_css1.deleteBlockBox
   }, React.createElement("div", {
-    className: Classnames(Module_3291.deleteTopIconBox, t && Module_3291.deleteTopIconBoxOff)
+    className: Classnames(Styles_module_css1.deleteTopIconBox, t && Styles_module_css1.deleteTopIconBoxOff)
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-delete-top",
-    className: Module_3291.deleteBlockTopIcon
+    className: Styles_module_css1.deleteBlockTopIcon
   })), React.createElement("div", {
-    className: Module_3291.deleteBottomIconBox
+    className: Styles_module_css1.deleteBottomIconBox
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-delete-bottom",
-    className: Module_3291.deleteBlockBottomIcon
-  })), React.createElement("div", null, Module_710$a$formatMessage({
+    className: Styles_module_css1.deleteBlockBottomIcon
+  })), React.createElement("div", null, useIntl$formatMessage({
     id: "Workspace.blockDragDeleteAreaTips"
   })))
 })
@@ -178,7 +178,7 @@ var Yv = memo(function () {
     return e.block.isBlockDragDeleteArea
   })
   return React.createElement("div", {
-    className: Module_3291.wrapper,
+    className: Styles_module_css1.wrapper,
     onMouseEnter: function () {
       return e(Redux_common_actions.ui(true))
     },
@@ -186,12 +186,12 @@ var Yv = memo(function () {
       return e(Redux_common_actions.ui(false))
     }
   }, React.createElement("div", {
-    className: Module_3291.basicBlock
+    className: Styles_module_css1.basicBlock
   }, React.createElement(Vv, null)), React.createElement("div", {
-    className: Module_3291.widgetTree,
+    className: Styles_module_css1.widgetTree,
     ref: t
   }, React.createElement(Fv, null)), React.createElement("div", {
-    className: Classnames(Module_3291.deleteBlockPanel, n && Module_3291.deleteBlockPanelShow)
+    className: Classnames(Styles_module_css1.deleteBlockPanel, n && Styles_module_css1.deleteBlockPanelShow)
   }, React.createElement(zv, null)))
 })
 export { Yv }

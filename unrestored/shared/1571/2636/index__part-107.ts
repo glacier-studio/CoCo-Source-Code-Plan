@@ -19,7 +19,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { forwardRef, useContext, createElement, memo, useState } from /* 0 */"react"
@@ -101,7 +101,7 @@ var fE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
-  var a = (0, Module_710.a().formatMessage)({
+  var a = (0, useIntl().formatMessage)({
     id: e$formConfig.label || "content"
   })
   var /* [auto-meaningful-name] */e$formConfig$max = e$formConfig.max
@@ -134,7 +134,7 @@ var hE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$renderInline = e.renderInline
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = e$getValue(n)
   var c = React.createElement(Src_shared_ui_components_index.i, {
     className: "coco-visible-switch changeVisible"
@@ -147,7 +147,7 @@ var hE = memo(function (e) {
     className: Module_88.btnIcon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: s ? "icon-see" : "icon-see-disable"
-  })), Module_710$a$formatMessage(s ? {
+  })), useIntl$formatMessage(s ? {
     id: "show"
   } : {
     id: "hide"
@@ -162,7 +162,7 @@ var mE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$renderInline = e.renderInline
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = e$getValue(n)
   var c = React.createElement(Src_shared_ui_components_index.i, {
     className: "changeDisabled"
@@ -175,7 +175,7 @@ var mE = memo(function (e) {
     className: Module_88.btnIcon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: s ? "icon-use_disable" : "icon-use"
-  })), Module_710$a$formatMessage(s ? {
+  })), useIntl$formatMessage(s ? {
     id: "disabled"
   } : {
     id: "able"
@@ -193,7 +193,7 @@ var gE = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig$label = e.formConfig.label
   var s = undefined === e$formConfig$label ? "color" : e$formConfig$label
   var c = e$getValue(n)
-  var l = (0, Module_710.a().formatMessage)({
+  var l = (0, useIntl().formatMessage)({
     id: s
   })
   var u = React.createElement(Src_shared_ui_components_index.i, {
@@ -218,9 +218,9 @@ var _E = memo(function (e) {
   var /* [auto-meaningful-name] */e$renderInline = e.renderInline
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
   var s = e$getValue(n)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$formConfig$label = e$formConfig.label
-  var u = Module_710$a$formatMessage({
+  var u = useIntl$formatMessage({
     id: undefined === e$formConfig$label ? "backgroundColor" : e$formConfig$label
   })
   var d = useState(false)

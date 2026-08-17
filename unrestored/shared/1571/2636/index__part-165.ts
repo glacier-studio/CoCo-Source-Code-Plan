@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Module_135 from /* 135 */"./135"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -27,7 +27,7 @@ var CA = function (e) {
   var i = Module_10.a(o, 2)
   var a = i[0]
   var s = i[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useDispatch()
   function u(t) {
     if (!e.isReadOnly) {
@@ -53,22 +53,22 @@ var CA = function (e) {
     className: Module_4731.SoundLayoutEmpty,
     onDragEnter: u,
     onDragLeave: d
-  }, React.createElement("h5", null, Module_710$a$formatMessage({
+  }, React.createElement("h5", null, useIntl$formatMessage({
     id: "emptySoundLibraryTitle"
   })), React.createElement("div", {
     className: Module_4731.emptyContent
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emptySoundLibraryTips1"
-  }), " ", React.createElement("br", null), Module_710$a$formatMessage({
+  }), " ", React.createElement("br", null), useIntl$formatMessage({
     id: "emptySoundLibraryTips2"
-  }), " ", React.createElement("br", null), Module_710$a$formatMessage({
+  }), " ", React.createElement("br", null), useIntl$formatMessage({
     id: "emptySoundLibraryTips3"
-  }), " ", React.createElement("br", null), Module_710$a$formatMessage({
+  }), " ", React.createElement("br", null), useIntl$formatMessage({
     id: "emptySoundLibraryTips4"
   }), " ", React.createElement("br", null))))
 }
 var TA = function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useDispatch()
   var r = useSelector(function (e) {
     return e.resource.soundFileList.reverse()
@@ -106,7 +106,7 @@ var TA = function (e) {
     className: Module_4731.icon
   }), React.createElement("div", {
     className: Module_4731.name
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.upload"
   }))))), r.map(function (e) {
     return React.createElement(EA, {

@@ -11,7 +11,7 @@ import { Wd } from "../../../../../unrestored/shared/1571/2636/index__part-32"
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"../../../../../unrestored/shared/1571/2636/60"
 import * as /* [auto-meaningful-name] */Module_49 from /* 49 */"../../../../../unrestored/shared/1571/2636/49"
 import * as /* [auto-meaningful-name] */Module_452 from /* 452 */"../../../../../unrestored/shared/1571/2636/452/index"
-import /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_styles_module_css from /* 279 */"../../../../src/editor/ui/PreviewArea/styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css from /* 279 */"../styles.module.css"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../unrestored/shared/1571/2636/238"
 import * as /* [auto-meaningful-name] */Module_75 from /* 75 */"../../../../../unrestored/shared/1571/2636/75"
 import * as /* [auto-meaningful-name] */Widget_builtIn_types from /* 5 */"../../../widget/built-in/types"
@@ -25,7 +25,7 @@ import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../../unrestored/shared/1571/2636/6"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"../../../../../unrestored/shared/1571/2636/188"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
@@ -39,7 +39,7 @@ import /* [auto-meaningful-name] */Module_9321 from /* 932 */"../../../../../unr
 var Vd = function (e) {
   var t
   var /* [auto-meaningful-name] */e$position = e.position
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
@@ -60,7 +60,7 @@ var Vd = function (e) {
   if (a.type === Widget_builtIn_types.a || a.type === Widget_builtIn_types.c) {
     return React.createElement("div", {
       className: Module_9321.container
-    }, React.createElement("div", null, s), React.createElement("div", null, Module_710$a$formatMessage({
+    }, React.createElement("div", null, s), React.createElement("div", null, useIntl$formatMessage({
       id: "relativeCoordinate"
     }), " X:", e$position.x, " Y:", e$position.y))
   }
@@ -187,10 +187,10 @@ var zd = React.memo(function () {
       i(Redux_common_actions.Mf(a, r))
     }
   }
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React.createElement("div", {
     ref: t,
-    className: Classnames(Src_editor_ui_PreviewArea_styles_module_css.stage, Module_11.a({}, Src_editor_ui_PreviewArea_styles_module_css.isActorDragging, c)),
+    className: Classnames(Styles_module_css.stage, Module_11.a({}, Styles_module_css.isActorDragging, c)),
     onDrop: z,
     onDragOver: function (e) {
       e.preventDefault()
@@ -253,7 +253,7 @@ var zd = React.memo(function () {
           return
         }
         var t = Module_9.Fb(a)
-        var n = Module_710$a$formatMessage({
+        var n = useIntl$formatMessage({
           id: "deleteWidget"
         }) + "“" + Module_190.f(t, 10) + "”?"
         var o = Module_26.z.checkFieldValueIsSelected("WIDGET_ID", a)
@@ -261,12 +261,12 @@ var zd = React.memo(function () {
         if (o || s) {
           i(Redux_common_actions.zh({
             onConfirm: X,
-            allowText: Module_710$a$formatMessage({
+            allowText: useIntl$formatMessage({
               id: "delete"
             }),
             title: n,
             isDangerous: true,
-            content: Module_710$a$formatMessage({
+            content: useIntl$formatMessage({
               id: s ? "deleteParentWidgetTips" : "deleteWidgetTips"
             })
           }))
@@ -280,7 +280,7 @@ var zd = React.memo(function () {
     disabled: "screen" !== u
   })), React.createElement("div", {
     ref: n,
-    className: Src_editor_ui_PreviewArea_styles_module_css.appZone,
+    className: Styles_module_css.appZone,
     id: "COCO_APP_ZONE",
     onMouseDown: function (e) {
       o.current = Module_60.d.NONE
@@ -336,25 +336,25 @@ var zd = React.memo(function () {
       if (v) {
         var /* [auto-meaningful-name] */v$widgetIds = v.widgetIds
         var t = []
-        v$widgetIds.forEach(function (e) {
+        e.forEach(function (e) {
           var n = Module_9.Bb(e)
           if (n && !n.parentId) {
             var /* [auto-meaningful-name] */n$position = n.position
             var /* [auto-meaningful-name] */n$size = n.size
-            var /* [auto-meaningful-name] */n$position$x = n$position.x
-            var /* [auto-meaningful-name] */n$position$y = n$position.y
-            var /* [auto-meaningful-name] */n$size$width = n$size.width
-            var /* [auto-meaningful-name] */n$size$height = n$size.height
+            var i = r.x
+            var a = r.y
+            var /* [auto-meaningful-name] */o$width = o.width
+            var /* [auto-meaningful-name] */o$height = o.height
             var l = {
               id: n.id,
-              width: n$size$width,
-              height: n$size$height,
-              left: n$position$x,
-              top: n$position$y,
-              right: n$position$x + n$size$width,
-              bottom: n$position$y + n$size$height,
-              center: n$position$x + n$size$width / 2,
-              middle: n$position$y + n$size$height / 2
+              width: s,
+              height: c,
+              left: i,
+              top: a,
+              right: i + s,
+              bottom: a + c,
+              center: i + s / 2,
+              middle: a + c / 2
             }
             t.push(l)
           }
@@ -363,14 +363,14 @@ var zd = React.memo(function () {
         var /* [auto-meaningful-name] */Module_75$d = Module_75.d
         t.push({
           id: v.id,
-          width: Module_75$e,
-          height: Module_75$d,
+          width: n,
+          height: r,
           left: 0,
           top: 0,
-          right: 0 + Module_75$e,
-          bottom: 0 + Module_75$d,
-          center: 0 + Module_75$e / 2,
-          middle: 0 + Module_75$d / 2
+          right: 0 + n,
+          bottom: 0 + r,
+          center: 0 + n / 2,
+          middle: 0 + r / 2
         })
         H.current = t
       }
@@ -405,8 +405,8 @@ var zd = React.memo(function () {
               }, t, r, "x")
               var /* [auto-meaningful-name] */i$length = i.length
               var /* [auto-meaningful-name] */i$origin = i.origin
-              e.length = i$length
-              e.origin = i$origin
+              e.length = a
+              e.origin = o$lines$hLines
             }
           })
           a$lines.forEach(function (e) {
@@ -420,8 +420,8 @@ var zd = React.memo(function () {
               }, t, r, "y")
               var /* [auto-meaningful-name] */i$length = i.length
               var /* [auto-meaningful-name] */i$origin = i.origin
-              e.length = i$length
-              e.origin = i$origin
+              e.length = a
+              e.origin = o$lines$hLines
             }
           })
         }
@@ -455,7 +455,7 @@ var zd = React.memo(function () {
     var /* [auto-meaningful-name] */e$value = e.value
     var /* [auto-meaningful-name] */e$origin = e.origin
     return React.createElement("span", {
-      className: Src_editor_ui_PreviewArea_styles_module_css.guideLine,
+      className: Styles_module_css.guideLine,
       key: "v-".concat(t),
       style: {
         left: e$value,
@@ -469,7 +469,7 @@ var zd = React.memo(function () {
     var /* [auto-meaningful-name] */e$value = e.value
     var /* [auto-meaningful-name] */e$origin = e.origin
     return React.createElement("span", {
-      className: Src_editor_ui_PreviewArea_styles_module_css.guideLine,
+      className: Styles_module_css.guideLine,
       key: "h-".concat(t),
       style: {
         top: e$value,

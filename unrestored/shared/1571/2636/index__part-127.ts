@@ -10,7 +10,7 @@ import { py } from "./index__part-102"
 import /* [auto-meaningful-name] */Module_88 from /* 88 */"./88"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -20,7 +20,7 @@ var _w = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var r = e$getValue("style") || Module_189.b.styleA
   var o = e$getValue("themeColor")
-  var i = (0, Module_710.a().formatMessage)({
+  var i = (0, useIntl().formatMessage)({
     id: e$formConfig.label || "previewImage"
   })
   var a = {
@@ -81,7 +81,7 @@ var vw = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
   var a = e$getValue(n)
   var s = e$formConfig.dropdown || []
-  var c = (0, Module_710.a().formatMessage)({
+  var c = (0, useIntl().formatMessage)({
     id: e$formConfig.label || "options"
   })
   return React.createElement(Src_shared_ui_components_index.i, {

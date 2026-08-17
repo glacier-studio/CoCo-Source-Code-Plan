@@ -100,7 +100,7 @@ exports.default = function () {
 }
 var r = a(require(/* 2708 */"../3309/2708"))
 var o = require(/* 2780 */"../2780")
-var i = require(/* 2750 */"../2750/index")
+var i = require(/* 2750 */"../2750")
 var l = {
   currentSrc: null,
   duration: 0,

@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -31,7 +31,7 @@ var OT = memo(function () {
   var /* [auto-meaningful-name] */t$options = t.options
   var a = Src_shared_packages_Crc_blink_src_index.Blink.mainWorkspace.get_block_by_id(t$blockInfo$sourceBlockId)
   var s = (null === a || undefined === a ? undefined : a.get_field_value("WIDGET_ID")) || (null === a || undefined === a || null === (e = a.get_parent()) || undefined === e ? undefined : e.get_field_value("WIDGET_ID"))
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useDispatch()
   if (!s) {
     console.error("actorId is null")
@@ -111,7 +111,7 @@ var OT = memo(function () {
                   onClick: u
                 }, React.createElement(Src_shared_ui_components_index.j, {
                   type: "icon-add"
-                }), Module_710$a$formatMessage({
+                }), useIntl$formatMessage({
                   id: "actorAddStyle"
                 })))
               }
@@ -183,7 +183,7 @@ var OT = memo(function () {
               onClick: u
             }, React.createElement(Src_shared_ui_components_index.j, {
               type: "icon-add"
-            }), Module_710$a$formatMessage({
+            }), useIntl$formatMessage({
               id: "ActorStyleDialog.addAction"
             }))) : React.createElement(Src_shared_ui_components_index.p, {
               value: e$value,

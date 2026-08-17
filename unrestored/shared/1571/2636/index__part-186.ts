@@ -12,12 +12,12 @@ import { Dj } from "./index__part-185"
 import * as /* [auto-meaningful-name] */Module_135 from /* 135 */"./135"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -31,7 +31,7 @@ var Pj = memo(function (e) {
   var /* [auto-meaningful-name] */e$selectedIds = e.selectedIds
   var /* [auto-meaningful-name] */e$canShowMultiply = e.canShowMultiply
   var /* [auto-meaningful-name] */e$selectHandler = e.selectHandler
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = useDispatch()
   var c = React.useState({})
   var l = Module_10.a(c, 2)[1]
@@ -77,7 +77,7 @@ var Pj = memo(function (e) {
     accept: e$mode === Module_68.c.ImageLibrary ? Module_133.f : e$mode === Module_68.c.SoundLibrary ? Module_135.h : e$mode === Module_68.c.IconLibrary ? "image/svg+xml" : ""
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-add2"
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "Resource.upload"
   }))), function () {
     if (e$mode === Module_68.c.ImageLibrary) {

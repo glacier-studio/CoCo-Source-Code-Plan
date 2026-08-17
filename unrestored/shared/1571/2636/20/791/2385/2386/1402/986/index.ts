@@ -9,10 +9,10 @@
 var r = require(/* 500 */"../../../../../../207/787/500")
 var i = require(/* 1 */"regenerator-runtime")
 var o = require(/* 399 */"../../../../../../207/787/399/index")
-var a = require(/* 984 */"../../1410/1159/984/index")
-var s = require(/* 985 */"../../1410/1159/985/index")
+var a = require(/* 984 */"./984/index")
+var s = require(/* 985 */"./985/index")
 var c = require(/* 298 */"process")
-var u = require(/* 311 */"../../1410/311")
+var u = require(/* 311 */"../311")
 var /* [auto-meaningful-name] */u$ArrayPrototypeIndexOf = u.ArrayPrototypeIndexOf
 var /* [auto-meaningful-name] */u$NumberIsInteger = u.NumberIsInteger
 var /* [auto-meaningful-name] */u$NumberIsNaN = u.NumberIsNaN
@@ -27,14 +27,14 @@ var /* [auto-meaningful-name] */u$SymbolAsyncIterator = u.SymbolAsyncIterator
 var /* [auto-meaningful-name] */u$Symbol = u.Symbol
 module.exports = J
 J.ReadableState = $
-var /* [auto-meaningful-name] */require_983_$$_1160_983$EventEmitter = require(/* 983 */"../1160/983").EventEmitter
-var E = require(/* 1160 */"../1160/index")
+var /* [auto-meaningful-name] */require_983_$_983$EventEmitter = require(/* 983 */"./983").EventEmitter
+var E = require(/* 1160 */"../1160")
 var /* [auto-meaningful-name] */E$Stream = E.Stream
 var /* [auto-meaningful-name] */E$prependListener = E.prependListener
 var /* [auto-meaningful-name] */require_333_$$_333_index$Buffer = require(/* 333 */"../333/index").Buffer
 var /* [auto-meaningful-name] */require_987_$$_987$addAbortSignal = require(/* 987 */"../987").addAbortSignal
-var S = require(/* 650 */"../../1410/650")
-var T = require(/* 427 */"../427").debuglog("stream", function (e) {
+var S = require(/* 650 */"../650")
+var T = require(/* 427 */"../427/index").debuglog("stream", function (e) {
   T = e
 })
 var B = require(/* 2389 */"./2389")
@@ -42,7 +42,7 @@ var D = require(/* 769 */"../769")
 var I = require(/* 988 */"../988")
 var /* [auto-meaningful-name] */I$getHighWaterMark = I.getHighWaterMark
 var /* [auto-meaningful-name] */I$getDefaultHighWaterMark = I.getDefaultHighWaterMark
-var P = require(/* 402 */"../402/index")
+var P = require(/* 402 */"../402")
 var /* [auto-meaningful-name] */P$aggregateTwoErrors = P.aggregateTwoErrors
 var /* [auto-meaningful-name] */P$codes = P.codes
 var /* [auto-meaningful-name] */P$codes$ERR_INVALID_ARG_TYPE = P$codes.ERR_INVALID_ARG_TYPE
@@ -51,7 +51,7 @@ var /* [auto-meaningful-name] */P$codes$ERR_OUT_OF_RANGE = P$codes.ERR_OUT_OF_RA
 var /* [auto-meaningful-name] */P$codes$ERR_STREAM_PUSH_AFTER_EOF = P$codes.ERR_STREAM_PUSH_AFTER_EOF
 var /* [auto-meaningful-name] */P$codes$ERR_STREAM_UNSHIFT_AFTER_END_EVENT = P$codes.ERR_STREAM_UNSHIFT_AFTER_END_EVENT
 var /* [auto-meaningful-name] */P$AbortError = P.AbortError
-var /* [auto-meaningful-name] */require_858_$$_$$_1410_1159_858$validateObject = require(/* 858 */"../../1410/1159/858").validateObject
+var /* [auto-meaningful-name] */require_858_$_858$validateObject = require(/* 858 */"./858").validateObject
 var Q = u$Symbol("kPaused")
 var /* [auto-meaningful-name] */require_2390_$_2390_index$StringDecoder = require(/* 2390 */"./2390/index").StringDecoder
 var K = require(/* 1407 */"./1407")
@@ -272,7 +272,7 @@ J.prototype._undestroy = D.undestroy
 J.prototype._destroy = function (e, t) {
   t(e)
 }
-J.prototype[require_983_$$_1160_983$EventEmitter.captureRejectionSymbol] = function (e) {
+J.prototype[require_983_$_983$EventEmitter.captureRejectionSymbol] = function (e) {
   this.destroy(e)
 }
 J.prototype[u$SymbolAsyncDispose] = function () {
@@ -894,7 +894,7 @@ J.prototype[u$SymbolAsyncIterator] = function () {
 }
 J.prototype.iterator = function (e) {
   if (undefined !== e) {
-    require_858_$$_$$_1410_1159_858$validateObject(e, "options")
+    require_858_$_858$validateObject(e, "options")
   }
   return fe(this, e)
 }

@@ -8,7 +8,7 @@
 
 import { UI, HI, VI, zI, YI } from "./index__part-177"
 import * as /* [auto-meaningful-name] */AgGridReact from /* 417 */"ag-grid-react"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
@@ -19,7 +19,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"./188"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
@@ -33,7 +33,7 @@ var ZI = memo(function (e) {
     return e.common.gridStatus
   })
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useRef(null)
   var i = useState(false)
   var a = Module_10.a(i, 2)
@@ -125,7 +125,7 @@ var ZI = memo(function (e) {
         var o = e.api.getColumnDefs()
         if (o.length >= 52) {
           n(Src_editor_redux_common_actions.mj({
-            message: Module_710$a$formatMessage({
+            message: useIntl$formatMessage({
               id: "columnLengthLimit"
             })
           }))
@@ -220,7 +220,7 @@ var ZI = memo(function (e) {
         e.api.refreshHeader()
       } else {
         n(Src_editor_redux_common_actions.mj({
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "emptyColumnName"
           })
         }))
@@ -247,13 +247,13 @@ var ZI = memo(function (e) {
         n(Src_editor_redux_common_actions.ni("", t))
         n(Src_editor_redux_common_actions.ri("", ""))
         n(Src_editor_redux_common_actions.mj({
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "copySuccess"
           })
         }))
       },
       className: Module_1321.menuItem
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "copyGridData"
     })), React.createElement("div", {
       onMouseDown: function () {
@@ -264,14 +264,14 @@ var ZI = memo(function (e) {
             var a = zI(e.api, t, i, 0)
             if (null === a || undefined === a ? undefined : a.columnOutOfRange) {
               n(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "pasteColumnOutOfRange"
                 })
               }))
             }
             if (null === a || undefined === a ? undefined : a.rowOutOfRange) {
               n(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "rowLengthLimit"
                 }, {
                   num: 1e3
@@ -283,7 +283,7 @@ var ZI = memo(function (e) {
         })
       },
       className: Module_1321.menuItem
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "pasteGridData"
     })), e.api.getColumnDefs().length > 3 ? React.createElement("div", {
       onMouseDown: function () {
@@ -314,7 +314,7 @@ var ZI = memo(function (e) {
         })
       },
       className: Classnames(Module_1321.menuItem, Module_1321.deleteOption)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "deleteGridData"
     })) : React.createElement("div", {
       onMouseDown: function () {
@@ -328,7 +328,7 @@ var ZI = memo(function (e) {
         }
       },
       className: Classnames(Module_1321.menuItem, Module_1321.deleteOption)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "clearGridData"
     })))
   }, React.createElement("div", {
@@ -393,7 +393,7 @@ var JI = memo(function (e) {
     return e.common.gridStatus
   })
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useState(false)
   var i = Module_10.a(o, 2)
   var a = i[0]
@@ -439,7 +439,7 @@ var JI = memo(function (e) {
   var y = function (o) {
     if (e.api.getDisplayedRowCount() >= 1e3) {
       n(Src_editor_redux_common_actions.mj({
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "rowLengthLimit"
         }, {
           num: 1e3
@@ -491,14 +491,14 @@ var JI = memo(function (e) {
           n(Src_editor_redux_common_actions.ni(e$node$id, ""))
           n(Src_editor_redux_common_actions.ri("", ""))
           n(Src_editor_redux_common_actions.mj({
-            message: Module_710$a$formatMessage({
+            message: useIntl$formatMessage({
               id: "copySuccess"
             })
           }))
         }
       },
       className: Module_1321.menuItem
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "copyGridData"
     })), React.createElement("div", {
       onMouseDown: function () {
@@ -507,14 +507,14 @@ var JI = memo(function (e) {
           var i = zI(e.api, t, o, e.rowIndex)
           if (null === i || undefined === i ? undefined : i.columnOutOfRange) {
             n(Src_editor_redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "pasteColumnOutOfRange"
               })
             }))
           }
           if (null === i || undefined === i ? undefined : i.rowOutOfRange) {
             n(Src_editor_redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "rowLengthLimit"
               }, {
                 num: 1e3
@@ -525,17 +525,17 @@ var JI = memo(function (e) {
         })
       },
       className: Module_1321.menuItem
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "pasteGridData"
     })), React.createElement("div", {
       onMouseDown: y.bind(null, "prev"),
       className: Classnames(Module_1321.menuItem, Module_1321.borderTop)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "insertPrevRow"
     })), React.createElement("div", {
       onMouseDown: y.bind(null, "next"),
       className: Classnames(Module_1321.menuItem, Module_1321.borderBottom)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "insertNextRow"
     })), React.createElement("div", {
       onMouseDown: function () {
@@ -555,7 +555,7 @@ var JI = memo(function (e) {
         }
       },
       className: Classnames(Module_1321.menuItem, Module_1321.deleteOption)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "deleteGridData"
     })))
   }, React.createElement("div", {
@@ -579,7 +579,7 @@ var $I = memo(function (e) {
     return e.common.gridStatus
   })
   var o = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useState(false)
   var s = Module_10.a(a, 2)
   var c = s[0]
@@ -605,7 +605,7 @@ var $I = memo(function (e) {
   var g = function () {
     if (e.limitRow && e.api.getDisplayedRowCount() >= e.limitRow) {
       return void o(Src_editor_redux_common_actions.mj({
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "rowLengthLimit"
         }, {
           num: e.limitRow
@@ -654,7 +654,7 @@ var ej = memo(function (e) {
   var c = useSelector(function (e) {
     return e.common.gridStatus
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var u = useDispatch()
   var d = useState(false)
   var p = Module_10.a(d, 2)
@@ -727,7 +727,7 @@ var ej = memo(function (e) {
   var K = function (t) {
     if (e.api.getDisplayedRowCount() >= 1e3) {
       u(Src_editor_redux_common_actions.mj({
-        message: Module_710$a$formatMessage({
+        message: useIntl$formatMessage({
           id: "rowLengthLimit"
         }, {
           num: 1e3
@@ -826,14 +826,14 @@ var ej = memo(function (e) {
           u(Src_editor_redux_common_actions.ri("", ""))
           e.api.clearFocusedCell()
           u(Src_editor_redux_common_actions.mj({
-            message: Module_710$a$formatMessage({
+            message: useIntl$formatMessage({
               id: "copySuccess"
             })
           }))
         }
       },
       className: Module_1321.menuItem
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "copyGridData"
     })), React.createElement("div", {
       onMouseDown: function () {
@@ -844,14 +844,14 @@ var ej = memo(function (e) {
             var o = zI(e.api, t, r, e.rowIndex)
             if (null === o || undefined === o ? undefined : o.columnOutOfRange) {
               u(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "pasteColumnOutOfRange"
                 })
               }))
             }
             if (null === o || undefined === o ? undefined : o.rowOutOfRange) {
               u(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "rowLengthLimit"
                 }, {
                   num: 1e3
@@ -863,17 +863,17 @@ var ej = memo(function (e) {
         })
       },
       className: Module_1321.menuItem
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "pasteGridData"
     })), React.createElement("div", {
       onMouseDown: K.bind(null, "prev"),
       className: Classnames(Module_1321.menuItem, Module_1321.borderTop)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "insertPrevRow"
     })), React.createElement("div", {
       onMouseDown: K.bind(null, "next"),
       className: Classnames(Module_1321.menuItem, Module_1321.borderBottom)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "insertNextRow"
     })), React.createElement("div", {
       onMouseDown: function () {
@@ -883,7 +883,7 @@ var ej = memo(function (e) {
         }
       },
       className: Classnames(Module_1321.menuItem, Module_1321.deleteOption)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "deleteRowData"
     })))
   }, React.createElement("div", {
@@ -924,7 +924,7 @@ var ej = memo(function (e) {
     }, React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-Image",
       className: Module_1321.resourceMenuIcon
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "Resource.ImageLibrary"
     })), React.createElement("div", {
       onMouseDown: X,
@@ -932,7 +932,7 @@ var ej = memo(function (e) {
     }, React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-Icon",
       className: Module_1321.resourceMenuIcon
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "Resource.IconLibrary"
     })), React.createElement("div", {
       onMouseDown: Q,
@@ -940,7 +940,7 @@ var ej = memo(function (e) {
     }, React.createElement(Src_shared_ui_components_index.j, {
       type: "icon-Sound",
       className: Module_1321.resourceMenuIcon
-    }), Module_710$a$formatMessage({
+    }), useIntl$formatMessage({
       id: "Resource.SoundLibrary"
     })))
   }, React.createElement("div", {
@@ -954,7 +954,7 @@ var rj = memo(function (e) {
     return e.project.focusedWorkspaceArea
   })
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useRef(null)
   var i = useRef({
     rowId: "",
@@ -1065,7 +1065,7 @@ var rj = memo(function (e) {
         if (o.length <= 2) {
           if (!document.querySelector(".noColumn")) {
             var a = document.createElement("div")
-            a.innerText = Module_710$a$formatMessage({
+            a.innerText = useIntl$formatMessage({
               id: "emptyColumn"
             })
             a.className = "noColumn"
@@ -1205,7 +1205,7 @@ var rj = memo(function (e) {
             n(Src_editor_redux_common_actions.ni(o, a))
             c.clearFocusedCell()
             return void n(Src_editor_redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "copySuccess"
               })
             }))
@@ -1215,7 +1215,7 @@ var rj = memo(function (e) {
           HI(c, i.current.columnId)
           n(Src_editor_redux_common_actions.ni("", i.current.columnId))
           return void n(Src_editor_redux_common_actions.mj({
-            message: Module_710$a$formatMessage({
+            message: useIntl$formatMessage({
               id: "copySuccess"
             })
           }))
@@ -1227,7 +1227,7 @@ var rj = memo(function (e) {
             VI(c, l)
             n(Src_editor_redux_common_actions.ni(i.current.rowId, ""))
             n(Src_editor_redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "copySuccess"
               })
             }))
@@ -1252,14 +1252,14 @@ var rj = memo(function (e) {
               var i = zI(c, e, t, e$rowIndex)
               if (null === i || undefined === i ? undefined : i.columnOutOfRange) {
                 n(Src_editor_redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "pasteColumnOutOfRange"
                   })
                 }))
               }
               if (null === i || undefined === i ? undefined : i.rowOutOfRange) {
                 n(Src_editor_redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "rowLengthLimit"
                   }, {
                     num: 1e3
@@ -1276,14 +1276,14 @@ var rj = memo(function (e) {
             var o = zI(c, e, i$current$columnId, 0)
             if (null === o || undefined === o ? undefined : o.columnOutOfRange) {
               n(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "pasteColumnOutOfRange"
                 })
               }))
             }
             if (null === o || undefined === o ? undefined : o.rowOutOfRange) {
               n(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "rowLengthLimit"
                 }, {
                   num: 1e3
@@ -1302,14 +1302,14 @@ var rj = memo(function (e) {
               var s = zI(c, e, o, a)
               if (null === s || undefined === s ? undefined : s.columnOutOfRange) {
                 n(Src_editor_redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "pasteColumnOutOfRange"
                   })
                 }))
               }
               if (null === s || undefined === s ? undefined : s.rowOutOfRange) {
                 n(Src_editor_redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "rowLengthLimit"
                   }, {
                     num: 1e3

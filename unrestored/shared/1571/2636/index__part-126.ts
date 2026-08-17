@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -27,7 +27,7 @@ var hw = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var a = e$getValue(n)
   var s = e$getValue("templateRenderType")
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useDispatch()
   var u = useState(false)
   var d = Module_10.a(u, 2)
@@ -54,19 +54,19 @@ var hw = memo(function (e) {
     className: Classnames(Module_186.formItemWrapper, "templateType")
   }, React.createElement("div", {
     className: "coco-form-item coco-form-item-horizontal"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.templateType"
   }), React.createElement("div", {
     className: Module_186.cardBox
   }, React.createElement("div", {
     onClick: g.bind(null, "tiled"),
     className: Classnames(Module_186.cardItem, "tiled" === s && Module_186.active)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.tiled"
   })), React.createElement("div", {
     onClick: g.bind(null, "card"),
     className: Classnames(Module_186.cardItem, "card" === s && Module_186.active)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.card"
   })))), React.createElement("div", {
     className: Module_186.templateBox,
@@ -98,7 +98,7 @@ var hw = memo(function (e) {
     className: Module_186.templateListTitle
   }, React.createElement("div", {
     className: Module_186.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.templateType"
   })), React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-closed"
@@ -128,12 +128,12 @@ var mw = memo(function (e) {
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
   var a = e$getValue(n)
   var s = e$formConfig.dropdown || []
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useState(a)
   var u = Module_10.a(l, 2)
   var d = u[0]
   var p = u[1]
-  var m = Module_710$a$formatMessage({
+  var m = useIntl$formatMessage({
     id: e$formConfig.label || "options"
   })
   var g = function (e) {

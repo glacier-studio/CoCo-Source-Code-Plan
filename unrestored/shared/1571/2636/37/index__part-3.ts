@@ -8,16 +8,16 @@
 
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../53"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../6"
 import * as /* [auto-meaningful-name] */Module_100 from /* 100 */"../100"
-var Fe = Module_66.a.Record({
+var Fe = Immutable.Record({
   editorInviteUrl: "",
   readOnlyInviteUrl: "",
-  cooperationUserList: Module_66.a.List([]),
-  onlineCooperationUserList: Module_66.a.List([]),
-  userFocusOTInfoList: Module_66.a.List([]),
-  onlineCooperationUserColorRecord: Module_66.a.Record({})(),
+  cooperationUserList: Immutable.List([]),
+  onlineCooperationUserList: Immutable.List([]),
+  userFocusOTInfoList: Immutable.List([]),
+  onlineCooperationUserColorRecord: Immutable.Record({})(),
   isAuthor: true,
   collWorkId: null
 })()
@@ -25,7 +25,7 @@ function Ge(e, t) {
   t.payload.list.sort(function (e) {
     return 0 - Number(e.is_author)
   })
-  return e.set("cooperationUserList", Module_66.a.List(t.payload.list))
+  return e.set("cooperationUserList", Immutable.List(t.payload.list))
 }
 var We = function () {
   var e = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : Fe
@@ -34,7 +34,7 @@ var We = function () {
     case Module_100.h:
       return Ge(e, t)
     case Module_100.j:
-      return e.set("onlineCooperationUserList", Module_66.a.List(t.payload.list))
+      return e.set("onlineCooperationUserList", Immutable.List(t.payload.list))
     case Module_100.e:
       return e.set("editorInviteUrl", t.payload.url)
     case Module_100.g:
@@ -46,7 +46,7 @@ var We = function () {
     case Module_100.k:
       return e.set("userFocusOTInfoList", t.payload.list)
     case Module_100.i:
-      return e.set("onlineCooperationUserColorRecord", Module_66.a.Record(t.payload.colors)())
+      return e.set("onlineCooperationUserColorRecord", Immutable.Record(t.payload.colors)())
     case Module_100.c:
       return Fe
     default:
@@ -60,14 +60,14 @@ var Ue = {
   sidebarType: undefined,
   setTab: undefined
 }
-var He = Module_66.a.Record({
+var He = Immutable.Record({
   resourceLibraryDialogInfo: Ue,
   resourceLibraryDialogVisible: false,
   resourceLibraryUpdateAt: 0,
-  imageFileList: Module_66.a.List([]),
-  iconFileList: Module_66.a.List([]),
-  soundFileList: Module_66.a.List([]),
-  fontFileList: Module_66.a.List(Module_53.a)
+  imageFileList: Immutable.List([]),
+  iconFileList: Immutable.List([]),
+  soundFileList: Immutable.List([]),
+  fontFileList: Immutable.List(Module_53.a)
 })()
 function Ve(e, t) {
   return e.update("imageFileList", function (e) {
@@ -186,7 +186,7 @@ var et = function () {
     case Src_editor_redux_common_actions.hc:
       return ze(e, t)
     case Src_editor_redux_common_actions.Zc:
-      return e.set("soundFileList", Module_66.a.List(t.payload.soundFileList))
+      return e.set("soundFileList", Immutable.List(t.payload.soundFileList))
     case Src_editor_redux_common_actions.m:
       return Ye(e, t)
     case Src_editor_redux_common_actions.Sb:
@@ -202,7 +202,7 @@ var et = function () {
     case Src_editor_redux_common_actions.Nc:
       return Je(e, t)
     case Src_editor_redux_common_actions.Vc:
-      return e.set("iconFileList", Module_66.a.List(t.payload.iconFileList))
+      return e.set("iconFileList", Immutable.List(t.payload.iconFileList))
     case Src_editor_redux_common_actions.Sc:
       return $e(e, t)
     default:

@@ -8,17 +8,17 @@
 
 import { wy } from "../../../../../unrestored/shared/1571/2636/index__part-105"
 import { FC } from "../../../../../unrestored/shared/1571/2636/index__part-141"
-import /* [auto-meaningful-name] */Module_420 from /* 420 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css from /* 420 */"./styles.module.css"
 import * as /* [auto-meaningful-name] */Module_33 from /* 33 */"../../../../../unrestored/shared/1571/2636/33"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../unrestored/shared/1571/2636/238"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
 import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"../../../../../unrestored/shared/1571/2636/26/index"
-import * as /* [auto-meaningful-name] */Src_shared_widget_custom_load from /* 34 */"../../../../shared/widget/custom/load"
+import * as /* [auto-meaningful-name] */Shared_widget_custom_load from /* 34 */"../../../../shared/widget/custom/load"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../unrestored/shared/1571/2636/18"
-import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../redux/common/actions"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
+import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
+import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -57,12 +57,12 @@ var UC = memo(function (e) {
         onChange: function (e, n) {
           !function (e, n, r) {
             var i = true
-            if (Src_shared_widget_custom_load.q(e$widgetType)) {
+            if (Shared_widget_custom_load.q(e$widgetType)) {
               if (!(Module_33.k.includes(e) && Module_33.l.includes(r))) {
                 i = false
               }
             }
-            c(Src_editor_redux_common_actions.Lg(e$widgetId, e, n, undefined, undefined, undefined, i))
+            c(Redux_common_actions.Lg(e$widgetId, e, n, undefined, undefined, undefined, i))
           }(e, n, e$type)
         },
         getValue: l,
@@ -71,12 +71,12 @@ var UC = memo(function (e) {
       })
     }
   }
-  return React.createElement(Src_shared_ui_components_index.h, {
+  return React.createElement(Shared_ui_components_index.h, {
     className: Classnames(Module_10571.formGroup, a && Module_10571.formGroupHasHelpUrl),
     "data-updated-at": s
   }, React.createElement("div", null, function e(n, r) {
     return n.map(function (n, o) {
-      return Array.isArray(n) ? React.createElement(Src_shared_ui_components_index.u, {
+      return Array.isArray(n) ? React.createElement(Shared_ui_components_index.u, {
         key: "".concat(e$widgetId, "-").concat(o),
         className: Module_10571.formItemWrapper,
         align: "middle",
@@ -87,7 +87,7 @@ var UC = memo(function (e) {
 })
 var HC = memo(function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
@@ -106,7 +106,7 @@ var HC = memo(function () {
   }) === Module_18.j.ReadOnly
   var c = function () {
     var t
-    if (!(e(Src_editor_redux_common_actions.fj(false)), i)) {
+    if (!(e(Redux_common_actions.fj(false)), i)) {
       Module_26.g.setSelectedItem()
       if (!(null === (t = Module_26.g.getToolbox()) || undefined === t)) {
         t.flyout.hide()
@@ -114,7 +114,7 @@ var HC = memo(function () {
     }
   }
   if (n && !a) {
-    e(Src_editor_redux_common_actions.fj(false))
+    e(Redux_common_actions.fj(false))
     return null
   }
   if (null === a || undefined === a ? undefined : a.type) {
@@ -126,23 +126,23 @@ var HC = memo(function () {
       var /* [auto-meaningful-name] */u$childWidgetEditConfig = u.childWidgetEditConfig
       var m = a.parentId && u$childWidgetEditConfig ? u$childWidgetEditConfig : u$editConfig
       return React.createElement("div", {
-        className: Classnames(Module_420.wrapper, !r && Module_420.hide),
+        className: Classnames(Styles_module_css.wrapper, !r && Styles_module_css.hide),
         style: {
           bottom: o + 8
         }
       }, React.createElement("div", {
-        className: Module_420.header
+        className: Styles_module_css.header
       }, React.createElement("h3", {
-        className: Module_420.title
-      }, Module_710$a$formatMessage({
+        className: Styles_module_css.title
+      }, useIntl$formatMessage({
         id: "property"
       })), React.createElement("div", {
         onClick: c,
-        className: Module_420.close
-      }, React.createElement(Src_shared_ui_components_index.j, {
+        className: Styles_module_css.close
+      }, React.createElement(Shared_ui_components_index.j, {
         type: "icon-close-bold"
       }))), React.createElement("div", {
-        className: Classnames(Module_420.content, s && Module_420.readonly)
+        className: Classnames(Styles_module_css.content, s && Styles_module_css.readonly)
       }, React.createElement(UC, {
         widgetId: a.id,
         widgetType: a.type,
@@ -152,23 +152,23 @@ var HC = memo(function () {
     }
   }
   return React.createElement("div", {
-    className: Classnames(Module_420.wrapper, !r && Module_420.hide),
+    className: Classnames(Styles_module_css.wrapper, !r && Styles_module_css.hide),
     style: {
       bottom: o + 8
     }
   }, React.createElement("div", {
-    className: Module_420.header
+    className: Styles_module_css.header
   }, React.createElement("h3", {
-    className: Module_420.title
-  }, Module_710$a$formatMessage({
+    className: Styles_module_css.title
+  }, useIntl$formatMessage({
     id: "property"
   })), React.createElement("div", {
     onClick: c,
-    className: Module_420.close
-  }, React.createElement(Src_shared_ui_components_index.j, {
+    className: Styles_module_css.close
+  }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-close-bold"
   }))), React.createElement("div", {
-    className: Classnames(Module_420.content, s && Module_420.readonly)
+    className: Classnames(Styles_module_css.content, s && Styles_module_css.readonly)
   }, React.createElement(wy, null)))
 })
 export { HC }

@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -90,7 +90,7 @@ var aP = memo(function () {
   var ce = Module_10.a(se, 2)
   var le = ce[0]
   var ue = ce[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var pe = useRef("")
   var fe = useSelector(function (e) {
     var /* [auto-meaningful-name] */e$common$userInfo
@@ -246,10 +246,10 @@ var aP = memo(function () {
   var ye = function (e, t) {
     if (ge.includes(e)) {
       n(Src_editor_redux_common_actions.zh({
-        title: Module_710$a$formatMessage({
+        title: useIntl$formatMessage({
           id: "cloudDBManager.deleteTitle"
         }),
-        content: Module_710$a$formatMessage({
+        content: useIntl$formatMessage({
           id: "cloudDBManager.deleteImportContent"
         }),
         cancelBtnVisible: false,
@@ -287,10 +287,10 @@ var aP = memo(function () {
             r()
           },
           isDangerous: true,
-          title: Module_710$a$formatMessage({
+          title: useIntl$formatMessage({
             id: "cloudDBManager.deleteTitle"
           }),
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "cloudDBManager.deleteContent"
           })
         }))
@@ -313,13 +313,13 @@ var aP = memo(function () {
         onConfirm: function () {
           r()
         },
-        title: Module_710$a$formatMessage({
+        title: useIntl$formatMessage({
           id: "cloudDBManager.editTitle"
         }),
-        content: Module_710$a$formatMessage({
+        content: useIntl$formatMessage({
           id: "cloudDBManager.editNotice"
         }),
-        allowText: Module_710$a$formatMessage({
+        allowText: useIntl$formatMessage({
           id: "cloudDBManager.editBtn"
         })
       }))
@@ -340,7 +340,7 @@ var aP = memo(function () {
       className: Module_160.managerTitle
     }, React.createElement("div", {
       className: Module_160.titleText
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "cloudDBManager.title"
     })), React.createElement(_C, {
       onChange: function () {
@@ -359,7 +359,7 @@ var aP = memo(function () {
   }, Z ? React.createElement("div", {
     className: Module_160.emptyContainer
   }, React.createElement(we, {
-    text: Module_710$a$formatMessage({
+    text: useIntl$formatMessage({
       id: "cloudDBManager.noCloudDB"
     })
   })) : React.createElement(React.Fragment, null, React.createElement("div", {
@@ -370,7 +370,7 @@ var aP = memo(function () {
     className: Module_160.header
   }, React.createElement("span", {
     className: Module_160.text1
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.capacity"
   })), React.createElement("span", {
     className: Module_160.text2
@@ -392,13 +392,13 @@ var aP = memo(function () {
     className: Classnames(Module_160.point, Module_160.dev)
   }), React.createElement("span", {
     className: Module_160.text
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.testData"
   })), React.createElement("div", {
     className: Classnames(Module_160.point, Module_160.prod)
   }), React.createElement("span", {
     className: Module_160.text
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.prodData"
   }))), React.createElement("div", {
     className: Module_160.line
@@ -425,14 +425,14 @@ var aP = memo(function () {
       return Oe(true)
     },
     className: Classnames(Module_160.tab, i && Module_160.selected_dev)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.testData"
   })), React.createElement("div", {
     onClick: function () {
       return Oe(false)
     },
     className: Classnames(Module_160.tab, !i && Module_160.selected_prod)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBManager.prodData"
   }))), React.createElement("div", {
     className: Module_160.gridArea
@@ -443,7 +443,7 @@ var aP = memo(function () {
     alt: "loading"
   }), React.createElement("span", {
     className: Module_160.text
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBWidget.loading"
   }))) : React.createElement(nP, {
     id: y || "",

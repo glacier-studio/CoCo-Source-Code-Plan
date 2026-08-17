@@ -19,7 +19,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
@@ -39,7 +39,7 @@ var lw = memo(function (e) {
   var i = e$getValue(n)
   var a = e$getValue("templateSlotMap")
   var s = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useRef(null)
   var u = useState(false)
   var d = Module_10.a(u, 2)
@@ -104,13 +104,13 @@ var lw = memo(function (e) {
                 break
               }
               s(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "maximumGridSourceSize"
                 })
               }))
               return e.abrupt("return")
             case 6:
-              r = Sg(Module_710$a$formatMessage)
+              r = Sg(useIntl$formatMessage)
               o = C().map(function (e) {
                 return e.title
               })
@@ -136,7 +136,7 @@ var lw = memo(function (e) {
             case 16:
               e$sent1 = e.sent
               s(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "uploadGridSuccess"
                 })
               }))
@@ -181,7 +181,7 @@ var lw = memo(function (e) {
     className: "coco-form-item coco-form-item-horizontal"
   }, React.createElement("div", {
     className: Module_1861.label
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.dataSource"
   })), React.createElement(py, {
     ref: l,
@@ -195,7 +195,7 @@ var lw = memo(function (e) {
       }
     },
     value: i || undefined,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "ListViewerWidget.dataSourcePlaceholder"
     }),
     optionLabelProp: "label",
@@ -251,10 +251,10 @@ var lw = memo(function (e) {
         switch (e) {
           case "CREATE_NEW_DATA_SOURCE":
             s(Src_editor_redux_common_actions.nj({
-              title: Module_710$a$formatMessage({
+              title: useIntl$formatMessage({
                 id: "addGridName"
               }),
-              placeholder: Module_710$a$formatMessage({
+              placeholder: useIntl$formatMessage({
                 id: "addGridNamePlaceholder"
               }),
               onConfirm: function () {
@@ -299,11 +299,11 @@ var lw = memo(function (e) {
                       return t.title === e
                     })
                   },
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "gridNameRepeat"
                   })
                 }
-              ].concat(Module_25.a(Sg(Module_710$a$formatMessage)))
+              ].concat(Module_25.a(Sg(useIntl$formatMessage)))
             }))
         }
         m(false)
@@ -312,7 +312,7 @@ var lw = memo(function (e) {
       value: "CREATE_NEW_DATA_SOURCE"
     }, React.createElement("div", {
       className: Module_1861.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "addGridName"
     }))), React.createElement(Src_shared_ui_components_index.m, {
       value: "IMPORT_DATA_SOURCE"
@@ -322,7 +322,7 @@ var lw = memo(function (e) {
       },
       accept: ".xlsx, .xls, .csv",
       className: Module_1861.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "ListViewerWidget.importNewSource"
     })))))
   }, React.createElement("div", {
@@ -333,7 +333,7 @@ var lw = memo(function (e) {
     className: Classnames(Module_1861.formItemWrapper, "dataBindings")
   }, React.createElement("div", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.dataBindings"
   })), Object.keys(a).reverse().map(function (e) {
     return React.createElement("div", {
@@ -343,7 +343,7 @@ var lw = memo(function (e) {
       className: Module_1861.label
     }, a[e].label), React.createElement(py, {
       allowClear: true,
-      placeholder: Module_710$a$formatMessage({
+      placeholder: useIntl$formatMessage({
         id: "ListViewerWidget.dataBindingsPlaceholder"
       }),
       onChange: R.bind(null, e),
@@ -372,7 +372,7 @@ var pw = memo(function (e) {
   var a = e$getValue(n)
   var s = e$getValue("templateSlotMap")
   var c = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var u = useRef(null)
   var d = useState([])
   var p = Module_10.a(d, 2)
@@ -546,7 +546,7 @@ var pw = memo(function (e) {
     className: Classnames(Module_1861.formItemWrapper, Module_1861.dataSource)
   }, React.createElement("div", {
     className: Module_1861.itemLabel
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.dataSource"
   })), React.createElement(py, {
     ref: u,
@@ -584,20 +584,20 @@ var pw = memo(function (e) {
       }, React.createElement("div", null, React.createElement(Src_shared_ui_components_index.j, {
         type: "icon-add",
         className: Module_1861.addIcon
-      }), Module_710$a$formatMessage({
+      }), useIntl$formatMessage({
         id: "ListViewerWidget.createDataSource"
       }))), e, (P$localOptions.length > 0 || k.length > 0) && React.createElement("div", {
         className: Classnames(Module_1861.cloudTable, P$localOptions.length > 0 && Module_1861.showShadow),
         onMouseEnter: K,
         onMouseLeave: q
-      }, React.createElement("div", null, Module_710$a$formatMessage({
+      }, React.createElement("div", null, useIntl$formatMessage({
         id: "CloudSpaceDBWidget.widgetName"
       })), x ? React.createElement(Src_shared_ui_components_index.j, {
         type: "icon-arrow-down",
         className: Module_1861.arrowIcon
       }) : React.createElement(Module_748.a, {
         placement: "bottom",
-        title: Module_710$a$formatMessage({
+        title: useIntl$formatMessage({
           id: "ListViewerWidget.cloudTableOtTips"
         })
       }, React.createElement("div", null, React.createElement(Src_shared_ui_components_index.j, {
@@ -612,7 +612,7 @@ var pw = memo(function (e) {
       }, React.createElement(Src_shared_ui_components_index.d, {
         type: "primary",
         onClick: X
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "cloudSpace.needLogin"
       }))), R && 0 === k.length && React.createElement("div", {
         className: Module_1861.noData
@@ -640,7 +640,7 @@ var pw = memo(function (e) {
       }))))
     },
     value: a || undefined,
-    placeholder: Module_710$a$formatMessage({
+    placeholder: useIntl$formatMessage({
       id: "ListViewerWidget.dataSourcePlaceholder"
     }),
     optionLabelProp: "label",
@@ -652,14 +652,14 @@ var pw = memo(function (e) {
     })
   }, P$localOptions.length > 0 && React.createElement(py$OptGroup, {
     key: "localTableData",
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "ListViewerWidget.localTableData"
     })
   }), P$localOptions, P$cloudOptions)), a ? React.createElement("div", {
     className: Classnames(Module_1861.formItemWrapper, "dataBindings")
   }, React.createElement("div", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.dataBindings"
   })), Object.keys(s).reverse().map(function (e) {
     return React.createElement("div", {
@@ -669,7 +669,7 @@ var pw = memo(function (e) {
       className: Module_1861.label
     }, s[e].label), React.createElement(py, {
       allowClear: true,
-      placeholder: Module_710$a$formatMessage({
+      placeholder: useIntl$formatMessage({
         id: "ListViewerWidget.dataBindingsPlaceholder"
       }),
       onChange: U.bind(null, e),

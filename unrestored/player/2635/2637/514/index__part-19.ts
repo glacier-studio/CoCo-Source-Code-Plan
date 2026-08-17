@@ -19,10 +19,10 @@ import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../shared/1571/2636/10/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 var ye = memo(function () {
   var t = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (t) {
     return t.emulatorPhoneInfo
   })
@@ -95,7 +95,7 @@ var ye = memo(function () {
     className: Module_71.phoneNumber
   }, n.phoneNumber), n.callStatus === Module_70.b.RINGING && React.createElement("div", {
     className: Module_71.phoneStatus
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emulator.onRinging"
   })), n.callStatus === Module_70.b.OFFHOOK && React.createElement("div", {
     className: Module_71.phoneStatus
@@ -110,13 +110,13 @@ var ye = memo(function () {
     type: "icon-phone-call-disconnect"
   })), React.createElement("span", {
     className: Module_71.callBtnText
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emulator.callEnd"
   }))))), "incomingCall" === n.callType && React.createElement(React.Fragment, null, React.createElement("div", {
     className: Module_71.phoneNumber
   }, n.phoneNumber), n.callStatus === Module_70.b.RINGING && React.createElement("div", {
     className: Module_71.phoneStatus
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emulator.phoneNumber"
   })), n.callStatus === Module_70.b.OFFHOOK && React.createElement("div", {
     className: Module_71.phoneStatus
@@ -131,9 +131,9 @@ var ye = memo(function () {
     type: "icon-phone-call-disconnect"
   })), React.createElement("span", {
     className: Module_71.callBtnText
-  }, n.callStatus === Module_70.b.RINGING ? Module_710$a$formatMessage({
+  }, n.callStatus === Module_70.b.RINGING ? useIntl$formatMessage({
     id: "emulator.callRefuse"
-  }) : Module_710$a$formatMessage({
+  }) : useIntl$formatMessage({
     id: "emulator.callEnd"
   }))), n.callStatus === Module_70.b.RINGING && React.createElement("div", {
     className: Module_71.callBtnItemBox,
@@ -144,7 +144,7 @@ var ye = memo(function () {
     type: "icon-phone-call-dial"
   })), React.createElement("span", {
     className: Module_71.callBtnText
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emulator.callConnect"
   }))))))
 })

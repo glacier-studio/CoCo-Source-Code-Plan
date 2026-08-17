@@ -10,7 +10,7 @@ var tP
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -44,7 +44,7 @@ var _P = memo(function () {
   var /* [auto-meaningful-name] */o$type = o.type
   var /* [auto-meaningful-name] */o$callback = o.callback
   var c = "share" === o$type ? "分享" : "打包"
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var u = useDispatch()
   useEffect(function () {
     if (o$visible) {
@@ -69,7 +69,7 @@ var _P = memo(function () {
       }
       d()
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cloudDBPublishDialog.jump"
   })), React.createElement("div", {
     className: Module_3851.imgArea
@@ -155,12 +155,12 @@ var _P = memo(function () {
   }, function () {
     switch (n) {
       case tP.STEP0:
-        return React.createElement("span", null, Module_710$a$formatMessage({
+        return React.createElement("span", null, useIntl$formatMessage({
           id: "cloudDBPublishDialog.know"
         }))
       case tP.STEP1:
       case tP.STEP2:
-        return React.createElement("span", null, Module_710$a$formatMessage({
+        return React.createElement("span", null, useIntl$formatMessage({
           id: "cloudDBPublishDialog.then"
         }))
       case tP.STEP3:

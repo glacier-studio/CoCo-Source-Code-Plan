@@ -21,11 +21,11 @@ var d = r(require(/* 1069 */"../../../13/780/1069/index"))
 var c = r(require(/* 50 */"../../../50/index"))
 var f = a(require(/* 0 */"react"))
 var h = r(require(/* 8 */"classnames"))
-var p = r(require(/* 2781 */"./2781/index"))
+var p = r(require(/* 2781 */"./2781"))
 var v = r(require(/* 2920 */"./2920"))
 var m = r(require(/* 2921 */"./2921"))
 var y = r(require(/* 2922 */"./2922"))
-var g = require(/* 2701 */"./2917/2701")
+var g = require(/* 2701 */"./2930/2701")
 var b = {
   player: c.default.object,
   mouseTime: c.default.object,

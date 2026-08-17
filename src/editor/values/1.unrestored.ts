@@ -17,9 +17,9 @@ var /* [auto-meaningful-name] */http__www$w3$org_2000_svg = "http://www.w3.org/2
 var C = 3
 export { _ }
 export { v }
-export { _1$21$7 as b }
+export { _1$21$7 }
 export { y }
 export { E }
 export { O }
-export { http__www$w3$org_2000_svg as w }
+export { http__www$w3$org_2000_svg as http__www$w3$org_2000_svg }
 export { C }

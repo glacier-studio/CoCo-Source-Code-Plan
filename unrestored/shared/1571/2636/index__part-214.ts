@@ -9,14 +9,14 @@
 import * as /* [auto-meaningful-name] */Module_77 from /* 77 */"./77"
 import * as /* [auto-meaningful-name] */Module_149 from /* 149 */"./149"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch, batch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -29,7 +29,7 @@ var MP = memo(function (e) {
   var /* [auto-meaningful-name] */e$onResourceLibraryClick = e.onResourceLibraryClick
   var /* [auto-meaningful-name] */e$fileId = e.fileId
   var /* [auto-meaningful-name] */e$type = e.type
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useState(false)
   var s = Module_10.a(a, 2)
   var c = s[0]
@@ -92,7 +92,7 @@ var MP = memo(function (e) {
       type: "icon-upload"
     }), React.createElement("span", {
       className: Module_2491.contentTitle
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "Resource.upload"
     }))), React.createElement("div", {
       className: Module_2491.content,
@@ -101,7 +101,7 @@ var MP = memo(function (e) {
       type: "icon-open-resource-library"
     }), React.createElement("span", {
       className: Module_2491.contentTitle
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "Resource.ImageLibrary"
     })))),
     placement: "bottomLeft",
@@ -112,7 +112,7 @@ var MP = memo(function (e) {
     }
   }, React.createElement("div", {
     className: Module_2491.replaceBtn
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.Replace"
   })))))
 })
@@ -130,7 +130,7 @@ var LP = memo(function () {
   var /* [auto-meaningful-name] */e$backgroundImageDirection = e.backgroundImageDirection
   var /* [auto-meaningful-name] */e$trackImageFileId = e.trackImageFileId
   var /* [auto-meaningful-name] */e$trackImageDirection = e.trackImageDirection
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var p = useDispatch()
   var m = useState("")
   var g = Module_10.a(m, 2)
@@ -277,7 +277,7 @@ var LP = memo(function () {
   return React.createElement(Src_shared_ui_components_index.f, {
     visible: e$visible,
     className: Module_2491.sliderImageDialog,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "slider.custom"
     }),
     onClose: function () {
@@ -301,7 +301,7 @@ var LP = memo(function () {
           }))
         })
       }
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "confirm"
     }))
   }, React.createElement("div", {
@@ -310,7 +310,7 @@ var LP = memo(function () {
     className: Module_2491.sliderPreview
   }, React.createElement("span", {
     className: Module_2491.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "slider.preview"
   })), React.createElement("div", {
     className: Module_2491.previewBox
@@ -345,7 +345,7 @@ var LP = memo(function () {
     className: Module_2491.imageInfo
   }, React.createElement("span", {
     className: Module_2491.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "slider.replaceImage"
   })), React.createElement("div", {
     className: Module_2491.imageList
@@ -356,7 +356,7 @@ var LP = memo(function () {
     onResourceLibraryClick: Oe,
     fileId: x,
     type: Module_77.a.BACKGROUND
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "slider.backgroundImage"
   }))), React.createElement("div", {
     className: Module_2491.imageItem
@@ -365,7 +365,7 @@ var LP = memo(function () {
     onResourceLibraryClick: Oe,
     fileId: W,
     type: Module_77.a.TRACK
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "slider.trackImage"
   }))), React.createElement("div", {
     className: Module_2491.imageItem
@@ -374,11 +374,11 @@ var LP = memo(function () {
     onResourceLibraryClick: Oe,
     fileId: v,
     type: Module_77.a.HANDLE
-  }), React.createElement("span", null, Module_710$a$formatMessage({
+  }), React.createElement("span", null, useIntl$formatMessage({
     id: "slider.handleImage"
   })))), React.createElement("span", {
     className: Module_2491.title
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "slider.handleSize"
   })), React.createElement("div", {
     className: Module_2491.handleSize
@@ -393,9 +393,9 @@ var LP = memo(function () {
     inputAfter: "%"
   }), React.createElement("div", {
     className: Module_2491.sizeLabel
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "smallSize"
-  })), React.createElement("span", null, Module_710$a$formatMessage({
+  })), React.createElement("span", null, useIntl$formatMessage({
     id: "largeSize"
   })))))))
 })

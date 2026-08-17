@@ -8,13 +8,13 @@
 
 import { Q } from "../../../../../unrestored/shared/1571/2636/index__part-3"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
-import * as /* [auto-meaningful-name] */Src_shared_widget_custom_load from /* 34 */"../../../../shared/widget/custom/load"
+import * as /* [auto-meaningful-name] */Shared_widget_custom_load from /* 34 */"../../../../shared/widget/custom/load"
 import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../../unrestored/shared/1571/2636/141/index"
-import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../redux/common/actions"
+import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
-import * as /* [auto-meaningful-name] */Src_shared_ui_language from /* 23 */"../../../../shared/ui/language"
+import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../../shared/ui/language"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { useState, useRef, useCallback, useEffect, useLayoutEffect } from /* 0 */"react"
@@ -24,24 +24,24 @@ import * as /* [auto-meaningful-name] */Module_90 from /* 90 */"../../../../../u
 import * as /* [auto-meaningful-name] */Module_738 from /* 738 */"../../../../../unrestored/shared/1571/2636/738/index"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"../../../../../unrestored/shared/1571/2636/68"
 import * as /* [auto-meaningful-name] */Module_55 from /* 55 */"../../../../../unrestored/shared/1571/2636/55"
-import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../widget/built-in/types"
-import * as /* [auto-meaningful-name] */Module_618 from /* 618 */"./index.module.css"
-import /* [auto-meaningful-name] */Module_6181 from /* 618 */"./index.module.css"
+import * as /* [auto-meaningful-name] */Widget_builtIn_types from /* 5 */"../../../widget/built-in/types"
+import * as /* [auto-meaningful-name] */Index_module_css from /* 618 */"./index.module.css"
+import /* [auto-meaningful-name] */Index_module_css1 from /* 618 */"./index.module.css"
 var Nn = React.memo(function (e) {
   var /* [auto-meaningful-name] */e$children = e.children
   var /* [auto-meaningful-name] */e$vibrating = e.vibrating
   var /* [auto-meaningful-name] */e$scale = e.scale
   return React.createElement("div", {
-    className: Classnames(Module_6181.deviceFrameContainer, Module_6181.galaxy5),
+    className: Classnames(Index_module_css1.deviceFrameContainer, Index_module_css1.galaxy5),
     style: {
       transform: "scale(".concat(e$scale, ")")
     }
   }, React.createElement("div", {
-    className: Classnames(Module_6181.deviceFrame, {
+    className: Classnames(Index_module_css1.deviceFrame, {
       vibrate: e$vibrating
     })
   }, e$children, React.createElement("div", {
-    className: Module_6181.mask
+    className: Index_module_css1.mask
   })))
 })
 var Rn = React.memo(function () {
@@ -58,7 +58,7 @@ var Rn = React.memo(function () {
     return e.common.language
   })
   var o = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useState(false)
   var s = Module_10.a(a, 2)
   var c = s[0]
@@ -97,15 +97,15 @@ var Rn = React.memo(function () {
     var /* [auto-meaningful-name] */e$data$id = e$data.id
     var /* [auto-meaningful-name] */e$data$tab = e$data.tab
     var /* [auto-meaningful-name] */e$data$value = e$data.value
-    o(Src_editor_redux_common_actions.Pj(e$data$id, "value", e$data$value))
-    if (!(e$data$tab !== Src_editor_widget_builtIn_types.B && e$data$tab !== Src_editor_widget_builtIn_types.G)) {
-      o(Src_editor_redux_common_actions.Pj(e$data$id, "defaultValue", e$data$value))
+    o(Redux_common_actions.Pj(e$data$id, "value", e$data$value))
+    if (!(e$data$tab !== Widget_builtIn_types.B && e$data$tab !== Widget_builtIn_types.G)) {
+      o(Redux_common_actions.Pj(e$data$id, "defaultValue", e$data$value))
     }
   }, [o])
   var k = useCallback(function (e) {
     var /* [auto-meaningful-name] */e$data$type = e.data.type
     localStorage.removeItem("".concat(e$data$type, "DialogPermission"))
-    o(Src_editor_redux_common_actions.Ej({
+    o(Redux_common_actions.Ej({
       type: e$data$type,
       visible: true,
       onConfirm: function () {
@@ -130,7 +130,7 @@ var Rn = React.memo(function () {
     }
     if (e$data$widgetType) {
       var l = Module_9.Db(e$data$widgetType)
-      var u = Module_710$a$formatMessage({
+      var u = useIntl$formatMessage({
         id: (null === l || undefined === l ? undefined : l.title) || (null === l || undefined === l ? undefined : l.previewAreaWidgetTitle)
       })
       if (u) {
@@ -144,16 +144,16 @@ var Rn = React.memo(function () {
       }
     }
     if (e$data.msgType === Module_55.a) {
-      if (e$data$widgetType && !Src_shared_widget_custom_load.q(e$data$widgetType)) {
-        e$data.message = Src_shared_ui_language.d(e$data.message, e$data.values)
+      if (e$data$widgetType && !Shared_widget_custom_load.q(e$data$widgetType)) {
+        e$data.message = Shared_ui_language.d(e$data.message, e$data.values)
       }
     } else {
-      e$data.message = Src_shared_ui_language.f(r, e$data.message, e$data.values)
+      e$data.message = Shared_ui_language.f(r, e$data.message, e$data.values)
     }
     if (n) {
       e$data.message = "".concat(n).concat(e$data.message)
     }
-    o(Src_editor_redux_common_actions.nf(e$data))
+    o(Redux_common_actions.nf(e$data))
     if (!("error" !== e$data.type && "customError" !== e$data.type && "lintError" !== e$data.type)) {
       Module_141.a("ConsoleDetail", {
         errorMessage: e$data.message,
@@ -166,7 +166,7 @@ var Rn = React.memo(function () {
         warningMessage: e$data.message
       })
     }
-  }, [o, Module_710$a$formatMessage, r])
+  }, [o, useIntl$formatMessage, r])
   useEffect(function () {
     Q.add(Module_68.b.DEVICE_VIBRATE, j)
     Q.add(Module_68.b.DEVICE_NOT_VIBRATE, N)
@@ -176,7 +176,7 @@ var Rn = React.memo(function () {
   }, [x, R, k])
   useEffect(function () {
     function e() {
-      o(Src_editor_redux_common_actions.vi(!navigator.onLine))
+      o(Redux_common_actions.vi(!navigator.onLine))
     }
     window.addEventListener("online", e)
     window.addEventListener("offline", e)
@@ -198,9 +198,9 @@ var Rn = React.memo(function () {
     if (e && p.current && m.current) {
       var /* [auto-meaningful-name] */p$current$clientWidth = p.current.clientWidth
       var /* [auto-meaningful-name] */p$current$clientHeight = p.current.clientHeight
-      var r = Math.min((p$current$clientWidth - 208) / 384, (p$current$clientHeight - 20) / 700, 1)
+      var r = Math.min((t - 208) / 384, (n - 20) / 700, 1)
       r = Math.floor(10 * r) / 10
-      var o = p$current$clientWidth / 2 + 192 * (r = Math.max(r, .7))
+      var o = t / 2 + 192 * (r = Math.max(r, .7))
       if (g.current) {
         g.current.style.left = "".concat(o, "px")
       }
@@ -215,10 +215,10 @@ var Rn = React.memo(function () {
     style: {
       display: e ? undefined : "none"
     },
-    className: Module_6181.wrapper,
+    className: Index_module_css1.wrapper,
     ref: p
   }, React.createElement("div", {
-    className: Module_6181.deviceFrameWrapper
+    className: Index_module_css1.deviceFrameWrapper
   }, React.createElement(Nn, {
     vibrating: c && e,
     scale: C
@@ -231,7 +231,7 @@ var Rn = React.memo(function () {
     sandbox: "allow-forms allow-modals allow-popups allow-same-origin allow-scripts",
     src: "".concat("/editor/editor-player.html").concat(L).concat(P)
   }))), React.createElement("div", {
-    className: Module_6181.emulatorWrapper,
+    className: Index_module_css1.emulatorWrapper,
     ref: g
   }, React.createElement(Module_738.a, {
     messageWindow: y

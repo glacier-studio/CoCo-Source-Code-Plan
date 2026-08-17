@@ -6,7 +6,7 @@
 
 "use strict"
 
-import { LL, PL } from "../download-apk/index"
+import { LL, PL } from "../DownloadApk/index"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../../../../../unrestored/shared/1571/2636/53"
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"

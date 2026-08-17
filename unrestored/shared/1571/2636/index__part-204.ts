@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
@@ -29,7 +29,7 @@ var kL = memo(function () {
   var e = useSelector(function (e) {
     return e.common.widgetMallVisible
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useDispatch()
   var r = useState(false)
   var o = Module_10.a(r, 2)
@@ -183,7 +183,7 @@ var kL = memo(function () {
             case 3:
               if (e.sent) {
                 n(Src_editor_redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "WidgetMall.addSuccess"
                   }),
                   type: "success"
@@ -213,7 +213,7 @@ var kL = memo(function () {
               e.prev = 7
               e.t0 = e.catch(0)
               n(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "WidgetMall.addFailure"
                 }),
                 type: "error"
@@ -234,12 +234,12 @@ var kL = memo(function () {
     onClick: function () {
       R([])
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "WidgetMall.clear"
   })), React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
     onClick: G
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "WidgetMall.add"
   }), "(", j.length, ")"))
   var U = useCallback(function () {
@@ -292,7 +292,7 @@ var kL = memo(function () {
   return React.createElement(Src_shared_ui_components_index.f, {
     withPortal: true,
     visible: e,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "Widget.widgetMall"
     }),
     footer: W,
@@ -303,14 +303,14 @@ var kL = memo(function () {
   }, React.createElement("img", {
     src: Module_11911,
     alt: "networkError"
-  }), React.createElement("h3", null, Module_710$a$formatMessage({
+  }), React.createElement("h3", null, useIntl$formatMessage({
     id: "WidgetMall.networkError"
   })), React.createElement(Src_shared_ui_components_index.d, {
     onClick: function () {
       L()
     },
     type: "primary"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "WidgetMall.retry"
   }))), !i && l.map(function (e) {
     return React.createElement("div", {
@@ -365,7 +365,7 @@ var kL = memo(function () {
       className: Module_2701.authorName
     }, e.author_name)) : React.createElement("div", null), 1 === e.if_have ? React.createElement("div", {
       className: Module_2701.added
-    }, React.createElement("span", null, Module_710$a$formatMessage({
+    }, React.createElement("span", null, useIntl$formatMessage({
       id: "WidgetMall.added"
     }))) : j.includes(e.id) ? React.createElement("div", {
       onClick: F.bind(null, e.id),
@@ -375,7 +375,7 @@ var kL = memo(function () {
     })) : React.createElement(Module_748.a, {
       placement: "bottom",
       trigger: ["hover", "click"],
-      title: Module_710$a$formatMessage({
+      title: useIntl$formatMessage({
         id: "WidgetMall.add"
       })
     }, React.createElement("div", {

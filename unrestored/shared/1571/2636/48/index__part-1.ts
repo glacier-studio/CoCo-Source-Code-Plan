@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../6"
 import * as /* [auto-meaningful-name] */Module_345 from /* 345 */"./345"
 import * as /* [auto-meaningful-name] */Module_489 from /* 489 */"./489"
 import * as /* [auto-meaningful-name] */Redux from /* 156 */"redux"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import /* [auto-meaningful-name] */RegeneratorRuntime1 from /* 1 */"regenerator-runtime"
 import * as /* [auto-meaningful-name] */Module_3 from /* 3 */"./3/index"
@@ -629,8 +629,8 @@ function oe(e) {
   var /* [auto-meaningful-name] */e$version = e.version
   Module_345.c(e$widgetMap, e$version)
   var p = {
-    screenList: Module_66.a.List(e$screenList),
-    widgetMap: Module_66.a.Map(e$widgetMap),
+    screenList: Immutable.List(e$screenList),
+    widgetMap: Immutable.Map(e$widgetMap),
     variableMap: e$variableMap ? re(e$variableMap) : undefined,
     imageFileMap: e$imageFileMap ? re(e$imageFileMap) : undefined,
     soundFileMap: e$soundFileMap ? re(e$soundFileMap) : undefined,

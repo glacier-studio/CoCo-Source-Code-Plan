@@ -9,15 +9,15 @@
 import { B } from "./index__part-4"
 var P
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../../src/shared/tools/index"
-import * as /* [auto-meaningful-name] */Module_344 from /* 344 */"./344"
+import * as /* [auto-meaningful-name] */Module_344 from /* 344 */"../133/344"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
 import /* [auto-meaningful-name] */Color from /* 51 */"color"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"../1213"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../710"
+import { useIntl } from /* 710 */"react-intl"
 import { useDispatch } from /* 16 */"react-redux"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useMemo, forwardRef, useRef, useImperativeHandle, useEffect, useCallback } from /* 0 */"react"
@@ -26,8 +26,8 @@ import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../10/index"
 import * as /* [auto-meaningful-name] */Module_797 from /* 797 */"./797/index"
 import * as /* [auto-meaningful-name] */Module_253 from /* 253 */"./253/index"
-import * as /* [auto-meaningful-name] */Module_226 from /* 226 */"./226"
-import /* [auto-meaningful-name] */Module_2261 from /* 226 */"./226"
+import * as /* [auto-meaningful-name] */Module_226 from /* 226 */"../15/226"
+import /* [auto-meaningful-name] */Module_2261 from /* 226 */"../15/226"
 !function (e) {
   e.HEX = "HEX"
   e.HSVA = "HSVA"
@@ -187,7 +187,7 @@ var z = memo(function (e) {
       var e = V.indexOf(c) - 1
       l(V[e = e < 0 ? 2 : e])
     }
-  }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     className: "coco-palette-arrow-up",
     type: "icon-fold"
   })), React.createElement("div", {
@@ -197,7 +197,7 @@ var z = memo(function (e) {
       e = e >= V.length ? 0 : e
       l(V[e])
     }
-  }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     className: "coco-palette-arrow-down",
     type: "icon-fold"
   }))))
@@ -283,7 +283,7 @@ var X = memo(forwardRef(function (e, t) {
   var m = useRef(null)
   var g = useRef(false)
   var _ = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var b = useState(e$value || d)
   var y = Module_10.a(b, 2)
   var O = y[0]
@@ -395,7 +395,7 @@ var X = memo(forwardRef(function (e, t) {
                 break
               }
               _(Src_editor_redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "colorPicker.eyeDropperTips"
                 })
               }))
@@ -447,7 +447,7 @@ var X = memo(forwardRef(function (e, t) {
     className: "coco-palette-history-color"
   }, React.createElement("span", {
     className: "coco-palette-history-title"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "colorPicker.history"
   })), React.createElement("div", {
     className: "coco-palette-history-color-list"
@@ -469,7 +469,7 @@ var X = memo(forwardRef(function (e, t) {
     }, React.createElement("div", {
       className: "coco-palette-icon-picker-box",
       onClick: F
-    }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+    }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
       type: "icon-picker-color"
     })), React.createElement(K, {
       color: O,
@@ -487,9 +487,9 @@ var X = memo(forwardRef(function (e, t) {
     src: require(/* 866 */"./866")
   }), React.createElement("span", {
     className: "coco-palette-more-title"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "colorPicker.more"
-  }))), React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }))), React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     className: "coco-palette-more-arrow",
     type: "icon-fold"
   })))))

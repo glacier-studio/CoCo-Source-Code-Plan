@@ -147,7 +147,7 @@ exports.register_procedure_blocks = function (e, n, u, l) {
     },
     domToMutation: function (e) {
       if (e) {
-        for (var /* [auto-meaningful-name] */e$children$length = e.children.length, n = 0; n < e$children$length; n++) {
+        for (var /* [auto-meaningful-name] */e$children$length = e.children.length, n = 0; n < t; n++) {
           var r = e.children[n]
           if ("arg" === r.nodeName.toLowerCase()) {
             var o = r.getAttribute("name");

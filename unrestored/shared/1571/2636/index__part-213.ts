@@ -11,12 +11,12 @@ var CP = false
 import * as /* [auto-meaningful-name] */Module_28 from /* 28 */"./28/index"
 import /* [auto-meaningful-name] */Quill from /* 620 */"quill"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -25,7 +25,7 @@ import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_707 from /* 707 */"./707"
 import /* [auto-meaningful-name] */Module_7071 from /* 707 */"./707"
 var kP = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   var n = useSelector(function (e) {
     return e.common.richTextEditorDialogInfo
@@ -54,7 +54,7 @@ var kP = memo(function () {
   useEffect(function () {
     if (y.current && w.current) {
       var t = {
-        placeholder: Module_710$a$formatMessage({
+        placeholder: useIntl$formatMessage({
           id: "RichTextEditor.inputPlaceholder"
         }),
         theme: "snow",
@@ -129,7 +129,7 @@ var kP = memo(function () {
         console.error("quill link error")
       }
     }
-  }, [Module_710$a$formatMessage])
+  }, [useIntl$formatMessage])
   useEffect(function () {
     if (n$visible && E.current) {
       E.current.root.innerHTML = Module_28.i(a)
@@ -249,7 +249,7 @@ var kP = memo(function () {
     visible: n$visible,
     withPortal: true,
     onClose: C,
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "RichTextEditor.editDialogTitle"
     }),
     className: Module_7071.container
@@ -269,7 +269,7 @@ var kP = memo(function () {
     className: Module_7071.save,
     type: "primary",
     onClick: T
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   }))), React.createElement(Module_1213.a, {
     placement: "rightBottom",

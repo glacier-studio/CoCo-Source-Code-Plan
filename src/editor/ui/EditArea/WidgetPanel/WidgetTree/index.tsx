@@ -21,7 +21,7 @@ import * as Components from "../../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../../unrestored/shared/1571/2636/11"
 import classNames from "classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from "react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../../unrestored/shared/1571/2636/10/index"
 import { useSelector, useDispatch } from "react-redux"
 import /* [auto-meaningful-name] */React from "react"
@@ -50,7 +50,7 @@ const WidgetListItem = memo(function (e) {
   var /* [auto-meaningful-name] */e$readonly = e.readonly
   var w = undefined !== e$readonly && e$readonly
   var /* [auto-meaningful-name] */e$isInvisibleWidget = e.isInvisibleWidget
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var A = useRef(null)
   var j = useSelector(function (e) {
     return e.block.flyoutVisible
@@ -116,7 +116,7 @@ const WidgetListItem = memo(function (e) {
             className={styles.menuItem}
             onMouseDown={W}
           >
-            {Module_710$a$formatMessage({
+            {useIntl$formatMessage({
               id: "copyAndPaste"
             })}
           </div>}
@@ -124,7 +124,7 @@ const WidgetListItem = memo(function (e) {
             className={classNames(styles.menuItem, styles.delete)}
             onMouseDown={G}
           >
-            {Module_710$a$formatMessage({
+            {useIntl$formatMessage({
               id: "delete"
             })}
           </div>}
@@ -219,7 +219,7 @@ interface IRenderWidgetListOptions {
 
 export const WidgetTree = memo(() => {
 
-  const { formatMessage } = Module_710.a()
+  const { formatMessage } = useIntl()
   const dispatch = useDispatch()
 
   var o = useRef()

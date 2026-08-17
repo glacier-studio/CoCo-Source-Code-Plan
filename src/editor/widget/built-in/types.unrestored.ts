@@ -42,7 +42,7 @@ export { CLOUD_SPACE_DICT_WIDGET as j }
 export { DATABASE_WIDGET as m }
 export { CLOUD_DB_WIDGET as h }
 export { CLOUD_SPACE_TABLE_WIDGET as k }
-export { TABLE_DATA_WIDGET as G }
+export { TABLE_DATA_WIDGET }
 export { SCREEN as D }
 export { U as r }
 export { i as p }

@@ -12,13 +12,13 @@ import * as /* [auto-meaningful-name] */Module_135 from /* 135 */"./135"
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../src/shared/packages/@crc/blink/src/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_68 from /* 68 */"./68"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"./18"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -94,7 +94,7 @@ var pT = memo(function () {
 })
 var fT = memo(function (e) {
   var /* [auto-meaningful-name] */e$options = e.options
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var r = useDispatch()
   var o = useSelector(function (e) {
     return e.block.dropdown
@@ -122,7 +122,7 @@ var fT = memo(function (e) {
       return e[1] === Module_9.h && e[0] === Module_9.g ? React.createElement("div", {
         className: Module_99.nullItem,
         key: t
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "closeHeadline"
       })) : React.createElement(Src_shared_ui_components_index.p, {
         value: e[1],
@@ -252,7 +252,7 @@ var hT = memo(function (e) {
 })
 var /* [auto-meaningful-name] */__EMPTY_VALUE__ = "__EMPTY_VALUE__"
 var gT = memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   var n = useSelector(function (e) {
     return e.block.dropdown
@@ -282,7 +282,7 @@ var gT = memo(function () {
     if (Src_shared_packages_Crc_blink_src_index.BU.base.is_old_dropdown_option(t)) {
       return t[1] === Module_9.h && t[0] === Module_9.g ? React.createElement("div", {
         className: Module_99.nullItem
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "closeHeadline"
       })) : React.createElement(Src_shared_ui_components_index.p, {
         value: t[1],
@@ -334,7 +334,7 @@ var gT = memo(function () {
       }, React.createElement("span", null, t.text), React.createElement("div", {
         className: Module_99.btn,
         onClick: t.callback
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "retry"
       }))) : React.createElement(Src_shared_ui_components_index.p, {
         value: t.value,
@@ -364,7 +364,7 @@ var _T = memo(function (e) {
   var n = useSelector(function (e) {
     return e.block.dropdown
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useDispatch()
   return React.createElement("ul", {
     className: Module_99.imageEntryList,
@@ -379,7 +379,7 @@ var _T = memo(function (e) {
         o(Src_editor_redux_common_actions.sh())
       }))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: e$type === Module_18.a.IMAGE_DROPDOWN ? "selectByLibrary" : "selectByIconLibrary"
   })), React.createElement("li", null, React.createElement(Src_shared_ui_components_index.B, {
     onChange: function (e) {
@@ -393,14 +393,14 @@ var _T = memo(function (e) {
       }
     },
     accept: e$type === Module_18.a.IMAGE_DROPDOWN ? Module_133.f : Module_133.c
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "uploadFileByLocal"
   }))), n.blockInfo.emptyImageVisible && React.createElement("li", {
     onClick: function () {
       n.setValue(Module_9.f)
       o(Src_editor_redux_common_actions.gh())
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "emptyImage"
   })))
 })
@@ -408,7 +408,7 @@ var vT = memo(function () {
   var e = useSelector(function (e) {
     return e.block.dropdown
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useDispatch()
   return React.createElement("ul", {
     className: Module_99.imageEntryList,
@@ -423,7 +423,7 @@ var vT = memo(function () {
         n(Src_editor_redux_common_actions.sh())
       }))
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "selectByLibrary"
   })), React.createElement("li", null, React.createElement(Src_shared_ui_components_index.B, {
     onChange: function (t) {
@@ -436,7 +436,7 @@ var vT = memo(function () {
       }
     },
     accept: Module_135.h
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "uploadFileByLocal"
   }))))
 })

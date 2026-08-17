@@ -6,7 +6,7 @@
 
 "use strict"
 
-var r = require(/* 86 */"./1662/86")
+var r = require(/* 86 */"./1650/86/index")
 var o = require(/* 958 */"./1723/958")
 r({
   target: "RegExp",

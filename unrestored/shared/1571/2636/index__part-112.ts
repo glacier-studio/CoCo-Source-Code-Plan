@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
@@ -26,7 +26,7 @@ var HE = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig = e.formConfig
-  var o = (0, Module_710.a().formatMessage)({
+  var o = (0, useIntl().formatMessage)({
     id: e$formConfig.label || "alignment"
   })
   var /* [auto-meaningful-name] */e$formConfig$horizontalKey = e$formConfig.horizontalKey
@@ -59,7 +59,7 @@ var VE = function (e) {
   var r = useSelector(function (e) {
     return e.project.selectedWidgetId
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var i = useDispatch()
   var a = Module_9.Bb(r || "")
   var s = a ? Module_9.Fb(a.id) : ""
@@ -70,7 +70,7 @@ var VE = function (e) {
   var /* [auto-meaningful-name] */a$type = a.type
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper, Module_88.formWidgetTitle, "changeTitle", Module_11.a({}, Module_88.formWidgetTitleWithDisableOrVisible, n)),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "WidgetForm.title"
     }),
     align: "vertical"

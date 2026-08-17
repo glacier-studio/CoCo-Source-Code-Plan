@@ -256,12 +256,12 @@ var u = function () {
             inline: "true" === e.getAttribute("layout_inline")
           })
           var /* [auto-meaningful-name] */this$targetWorkspace_$options$flyout$blocks$default_gap = this.targetWorkspace_.options.flyout.blocks.default_gap
-          if (a.is_starting_block() && n.length > 0 && n[n.length - 1] === this$targetWorkspace_$options$flyout$blocks$default_gap) {
+          if (a.is_starting_block() && n.length > 0 && n[n.length - 1] === s) {
             var c = this.targetWorkspace_.options.flyout.blocks.head_block_offset[1]
             n[n.length - 1] += c
           }
           var u = e.getAttribute("gap")
-          return void n.push(u ? parseInt(u) <= 10 ? this$targetWorkspace_$options$flyout$blocks$default_gap : parseInt(u) : this$targetWorkspace_$options$flyout$blocks$default_gap)
+          return void n.push(u ? parseInt(u) <= 10 ? s : parseInt(u) : s)
         case "SEP":
           var l = e.getAttribute("gap")
           return void (l && n.length > 0 && (n[n.length - 1] = parseInt(l, 10)))

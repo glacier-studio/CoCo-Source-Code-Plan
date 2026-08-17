@@ -14,7 +14,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -32,7 +32,7 @@ var EA = memo(function (e) {
   var /* [auto-meaningful-name] */e$source = e.source
   var /* [auto-meaningful-name] */e$duration = e.duration
   var /* [auto-meaningful-name] */e$isPlaying = e.isPlaying
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useDispatch()
   var l = useState(0)
   var u = Module_10.a(l, 2)
@@ -83,15 +83,15 @@ var EA = memo(function (e) {
         c(Src_editor_redux_common_actions.zh({
           isDangerous: true,
           onConfirm: m.bind(null, e),
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "delete"
           }),
-          title: Module_710$a$formatMessage({
+          title: useIntl$formatMessage({
             id: "deleteSoundFileTitle"
           }, {
             name: Module_190.f(e$name || "", 10)
           }),
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "deleteSoundFileTips"
           }, {
             name: t.join("、")
@@ -184,7 +184,7 @@ var EA = memo(function (e) {
           o.target.value = e
           if (r !== e) {
             c(Src_editor_redux_common_actions.mj({
-              message: Module_710$a$formatMessage({
+              message: useIntl$formatMessage({
                 id: "renameFileNameRepeatTips"
               })
             }))

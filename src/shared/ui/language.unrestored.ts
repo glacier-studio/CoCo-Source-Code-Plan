@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../unrestore
 import /* 0 */"react"
 import * as /* [auto-meaningful-name] */React from "react"
 import /* [auto-meaningful-name] */React1 from /* 0 */"react"
-import * as /* [auto-meaningful-name] */Module_2681 from /* 2681 */"../../../unrestored/shared/1571/2636/2681/index"
+import { createIntl } from /* 2681 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../unrestored/shared/1571/2636/10/index"
 var c = {
   mustToBeString: "{name} 必须是字符串",
@@ -1015,7 +1015,7 @@ function f(e) {
     Object.assign(p[t], e[t])
   }
 }
-var h = Module_2681.a({
+var h = createIntl({
   locale: d,
   messages: p[d]
 })

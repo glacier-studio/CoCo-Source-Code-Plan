@@ -15,7 +15,7 @@ export interface IButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>
   disabled?: boolean
   style?: React.CSSProperties
-  className: classNames.Argument
+  className?: classNames.Argument
   danger?: boolean
   children?: ReactNode
   shape?: "circle" | "square"

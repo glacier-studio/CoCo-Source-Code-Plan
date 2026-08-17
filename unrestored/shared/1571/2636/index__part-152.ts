@@ -10,7 +10,7 @@ import { VT } from "./index__part-151"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -29,7 +29,7 @@ var KT = memo(function () {
   var i = Module_10.a(o, 2)
   var a = i[0]
   var s = i[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var l = useRef(false)
   var u = function () {
     e(Src_editor_redux_common_actions.xf())
@@ -71,12 +71,12 @@ var KT = memo(function () {
             e(Src_editor_redux_common_actions.Gh("PACKAGE_APK_ICON"))
           },
           onClose: d,
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "package.cancel"
           }),
           title: "",
           isDangerous: true,
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "package.deletePackage"
           })
         }))
@@ -95,7 +95,7 @@ var KT = memo(function () {
     return function () {
       Src_editor_redux_common_actions.Gh("PACKAGE_APK_ICON")
     }
-  }, [e, Module_710$a$formatMessage, d, a])
+  }, [e, useIntl$formatMessage, d, a])
   return React.createElement(React.Fragment, null, React.createElement("div", null, !a && t$isPackaging && React.createElement("div", {
     className: Module_6221.packageProgress
   }, React.createElement("div", {
@@ -110,9 +110,9 @@ var KT = memo(function () {
     className: Module_6221.symbol
   }, "%")), React.createElement("p", {
     className: Module_6221.progressType
-  }, 0 === t$packageProgress && Module_710$a$formatMessage({
+  }, 0 === t$packageProgress && useIntl$formatMessage({
     id: "package.packagePendingText"
-  }), Module_710$a$formatMessage(100 === t$packageProgress ? {
+  }), useIntl$formatMessage(100 === t$packageProgress ? {
     id: "package.packageComplete"
   } : {
     id: "package.isPackaging"
@@ -123,12 +123,12 @@ var KT = memo(function () {
         e(Src_editor_redux_common_actions.zh({
           onConfirm: u,
           onClose: d,
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "package.cancel"
           }),
           title: "",
           isDangerous: true,
-          content: Module_710$a$formatMessage({
+          content: useIntl$formatMessage({
             id: "package.cancelPackage"
           })
         }))

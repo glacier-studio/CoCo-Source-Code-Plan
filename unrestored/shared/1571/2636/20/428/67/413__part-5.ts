@@ -19,7 +19,7 @@ import /* [auto-meaningful-name] */Color from /* 51 */"color"
 import * as /* [auto-meaningful-name] */Module_513 from /* 513 */"../../../513"
 import /* [auto-meaningful-name] */Module_5131 from /* 513 */"../../../513"
 import * as /* [auto-meaningful-name] */Module_433 from /* 433 */"../../../433"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../133/index"
 var V = memo(function (e) {
   var t = e.id
   var /* [auto-meaningful-name] */e$type = e.type

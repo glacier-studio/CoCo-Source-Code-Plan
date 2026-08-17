@@ -19,7 +19,7 @@ import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../shar
 import * as /* [auto-meaningful-name] */Src_shared_widget_custom_externalModule from /* 347 */"../../../../../src/shared/widget/custom/external-module"
 import /* 1187 */"./1187"
 import /* 1188 */"./1188"
-import * as /* [auto-meaningful-name] */Module_2681 from /* 2681 */"../../../../shared/1571/2636/2681/index"
+import /* 2681 */"react-intl"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_71 from /* 71 */"./71"
 import /* [auto-meaningful-name] */Module_711 from /* 71 */"./71"

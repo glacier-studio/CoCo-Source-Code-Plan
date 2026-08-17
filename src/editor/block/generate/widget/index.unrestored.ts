@@ -7,7 +7,7 @@
 "use strict"
 
 import { fe, he } from "./utils"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../unrestored/shared/1571/2636/301/85"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../unrestored/shared/1571/2636/34/85"
 import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../../../../../unrestored/shared/1571/2636/118/index"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_load from /* 34 */"../../../../shared/widget/custom/load"
 import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"
@@ -112,9 +112,9 @@ function _e(e, t) {
         })
         if (this.isAnyWidget) {
           var /* [auto-meaningful-name] */Shared_widget_custom_load$a = Shared_widget_custom_load.a
-          var v = "PARAM_".concat(Shared_widget_custom_load$a)
+          var v = "PARAM_".concat(_)
           var /* [auto-meaningful-name] */Shared_widget_custom_load$b = Shared_widget_custom_load.b
-          this.append_shadow_input(v, "<shadow type=\"widget_event_param\">\n          <field name=\"PARAM_NAME\">".concat(Shared_widget_custom_load$b, "</field>\n          <mutation widget_type=\"").concat(this.widgetType, "\" event=\"").concat(this.event, "\" param=\"").concat(Shared_widget_custom_load$a, "\"></mutation>\n        </shadow>"), "DO")
+          this.append_shadow_input(v, "<shadow type=\"widget_event_param\">\n          <field name=\"PARAM_NAME\">".concat(b, "</field>\n          <mutation widget_type=\"").concat(this.widgetType, "\" event=\"").concat(this.event, "\" param=\"").concat(_, "\"></mutation>\n        </shadow>"), "DO")
         }
       },
       domToMutation: function (e) {
@@ -159,7 +159,7 @@ function _e(e, t) {
               return void console.error("WIDGET_EVENT_PARAM_MUTATOR get param error", this.widgetType, this.event, this.param)
             }
             var /* [auto-meaningful-name] */o$valueType = o.valueType
-            var a = Shared_widget_custom_load.g(o$valueType)
+            var a = Shared_widget_custom_load.g(i)
             this.set_output(true, a, r)
           }
         } else {
@@ -384,7 +384,7 @@ function _e(e, t) {
         if (r$validators && "number" === r$valueType) {
           var E = r$validators
           var /* [auto-meaningful-name] */E$isInteger = E.isInteger
-          y = !!E$isInteger
+          y = !!w
           o = Shared_widget_custom_load.p(E)
           i = Shared_widget_custom_load.n(E)
         }
@@ -794,22 +794,22 @@ function _e(e, t) {
       if (t) {
         var /* [auto-meaningful-name] */t$defaultValue = t.defaultValue
         var /* [auto-meaningful-name] */t$dropdown = t.dropdown
-        if (t$dropdown) {
+        if (r) {
           this.set_shadow(true)
           var o = new Module_118.a({
             type: "field_coco_dropdown",
             name: "VALUE",
             custom: true,
             options: function () {
-              return he(e.widgetType, t$dropdown)
+              return he(e.widgetType, r)
             }
           })
           if (!this.get_field("VALUE")) {
             this.append_dummy_input("").append_field(o, "VALUE")
-            o.set_value(String(t$defaultValue))
+            o.set_value(String(n))
           }
         } else {
-          console.error("WIDGET_DROPDOWN_MUTATOR dropdown is invalid", t$dropdown)
+          console.error("WIDGET_DROPDOWN_MUTATOR dropdown is invalid", r)
         }
       } else {
         console.error("WIDGET_DROPDOWN_MUTATOR getWidgetProperty error", this.widgetType, this.property)

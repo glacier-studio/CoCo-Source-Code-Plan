@@ -20,7 +20,7 @@ import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"./26/index"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -36,7 +36,7 @@ var aj = memo(function () {
   var /* [auto-meaningful-name] */e$grid = e.grid
   var /* [auto-meaningful-name] */e$onClose = e.onClose
   var /* [auto-meaningful-name] */e$isCreateNewGrid = e.isCreateNewGrid
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useDispatch()
   var s = useState(false)
   var c = Module_10.a(s, 2)
@@ -207,13 +207,13 @@ var aj = memo(function () {
   }
   var Z = React.createElement("div", {
     className: Module_8141.footer
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "gridSupportTypeTips"
   })), React.createElement(Src_shared_ui_components_index.d, {
     type: "primary",
     disabled: l,
     onClick: Q
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   })))
   return React.createElement(Src_shared_ui_components_index.f, {
@@ -221,7 +221,7 @@ var aj = memo(function () {
     className: Module_8141.tableDataDialog,
     title: React.createElement("div", null, y, React.createElement("span", {
       className: Module_8141.defaultData
-    }, "— ", Module_710$a$formatMessage({
+    }, "— ", useIntl$formatMessage({
       id: "TableDataWidget.data"
     }))),
     footer: Z,
@@ -242,9 +242,9 @@ var aj = memo(function () {
     className: Module_8141.rowAndColumnCount
   }, React.createElement("span", {
     className: Module_8141.itemCount
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "column"
-  }), ": ", H), React.createElement("span", null, Module_710$a$formatMessage({
+  }), ": ", H), React.createElement("span", null, useIntl$formatMessage({
     id: "row"
   }), ": ", F)), e$visible && React.createElement(rj, {
     id: e$grid.id,

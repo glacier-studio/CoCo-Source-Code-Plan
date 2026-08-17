@@ -49,7 +49,7 @@ import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../../../../27"
 import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../../../../39"
 import * as /* [auto-meaningful-name] */Module_465 from /* 465 */"../../../../34/465"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../25/index"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../47"
 import * as /* [auto-meaningful-name] */Module_777 from /* 777 */"../../777/index"
 function f(e, t) {
   var n = t.range[0]

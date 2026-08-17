@@ -9,7 +9,7 @@
 var /* [auto-meaningful-name] */s$location
 var i
 var o
-var /* [auto-meaningful-name] */ONewO$port2
+var /* [auto-meaningful-name] */ONewS$MessageChannel$port2
 var s = require(/* 6 */"../../275/6")
 var u = require(/* 118 */"../../237/118")
 var c = require(/* 43 */"../../204/142/43")
@@ -78,9 +78,9 @@ if (!(s$setImmediate && s$clearImmediate)) {
       }
     } else {
       if (s$MessageChannel && !v) {
-        ONewO$port2 = (o = new s$MessageChannel()).port2
+        ONewS$MessageChannel$port2 = (o = new s$MessageChannel()).port2
         o.port1.onmessage = I
-        i = c(ONewO$port2.postMessage, ONewO$port2)
+        i = c(ONewS$MessageChannel$port2.postMessage, ONewS$MessageChannel$port2)
       } else {
         if (s.addEventListener && l(s.postMessage) && !s.importScripts && s$location && "file:" !== s$location.protocol && !p(N)) {
           i = N

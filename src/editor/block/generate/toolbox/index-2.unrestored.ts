@@ -23,13 +23,13 @@ function U(e, t) {
       var /* [auto-meaningful-name] */o$addMutation
       var /* [auto-meaningful-name] */o$removeMutation
       var /* [auto-meaningful-name] */this$source_block = this.source_block
-      if (this$source_block) {
+      if (o) {
         if ("nth" === e) {
-          if (!(null === (o$addMutation = this$source_block.addMutation) || undefined === o$addMutation)) {
-            o$addMutation.call(this$source_block)
+          if (!(null === (o$addMutation = o.addMutation) || undefined === o$addMutation)) {
+            o$addMutation.call(o)
           }
-        } else if (!(null === (o$removeMutation = this$source_block.removeMutation) || undefined === o$removeMutation)) {
-          o$removeMutation.call(this$source_block)
+        } else if (!(null === (o$removeMutation = o.removeMutation) || undefined === o$removeMutation)) {
+          o$removeMutation.call(o)
         }
       }
     }
@@ -742,7 +742,7 @@ function X(e) {
         this.updateShape_()
         var r = Module_4.c("mutation", {
           block: this,
-          old_value: this$itemCount_,
+          old_value: n,
           new_value: this.itemCount_
         })
         e.events.fire(r)
@@ -760,7 +760,7 @@ function X(e) {
         this.updateShape_()
         var r = Module_4.c("mutation", {
           block: this,
-          old_value: this$itemCount_,
+          old_value: n,
           new_value: this.itemCount_
         })
         e.events.fire(r)

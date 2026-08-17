@@ -9,7 +9,7 @@ import classNames from "classnames"
 import IconFont from "../../../../../unrestored/home/components/IconFont-zVV7"
 import "./styles.module.css"
 
-interface InputProps {
+interface IInputProps {
   warning?: boolean
   placeholder?: string
   value?: string
@@ -33,20 +33,20 @@ interface InputProps {
   disabled?: boolean
   type?: "number" | "text"
   dependency?: unknown
-  rules?: Rules
+  rules?: TRules
   readOnly?: boolean
   isTrimmed?: boolean
   clearButtonVisible?: boolean
 }
 
-type Rules = Iterable<InputRule>
+type TRules = Iterable<IInputRule>
 
-interface InputRule {
+interface IInputRule {
   rule: RegExp
   message?: string
 }
 
-interface FormatResult {
+interface IFormatResult {
   status: "success" | "fail"
   value: string
   massage?: string
@@ -66,7 +66,7 @@ function formatNumberOnBlurEvent(value: string, max?: number, min?: number) {
   return number.toString()
 }
 
-function formatNumberValueOnChangeEvent(value: string, max?: number): FormatResult {
+function formatNumberValueOnChangeEvent(value: string, max?: number): IFormatResult {
   let status: "success" | "fail" = "success"
   if (!numberRegEx.test(value)) {
     status = "fail"
@@ -83,7 +83,7 @@ function formatNumberValueOnChangeEvent(value: string, max?: number): FormatResu
   }
 }
 
-function formatNumberRulesOnChangeEvent(value: string, oldValue: string, rules: Rules): FormatResult {
+function formatNumberRulesOnChangeEvent(value: string, oldValue: string, rules: TRules): IFormatResult {
   if (rules) {
     for (const rule of rules) {
       const result = value.match(rule.rule)
@@ -106,8 +106,8 @@ function formatOnChangeEvent(
   value: string,
   oldInputValueRef: React.MutableRefObject<string>,
   maxLength?: number,
-  rules?: Rules
-): FormatResult {
+  rules?: TRules
+): IFormatResult {
   const oldValue = oldInputValueRef.current!
   if (value !== "") {
     // rule verify
@@ -198,7 +198,7 @@ function Input({
   readOnly = false,
   isTrimmed = false,
   clearButtonVisible
-}: InputProps, ref: React.Ref<unknown> | undefined) {
+}: IInputProps, ref: React.Ref<unknown> | undefined) {
 
   const [isFocused, setIsFocused] = React.useState(false)
   const [isWarningAnimation, setWarningAnimation] = React.useState(false)
@@ -313,7 +313,7 @@ function Input({
     }
   }
 
-  function handleFormatResult(result: FormatResult) {
+  function handleFormatResult(result: IFormatResult) {
     if (result.status === "fail") {
       if (!animationTimeId) {
         setWarningAnimation(true)

@@ -24,6 +24,7 @@
     "556": "qrcode",
     "611": "terser",
     "620": "quill",
+    "710": "react-intl",
     "778": "is-ip",
     "785": "js-sha256",
     "793": "@vikadata/vika",
@@ -31,6 +32,7 @@
     "2027": "punycode",
     "2140": "inversify-inject-decorators",
     "2145": "lodash.clonedeep",
+    "2681": "react-intl",
     "2720": "@babel/core",
     "3324": "@babel/preset-react"
 }

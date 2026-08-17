@@ -6,7 +6,7 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_294 from /* 294 */"../294/index"
+import * as /* [auto-meaningful-name] */Module_294 from /* 294 */"../../../../../src/shared/ui/components/Input/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef, useState, useEffect, useCallback } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"

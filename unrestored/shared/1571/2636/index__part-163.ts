@@ -9,9 +9,9 @@
 import { dA } from "./index__part-162"
 import /* [auto-meaningful-name] */Module_355 from /* 355 */"./355"
 var sA
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"./133/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
 import * as /* [auto-meaningful-name] */Module_190 from /* 190 */"./190"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
@@ -19,13 +19,13 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useRef, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_294 from /* 294 */"./294/index"
+import * as /* [auto-meaningful-name] */Module_294 from /* 294 */"../../../../src/shared/ui/components/Input/index"
 import /* 2612 */"./2612"
 var fA = memo(function (e) {
   var t = useState(false)
@@ -156,7 +156,7 @@ var hA = function (e) {
   })))
 }
 var mA = function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useDispatch()
   var r = Module_25.a(Module_9.jb()).reverse()
   function o(e) {
@@ -225,12 +225,12 @@ var mA = function (e) {
         }
       }
       var d = Module_9.ub("IMAGE_FILE_ID", s.id).length > 0 || Module_9.Ib(s.id) || Module_9.Lb(s.id)
-      var p = Module_710$a$formatMessage({
+      var p = useIntl$formatMessage({
         id: c ? "deleteImageGroupFileTitle" : "deleteImageFileTitle"
       }, {
         name: Module_190.f((c ? null === (i = s) || undefined === i ? undefined : i.groupId : null === (a = s) || undefined === a ? undefined : a.id) || "", 10)
       })
-      var f = Module_710$a$formatMessage({
+      var f = useIntl$formatMessage({
         id: c ? "deleteImageGroupFileTips" : "deleteImageFileTips"
       })
       var h = function () {
@@ -248,7 +248,7 @@ var mA = function (e) {
         n(Src_editor_redux_common_actions.zh({
           isDangerous: true,
           onConfirm: h,
-          allowText: Module_710$a$formatMessage({
+          allowText: useIntl$formatMessage({
             id: "delete"
           }),
           title: p,
@@ -265,7 +265,7 @@ var mA = function (e) {
         i.target.value = e
         if (o !== e) {
           n(Src_editor_redux_common_actions.mj({
-            message: Module_710$a$formatMessage({
+            message: useIntl$formatMessage({
               id: "renameFileNameRepeatTips"
             }),
             duration: 2e3
@@ -304,7 +304,7 @@ var mA = function (e) {
     className: Module_355.icon
   }), React.createElement("div", {
     className: Module_355.name
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "Resource.upload"
   }))))), r.filter(function (e) {
     return !e.groupId

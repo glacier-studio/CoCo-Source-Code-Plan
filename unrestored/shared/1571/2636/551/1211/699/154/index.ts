@@ -6,7 +6,7 @@
 
 import { d } from "./index__part-0"
 import "./index__part-1"
-import * as /* [auto-meaningful-name] */Module_798 from /* 798 */"../../709/798"
+import * as /* [auto-meaningful-name] */Module_798 from /* 798 */"../../709/798/index"
 import * as /* [auto-meaningful-name] */Module_19 from /* 19 */"../../../../19"
 var _a
 _a = function (e, t) {

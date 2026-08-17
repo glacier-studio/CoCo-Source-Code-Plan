@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../..
 import * as /* [auto-meaningful-name] */Shared_tools_index from /* 15 */"../../../../shared/tools/index"
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import { useDispatch, useSelector } from /* 16 */"react-redux"
@@ -48,7 +48,7 @@ var Qe = [
   }
 ]
 var Ze = memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useDispatch()
   var r = useSelector(function (e) {
     return e.common.userInfo
@@ -108,15 +108,15 @@ var Ze = memo(function (e) {
       onClick: o
     }, React.createElement(Shared_ui_components_index.m, {
       value: Ye.ACCOUNT_SETTING
-    }, React.createElement("div", null, Module_710$a$formatMessage({
+    }, React.createElement("div", null, useIntl$formatMessage({
       id: "accountSetting"
     }))), React.createElement(Shared_ui_components_index.y, {
       subMenu: i
-    }, React.createElement("div", null, Module_710$a$formatMessage({
+    }, React.createElement("div", null, useIntl$formatMessage({
       id: "serviceAgreement"
     }))), React.createElement(Shared_ui_components_index.m, {
       value: Ye.LOGOUT
-    }, React.createElement("div", null, Module_710$a$formatMessage({
+    }, React.createElement("div", null, useIntl$formatMessage({
       id: "logout"
     }))))
   }, React.createElement("div", {
@@ -130,7 +130,7 @@ var Ze = memo(function (e) {
       n(Redux_common_actions.Ch())
       Module_141.a("LoginButtonClick")
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "login"
   }))
 })

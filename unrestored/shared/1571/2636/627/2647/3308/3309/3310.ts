@@ -17,7 +17,7 @@ var i = r(require(/* 1066 */"../../../../13/780/1066"))
 var l = r(require(/* 1067 */"../../../../13/780/1067"))
 var u = require(/* 156 */"redux")
 var s = r(require(/* 2909 */"../2909/index"))
-var d = a(require(/* 2750 */"../2750/index"))
+var d = a(require(/* 2750 */"../2750"))
 var c = a(require(/* 2780 */"../2780"))
 var f = function () {
   function e(t) {

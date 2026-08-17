@@ -26,7 +26,7 @@ import /* 120 */"../../120"
 import * as /* [auto-meaningful-name] */Module_709 from /* 709 */"../../551/1211/709/index"
 import * as /* [auto-meaningful-name] */Module_690 from /* 690 */"./690/index"
 import * as /* [auto-meaningful-name] */Module_316 from /* 316 */"./316/index"
-import * as /* [auto-meaningful-name] */Module_366 from /* 366 */"./366"
+import * as /* [auto-meaningful-name] */Module_366 from /* 366 */"./366/index"
 var h = Module_709.a({
   toolbarLandscape: {
     flexWrap: "wrap"

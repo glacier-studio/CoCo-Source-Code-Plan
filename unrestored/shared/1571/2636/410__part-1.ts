@@ -10,7 +10,7 @@ var i
 var o
 var r
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 var /* [auto-meaningful-name] */IconWidgetTableData = "icon-widget-table-data"
 var l = Module_64.a("COLUMN")
 var u = Module_64.a("COLUMN")

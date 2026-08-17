@@ -6,7 +6,7 @@
 
 "use strict"
 
-var r = require(/* 86 */"../1662/86")
+var r = require(/* 86 */"../1650/86/index")
 var /* [auto-meaningful-name] */require_828_$$_1761_828$indexOf = require(/* 828 */"../1761/828").indexOf
 var i = require(/* 717 */"./717")
 var /* [auto-meaningful-name] */$indexOf = [].indexOf

@@ -7,8 +7,8 @@
 "use strict"
 
 import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
-import * as /* [auto-meaningful-name] */Module_196 from /* 196 */"../../../../src/editor/ui/PreviewArea/WidgetList/styles.module.css"
-import /* [auto-meaningful-name] */Module_1961 from /* 196 */"../../../../src/editor/ui/PreviewArea/WidgetList/styles.module.css"
+import * as /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_WidgetList_styles_module_css from /* 196 */"../../../../src/editor/ui/PreviewArea/WidgetList/styles.module.css"
+import /* [auto-meaningful-name] */Src_editor_ui_PreviewArea_WidgetList_styles_module_css1 from /* 196 */"../../../../src/editor/ui/PreviewArea/WidgetList/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_146 from /* 146 */"./146"
 var Xd = [
   {

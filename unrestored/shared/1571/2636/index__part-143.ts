@@ -6,12 +6,12 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"./18"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"./188"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
@@ -52,7 +52,7 @@ var ZC = memo(function () {
   var T = Module_10.a(w, 2)
   var A = T[0]
   var j = T[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var k = useRef(null)
   var x = useRef(true)
   var D = useSelector(function (e) {
@@ -106,11 +106,11 @@ var ZC = memo(function () {
   }, [M, e$onClose])
   var B = useCallback(function (e) {
     if (E && !e) {
-      d(Module_710$a$formatMessage({
+      d(useIntl$formatMessage({
         id: "invalidVariableName"
       }))
     }
-  }, [Module_710$a$formatMessage, E])
+  }, [useIntl$formatMessage, E])
   var F = useCallback(function () {
     if (!u && g) {
       if (e$onConfirm) {
@@ -159,26 +159,26 @@ var ZC = memo(function () {
   var X = ""
   switch (e$title) {
     case "addPrimitiveVariableName":
-      q = Module_710$a$formatMessage({
+      q = useIntl$formatMessage({
         id: "screenVariable"
       })
-      X = Module_710$a$formatMessage({
+      X = useIntl$formatMessage({
         id: "globalVariable"
       })
       break
     case "addArrayVariableName":
-      q = Module_710$a$formatMessage({
+      q = useIntl$formatMessage({
         id: "screenArray"
       })
-      X = Module_710$a$formatMessage({
+      X = useIntl$formatMessage({
         id: "globalArray"
       })
       break
     case "object.createNewObject":
-      q = Module_710$a$formatMessage({
+      q = useIntl$formatMessage({
         id: "object.screenObject"
       })
-      X = Module_710$a$formatMessage({
+      X = useIntl$formatMessage({
         id: "object.globalObject"
       })
   }
@@ -194,15 +194,15 @@ var ZC = memo(function () {
     callback: F
   })), React.createElement("p", {
     className: Module_991.dialogTitle
-  }, QC.includes(e$title) ? Module_710$a$formatMessage({
+  }, QC.includes(e$title) ? useIntl$formatMessage({
     id: e$title
-  }) : Module_710$a$formatMessage({
+  }) : useIntl$formatMessage({
     id: "addCurrentScreenIndexTitle"
   }, {
     currentScreenIndex: D + 1
   })), React.createElement("div", {
     className: Classnames(Module_991.inputWrapper, u && Module_991.inputWaringWrapper)
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "name"
   })), React.createElement(Src_shared_ui_components_index.k, {
     ref: k,
@@ -218,7 +218,7 @@ var ZC = memo(function () {
     className: Module_991.warningTips
   }, " ", u)), ("addPrimitiveVariableName" === e$title || "addArrayVariableName" === e$title || "object.createNewObject" === e$title) && React.createElement("div", {
     className: Module_991.inputWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "property"
   })), React.createElement("div", {
     className: Module_991.propertyBox,
@@ -262,13 +262,13 @@ var ZC = memo(function () {
     onMouseDown: W
   }, React.createElement(Src_shared_ui_components_index.d, {
     onClick: P
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cancel"
   })), React.createElement(Src_shared_ui_components_index.d, {
     onClick: F,
     type: "primary",
     disabled: !!u || !g
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "confirm"
   }))), e$tips && React.createElement("span", {
     className: Module_991.bottomTips

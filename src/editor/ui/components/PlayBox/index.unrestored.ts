@@ -9,22 +9,22 @@
 import { XM } from "../../../../../unrestored/shared/1571/2636/index__part-198"
 import { cL } from "../../../../../unrestored/shared/1571/2636/index__part-199"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../../../../../unrestored/shared/1571/2636/53"
-import /* [auto-meaningful-name] */Src_editor_ui_header_styles_module_css from /* 161 */"../../../../src/editor/ui/Header/styles.module.css"
+import /* [auto-meaningful-name] */Header_styles_module_css from /* 161 */"../../Header/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_141 from /* 141 */"../../../../../unrestored/shared/1571/2636/141/index"
-import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../redux/common/actions"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
+import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
+import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import { useDispatch, useSelector, batch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { useState, useEffect, memo, useRef } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_570 from /* 570 */"../../../../../unrestored/shared/1571/2636/570"
-import /* [auto-meaningful-name] */Module_5701 from /* 570 */"../../../../../unrestored/shared/1571/2636/570"
+import * as /* [auto-meaningful-name] */Style_styles_module_css from /* 570 */"./style/styles.module.css"
+import /* [auto-meaningful-name] */Style_styles_module_css1 from /* 570 */"./style/styles.module.css"
 var dL = React.memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   var n = useState(true)
   var r = Module_10.a(n, 2)
@@ -42,27 +42,27 @@ var dL = React.memo(function () {
     }
   }, [s])
   return React.createElement("div", {
-    className: Module_5701.playBox
+    className: Style_styles_module_css1.playBox
   }, React.createElement("button", {
-    className: Classnames(Module_5701.playButton, s.size > 1 && Module_5701.borderLeft),
+    className: Classnames(Style_styles_module_css1.playButton, s.size > 1 && Style_styles_module_css1.borderLeft),
     onClick: function () {
       if (a) {
-        t(Src_editor_redux_common_actions.Dj())
-        t(Src_editor_redux_common_actions.Wh())
+        t(Redux_common_actions.Dj())
+        t(Redux_common_actions.Wh())
       } else {
-        Src_editor_redux_common_actions.Nf(t, Src_editor_redux_common_actions.kg(o))
+        Redux_common_actions.Nf(t, Redux_common_actions.kg(o))
       }
     }
-  }, a ? React.createElement(React.Fragment, null, React.createElement(Src_shared_ui_components_index.j, {
+  }, a ? React.createElement(React.Fragment, null, React.createElement(Shared_ui_components_index.j, {
     type: "icon-stop"
-  }), " ", Module_710$a$formatMessage({
+  }), " ", useIntl$formatMessage({
     id: "stop"
-  })) : React.createElement(React.Fragment, null, React.createElement(Src_shared_ui_components_index.j, {
+  })) : React.createElement(React.Fragment, null, React.createElement(Shared_ui_components_index.j, {
     type: o ? "icon-start" : "icon-start-first-screen"
-  }), Module_710$a$formatMessage({
+  }), useIntl$formatMessage({
     id: "play"
   }))), s.size > 1 && React.createElement(XM, {
-    overlayClassName: Module_5701.playMenu,
+    overlayClassName: Style_styles_module_css1.playMenu,
     placement: "bottomLeft",
     overlay: React.createElement(cL, {
       onClick: function (e) {
@@ -76,26 +76,26 @@ var dL = React.memo(function () {
       }
     }, React.createElement(cL.Item, {
       key: "START_CURRENT_SCREEN"
-    }, React.createElement(Src_shared_ui_components_index.j, {
+    }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-start",
-      className: Module_5701.menuIcon
+      className: Style_styles_module_css1.menuIcon
     }), React.createElement("span", {
-      className: Module_5701.menuText
-    }, Module_710$a$formatMessage({
+      className: Style_styles_module_css1.menuText
+    }, useIntl$formatMessage({
       id: "playCurrentScreen"
     }))), React.createElement(cL.Item, {
       key: "START_FIRST_SCREEN"
-    }, React.createElement(Src_shared_ui_components_index.j, {
+    }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-start-first-screen",
-      className: Module_5701.menuIcon
+      className: Style_styles_module_css1.menuIcon
     }), React.createElement("span", {
-      className: Module_5701.menuText
-    }, Module_710$a$formatMessage({
+      className: Style_styles_module_css1.menuText
+    }, useIntl$formatMessage({
       id: "playFirstScreen"
     }))))
   }, React.createElement("div", {
-    className: Module_5701.playType
-  }, React.createElement(Src_shared_ui_components_index.j, {
+    className: Style_styles_module_css1.playType
+  }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-dropdown-down"
   }))))
 })
@@ -110,7 +110,7 @@ var pL = memo(function (e) {
     return e.oTState.isAuthor
   })
   var o = useRef(null)
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = useDispatch()
   var s = useState(false)
   var c = Module_10.a(s, 2)
@@ -125,14 +125,14 @@ var pL = memo(function (e) {
     title: l ? m : n,
     trigger: ["hover", "click"]
   }, React.createElement("div", {
-    className: Src_editor_ui_header_styles_module_css.projectTitleWrapper
-  }, React.createElement(Src_shared_ui_components_index.k, {
+    className: Header_styles_module_css.projectTitleWrapper
+  }, React.createElement(Shared_ui_components_index.k, {
     defaultValue: n,
     dependency: n,
     disabled: !r || e.readonly,
     isTrimmed: true,
-    className: Src_editor_ui_header_styles_module_css.projectTitle,
-    placeholder: Module_710$a$formatMessage({
+    className: Header_styles_module_css.projectTitle,
+    placeholder: useIntl$formatMessage({
       id: "projectTitlePlaceholder"
     }),
     rules: [
@@ -148,7 +148,7 @@ var pL = memo(function (e) {
     onBlur: function (e, r) {
       if (e) {
         batch(function () {
-          a(Src_editor_redux_common_actions.Bf(e))
+          a(Redux_common_actions.Bf(e))
           if (n !== e) {
             Module_141.a("EditWorkName", {
               workId: t,
@@ -157,8 +157,8 @@ var pL = memo(function (e) {
           }
         })
       } else {
-        a(Src_editor_redux_common_actions.mj({
-          message: Module_710$a$formatMessage({
+        a(Redux_common_actions.mj({
+          message: useIntl$formatMessage({
             id: "isEmptyProjectTitle"
           }),
           showCloseIcon: false
@@ -178,9 +178,9 @@ var pL = memo(function (e) {
           o.current.focus()
         }
       }
-    }, React.createElement(Src_shared_ui_components_index.j, {
+    }, React.createElement(Shared_ui_components_index.j, {
       type: "icon-edit",
-      className: Src_editor_ui_header_styles_module_css.editIcon
+      className: Header_styles_module_css.editIcon
     }))
   })))
 })

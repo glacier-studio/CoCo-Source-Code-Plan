@@ -4,7 +4,7 @@
  * 模块 ID：1336
  */
 
-var r = require(/* 1122 */"./1333/1122")
+var r = require(/* 1122 */"./2020/1122")
 function i(e) {
   var t
   var n = r.spaceIndex(e)

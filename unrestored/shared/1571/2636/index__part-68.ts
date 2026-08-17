@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
@@ -50,7 +50,7 @@ var Vh = function (e) {
   var C = Module_10.a(w, 2)
   var T = C[0]
   var j = C[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var k = t
   var x = useSelector(function (e) {
     return e.project.selectedWidgetId
@@ -450,7 +450,7 @@ var Vh = function (e) {
     }
   }, React.createElement(Module_748.a, {
     placement: "right",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "actor.editProperty"
     }),
     trigger: ["hover", "click"]
@@ -469,7 +469,7 @@ var Vh = function (e) {
     className: Classnames(Module_8101.iconButton, Module_8101.editIcon)
   }))), React.createElement(Module_748.a, {
     placement: "right",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "actor.editActionStyle"
     }),
     trigger: ["hover", "click"]

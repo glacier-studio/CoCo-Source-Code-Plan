@@ -4,7 +4,7 @@
  * 模块 ID：1749
  */
 
-require(/* 578 */"./1745/578/index")("Uint16", function (e) {
+require(/* 578 */"./1750/578/index")("Uint16", function (e) {
   return function (t, n, r) {
     return e(this, t, n, r)
   }

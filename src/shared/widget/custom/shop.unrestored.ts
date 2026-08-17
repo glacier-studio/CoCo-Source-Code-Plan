@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenera
 import /* [auto-meaningful-name] */RegeneratorRuntime1 from /* 1 */"regenerator-runtime"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../unrestored/shared/1571/2636/7"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../unrestored/shared/1571/2636/9"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../unrestored/shared/1571/2636/64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../unrestored/shared/1571/2636/64/index"
 import * as c from /* 78 */"./type"
 import * as /* [auto-meaningful-name] */Utils_network_axiosWithCredentials from /* 41 */"../../utils/network/axios-with-credentials"
 import * as u from /* 57 */"../../env"

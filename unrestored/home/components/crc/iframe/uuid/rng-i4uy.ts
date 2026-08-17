@@ -14,8 +14,7 @@
 var getRandomValues = typeof crypto != "undefined" && crypto.getRandomValues && crypto.getRandomValues.bind(crypto) || typeof msCrypto != "undefined" && typeof window.msCrypto.getRandomValues == "function" && msCrypto.getRandomValues.bind(msCrypto)
 if (getRandomValues) {
   // WHATWG crypto RNG - http://wiki.whatwg.org/wiki/Crypto
-  var rnds8 = new Uint8Array(16)  
-
+  var rnds8 = new Uint8Array(16)
   module.exports = function whatwgRNG() {
     getRandomValues(rnds8)
     return rnds8

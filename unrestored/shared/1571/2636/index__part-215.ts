@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
@@ -43,7 +43,7 @@ var zP = memo(function () {
   })
   var /* [auto-meaningful-name] */e$visible = e.visible
   var /* [auto-meaningful-name] */e$onConfirm = e.onConfirm
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var i = useState(RP.TABLE_DATA)
   var a = Module_10.a(i, 2)
   var s = a[0]
@@ -116,7 +116,7 @@ var zP = memo(function () {
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-arrow-down",
     className: Module_2821.backIcon
-  })), Module_710$a$formatMessage({
+  })), useIntl$formatMessage({
     id: "ListViewerWidget.createCloudTable"
   })), React.createElement("div", {
     className: Module_2821.cloudSpaceTipsContent
@@ -134,7 +134,7 @@ var zP = memo(function () {
     className: Module_2821.logoImage,
     src: Module_15401,
     alt: ""
-  })), React.createElement("div", null, Module_710$a$formatMessage({
+  })), React.createElement("div", null, useIntl$formatMessage({
     id: "ListViewerWidget.toCloudSpaceDomainTips"
   }))), React.createElement("div", {
     className: Classnames(Module_2821.confirmBox, Module_2821.cloudSpaceConfirm)
@@ -144,11 +144,11 @@ var zP = memo(function () {
       m(Src_editor_redux_common_actions.mh())
     },
     type: "primary"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.toCloudSpaceDomain"
   })))), !d && React.createElement(React.Fragment, null, React.createElement("p", {
     className: Module_2821.tableDataTitle
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.createDataSource"
   })), React.createElement("div", {
     className: Module_2821.tableDataList
@@ -160,11 +160,11 @@ var zP = memo(function () {
     className: Module_2821.icon
   }), React.createElement("div", {
     className: Module_2821.name
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.tableData"
   })), React.createElement("div", {
     className: Module_2821.desc
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.tableDataDesc"
   }))), React.createElement("div", {
     onClick: b.bind(null, RP.CLOUD_SPACE_TABLE),
@@ -174,29 +174,29 @@ var zP = memo(function () {
     className: Module_2821.icon
   }), t ? React.createElement("div", {
     className: Module_2821.name
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.cloudTable"
   })) : React.createElement(Module_748.a, {
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "ListViewerWidget.cloudTableOtTips"
     })
   }, React.createElement("div", {
     className: Module_2821.name
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.cloudTable"
   }), React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-locked"
   }))), React.createElement("div", {
     className: Module_2821.desc
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "ListViewerWidget.cloudTableDesc"
   })))), React.createElement("div", {
     className: Module_2821.confirmBox
   }, React.createElement(Src_shared_ui_components_index.d, {
     onClick: v,
     type: "primary"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "confirm"
   })))))
 })

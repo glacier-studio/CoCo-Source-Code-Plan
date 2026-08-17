@@ -10,7 +10,7 @@ import * as /* [auto-meaningful-name] */Redux from /* 156 */"redux"
 import * as /* [auto-meaningful-name] */Module_489 from /* 489 */"../../../../unrestored/shared/1571/2636/48/489"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../unrestored/shared/1571/2636/25/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../unrestored/shared/1571/2636/6"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../../../../unrestored/shared/1571/2636/738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Actions from /* 2 */"./actions"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../unrestored/shared/1571/2636/18"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_type from /* 78 */"../../../shared/widget/custom/type"
@@ -84,7 +84,7 @@ function w(e) {
   }))
   return e
 }
-var C = Module_66.a.Record(Module_6.a(Module_6.a({
+var C = Immutable.Record(Module_6.a(Module_6.a({
   language: p,
   editAreaUpdatedAt: 0,
   previewAreaUpdatedAt: 0,
@@ -130,7 +130,7 @@ var C = Module_66.a.Record(Module_6.a(Module_6.a({
     visible: false,
     progress: 10
   },
-  consoleMessages: Module_66.a.List(),
+  consoleMessages: Immutable.List(),
   consoleHeight: 0,
   saving: false,
   widgetAttributeVisible: false,
@@ -211,7 +211,7 @@ var C = Module_66.a.Record(Module_6.a(Module_6.a({
   }
 }))()
 function T(e, t) {
-  return e.consoleMessages.push(Module_66.a.Record(t.payload)())
+  return e.consoleMessages.push(Immutable.Record(t.payload)())
 }
 function S(e, t) {
   var /* [auto-meaningful-name] */t$payload = t.payload
@@ -364,7 +364,7 @@ var F = function () {
     case Actions.n:
       return e.set("consoleMessages", T(e, t))
     case Actions.Tb:
-      return e.set("consoleMessages", Module_66.a.List())
+      return e.set("consoleMessages", Immutable.List())
     case Actions.kd:
       return e.set("consoleHeight", t.payload)
     case Actions.bc:

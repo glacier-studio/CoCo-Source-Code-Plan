@@ -40,7 +40,7 @@ import * as /* [auto-meaningful-name] */Shared_tools_index from /* 15 */"../../.
 import * as /* [auto-meaningful-name] */Module_49 from /* 49 */"../../../../unrestored/shared/1571/2636/49"
 import * as /* [auto-meaningful-name] */Module_24 from /* 24 */"../../../../unrestored/shared/1571/2636/24/index"
 import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../shared/ui/language"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../unrestored/shared/1571/2636/64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../unrestored/shared/1571/2636/64/index"
 import * as /* [auto-meaningful-name] */Widget_builtIn_types from /* 5 */"../../widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_305 from /* 305 */"../../../../unrestored/shared/1571/2636/305"
 import * as /* [auto-meaningful-name] */Module_215 from /* 215 */"../../../../unrestored/shared/1571/2636/215"
@@ -62,13 +62,13 @@ import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../unrest
 import * as /* [auto-meaningful-name] */Module_3 from /* 3 */"../../../../unrestored/shared/1571/2636/48/3/index"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
 import * as /* [auto-meaningful-name] */Module_100 from /* 100 */"../../../../unrestored/shared/1571/2636/100"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../unrestored/shared/1571/2636/47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../unrestored/shared/1571/2636/47"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../../../../unrestored/shared/1571/2636/53"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_type from /* 78 */"../../../shared/widget/custom/type"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../unrestored/shared/1571/2636/18"
 import * as /* [auto-meaningful-name] */Actions from /* 2 */"./actions"
-import * as /* [auto-meaningful-name] */Module_66 from /* 66 */"../../../../unrestored/shared/1571/2636/738/66"
+import * as /* [auto-meaningful-name] */Immutable from /* 66 */"immutable"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../unrestored/shared/1571/2636/6"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../unrestored/shared/1571/2636/25/index"
 import /* 0 */"react"
@@ -3357,12 +3357,12 @@ function ms(e) {
   var /* [auto-meaningful-name] */e$payload$attributes
   var /* [auto-meaningful-name] */e$payload$setBlockValue
   var s
-  var /* [auto-meaningful-name] */v$sent
-  var /* [auto-meaningful-name] */v$sent1
   var /* [auto-meaningful-name] */v$sent2
   var /* [auto-meaningful-name] */v$sent3
+  var /* [auto-meaningful-name] */v$sent
   var /* [auto-meaningful-name] */v$sent4
   var /* [auto-meaningful-name] */v$sent5
+  var /* [auto-meaningful-name] */v$sent1
   var /* [auto-meaningful-name] */Module_49$oTHelper$globalWidget
   var /* [auto-meaningful-name] */Module_49$oTHelper$widget
   var /* [auto-meaningful-name] */Module_49$oTHelper$widget1
@@ -3380,7 +3380,7 @@ function ms(e) {
           v.next = 4
           return Module_3.b(ps, e$payload$widgetType, e$payload$position, e$payload$screenId)
         case 4:
-          if ((v$sent = v.sent) && s) {
+          if ((v$sent2 = v.sent) && s) {
             v.next = 8
             break
           }
@@ -3388,7 +3388,7 @@ function ms(e) {
           return v.abrupt("return")
         case 8:
           v.next = 10
-          return Module_3.b(us, v$sent)
+          return Module_3.b(us, v$sent2)
         case 10:
           if (v.sent) {
             v.next = 13
@@ -3399,19 +3399,19 @@ function ms(e) {
           v.next = 15
           return Module_3.f(Module_22.J)
         case 15:
-          if (v$sent1 = v.sent, v$sent.type !== Widget_builtIn_types.n && v$sent.type !== Widget_builtIn_types.J) {
+          if (v$sent3 = v.sent, v$sent2.type !== Widget_builtIn_types.n && v$sent2.type !== Widget_builtIn_types.J) {
             v.next = 20
             break
           }
-          v$sent.attributes.timeStamp = Date.now()
+          v$sent2.attributes.timeStamp = Date.now()
           v.next = 68
           break
         case 20:
-          if (v$sent.type !== Widget_builtIn_types.l) {
+          if (v$sent2.type !== Widget_builtIn_types.l) {
             v.next = 30
             break
           }
-          if (v$sent1) {
+          if (v$sent3) {
             v.next = 25
             break
           }
@@ -3421,51 +3421,51 @@ function ms(e) {
           return v.abrupt("return")
         case 25:
           v.next = 27
-          return Module_3.b(fs, v$sent)
+          return Module_3.b(fs, v$sent2)
         case 27:
-          v$sent.attributes.cloudDbId = v.sent
+          v$sent2.attributes.cloudDbId = v.sent
           v.next = 68
           break
         case 30:
-          if (v$sent.type !== Widget_builtIn_types.x && v$sent.type !== Widget_builtIn_types.A) {
+          if (v$sent2.type !== Widget_builtIn_types.x && v$sent2.type !== Widget_builtIn_types.A) {
             v.next = 38
             break
           }
           v.next = 33
-          return Module_3.b(_s, e$payload$screenId, v$sent.id, v$sent.attributes.templateType)
+          return Module_3.b(_s, e$payload$screenId, v$sent2.id, v$sent2.attributes.templateType)
         case 33:
-          v$sent2 = v.sent
-          v$sent.widgetIds = v$sent2.widgetIds
-          v$sent.attributes.templateSlotMap = v$sent2.templateSlotMap
+          v$sent = v.sent
+          v$sent2.widgetIds = v$sent.widgetIds
+          v$sent2.attributes.templateSlotMap = v$sent.templateSlotMap
           v.next = 68
           break
         case 38:
-          if (v$sent.type !== Widget_builtIn_types.m) {
+          if (v$sent2.type !== Widget_builtIn_types.m) {
             v.next = 42
             break
           }
           if (e$payload$attributes) {
             if (Lodash.isString(e$payload$attributes.name)) {
-              v$sent.title = e$payload$attributes.name
+              v$sent2.title = e$payload$attributes.name
             }
             if (e$payload$attributes.header) {
-              v$sent.attributes.db.header = e$payload$attributes.header
+              v$sent2.attributes.db.header = e$payload$attributes.header
             }
             if (e$payload$attributes.data) {
-              v$sent.attributes.db.data = e$payload$attributes.data
+              v$sent2.attributes.db.data = e$payload$attributes.data
             }
           }
           v.next = 68
           break
         case 42:
-          if (v$sent.type !== Widget_builtIn_types.h) {
+          if (v$sent2.type !== Widget_builtIn_types.h) {
             v.next = 67
             break
           }
           v.next = 45
           return Module_3.f(Module_22.y)
         case 45:
-          if (v$sent3 = v.sent, v$sent1) {
+          if (v$sent4 = v.sent, v$sent3) {
             v.next = 50
             break
           }
@@ -3474,59 +3474,59 @@ function ms(e) {
         case 49:
           return v.abrupt("return")
         case 50:
-          if (e$payload$attributes && (v$sent.attributes.cloudDbId = e$payload$attributes.cloudDbId, v$sent.attributes.name = e$payload$attributes.name, v$sent.attributes.columns = e$payload$attributes.columns, v$sent.attributes.primaryKey = e$payload$attributes.primaryKey), "_EMPTY_CLOUD_DB_ID_" !== v$sent.attributes.cloudDbId) {
+          if (e$payload$attributes && (v$sent2.attributes.cloudDbId = e$payload$attributes.cloudDbId, v$sent2.attributes.name = e$payload$attributes.name, v$sent2.attributes.columns = e$payload$attributes.columns, v$sent2.attributes.primaryKey = e$payload$attributes.primaryKey), "_EMPTY_CLOUD_DB_ID_" !== v$sent2.attributes.cloudDbId) {
             v.next = 64
             break
           }
           v.next = 54
           return Module_3.f(Module_22.s)
         case 54:
-          v$sent4 = v.sent
+          v$sent5 = v.sent
           v.next = 57
-          return Module_3.b(Module_147.b, Shared_ui_language.c(v$sent4, "cloudDb.defaultName").toString(), Module_97.a(v$sent3) ? v$sent3 : "")
+          return Module_3.b(Module_147.b, Shared_ui_language.c(v$sent5, "cloudDb.defaultName").toString(), Module_97.a(v$sent4) ? v$sent4 : "")
         case 57:
-          if ((v$sent5 = v.sent).id) {
+          if ((v$sent1 = v.sent).id) {
             v.next = 62
             break
           }
           v.next = 61
           return Module_3.e(Actions.mj({
             type: "error",
-            message: Shared_ui_language.c(v$sent4, "cloudDBWidget.generateError").toString()
+            message: Shared_ui_language.c(v$sent5, "cloudDBWidget.generateError").toString()
           }))
         case 61:
           return v.abrupt("return")
         case 62:
-          v$sent.attributes.cloudDbId = v$sent5.id
-          v$sent.attributes.name = v$sent5.name
+          v$sent2.attributes.cloudDbId = v$sent1.id
+          v$sent2.attributes.name = v$sent1.name
         case 64:
-          v$sent.title = v$sent.attributes.name
+          v$sent2.title = v$sent2.attributes.name
           v.next = 68
           break
         case 67:
-          if (v$sent.type === Widget_builtIn_types.G) {
-            v$sent.attributes.db = Module_410.d()
+          if (v$sent2.type === Widget_builtIn_types.G) {
+            v$sent2.attributes.db = Module_410.d()
           }
         case 68:
           v.next = 70
-          return Module_3.b(hs, v$sent, e$payload$screenId)
+          return Module_3.b(hs, v$sent2, e$payload$screenId)
         case 70:
           if (e$payload$setBlockValue) {
-            e$payload$setBlockValue(v$sent.id)
+            e$payload$setBlockValue(v$sent2.id)
           }
-          if (v$sent.isGlobalWidget) {
+          if (v$sent2.isGlobalWidget) {
             if (!(null === (Module_49$oTHelper$globalWidget = Module_49.oTHelper.globalWidget) || undefined === Module_49$oTHelper$globalWidget)) {
-              Module_49$oTHelper$globalWidget.clientOp.add(v$sent)
+              Module_49$oTHelper$globalWidget.clientOp.add(v$sent2)
             }
           } else {
             if (e$payload$screenId) {
               if (s.isInvisibleWidget) {
                 if (!(null === (Module_49$oTHelper$widget = Module_49.oTHelper.widget) || undefined === Module_49$oTHelper$widget)) {
-                  Module_49$oTHelper$widget.clientOp.addInvisibleWidgetOp(e$payload$screenId, v$sent)
+                  Module_49$oTHelper$widget.clientOp.addInvisibleWidgetOp(e$payload$screenId, v$sent2)
                 }
               } else {
                 if (!(null === (Module_49$oTHelper$widget1 = Module_49.oTHelper.widget) || undefined === Module_49$oTHelper$widget1)) {
-                  Module_49$oTHelper$widget1.clientOp.addWidgetOp(e$payload$screenId, v$sent)
+                  Module_49$oTHelper$widget1.clientOp.addWidgetOp(e$payload$screenId, v$sent2)
                 }
               }
             }
@@ -3534,21 +3534,21 @@ function ms(e) {
           v.next = 74
           return Module_3.e(Actions.Fi(true))
         case 74:
-          if (v$sent.type === Widget_builtIn_types.m) {
+          if (v$sent2.type === Widget_builtIn_types.m) {
             v.next = 79
             break
           }
           v.next = 77
-          return Module_3.b(vs, v$sent)
+          return Module_3.b(vs, v$sent2)
         case 77:
           v.next = 79
-          return Module_3.e(Actions.ug(v$sent.id))
+          return Module_3.e(Actions.ug(v$sent2.id))
         case 79:
           v.next = 81
-          return Module_3.b(bs, e$payload$screenId, v$sent)
+          return Module_3.b(bs, e$payload$screenId, v$sent2)
         case 81:
-          Shared_widget_custom_shop.a(v$sent.type, null === v$sent1 || undefined === v$sent1 ? undefined : v$sent1.id)
-          return v.abrupt("return", v$sent)
+          Shared_widget_custom_shop.a(v$sent2.type, null === v$sent3 || undefined === v$sent3 ? undefined : v$sent3.id)
+          return v.abrupt("return", v$sent2)
         case 83:
         case "end":
           return v.stop()
@@ -4050,13 +4050,13 @@ function Cs() {
 }
 function Ts(e, t) {
   var n
+  var /* [auto-meaningful-name] */C$sent8
   var /* [auto-meaningful-name] */C$sent
   var /* [auto-meaningful-name] */C$sent1
   var /* [auto-meaningful-name] */C$sent2
   var /* [auto-meaningful-name] */C$sent3
   var /* [auto-meaningful-name] */C$sent4
-  var /* [auto-meaningful-name] */C$sent5
-  var /* [auto-meaningful-name] */C$sent6
+  var /* [auto-meaningful-name] */C$sent9
   var d
   var p
   var f
@@ -4065,9 +4065,9 @@ function Ts(e, t) {
   var g
   var _
   var v
+  var /* [auto-meaningful-name] */C$sent5
+  var /* [auto-meaningful-name] */C$sent6
   var /* [auto-meaningful-name] */C$sent7
-  var /* [auto-meaningful-name] */C$sent8
-  var /* [auto-meaningful-name] */C$sent9
   var O
   var w
   return RegeneratorRuntime.wrap(function (C) {
@@ -4081,35 +4081,35 @@ function Ts(e, t) {
           C.next = 5
           return Module_3.f(Module_22.s)
         case 5:
-          C$sent = C.sent
+          C$sent8 = C.sent
           C.next = 8
           return Module_3.f(Module_22.C)
         case 8:
-          C$sent1 = C.sent
+          C$sent = C.sent
           C.next = 11
           return Module_3.f(Module_22.m)
         case 11:
-          C$sent2 = C.sent
+          C$sent1 = C.sent
           C.next = 14
           return Module_3.f(Module_22.k)
         case 14:
-          C$sent3 = C.sent
+          C$sent2 = C.sent
           C.next = 17
           return Module_3.f(Module_22.l)
         case 17:
-          C$sent4 = C.sent
+          C$sent3 = C.sent
           C.next = 20
           return Module_3.f(Module_22.n)
         case 20:
-          C$sent5 = C.sent
+          C$sent4 = C.sent
           C.next = 23
           return Module_3.f(Module_22.f)
         case 23:
-          C$sent6 = C.sent
+          C$sent9 = C.sent
           C.next = 26
           return Module_3.f(Module_22.v)
         case 26:
-          if (d = C.sent, C$sent6) {
+          if (d = C.sent, C$sent9) {
             C.next = 29
             break
           }
@@ -4127,7 +4127,7 @@ function Ts(e, t) {
           return Module_3.e(Actions.mj({
             duration: 4e3,
             showPrefixIcon: false,
-            message: Shared_ui_language.c(C$sent, "project.saving").toString()
+            message: Shared_ui_language.c(C$sent8, "project.saving").toString()
           }))
         case 40:
           C.next = 42
@@ -4150,20 +4150,20 @@ function Ts(e, t) {
         case 48:
           d = C.sent
         case 49:
-          v = e ? C$sent6.id : C$sent1.toArray()[0].id
+          v = e ? C$sent9.id : C$sent.toArray()[0].id
           C.next = 52
           return Bs()
         case 52:
-          C$sent7 = C.sent
+          C$sent5 = C.sent
           C.next = 55
           return Fs()
         case 55:
-          C$sent8 = C.sent
+          C$sent6 = C.sent
           C.next = 58
           return Gs()
         case 58:
-          C$sent9 = C.sent;
-          (O = Module_177.c(n, Module_26.z, C$sent1.toArray(), C$sent2, C$sent3, Module_9.kb(), C$sent7, C$sent8, v, d, C$sent5, C$sent4)).fontFileMap = C$sent9
+          C$sent7 = C.sent;
+          (O = Module_177.c(n, Module_26.z, C$sent.toArray(), C$sent1, C$sent2, Module_9.kb(), C$sent5, C$sent6, v, d, C$sent4, C$sent3)).fontFileMap = C$sent7
           O.blockCode = Module_26.z.generateAllWorkspaceCodes(O.screenList, t)
           if (undefined !== (w = Terser.minify(O.blockCode, {
             keep_fnames: true
@@ -4179,13 +4179,13 @@ function Ts(e, t) {
   }, ea)
 }
 function Ss() {
-  var /* [auto-meaningful-name] */l$sent
-  var t
-  var /* [auto-meaningful-name] */l$sent1
   var /* [auto-meaningful-name] */l$sent2
-  var /* [auto-meaningful-name] */l$sent2$url
-  var /* [auto-meaningful-name] */l$sent2$version
-  var /* [auto-meaningful-name] */l$sent2$expireTime
+  var t
+  var /* [auto-meaningful-name] */l$sent
+  var /* [auto-meaningful-name] */l$sent1
+  var /* [auto-meaningful-name] */l$sent1$url
+  var /* [auto-meaningful-name] */l$sent1$version
+  var /* [auto-meaningful-name] */l$sent1$expireTime
   var s
   return RegeneratorRuntime.wrap(function (l) {
     for (;;) {
@@ -4194,7 +4194,7 @@ function Ss() {
           l.next = 2
           return Module_3.f(Module_22.B)
         case 2:
-          l$sent = l.sent
+          l$sent2 = l.sent
           l.next = 5
           return Module_3.e(Actions.Oi(true))
         case 5:
@@ -4207,15 +4207,15 @@ function Ss() {
           t = 0
           l.prev = 10
         case 11:
-          if (!(t < 100 && t >= 0 && l$sent)) {
+          if (!(t < 100 && t >= 0 && l$sent2)) {
             l.next = 22
             break
           }
           l.next = 14
-          return Module_3.b(Module_177.a, l$sent)
+          return Module_3.b(Module_177.a, l$sent2)
         case 14:
-          l$sent1 = l.sent
-          t = l$sent1.progress
+          l$sent = l.sent
+          t = l$sent.progress
           l.next = 18
           return Module_3.e(Actions.Ki(t))
         case 18:
@@ -4250,19 +4250,19 @@ function Ss() {
             break
           }
           l.next = 35
-          return Module_3.b(Module_177.i, l$sent)
+          return Module_3.b(Module_177.i, l$sent2)
         case 35:
-          l$sent2 = l.sent
-          l$sent2$url = l$sent2.url
-          l$sent2$version = l$sent2.version
-          l$sent2$expireTime = l$sent2.expireTime
+          l$sent1 = l.sent
+          l$sent1$url = l$sent1.url
+          l$sent1$version = l$sent1.version
+          l$sent1$expireTime = l$sent1.expireTime
           l.next = 41
-          return Module_3.e(Actions.Oi(false, l$sent2$url))
+          return Module_3.e(Actions.Oi(false, l$sent1$url))
         case 41:
           l.next = 43
           return Module_3.e(Actions.Ji({
-            version: l$sent2$version,
-            expireTime: l$sent2$expireTime,
+            version: l$sent1$version,
+            expireTime: l$sent1$expireTime,
             startTimeTamp: Date.now()
           }))
         case 43:
@@ -4619,10 +4619,10 @@ function Rs(e) {
 }
 function ks(e) {
   var /* [auto-meaningful-name] */h$sent
-  var /* [auto-meaningful-name] */h$sent1
+  var /* [auto-meaningful-name] */h$sent2
   var r
   var o
-  var /* [auto-meaningful-name] */h$sent2
+  var /* [auto-meaningful-name] */h$sent1
   var /* [auto-meaningful-name] */e$payload
   var /* [auto-meaningful-name] */e$payload$name
   var /* [auto-meaningful-name] */e$payload$description
@@ -4648,7 +4648,7 @@ function ks(e) {
           h.next = 7
           return Module_3.f(Module_22.y)
         case 7:
-          h$sent1 = h.sent
+          h$sent2 = h.sent
           h.next = 10
           return Module_3.b(Actions.Bf, e.payload.name)
         case 10:
@@ -4661,7 +4661,7 @@ function ks(e) {
           h.next = 14
           return Module_3.b(Module_197.e, o, "JSON")
         case 14:
-          h$sent2 = h.sent
+          h$sent1 = h.sent
           e$payload = e.payload
           e$payload$name = e$payload.name
           e$payload$description = e$payload.description
@@ -4672,9 +4672,9 @@ function ks(e) {
             description: e$payload$description || Module_328.a,
             operation: e$payload$operation || Module_328.b,
             coverUrl: e$payload$coverUrl,
-            workId: h$sent1,
-            bcmcUrl: h$sent2.url,
-            playerUrl: Shared_tools_index.E(h$sent1)
+            workId: h$sent2,
+            bcmcUrl: h$sent1.url,
+            playerUrl: Shared_tools_index.E(h$sent2)
           }
           h.next = 19
           return Module_3.b(Module_177.m, p)
@@ -4687,11 +4687,11 @@ function ks(e) {
         case 22:
           qt(Module_9.cb().map(function (e) {
             return e.attributes.cloudDbId
-          }), 2, 1, Module_97.a(h$sent1) ? h$sent1 : undefined)
+          }), 2, 1, Module_97.a(h$sent2) ? h$sent2 : undefined)
           h.next = 26
           return Os()
         case 26:
-          return h.abrupt("return", h$sent1)
+          return h.abrupt("return", h$sent2)
         case 27:
         case "end":
           return h.stop()
@@ -4702,10 +4702,10 @@ function ks(e) {
 function xs(e) {
   var /* [auto-meaningful-name] */f$sent
   var n
-  var /* [auto-meaningful-name] */f$sent1
-  var /* [auto-meaningful-name] */e$payload$info
   var /* [auto-meaningful-name] */f$sent2
+  var /* [auto-meaningful-name] */e$payload$info
   var /* [auto-meaningful-name] */f$sent3
+  var /* [auto-meaningful-name] */f$sent1
   var l
   var u
   var /* [auto-meaningful-name] */f$sent4
@@ -4725,34 +4725,34 @@ function xs(e) {
             isAutoSave: true
           }))
         case 6:
-          f$sent1 = f.sent
+          f$sent2 = f.sent
           e$payload$info = e.payload.info
           f.next = 10
           return Module_3.f(Module_22.J)
         case 10:
-          f$sent2 = f.sent
+          f$sent3 = f.sent
           f.next = 13
           return Module_3.b(function () {
             return Ts(false)
           })
         case 13:
-          if (f$sent3 = f.sent) {
+          if (f$sent1 = f.sent) {
             f.next = 16
             break
           }
           throw new Error("can not generate player data")
         case 16:
-          if (f$sent2) {
+          if (f$sent3) {
             f.next = 18
             break
           }
           throw new Error("user not login")
         case 18:
           l = new Blob([
-            JSON.stringify(Module_6.a(Module_6.a({}, f$sent3), {}, {
+            JSON.stringify(Module_6.a(Module_6.a({}, f$sent1), {}, {
               userInfo: {
-                name: f$sent2.nickname,
-                avatarUrl: f$sent2.avatar_url
+                name: f$sent3.nickname,
+                avatarUrl: f$sent3.avatar_url
               },
               title: e$payload$info.title,
               description: e$payload$info.desc,
@@ -4770,12 +4770,12 @@ function xs(e) {
           f$sent4 = f.sent
           qt(Module_9.cb().map(function (e) {
             return e.attributes.cloudDbId
-          }), 2, 1, Module_97.a(f$sent1) ? f$sent1 : undefined)
+          }), 2, 1, Module_97.a(f$sent2) ? f$sent2 : undefined)
           f.next = 27
           return Os()
         case 27:
           f.next = 29
-          return Module_3.b(Module_177.n, f$sent1, f$sent4.url)
+          return Module_3.b(Module_177.n, f$sent2, f$sent4.url)
         case 29:
           if (200 === (f$sent5 = f.sent).code) {
             f.next = 32
@@ -4783,7 +4783,7 @@ function xs(e) {
           }
           throw Error("".concat(f$sent5.code))
         case 32:
-          return f.abrupt("return", f$sent1)
+          return f.abrupt("return", f$sent2)
         case 33:
         case "end":
           return f.stop()
@@ -4793,9 +4793,9 @@ function xs(e) {
 }
 function Ds(e) {
   var /* [auto-meaningful-name] */e$payload$shouldCloneCloud
-  var /* [auto-meaningful-name] */a$sent
   var /* [auto-meaningful-name] */a$sent1
   var /* [auto-meaningful-name] */a$sent2
+  var /* [auto-meaningful-name] */a$sent
   var i
   return RegeneratorRuntime.wrap(function (a) {
     for (;;) {
@@ -4805,22 +4805,22 @@ function Ds(e) {
           a.next = 3
           return Module_3.f(Module_22.f)
         case 3:
-          a$sent = a.sent
+          a$sent1 = a.sent
           a.next = 6
           return Module_3.f(Module_22.G)
         case 6:
-          if (a$sent1 = a.sent, !a$sent) {
+          if (a$sent2 = a.sent, !a$sent1) {
             a.next = 13
             break
           }
           a.next = 10
           return Module_3.b(Module_97.b, e$payload$shouldCloneCloud)
         case 10:
-          a$sent2 = a.sent
-          i = new Blob([JSON.stringify(a$sent2)], {
+          a$sent = a.sent
+          i = new Blob([JSON.stringify(a$sent)], {
             type: "application/json,charset=utf-8;"
           })
-          Shared_tools_index.s(URL.createObjectURL(i), a$sent1)
+          Shared_tools_index.s(URL.createObjectURL(i), a$sent2)
         case 13:
         case "end":
           return a.stop()
@@ -5007,13 +5007,13 @@ function Gs() {
               if ((null === n || undefined === n ? undefined : n.type) === Widget_builtIn_types.H || (null === n || undefined === n ? undefined : n.type) === Widget_builtIn_types.z || (null === n || undefined === n ? undefined : n.type) === Widget_builtIn_types.w) {
                 var o
                 var /* [auto-meaningful-name] */n$attributes$fontFamily = n.attributes.fontFamily
-                if (!r[n$attributes$fontFamily] && (null === (o = t[n$attributes$fontFamily]) || undefined === o ? undefined : o.cdnUrl)) {
-                  r[n$attributes$fontFamily] = t[n$attributes$fontFamily]
+                if (!r[Module_25] && (null === (o = t[Module_25]) || undefined === o ? undefined : o.cdnUrl)) {
+                  r[Module_25] = t[Module_25]
                 }
               }
               if (n && n.attributes && "EXTENSION_QUILL_RICH_TEXT_WIDGET" === n.type) {
                 var /* [auto-meaningful-name] */n$attributes$content = n.attributes.content
-                var s = undefined === n$attributes$content ? "" : n$attributes$content
+                var s = undefined === Module_6 ? "" : Module_6
                 Module_375.a(s).forEach(function (e) {
                   var n
                   if (!r[e] && (null === (n = t[e]) || undefined === n ? undefined : n.cdnUrl)) {
@@ -5038,10 +5038,10 @@ function Ws(e) {
   var /* [auto-meaningful-name] */e$payload$isAutoSave
   var /* [auto-meaningful-name] */e$payload$isSaveAs
   var /* [auto-meaningful-name] */A$sent
-  var /* [auto-meaningful-name] */A$sent1
-  var l
   var /* [auto-meaningful-name] */A$sent2
+  var l
   var /* [auto-meaningful-name] */A$sent3
+  var /* [auto-meaningful-name] */A$sent1
   var p
   var f
   var h
@@ -5073,21 +5073,21 @@ function Ws(e) {
           A.next = 6
           return Module_3.f(Module_22.y)
         case 6:
-          A$sent1 = A.sent
+          A$sent2 = A.sent
           l = Math.ceil(10 * Math.random()) + 10
           A.next = 10
           return Module_3.f(Module_22.J)
         case 10:
-          A$sent2 = A.sent
+          A$sent3 = A.sent
           A.next = 13
           return Module_3.f(Module_22.F)
         case 13:
-          A$sent3 = A.sent
+          A$sent1 = A.sent
           p = 20
           A.next = 17
           break
         case 17:
-          if (A$sent2) {
+          if (A$sent3) {
             A.next = 21
             break
           }
@@ -5189,7 +5189,7 @@ function Ws(e) {
             name: f.substring(0, p),
             bcmUrl: A$sent5,
             coverUrl: _,
-            id: A$sent1,
+            id: A$sent2,
             saveType: e$payload$isAutoSave ? Module_53.g.AutoSave : Module_53.g.ByUser
           }
           A.prev = 77
@@ -5233,16 +5233,16 @@ function Ws(e) {
           return Module_3.e(Actions.Ei(Date.now()))
         case 101:
           A.next = 103
-          return Module_3.b(vc, A$sent1)
+          return Module_3.b(vc, A$sent2)
         case 103:
-          return A.abrupt("return", A$sent1)
+          return A.abrupt("return", A$sent2)
         case 106:
           T = {
             name: f.substring(0, p),
             bcmUrl: A$sent5,
             coverUrl: _,
             saveType: e$payload$isAutoSave ? Module_53.g.AutoSave : Module_53.g.ByUser,
-            sourceTag: A$sent3.tag
+            sourceTag: A$sent1.tag
           }
           A.prev = 107
           A.next = 110
@@ -6128,9 +6128,9 @@ function rc(e) {
   var o
   var /* [auto-meaningful-name] */Widget_builtIn_types$a
   var s
+  var /* [auto-meaningful-name] */E$sent2
   var /* [auto-meaningful-name] */E$sent
   var /* [auto-meaningful-name] */E$sent1
-  var /* [auto-meaningful-name] */E$sent2
   var p
   var /* [auto-meaningful-name] */E$sent3
   var h
@@ -6153,15 +6153,15 @@ function rc(e) {
           E.next = 6
           return Module_3.f(Module_22.s)
         case 6:
-          E$sent = E.sent
+          E$sent2 = E.sent
           E.next = 9
           return Module_3.f(Module_22.x)
         case 9:
-          E$sent1 = E.sent
+          E$sent = E.sent
           E.next = 12
           return Module_3.f(Module_22.C)
         case 12:
-          if (E$sent2 = E.sent, p = E$sent1 > -1 ? E$sent2.get(E$sent1) : undefined) {
+          if (E$sent1 = E.sent, p = E$sent > -1 ? E$sent1.get(E$sent) : undefined) {
             E.next = 16
             break
           }
@@ -6178,10 +6178,10 @@ function rc(e) {
         case 20:
           if (E$sent3 = E.sent, h = Lodash.cloneDeep(s.widget.attributes), s$widget$isGlobalWidget = s.widget.isGlobalWidget, h.actionList.push({
             id: Module_64.a(Module_144.a),
-            name: Shared_ui_language.c(E$sent, "ActorStyleDialog.defaultActionName").toString(),
+            name: Shared_ui_language.c(E$sent2, "ActorStyleDialog.defaultActionName").toString(),
             styleList: [],
             interval: 200
-          }), g = s.title ? Module_9.D(Widget_builtIn_types$a, p.widgetIds, Shared_ui_language.c(E$sent, s.title).toString()) : "", _ = Module_64.a(Widget_builtIn_types$a), v = {
+          }), g = s.title ? Module_9.D(Widget_builtIn_types$a, p.widgetIds, Shared_ui_language.c(E$sent2, s.title).toString()) : "", _ = Module_64.a(Widget_builtIn_types$a), v = {
             id: _,
             title: g,
             type: Widget_builtIn_types.a,
@@ -6230,9 +6230,9 @@ function oc(e) {
   var /* [auto-meaningful-name] */e$payload
   var /* [auto-meaningful-name] */e$payload$screenId
   var /* [auto-meaningful-name] */e$payload$blockId
-  var /* [auto-meaningful-name] */l$sent
   var /* [auto-meaningful-name] */l$sent1
   var /* [auto-meaningful-name] */l$sent2
+  var /* [auto-meaningful-name] */l$sent
   var s
   return RegeneratorRuntime.wrap(function (l) {
     for (;;) {
@@ -6244,17 +6244,17 @@ function oc(e) {
           l.next = 3
           return Module_3.f(Module_22.s)
         case 3:
-          l$sent = l.sent
+          l$sent1 = l.sent
           l.next = 6
           return Module_3.f(Module_22.f)
         case 6:
-          l$sent1 = l.sent
+          l$sent2 = l.sent
           l.next = 9
           return Module_3.f(Module_22.C)
         case 9:
-          if (l$sent2 = l.sent, s = l$sent2.findIndex(function (e) {
+          if (l$sent = l.sent, s = l$sent.findIndex(function (e) {
             return e.id === e$payload$screenId
-          }), (null === l$sent1 || undefined === l$sent1 ? undefined : l$sent1.id) !== e$payload$screenId) {
+          }), (null === l$sent2 || undefined === l$sent2 ? undefined : l$sent2.id) !== e$payload$screenId) {
             l.next = 16
             break
           }
@@ -6283,7 +6283,7 @@ function oc(e) {
         case 25:
           l.next = 27
           return Module_3.e(Actions.mj({
-            message: Shared_ui_language.c(l$sent, "theBlockHasBeRemoved").toString(),
+            message: Shared_ui_language.c(l$sent1, "theBlockHasBeRemoved").toString(),
             showCloseIcon: false,
             showPrefixIcon: false,
             type: "error"
@@ -6297,9 +6297,9 @@ function oc(e) {
 }
 function ic(e) {
   var /* [auto-meaningful-name] */e$payload$screenIds
-  var /* [auto-meaningful-name] */l$sent
-  var r
   var /* [auto-meaningful-name] */l$sent1
+  var r
+  var /* [auto-meaningful-name] */l$sent
   var i
   var a
   return RegeneratorRuntime.wrap(function (l) {
@@ -6310,20 +6310,20 @@ function ic(e) {
           l.next = 3
           return Module_3.f(Module_22.C)
         case 3:
-          l$sent = l.sent
-          r = l$sent.map(function (e) {
+          l$sent1 = l.sent
+          r = l$sent1.map(function (e) {
             return e.id
           }).toJSON()
           l.next = 7
           return Module_3.f(Module_22.f)
         case 7:
-          if (l$sent1 = l.sent, Lodash.isEqual(r, e$payload$screenIds)) {
+          if (l$sent = l.sent, Lodash.isEqual(r, e$payload$screenIds)) {
             l.next = 16
             break
           }
           i = []
           e$payload$screenIds.forEach(function (e) {
-            var t = l$sent.find(function (t) {
+            var t = l$sent1.find(function (t) {
               return t.id === e
             })
             if (t) {
@@ -6331,9 +6331,9 @@ function ic(e) {
             }
           })
           l.next = 13
-          return Module_3.e(Actions.Aj(Module_66.a.List(i)))
+          return Module_3.e(Actions.Aj(Immutable.List(i)))
         case 13:
-          a = e$payload$screenIds.indexOf(l$sent1.id)
+          a = e$payload$screenIds.indexOf(l$sent.id)
           l.next = 16
           return Module_3.e(Actions.Bi(a))
         case 16:
@@ -6969,10 +6969,10 @@ function hc() {
               if (e.title !== a.name) {
                 i = true
                 var /* [auto-meaningful-name] */a$name = a.name
-                Module_9.Xb(n, a$name)
-                Module_26.g.updateToolBoxWidgetTitle(n, a$name)
-                Module_26.y(e.id, a$name, "CLOUD_DB")
-                Module_9.Vb(n, "name", a$name)
+                Module_9.Xb(n, Immutable)
+                Module_26.g.updateToolBoxWidgetTitle(n, Immutable)
+                Module_26.y(e.id, Immutable, "CLOUD_DB")
+                Module_9.Vb(n, "name", Immutable)
                 xl.dispatch(Actions.Uj())
                 xl.dispatch(Actions.Qj())
               }
@@ -7135,13 +7135,13 @@ function mc(e) {
   }, Ua)
 }
 function gc(e) {
-  var /* [auto-meaningful-name] */c$sent
+  var /* [auto-meaningful-name] */c$sent2
   var n
   var r
   var o
-  var /* [auto-meaningful-name] */c$sent1
+  var /* [auto-meaningful-name] */c$sent
   var a
-  var /* [auto-meaningful-name] */c$sent2
+  var /* [auto-meaningful-name] */c$sent1
   return RegeneratorRuntime.wrap(function (c) {
     for (;;) {
       switch (c.prev = c.next) {
@@ -7149,14 +7149,14 @@ function gc(e) {
           c.next = 2
           return Module_3.f(Module_22.y)
         case 2:
-          c$sent = c.sent
+          c$sent2 = c.sent
           n = []
           r = 1
           o = 500
           c.next = 8
-          return Module_3.b(Vt, e, r, o, Module_97.a(c$sent) ? c$sent : undefined)
+          return Module_3.b(Vt, e, r, o, Module_97.a(c$sent2) ? c$sent2 : undefined)
         case 8:
-          if (c$sent1 = c.sent, n = n.concat(c$sent1.items), !((a = Math.ceil(c$sent1.total / o)) > 1)) {
+          if (c$sent = c.sent, n = n.concat(c$sent.items), !((a = Math.ceil(c$sent.total / o)) > 1)) {
             c.next = 21
             break
           }
@@ -7167,10 +7167,10 @@ function gc(e) {
             break
           }
           c.next = 16
-          return Module_3.b(Vt, e, r, o, Module_97.a(c$sent) ? c$sent : undefined)
+          return Module_3.b(Vt, e, r, o, Module_97.a(c$sent2) ? c$sent2 : undefined)
         case 16:
-          c$sent2 = c.sent
-          n = n.concat(c$sent2.items)
+          c$sent1 = c.sent
+          n = n.concat(c$sent1.items)
         case 18:
           r++
           c.next = 13
@@ -7185,10 +7185,10 @@ function gc(e) {
   }, Ha)
 }
 function _c(e) {
-  var /* [auto-meaningful-name] */s$sent
-  var /* [auto-meaningful-name] */e$payload$archiveId
   var /* [auto-meaningful-name] */s$sent1
-  var /* [auto-meaningful-name] */s$sent1$content
+  var /* [auto-meaningful-name] */e$payload$archiveId
+  var /* [auto-meaningful-name] */s$sent
+  var /* [auto-meaningful-name] */s$sent$content
   var /* [auto-meaningful-name] */s$sent2
   var /* [auto-meaningful-name] */Module_24$a$client
   return RegeneratorRuntime.wrap(function (s) {
@@ -7200,7 +7200,7 @@ function _c(e) {
             return e.oTState.collWorkId
           })
         case 2:
-          s$sent = s.sent
+          s$sent1 = s.sent
           e$payload$archiveId = e.payload.archiveId
           s.next = 6
           return Module_3.e(Actions.si(""))
@@ -7212,7 +7212,7 @@ function _c(e) {
           s.next = 9
           return Module_3.b(Module_297.e, e$payload$archiveId)
         case 9:
-          if (s$sent1 = s.sent, !(s$sent1$content = s$sent1.content)) {
+          if (s$sent = s.sent, !(s$sent$content = s$sent.content)) {
             s.next = 32
             break
           }
@@ -7223,7 +7223,7 @@ function _c(e) {
           return Module_3.e(Actions.cg())
         case 16:
           s.next = 18
-          return Module_3.b(rs, s$sent1$content)
+          return Module_3.b(rs, s$sent$content)
         case 18:
           s.next = 20
           return Module_3.e(Actions.dg())
@@ -7247,7 +7247,7 @@ function _c(e) {
             type: "success"
           }))
         case 31:
-          if (s$sent) {
+          if (s$sent1) {
             if (!(null === (Module_24$a$client = Module_24.a.client) || undefined === Module_24$a$client)) {
               Module_24$a$client.forceSetDoc()
             }

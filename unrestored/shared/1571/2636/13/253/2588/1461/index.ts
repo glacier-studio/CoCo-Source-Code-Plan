@@ -4,7 +4,7 @@
  * 模块 ID：1461
  */
 
-var r = require(/* 479 */"./479")
+var r = require(/* 479 */"../../2583/2584/479")
 var i = require(/* 2585 */"./2585/index")
 var o = require(/* 2586 */"./2586/index")
 var /* [auto-meaningful-name] */Math$max = Math.max

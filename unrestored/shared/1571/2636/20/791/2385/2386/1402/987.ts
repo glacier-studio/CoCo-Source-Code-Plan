@@ -7,15 +7,15 @@
 "use strict"
 
 var r
-var /* [auto-meaningful-name] */require_311_$$_1410_311$SymbolDispose = require(/* 311 */"../1410/311").SymbolDispose
-var o = require(/* 402 */"./402/index")
+var /* [auto-meaningful-name] */require_311_$_311$SymbolDispose = require(/* 311 */"./311").SymbolDispose
+var o = require(/* 402 */"./402")
 var /* [auto-meaningful-name] */o$AbortError = o.AbortError
 var /* [auto-meaningful-name] */o$codes = o.codes
-var c = require(/* 583 */"../1410/583")
+var c = require(/* 583 */"./583")
 var /* [auto-meaningful-name] */c$isNodeStream = c.isNodeStream
 var /* [auto-meaningful-name] */c$isWebStream = c.isWebStream
 var /* [auto-meaningful-name] */c$kControllerErrorFunction = c.kControllerErrorFunction
-var d = require(/* 650 */"../1410/650")
+var d = require(/* 650 */"./650")
 var /* [auto-meaningful-name] */o$codes$ERR_INVALID_ARG_TYPE = o$codes.ERR_INVALID_ARG_TYPE
 module.exports.addAbortSignal = function (t, n) {
   (function (e, t) {
@@ -44,8 +44,8 @@ module.exports.addAbortSignalNoValidate = function (e, t) {
   if (e.aborted) {
     o()
   } else {
-    var s = (r = r || require(/* 427 */"./427").addAbortListener)(e, o)
-    d(t, s[require_311_$$_1410_311$SymbolDispose])
+    var s = (r = r || require(/* 427 */"./427/index").addAbortListener)(e, o)
+    d(t, s[require_311_$_311$SymbolDispose])
   }
   return t
 }

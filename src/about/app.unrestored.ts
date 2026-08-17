@@ -7,13 +7,13 @@
 "use strict"
 
 import { r, b } from "./language"
-import * as /* [auto-meaningful-name] */Module_73 from /* 73 */"../../unrestored/about/64/73/index"
+import { IntlProvider } from /* 73 */"react-intl"
 import /* [auto-meaningful-name] */ReactDom from /* 48 */"react-dom"
-import * as /* [auto-meaningful-name] */Module_71 from /* 71 */"../../unrestored/about/64/71/index"
-import * as /* [auto-meaningful-name] */Module_30 from /* 30 */"../../unrestored/about/64/30"
-import /* [auto-meaningful-name] */Module_301 from /* 30 */"../../unrestored/about/64/30"
-import * as /* [auto-meaningful-name] */Styles_module_css from /* 4 */"./styles.module.css"
-import /* [auto-meaningful-name] */Styles_module_css1 from /* 4 */"./styles.module.css"
+import { useIntl } from /* 71 */"react-intl"
+import * as /* [auto-meaningful-name] */Classnames from /* 30 */"classnames"
+import /* [auto-meaningful-name] */Classnames1 from /* 30 */"classnames"
+import * as /* [auto-meaningful-name] */Style_styles_module_css from /* 4 */"./style/styles.module.css"
+import /* [auto-meaningful-name] */Style_styles_module_css1 from /* 4 */"./style/styles.module.css"
 import * as /* [auto-meaningful-name] */React_jsxRuntime from /* 2 */"react/jsx-runtime"
 var x = [
   {
@@ -64,97 +64,97 @@ var f = [
   }
 ]
 var y = function () {
-  var /* [auto-meaningful-name] */Module_71$a$formatMessage = Module_71.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React_jsxRuntime.jsxs("div", {
-    className: Styles_module_css1.pageWrapper,
+    className: Style_styles_module_css1.pageWrapper,
     children: [
       React_jsxRuntime.jsxs("div", {
-        className: Module_301(Styles_module_css1.flexTC, Styles_module_css1.bannerBox),
+        className: Classnames1(Style_styles_module_css1.flexTC, Style_styles_module_css1.bannerBox),
         children: [
           React_jsxRuntime.jsx("img", {
-            className: Styles_module_css1.bannerLeftBg,
+            className: Style_styles_module_css1.bannerLeftBg,
             src: "https://static.codemao.cn/coco/image/about_page_left_banner.png",
             alt: ""
           }), React_jsxRuntime.jsx("img", {
-            className: Styles_module_css1.bannerRightBg,
+            className: Style_styles_module_css1.bannerRightBg,
             src: "https://static.codemao.cn/coco/image/about_page_right_banner.png",
             alt: ""
           }), React_jsxRuntime.jsx("div", {
-            className: Styles_module_css1.left
+            className: Style_styles_module_css1.left
           }), React_jsxRuntime.jsxs("div", {
-            className: Styles_module_css1.bannerContent,
+            className: Style_styles_module_css1.bannerContent,
             children: [
               React_jsxRuntime.jsx("div", {
-                className: Styles_module_css1.bannerLogoBox,
+                className: Style_styles_module_css1.bannerLogoBox,
                 children: React_jsxRuntime.jsx("img", {
-                  className: Styles_module_css1.bannerLogoImg,
+                  className: Style_styles_module_css1.bannerLogoImg,
                   src: "https://static.codemao.cn/coco/image/about_page_logo_new.png",
                   alt: "logo"
                 })
               }), React_jsxRuntime.jsxs("div", {
-                className: Styles_module_css1.bannerText,
+                className: Style_styles_module_css1.bannerText,
                 children: [
                   React_jsxRuntime.jsx("img", {
-                    className: Styles_module_css1.quotesLeft,
+                    className: Style_styles_module_css1.quotesLeft,
                     src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAuCAMAAABOIvqXAAAArlBMVEUAAAD06P/46//37P/26f/26f/27P/16f/////57f/26//37P/26//16v/27P/26f/26v/16v/26//37P/27f/////16v/26//16f/26v//8P//7P/16P/27f/37P/16v/16v/05//26//16P/16f/27P/37f/37f/57f/16P/37f/16v/36//16//17f/16v/37v/37P/27f/37P/57v/77f/z5f/06P/16v/27P8iISitAAAANnRSTlMA0CRdmcno0wIm6GH85pH33da1OxsH7rCogRQN/N/Yy8K6op6NcFcyKvTqvXhqTUxB/MGFWUeMaG9zAAABi0lEQVRIx+3Ux3qCQBSGYYNRqnRF7F0Ta5oM939jEQfjfziYjdnFs3Dh+3w4wgyVvx5taXZ+c2WxKvs6sNf9tzTd36j02B84afrBfm03McR50nn5ZQdCzqQQblpCiCQbIWweLvpXfifyNZAgMSqGqxGyC9KNLnI8Zp9DGmq2Rdi5UugJCdlkaJCy6QNnLsIL6X0BkpnVxCXVipwcclrWpWAKT67jiSILM1+OWyiddhW3hF8oe+OtktMzlZeYbiWTlr2p/kMHi5RjpUImbJFSDeDuuaScaRU6Pin9LpBJaMM2rUBua2gjpDGAHBvZ7SIpFpATshNhYLonNkOa8j2P/ETNBUsClkbIc0JNXG9LY6kHnOiEggRsxEqth1emtiW3nqVLZI+aTbZgo9EwjPppXhXJVUydK3+ebAIkT7F8N+V/a36DzZNFzCTnaQyMnqVrMNBLOivnc1oDAxZKfh6Bsa6SlCKkbDDliCmfR/pI/306vCcF5Od1WsoybatPfFTVC2Uaq2oZq7vKPfMNyVRLK/yK2/QAAAAASUVORK5CYII=",
                     alt: ""
                   }), React_jsxRuntime.jsx("img", {
-                    className: Styles_module_css1.quotesRight,
+                    className: Style_styles_module_css1.quotesRight,
                     src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAuCAMAAABOIvqXAAAAwFBMVEUAAAD06P/16v/16//36v/16v/27P/26//27P/06P/16f/37P/26//27P/26//27P/26f/17f/56//////16v/26//16//06P/05v/27P/16v/36//26v/16v//7//////16P/27P/16f/37P/26//16//26//57//37P/26v/26//16v/16f/27P/37P/26//47f/67f/47v//8v/26//06P/37P/15///8///7f/y5P/z5//y5f/06f/16v/27P8NqjbUAAAAOnRSTlMAz3KIO7np5vvm0r1zGvOMU00sBu7a1NHQkIWAODIKAvzLyq2pmmI9H/fPxLSwpWZZRCQSuXhdSRUO+NM0zgAAAclJREFUSMft02lT6jAYhuHA8UCBtkBZPLLKjvt2XNOk//9fmaSJPG8j6ox+9PkG19yhUybsO2vf3H3Em/Z2r/WyrDu7XD/v4UWWxf2LMHrPYmkWnL3PM8ung6RId1IKM8X/b/20al3lpxtKB0ZsfdKcFMppABwsI7S1EDyf0WqbprcSXcYh2NBQmjoNruj7z8s3lkc7u9SWmuUqh5iWPV5OnTWsOaUHs6bPjY616WbQ0/aiplXjNbRJOOccmR7dLmnUy7HyxHCjc2DlwQhwGsakvWB0rVqq3XGvgziukfa60EYljm2T4Ja0M1bY5IwDxxOCj9y22sS42G672F5RXGK7YsXdI8+pJXx3ruh2vEfGn5UJxTme22LFrZAH1AZoQy9t4VOd7ze+8NJIszu6R22E1mfejoGP9btYVNSqarUaT3d24i5lRc8wpubfa2RSTeTXFsy+4iPHAjjl4kanGqB0Ftlbt2OStkxqvjeCaeJSyu6p1jp1J2qC1N6sP8iQlpX91WQB7cClyH4K4KXIfkrJT4Fpyj9L09/0N/1qKn40TUnKfcab45GA1Ge8r3QcUmBwESpb9euHpX8lmPp0WK+P87S8hx/YN/YK6QFo0NXHJ6QAAAAASUVORK5CYII=",
                     alt: ""
                   }), React_jsxRuntime.jsx("p", {
-                    children: Module_71$a$formatMessage({
+                    children: useIntl$formatMessage({
                       id: "about.remarks1"
                     })
                   }), React_jsxRuntime.jsx("p", {
-                    children: Module_71$a$formatMessage({
+                    children: useIntl$formatMessage({
                       id: "about.remarks2"
                     })
                   })
                 ]
               }), React_jsxRuntime.jsx("div", {
-                className: Styles_module_css1.bannerTexSpeech,
+                className: Style_styles_module_css1.bannerTexSpeech,
                 children: "—— prince"
               })
             ]
           }), React_jsxRuntime.jsx("div", {
-            className: Styles_module_css1.right
+            className: Style_styles_module_css1.right
           })
         ]
       }), React_jsxRuntime.jsxs("div", {
-        className: Module_301(Styles_module_css1.flexTC, Styles_module_css1.courseAndFamilyBox),
+        className: Classnames1(Style_styles_module_css1.flexTC, Style_styles_module_css1.courseAndFamilyBox),
         children: [
           React_jsxRuntime.jsx("div", {
-            className: Styles_module_css1.left
+            className: Style_styles_module_css1.left
           }), React_jsxRuntime.jsxs("div", {
-            className: Styles_module_css1.courseAndFamilyContent,
+            className: Style_styles_module_css1.courseAndFamilyContent,
             children: [
               React_jsxRuntime.jsx("h3", {
-                className: Styles_module_css1.courseTitle,
-                children: Module_71$a$formatMessage({
+                className: Style_styles_module_css1.courseTitle,
+                children: useIntl$formatMessage({
                   id: "about.toolCourse"
                 })
               }), React_jsxRuntime.jsxs("div", {
-                className: Styles_module_css1.courseList,
+                className: Style_styles_module_css1.courseList,
                 children: [
                   React_jsxRuntime.jsx("div", {
-                    className: Styles_module_css1.courseUpList,
+                    className: Style_styles_module_css1.courseUpList,
                     children: h.map(function (e) {
                       return React_jsxRuntime.jsxs("div", {
-                        className: Module_301(Styles_module_css1.courseItem, Styles_module_css1.courseUpItem),
+                        className: Classnames1(Style_styles_module_css1.courseItem, Style_styles_module_css1.courseUpItem),
                         children: [
                           React_jsxRuntime.jsx("img", {
-                            className: Styles_module_css1.courseUpImg,
+                            className: Style_styles_module_css1.courseUpImg,
                             src: "https://static.codemao.cn/coco/image/about_page_timeline_up.png",
                             alt: ""
                           }), React_jsxRuntime.jsxs("div", {
-                            className: Styles_module_css1.courseText,
+                            className: Style_styles_module_css1.courseText,
                             children: [
                               React_jsxRuntime.jsx("p", {
-                                className: Styles_module_css1.courseItemTitle,
+                                className: Style_styles_module_css1.courseItemTitle,
                                 children: e.time
                               }), React_jsxRuntime.jsx("p", {
-                                className: Styles_module_css1.courseItemDesc,
+                                className: Style_styles_module_css1.courseItemDesc,
                                 children: e.desc
                               })
                             ]
@@ -163,30 +163,30 @@ var y = function () {
                       })
                     })
                   }), React_jsxRuntime.jsx("div", {
-                    className: Styles_module_css1.courseTimeline,
+                    className: Style_styles_module_css1.courseTimeline,
                     children: React_jsxRuntime.jsx("img", {
-                      className: Styles_module_css1.courseTimelineImg,
+                      className: Style_styles_module_css1.courseTimelineImg,
                       src: "https://static.codemao.cn/coco/image/about_page_timeline.png",
                       alt: ""
                     })
                   }), React_jsxRuntime.jsx("div", {
-                    className: Styles_module_css1.courseDownList,
+                    className: Style_styles_module_css1.courseDownList,
                     children: f.map(function (e) {
                       return React_jsxRuntime.jsxs("div", {
-                        className: Module_301(Styles_module_css1.courseItem, Styles_module_css1.courseDownItem),
+                        className: Classnames1(Style_styles_module_css1.courseItem, Style_styles_module_css1.courseDownItem),
                         children: [
                           React_jsxRuntime.jsx("img", {
-                            className: Styles_module_css1.courseDownImg,
+                            className: Style_styles_module_css1.courseDownImg,
                             src: "https://static.codemao.cn/coco/image/about_page_timeline_down.png",
                             alt: ""
                           }), React_jsxRuntime.jsxs("div", {
-                            className: Styles_module_css1.courseText,
+                            className: Style_styles_module_css1.courseText,
                             children: [
                               React_jsxRuntime.jsx("p", {
-                                className: Styles_module_css1.courseItemTitle,
+                                className: Style_styles_module_css1.courseItemTitle,
                                 children: e.time
                               }), React_jsxRuntime.jsx("p", {
-                                className: Styles_module_css1.courseItemDesc,
+                                className: Style_styles_module_css1.courseItemDesc,
                                 children: e.desc
                               })
                             ]
@@ -197,24 +197,24 @@ var y = function () {
                   })
                 ]
               }), React_jsxRuntime.jsx("h3", {
-                className: Styles_module_css1.familyTitle,
-                children: Module_71$a$formatMessage({
+                className: Style_styles_module_css1.familyTitle,
+                children: useIntl$formatMessage({
                   id: "about.familyPhoto"
                 })
               }), React_jsxRuntime.jsxs("div", {
-                className: Styles_module_css1.familyBox,
+                className: Style_styles_module_css1.familyBox,
                 children: [
                   React_jsxRuntime.jsx("div", {
-                    className: Styles_module_css1.familyImgBox,
+                    className: Style_styles_module_css1.familyImgBox,
                     children: React_jsxRuntime.jsx("img", {
-                      className: Styles_module_css1.familyPhotoImg,
+                      className: Style_styles_module_css1.familyPhotoImg,
                       src: "https://static.codemao.cn/coco/image/about_page_family.png",
                       alt: "family"
                     })
                   }), React_jsxRuntime.jsx("div", {
-                    className: Styles_module_css1.familyIconBox,
+                    className: Style_styles_module_css1.familyIconBox,
                     children: React_jsxRuntime.jsx("img", {
-                      className: Styles_module_css1.familyLikeImg,
+                      className: Style_styles_module_css1.familyLikeImg,
                       src: "https://static.codemao.cn/coco/image/about_page_like.png",
                       alt: "like"
                     })
@@ -223,36 +223,36 @@ var y = function () {
               })
             ]
           }), React_jsxRuntime.jsx("div", {
-            className: Styles_module_css1.right
+            className: Style_styles_module_css1.right
           })
         ]
       }), React_jsxRuntime.jsxs("div", {
-        className: Module_301(Styles_module_css1.flexTC, Styles_module_css1.TeamBox),
+        className: Classnames1(Style_styles_module_css1.flexTC, Style_styles_module_css1.TeamBox),
         children: [
           React_jsxRuntime.jsx("div", {
-            className: Styles_module_css1.left
+            className: Style_styles_module_css1.left
           }), React_jsxRuntime.jsxs("div", {
-            className: Styles_module_css1.teamContent,
+            className: Style_styles_module_css1.teamContent,
             children: [
               React_jsxRuntime.jsx("div", {
-                className: Styles_module_css1.thanksText,
+                className: Style_styles_module_css1.thanksText,
                 children: "— Thanks —"
               }), x.map(function (e) {
                 return React_jsxRuntime.jsxs("div", {
-                  className: Styles_module_css1.teamItem,
+                  className: Style_styles_module_css1.teamItem,
                   children: [
                     React_jsxRuntime.jsx("img", {
-                      className: Styles_module_css1.teamIcon,
+                      className: Style_styles_module_css1.teamIcon,
                       src: e.icon,
                       alt: ""
                     }), React_jsxRuntime.jsxs("div", {
-                      className: Styles_module_css1.itemDetail,
+                      className: Style_styles_module_css1.itemDetail,
                       children: [
                         React_jsxRuntime.jsx("p", {
-                          className: Styles_module_css1.itemPosition,
+                          className: Style_styles_module_css1.itemPosition,
                           children: e.position
                         }), React_jsxRuntime.jsx("p", {
-                          className: Styles_module_css1.itemMember,
+                          className: Style_styles_module_css1.itemMember,
                           children: e.member
                         })
                       ]
@@ -262,14 +262,14 @@ var y = function () {
               })
             ]
           }), React_jsxRuntime.jsx("div", {
-            className: Styles_module_css1.right
+            className: Style_styles_module_css1.right
           })
         ]
       })
     ]
   })
 }
-ReactDom.render(React_jsxRuntime.jsx(Module_73.a, {
+ReactDom.render(React_jsxRuntime.jsx(IntlProvider, {
   locale: r,
   messages: b["zh-CN"],
   children: React_jsxRuntime.jsx(y, {})

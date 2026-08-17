@@ -9,7 +9,7 @@
 import /* 13 */"react"
 import * as /* [auto-meaningful-name] */ReactDom from /* 48 */"react-dom"
 import /* [auto-meaningful-name] */ReactDom1 from /* 48 */"react-dom"
-import * as /* [auto-meaningful-name] */Module_73 from /* 73 */"../../unrestored/about/64/73/index"
+import /* 73 */"react-intl"
 var r = "zh-CN"
 var b = {
   "zh-CN": {

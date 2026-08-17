@@ -15,7 +15,7 @@ import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
@@ -31,7 +31,7 @@ var qE = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var i = e$getValue(n)
   var a = e$getValue("headlineVisible")
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useState(1)
   var l = Module_10.a(c, 2)
   var u = l[0]
@@ -53,7 +53,7 @@ var qE = memo(function (e) {
     className: Classnames(Module_10561.headline, Module_10561.formItemWrapper, "changeHeadline")
   }, React.createElement("div", {
     className: Module_10561.formTitle
-  }, React.createElement("p", null, Module_710$a$formatMessage({
+  }, React.createElement("p", null, useIntl$formatMessage({
     id: "headline"
   })), React.createElement(Module_541.a, {
     checked: a,
@@ -92,7 +92,7 @@ var QE = memo(function (e) {
   var l = null === s || undefined === s ? undefined : s.height
   var u = e$getValue("type")
   var d = e$getValue("id")
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var m = useRef({})
   var g = function (e, t, r) {
     var i = {}
@@ -117,14 +117,14 @@ var QE = memo(function (e) {
     className: "".concat(Module_88.formItemWrapper, " ").concat(Module_88.formInputNumberRow)
   }, React.createElement("p", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "size"
   })), React.createElement("div", {
     className: Module_88.formInputNumberRow
   }, React.createElement(Src_shared_ui_components_index.i, {
     className: "changeWidth"
   }, React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "width"
     }),
     defaultValue: c,
@@ -144,7 +144,7 @@ var QE = memo(function (e) {
   })), React.createElement(Src_shared_ui_components_index.i, {
     className: "changeHeight"
   }, React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "height"
     }),
     defaultValue: l,

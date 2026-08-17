@@ -6,11 +6,11 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useCallback } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_294 from /* 294 */"../294/index"
+import * as /* [auto-meaningful-name] */Module_294 from /* 294 */"../../../../../src/shared/ui/components/Input/index"
 import * as /* [auto-meaningful-name] */Module_295 from /* 295 */"../295"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import /* 640 */"./640"
@@ -44,12 +44,12 @@ var g = memo(function (e) {
     }, React.createElement("span", {
       className: l || e$disabled ? "disable" : "",
       onClick: p
-    }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+    }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
       type: "icon-up"
     })), React.createElement("span", {
       className: u || e$disabled ? "disable" : "",
       onClick: g
-    }, React.createElement(Src_shared_ui_components_iconfont_index.a, {
+    }, React.createElement(Src_shared_ui_components_Iconfont_index.a, {
       type: "icon-down"
     })))
   }))

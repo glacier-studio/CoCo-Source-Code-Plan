@@ -368,7 +368,7 @@ var te = {
 function ne(e) {
   if (te[e]) {
     var /* [auto-meaningful-name] */teE$ref = te[e].ref
-    return window[teE$ref]
+    return window[t]
   }
   switch (e) {
     case "http":
@@ -404,7 +404,7 @@ function ne(e) {
 function re(e) {
   if (te[e]) {
     var /* [auto-meaningful-name] */teE$url = te[e].url
-    ee.set(e, teE$url)
+    ee.set(e, t)
   }
 }
 function oe() {

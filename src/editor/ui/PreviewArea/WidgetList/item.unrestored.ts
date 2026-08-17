@@ -43,7 +43,7 @@ import * as /* [auto-meaningful-name] */Module_686 from /* 686 */"../../../../..
 import * as /* [auto-meaningful-name] */Module_685 from /* 685 */"../../../../../unrestored/shared/1571/2636/685/index"
 import * as /* [auto-meaningful-name] */Module_684 from /* 684 */"../../../../../unrestored/shared/1571/2636/684/index"
 import * as /* [auto-meaningful-name] */Module_683 from /* 683 */"../../../../../unrestored/shared/1571/2636/683"
-import /* [auto-meaningful-name] */Module_196 from /* 196 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css from /* 196 */"./styles.module.css"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../../../../../unrestored/shared/1571/2636/53"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../unrestored/shared/1571/2636/238"
 import * as /* [auto-meaningful-name] */Widget_builtIn_types from /* 5 */"../../../widget/built-in/types"
@@ -55,7 +55,7 @@ import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"../../../../
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Shared_ui_language from /* 23 */"../../../../shared/ui/language"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
@@ -64,7 +64,7 @@ import { useDispatch, useSelector } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Shared_ui_components_iconfont_index from /* 94 */"../../../../shared/ui/components/iconfont/index"
+import * as /* [auto-meaningful-name] */Shared_ui_components_Iconfont_index from /* 94 */"../../../../shared/ui/components/Iconfont/index"
 import * as /* [auto-meaningful-name] */Shared_widget_custom_shop from /* 183 */"../../../../shared/widget/custom/shop"
 import * as /* [auto-meaningful-name] */Module_542 from /* 542 */"../../../../../unrestored/shared/1571/2636/542"
 var iv = [require(/* 543 */"../../../../../unrestored/shared/1571/2636/543").a, Module_542.a, "UNSAFE_EXTENSION_KANO_WAND_WIDGET"]
@@ -77,7 +77,7 @@ var av = memo(function (e) {
   var /* [auto-meaningful-name] */e$widgetServerId = e.widgetServerId
   var s = Module_238.d()
   var c = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var u = useState(false)
   var d = Module_10.a(u, 2)
   var p = d[0]
@@ -144,7 +144,7 @@ var av = memo(function (e) {
             case 3:
               if (e.sent) {
                 c(Redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "WidgetMall.removeSuccess"
                   }),
                   type: "success"
@@ -152,7 +152,7 @@ var av = memo(function (e) {
                 c(Redux_common_actions.Kh([e$type]))
               } else {
                 c(Redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "WidgetMall.removeFailure"
                   })
                 }))
@@ -184,21 +184,21 @@ var av = memo(function (e) {
     visible: p || b,
     content: function () {
       return p ? React.createElement("div", {
-        className: Module_196.menuWrapper,
+        className: Styles_module_css.menuWrapper,
         onMouseDown: F
-      }, Module_710$a$formatMessage({
+      }, useIntl$formatMessage({
         id: "Widget.removeWidget"
       })) : b && A ? React.createElement("div", {
-        className: Module_196.imgWrapper
+        className: Styles_module_css.imgWrapper
       }, React.createElement("div", {
-        className: Module_196.widgetImgBig,
+        className: Styles_module_css.widgetImgBig,
         style: {
           backgroundImage: "url(\"".concat(e$icon, "\")")
         }
       })) : undefined
     }
   }, React.createElement("div", {
-    className: Classnames(Module_196.widgetItem, Module_11.a({}, Module_196.disabled, !B || !D)),
+    className: Classnames(Styles_module_css.widgetItem, Module_11.a({}, Styles_module_css.disabled, !B || !D)),
     draggable: true,
     onMouseEnter: function () {
       if (e$isMallExtensionWidget && !e$isInvisibleWidget) {
@@ -231,7 +231,7 @@ var av = memo(function (e) {
       if (!B || !D) {
         var t = ""
         if (D) {
-          t = Module_710$a$formatMessage({
+          t = useIntl$formatMessage({
             id: "StageToast.addCanvasWidgetTips"
           })
         } else {
@@ -241,7 +241,7 @@ var av = memo(function (e) {
             return
           }
           var i = null === (n = Shared_ui_language.c(P, o.title)) || undefined === n ? undefined : n.toString()
-          t = Module_710$a$formatMessage({
+          t = useIntl$formatMessage({
             id: "StageToast.addLimitedWidgetTips"
           }, {
             widgetTitle: i
@@ -272,28 +272,28 @@ var av = memo(function (e) {
     },
     "data-widget-type": e$type
   }, Shared_tools_index.X(e$icon) ? e$isInvisibleWidget ? React.createElement("img", {
-    className: Module_196.icon,
+    className: Styles_module_css.icon,
     src: e$icon,
     alt: e$title,
     draggable: false
   }) : React.createElement("div", {
-    className: Module_196.widgetImgSmall,
+    className: Styles_module_css.widgetImgSmall,
     style: {
       backgroundImage: "url(\"".concat(e$icon, "\")")
     }
   }) : React.createElement("span", {
-    className: Module_196.icon
-  }, React.createElement(Shared_ui_components_iconfont_index.a, {
+    className: Styles_module_css.icon
+  }, React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: e$icon
   })), React.createElement("span", {
-    className: Module_196.title
+    className: Styles_module_css.title
   }, e$title)))
 })
 var sv = memo(function (e) {
   var /* [auto-meaningful-name] */e$configList = e.configList
   var /* [auto-meaningful-name] */e$title = e.title
   var /* [auto-meaningful-name] */e$defaultExpanded = e.defaultExpanded
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var i = useSelector(function (e) {
     var /* [auto-meaningful-name] */e$common$userInfo
     return null === (e$common$userInfo = e.common.userInfo) || undefined === e$common$userInfo ? undefined : e$common$userInfo.id
@@ -310,9 +310,9 @@ var sv = memo(function (e) {
     return e ? JSON.parse(e) : {}
   }
   return e$configList.length ? React.createElement("div", {
-    className: Classnames(Module_196.categoryItem, Module_11.a({}, Module_196.expanded, c))
+    className: Classnames(Styles_module_css.categoryItem, Module_11.a({}, Styles_module_css.expanded, c))
   }, React.createElement("div", {
-    className: Classnames(Module_196.categoryHeader, window.innerWidth <= 1300 && Module_196.categoryMinHeader),
+    className: Classnames(Styles_module_css.categoryHeader, window.innerWidth <= 1300 && Styles_module_css.categoryMinHeader),
     onClick: function () {
       l(!c)
       if (Module_53.k.includes(e$title) && i && !d[e$title]) {
@@ -322,19 +322,19 @@ var sv = memo(function (e) {
       }
     }
   }, React.createElement("div", {
-    className: Module_196.categoryTitleBox
+    className: Styles_module_css.categoryTitleBox
   }, React.createElement("h3", {
-    className: Classnames(Module_196.categoryTitle)
-  }, Module_710$a$formatMessage({
+    className: Classnames(Styles_module_css.categoryTitle)
+  }, useIntl$formatMessage({
     id: e$title
   })), Module_53.k.includes(e$title) && p && React.createElement("div", {
-    className: Module_196.newTips
+    className: Styles_module_css.newTips
   }, "New")), React.createElement("span", {
-    className: Module_196.icon
-  }, React.createElement(Shared_ui_components_iconfont_index.a, {
+    className: Styles_module_css.icon
+  }, React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: "icon-fold"
   }))), c && React.createElement("div", {
-    className: Module_196.categoryBody
+    className: Styles_module_css.categoryBody
   }, e$configList.map(function (e) {
     var /* [auto-meaningful-name] */e$type = e.type
     var /* [auto-meaningful-name] */e$icon = e.icon
@@ -345,7 +345,7 @@ var sv = memo(function (e) {
     return !e.isDiscard && React.createElement(av, {
       key: e$type,
       icon: e$icon,
-      title: e$previewAreaWidgetTitle ? Module_710$a$formatMessage({
+      title: e$previewAreaWidgetTitle ? useIntl$formatMessage({
         id: e$previewAreaWidgetTitle
       }) : e$title,
       type: e$type,
@@ -397,7 +397,7 @@ var gv = React.memo(function (e) {
   var c = Module_9.Eb(Module_9.j.NETWORK)
   var l = Module_9.Eb(Module_9.j.SOCIAL)
   return React.createElement("div", {
-    className: Module_196.scrollBasic
+    className: Styles_module_css.scrollBasic
   }, React.createElement(sv, {
     configList: t,
     title: "WidgetList.category.ui",

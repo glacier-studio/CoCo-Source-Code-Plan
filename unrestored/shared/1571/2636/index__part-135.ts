@@ -8,7 +8,7 @@
 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -24,12 +24,12 @@ var Jw = memo(function (e) {
   var s = undefined === e$formConfig$label ? "brushPenSize" : e$formConfig$label
   var /* [auto-meaningful-name] */e$formConfig$min = e$formConfig.min
   var /* [auto-meaningful-name] */e$formConfig$max = e$formConfig.max
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var d = e$getValue(n)
   return React.createElement(Src_shared_ui_components_index.i, {
     align: "vertical",
     className: Classnames(Module_12041.formItemWrapper, Module_12041.numberSlider),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: s
     })
   }, React.createElement(Src_shared_ui_components_index.x, {

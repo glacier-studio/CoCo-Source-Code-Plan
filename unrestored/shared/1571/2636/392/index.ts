@@ -12,7 +12,7 @@ import * as /* [auto-meaningful-name] */React from "react"
 import /* [auto-meaningful-name] */React1 from /* 0 */"react"
 import { useDispatch } from /* 16 */"react-redux"
 import * as /* [auto-meaningful-name] */Module_627 from /* 627 */"../627/index"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../748/index"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
@@ -22,10 +22,10 @@ var /* [auto-meaningful-name] */COURSE_ICON_NAME = "COURSE_ICON_NAME"
 var _b
 _b = memo(function () {
   var e = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   return React1.createElement(Module_748.a, {
     placement: "left",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "studyCourseVideo"
     }),
     trigger: ["hover"]

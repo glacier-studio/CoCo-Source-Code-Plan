@@ -51,7 +51,7 @@ exports.getWood3ViewerUrl = function (e, t, n, r) {
 }
 var r = require(/* 772 */"../772")
 var o = require(/* 773 */"../773/index")
-var i = require(/* 885 */"../2618/885")
+var i = require(/* 885 */"../2620/885")
 var a = require(/* 2623 */"./2623")
 var s = new r.ApiSpec("wood3", {
   configure: new r.MethodType(),

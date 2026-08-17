@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */Module_40 from /* 40 */"../../../40/inde
 import * as /* [auto-meaningful-name] */Module_107 from /* 107 */"../../../107"
 import /* 241 */"../../../241/index"
 import * as /* [auto-meaningful-name] */Module_391 from /* 391 */"./391"
-import * as /* [auto-meaningful-name] */Module_2684 from /* 2684 */"./2684/index"
+import * as /* [auto-meaningful-name] */Module_2684 from /* 2684 */"../../../552/1214/316/2684/index"
 import * as /* [auto-meaningful-name] */ReactDom from /* 80 */"react-dom"
 var se = createContext({})
 var ce = forwardRef(function (e, t) {

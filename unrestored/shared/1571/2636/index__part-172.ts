@@ -11,7 +11,7 @@ import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -35,7 +35,7 @@ var hI = memo(function (e) {
   var s = Module_10.a(a, 2)
   var c = s[0]
   var l = s[1]
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var d = useState(false)
   var p = Module_10.a(d, 2)
   var m = p[0]
@@ -118,18 +118,18 @@ var hI = memo(function (e) {
     className: Module_6231.title
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-warning"
-  }), React.createElement("p", null, t$importFailResults.length, " ", Module_710$a$formatMessage({
+  }), React.createElement("p", null, t$importFailResults.length, " ", useIntl$formatMessage({
     id: y
   })), React.createElement("span", {
     className: "showImportFailDetail",
     onClick: function () {
       g(true)
     }
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "importFailDetail"
   })), React.createElement("span", {
     onClick: C
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "close"
   }))), m && React.createElement(React.Fragment, null, React.createElement("ul", {
     className: Module_6231.main
@@ -150,7 +150,7 @@ var hI = memo(function (e) {
     type: "primary",
     className: Module_6231.confirmButton,
     onClick: C
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "know"
   }))))
 })

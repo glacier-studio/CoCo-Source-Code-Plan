@@ -11,7 +11,7 @@ import { memo, forwardRef, useState, useRef, useEffect, useLayoutEffect, useImpe
 import * as /* [auto-meaningful-name] */React1 from "react"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
-import /* 867 */"./867"
+import /* 867 */"./styles.css"
 var Q = memo(forwardRef(function (e, t) {
   var /* [auto-meaningful-name] */e$children = e.children
   var /* [auto-meaningful-name] */e$defaultVisible = e.defaultVisible

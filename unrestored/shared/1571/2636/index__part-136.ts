@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Module_277 from /* 277 */"./277"
 import * as /* [auto-meaningful-name] */Module_1213 from /* 1213 */"./1213"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
@@ -22,7 +22,7 @@ import /* [auto-meaningful-name] */Module_3831 from /* 383 */"./383"
 var tC = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = e$getValue("drawProcess") || false
   var i = e$getValue("drawSpeed")
   var a = undefined === i ? Module_277.b : i
@@ -33,7 +33,7 @@ var tC = memo(function (e) {
     className: Classnames(Module_3831.formItemWrapper, Module_3831.brushWrapper, "coco-form-item", "coco-form-item-vertical")
   }, React.createElement("div", {
     className: Module_3831.processWrapper
-  }, React.createElement("div", null, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("div", null, React.createElement("span", null, useIntl$formatMessage({
     id: "drawProcess"
   })), React.createElement(Module_1213.a, {
     overlayClassName: Module_3831.helpPopover,
@@ -50,11 +50,11 @@ var tC = memo(function (e) {
     }
   })), o && React.createElement("div", {
     className: Module_3831.speedWrapper
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "drawSpeed"
   })), React.createElement(Src_shared_ui_components_index.o, {
     className: Module_3831.speedInput,
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "drawSpeedUnit"
     }),
     type: "number",
@@ -103,14 +103,14 @@ var rC = memo(function (e) {
   var n = undefined === e$keyName ? "color" : e$keyName
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$getValue = e.getValue
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var a = e$getValue(n)
   var s = e$getValue("cursorShape") || Module_286.a.NONE
   return React.createElement("div", {
     className: Classnames(Module_3831.formItemWrapper, Module_3831.colorWrapper, "coco-form-item", "coco-form-item-horizontal")
   }, React.createElement("div", {
     className: Module_3831.brushPenColor
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "brushPenColor"
   })), React.createElement(mb, {
     width: 43,
@@ -119,7 +119,7 @@ var rC = memo(function (e) {
     color: a
   })), React.createElement("div", {
     className: Module_3831.brushPenCursor
-  }, React.createElement("span", null, Module_710$a$formatMessage({
+  }, React.createElement("span", null, useIntl$formatMessage({
     id: "brushCursorShape"
   })), React.createElement(hb, {
     value: s,

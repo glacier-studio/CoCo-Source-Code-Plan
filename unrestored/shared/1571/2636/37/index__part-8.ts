@@ -9,7 +9,7 @@
 import { xl } from "../../../../../src/editor/redux/store"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../47"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_127 from /* 127 */"../127"
 import * as /* [auto-meaningful-name] */Src_shared_widget_custom_load from /* 34 */"../../../../../src/shared/widget/custom/load"

@@ -19,7 +19,7 @@ import * as /* [auto-meaningful-name] */Module_1546 from /* 1546 */"../../../551
 import * as /* [auto-meaningful-name] */Module_696 from /* 696 */"./696"
 import * as /* [auto-meaningful-name] */Module_690 from /* 690 */"../690/index"
 import * as /* [auto-meaningful-name] */Module_701 from /* 701 */"./701"
-import * as /* [auto-meaningful-name] */Module_287 from /* 287 */"../../../551/1211/269/287"
+import * as /* [auto-meaningful-name] */Module_287 from /* 287 */"./287"
 var x = {
   entering: {
     opacity: 1

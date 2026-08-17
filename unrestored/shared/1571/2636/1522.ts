@@ -10,7 +10,7 @@ import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import { memo, useRef, useState, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React from "react"
 import /* [auto-meaningful-name] */React1 from /* 0 */"react"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import { useSelector, useDispatch } from /* 16 */"react-redux"
 import * as /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import /* [auto-meaningful-name] */Classnames1 from /* 8 */"classnames"
@@ -33,7 +33,7 @@ _a = memo(function () {
   var /* [auto-meaningful-name] */t$validator = t.validator
   var /* [auto-meaningful-name] */t$confirmCallback = t.confirmCallback
   var /* [auto-meaningful-name] */t$cancelCallback = t.cancelCallback
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var O = useRef(null)
   var w = useDispatch()
   var C = useState("")
@@ -86,16 +86,16 @@ _a = memo(function () {
     callback: x
   })), React1.createElement("p", {
     className: Module_991.dialogTitle
-  }, t$title && Module_710$a$formatMessage({
+  }, t$title && useIntl$formatMessage({
     id: t$title
   }) || ""), React1.createElement("div", {
     className: Module_991.inputWrapper
-  }, React1.createElement("span", null, Module_710$a$formatMessage({
+  }, React1.createElement("span", null, useIntl$formatMessage({
     id: "name"
   })), React1.createElement(Src_shared_ui_components_index.k, {
     ref: O,
     warning: !!S,
-    placeholder: t$placeholder && Module_710$a$formatMessage({
+    placeholder: t$placeholder && useIntl$formatMessage({
       id: t$placeholder
     }),
     onChange: function (e) {
@@ -107,19 +107,19 @@ _a = memo(function () {
     value: N
   }), S && React1.createElement("div", {
     className: Module_991.warningTips
-  }, " ", Module_710$a$formatMessage({
+  }, " ", useIntl$formatMessage({
     id: S
   }))), React1.createElement("div", {
     className: Module_991.confirmBox
   }, React1.createElement(Src_shared_ui_components_index.d, {
     onClick: k
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "cancel"
   })), React1.createElement(Src_shared_ui_components_index.d, {
     onClick: x,
     type: "primary",
     disabled: !!S || !N
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "confirm"
   }))))
 })

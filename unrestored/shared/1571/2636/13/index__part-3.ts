@@ -11,7 +11,7 @@ import { memo, useState, useRef, useEffect, useCallback, useContext } from /* 0 
 import * as /* [auto-meaningful-name] */React1 from "react"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../10/index"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_Iconfont_index from /* 94 */"../../../../../src/shared/ui/components/Iconfont/index"
 import /* 641 */"./641"
 import * as /* [auto-meaningful-name] */Module_361 from /* 361 */"../361"
 var w = memo(function (e) {
@@ -97,7 +97,7 @@ var w = memo(function (e) {
     onClick: R
   }, React.createElement("div", {
     className: Classnames("coco-select-label")
-  }, A), React.createElement(Src_shared_ui_components_iconfont_index.a, {
+  }, A), React.createElement(Src_shared_ui_components_Iconfont_index.a, {
     type: "icon-up",
     className: Classnames("coco-select-arrow", {
       active: y

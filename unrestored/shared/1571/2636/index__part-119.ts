@@ -17,7 +17,7 @@ import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 1
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"./11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useState, useRef, useCallback, useMemo, useEffect } from /* 0 */"react"
@@ -30,7 +30,7 @@ var MO = memo(function (e) {
   var /* [auto-meaningful-name] */e$getValue = e.getValue
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig$label = e.formConfig.label
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var s = e$getValue(n)
   var c = 180 * s / Math.PI % 360
   if (c > 180) {
@@ -46,7 +46,7 @@ var MO = memo(function (e) {
   var p = u[1]
   return React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames(Module_88.formItemWrapper),
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: e$formConfig$label
     })
   }, React.createElement(Src_shared_ui_components_index.k, {
@@ -82,7 +82,7 @@ var LO = memo(function (e) {
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$formConfig$label = e.formConfig.label
   var a = undefined === e$formConfig$label ? "flip" : e$formConfig$label
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = e$getValue(n) || {}
   var l = function (e) {
     e$onChange(n, Module_6.a(Module_6.a({}, c), {}, Module_11.a({}, e, !c[e])))
@@ -112,7 +112,7 @@ var LO = memo(function (e) {
     className: "".concat(Module_88.formItemWrapper, " ").concat(Module_88.formInputNumberRow)
   }, React.createElement("p", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: a
   })), React.createElement("div", {
     className: Module_88.formInputNumberRow
@@ -124,7 +124,7 @@ var LO = memo(function (e) {
     className: Module_88.btnIcon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-actor-horizontal"
-  })), Module_710$a$formatMessage({
+  })), useIntl$formatMessage({
     id: "horizontal"
   }))), React.createElement(Src_shared_ui_components_index.i, null, React.createElement(Zv, {
     hasIcon: true,
@@ -134,7 +134,7 @@ var LO = memo(function (e) {
     className: Module_88.btnIcon
   }, React.createElement(Src_shared_ui_components_index.j, {
     type: "icon-actor-vertical"
-  })), Module_710$a$formatMessage({
+  })), useIntl$formatMessage({
     id: "vertical"
   })))))
 })
@@ -165,7 +165,7 @@ var BO = memo(function (e) {
   var _ = g.x
   var v = g.y
   var b = g.ratio || false
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var E = useRef({})
   var O = useCallback(function () {
     var /* [auto-meaningful-name] */E$current = E.current
@@ -243,14 +243,14 @@ var BO = memo(function (e) {
     className: "".concat(Module_88.formItemWrapper, " ").concat(Module_88.formInputNumberRow)
   }, React.createElement("p", {
     className: "coco-form-item-label"
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: l
   })), React.createElement("div", {
     className: Module_88.formInputNumberRow
   }, React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames("changeWidth", Module_3971.formItem)
   }, React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "width"
     }),
     defaultValue: Math.round(_ * d),
@@ -281,7 +281,7 @@ var BO = memo(function (e) {
   })), React.createElement(Src_shared_ui_components_index.i, {
     className: Classnames("changeHeight", Module_3971.formItem)
   }, React.createElement(Src_shared_ui_components_index.o, {
-    label: Module_710$a$formatMessage({
+    label: useIntl$formatMessage({
       id: "height"
     }),
     defaultValue: Math.round(v * d),

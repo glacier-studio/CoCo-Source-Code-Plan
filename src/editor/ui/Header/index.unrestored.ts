@@ -8,14 +8,14 @@
 
 import { B, G, H } from "../../../../unrestored/shared/1571/2636/index__part-2"
 import { Q } from "../../../../unrestored/shared/1571/2636/index__part-3"
-import { Pe } from "../../../../unrestored/shared/1571/2636/index__part-8"
+import { Pe } from "../Dialogs/ProjectDialog/index"
 import { Ge } from "../../../../unrestored/shared/1571/2636/index__part-9"
 import { Ze } from "./UserAvatar/index"
 import { Xe, ot } from "../../../../unrestored/shared/1571/2636/index__part-11"
-import { St } from "./collaboration/index"
+import { St } from "./Collaboration/index"
 import { Dt } from "../../../../unrestored/shared/1571/2636/index__part-15"
 import { Gt } from "../../../../unrestored/shared/1571/2636/index__part-16"
-import { on } from "./share/menu-item"
+import { on } from "./Share/MenuItem"
 import { dn, pn, fn } from "../../../../unrestored/shared/1571/2636/index__part-20"
 import { gn } from "../../../../unrestored/shared/1571/2636/index__part-21"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../unrestored/shared/1571/2636/9"
@@ -31,7 +31,7 @@ import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_627 from /* 627 */"../../../../unrestored/shared/1571/2636/627/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../unrestored/shared/1571/2636/7"
@@ -40,11 +40,11 @@ import { useSelector, useDispatch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { useState, useEffect, useRef, useCallback } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../unrestored/shared/1571/2636/47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../unrestored/shared/1571/2636/47"
 import * as /* [auto-meaningful-name] */Module_1053 from /* 1053 */"../../../../unrestored/shared/1571/2636/1053"
 import /* [auto-meaningful-name] */Module_10531 from /* 1053 */"../../../../unrestored/shared/1571/2636/1053"
 var yn = function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useSelector(function (e) {
     return e.uiConfig.header
   })
@@ -70,11 +70,11 @@ var yn = function () {
     try {
       for (t.s(); !(e = t.n()).done;) {
         var /* [auto-meaningful-name] */e$value = e.value
-        if (e$value.prod_capacity >= Module_9.a * Module_9.c) {
+        if (o.prod_capacity >= Module_9.a * Module_9.c) {
           d(true)
           break
         }
-        if (e$value.prod_capacity >= Module_9.b * Module_9.c) {
+        if (o.prod_capacity >= Module_9.b * Module_9.c) {
           s(true)
         }
       }
@@ -88,11 +88,11 @@ var yn = function () {
     try {
       for (a.s(); !(i = a.n()).done;) {
         var /* [auto-meaningful-name] */i$value = i.value
-        if (i$value.prod_capacity >= Module_9.a * Module_9.d) {
+        if (c.prod_capacity >= Module_9.a * Module_9.d) {
           d(true)
           break
         }
-        if (i$value.prod_capacity >= Module_9.b * Module_9.d) {
+        if (c.prod_capacity >= Module_9.b * Module_9.d) {
           s(true)
         }
       }
@@ -105,7 +105,7 @@ var yn = function () {
   if (t.cloudSpaceManager === Module_18.j.Hide) {
     return null
   }
-  var p = Module_710$a$formatMessage(u ? {
+  var p = useIntl$formatMessage(u ? {
     id: "cloudSpace.outMaxLimit"
   } : a ? {
     id: "cloudSpace.outWarnLimit"
@@ -125,19 +125,19 @@ var yn = function () {
       window.open("".concat(Shared_tools_index.A(), "/"), "_blank")
     },
     className: Classnames(Module_10531.cloudSpaceManager)
-  }, p === Module_710$a$formatMessage({
+  }, p === useIntl$formatMessage({
     id: "cloudSpace.outMaxLimit"
   }) && React.createElement("div", {
     className: Module_10531.cloudIconError
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-cloud-manager-error"
-  })), p === Module_710$a$formatMessage({
+  })), p === useIntl$formatMessage({
     id: "cloudSpace.outWarnLimit"
   }) && React.createElement("div", {
     className: Module_10531.cloudIconWarn
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-cloud-manager-warn"
-  })), p === Module_710$a$formatMessage({
+  })), p === useIntl$formatMessage({
     id: "cloudSpace.cloudSpace"
   }) && React.createElement("div", null, React.createElement(Shared_ui_components_index.j, {
     type: "icon-cloud-manager-normal"
@@ -146,7 +146,7 @@ var yn = function () {
 var En = React.memo(function (e) {
   var /* [auto-meaningful-name] */e$children = e.children
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useState(false)
   var i = Module_10.a(o, 2)
   var a = i[0]
@@ -284,7 +284,7 @@ var En = React.memo(function (e) {
                 break
               }
               n(Redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "package.packagePending"
                 }),
                 type: "success"
@@ -443,7 +443,7 @@ var En = React.memo(function (e) {
             case 12:
               if (!t) {
                 n(Redux_common_actions.mj({
-                  message: Module_710$a$formatMessage({
+                  message: useIntl$formatMessage({
                     id: "saveProject.successTips"
                   }),
                   type: "success"
@@ -485,7 +485,7 @@ var En = React.memo(function (e) {
     return function (t, n) {
       return e.apply(this, arguments)
     }
-  }(), [n, Module_710$a$formatMessage, U, g, m])
+  }(), [n, useIntl$formatMessage, U, g, m])
   useEffect(function () {
     function e() {
       if (X.current) {
@@ -689,7 +689,7 @@ var En = React.memo(function (e) {
               e$sent = e.sent
               e$sent$title = e$sent.title
               n(Redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "HeaderDropdown.importExtensionSuccess"
                 }, {
                   title: e$sent$title
@@ -753,7 +753,7 @@ var En = React.memo(function (e) {
                 break
               }
               n(Redux_common_actions.mj({
-                message: Module_710$a$formatMessage({
+                message: useIntl$formatMessage({
                   id: "coursePlayingTips"
                 })
               }))
@@ -782,7 +782,7 @@ var En = React.memo(function (e) {
   }, !le && oe.logo !== Module_18.j.Hide && React.createElement(Module_748.a, {
     mouseLeaveDelay: 0,
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "back"
     }),
     overlayInnerStyle: {
@@ -810,19 +810,19 @@ var En = React.memo(function (e) {
       value: "CREATE_NEW_PROJECT"
     }, React.createElement("div", {
       className: Styles_module_css.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.newProject"
     }))), oe.file.openMyProject === Module_18.j.Show && React.createElement(Shared_ui_components_index.m, {
       value: "OPEN_MY_PROJECT"
     }, React.createElement("div", {
       className: Styles_module_css.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.openProject"
     }))), ke && React.createElement(Shared_ui_components_index.m, {
       value: "SAVE_AS"
     }, React.createElement("div", {
       className: Styles_module_css.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.saveAs"
     }))), React.createElement("div", {
       className: Styles_module_css.line
@@ -830,7 +830,7 @@ var En = React.memo(function (e) {
       value: "HISTORY"
     }, React.createElement("div", {
       className: Styles_module_css.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.history"
     }))), !ge && React.createElement(Shared_ui_components_index.m, {
       value: "IMPORT_EXTENSION_WIDGET"
@@ -838,7 +838,7 @@ var En = React.memo(function (e) {
       onChange: Ie,
       accept: ".js,.jsx",
       className: Classnames(Styles_module_css.itemUploadButton)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.importExtension"
     }))), (Re || Re) && React.createElement("div", {
       className: Styles_module_css.line
@@ -849,20 +849,20 @@ var En = React.memo(function (e) {
       onCancel: Ae,
       accept: ".json",
       className: Classnames(Styles_module_css.itemUploadButton)
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.openLocalFile"
     }))), Re && React.createElement(Shared_ui_components_index.m, {
       value: "EXPORT_PROJECT_AS_JSON"
     }, React.createElement("div", {
       className: Styles_module_css.itemContent
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "HeaderDropdown.exportProjectAsJson"
     }))))
   }, React.createElement(Module_748.a, {
     mouseLeaveDelay: 0,
     placement: "bottom",
     trigger: ["hover", "click"],
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "file"
     }),
     overlayInnerStyle: {
@@ -883,7 +883,7 @@ var En = React.memo(function (e) {
       onClick: xe
     }, React.createElement("span", {
       className: Styles_module_css.link
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "courseVideo"
     })))), oe.tutorial.tutorial === Module_18.j.Show && React.createElement(Shared_ui_components_index.m, {
       value: "tutorial"
@@ -894,7 +894,7 @@ var En = React.memo(function (e) {
       target: "_blank",
       rel: "noopener noreferrer",
       className: Styles_module_css.link
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "seeTutorial"
     })))), React.createElement("div", {
       className: Styles_module_css.line
@@ -907,7 +907,7 @@ var En = React.memo(function (e) {
       target: "_blank",
       rel: "noopener noreferrer",
       className: Styles_module_css.link
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "feedback"
     })))), oe.tutorial.releaseInfo === Module_18.j.Show && React.createElement(Shared_ui_components_index.m, {
       value: "releaseInfo"
@@ -918,7 +918,7 @@ var En = React.memo(function (e) {
       }
     }, React.createElement("span", {
       className: Styles_module_css.link
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "releaseInfo"
     })))), oe.tutorial.about === Module_18.j.Show && React.createElement(Shared_ui_components_index.m, {
       value: "aboutUs"
@@ -927,14 +927,14 @@ var En = React.memo(function (e) {
       onClick: De
     }, React.createElement("span", {
       className: Styles_module_css.link
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "aboutUs"
     })))))
   }, React.createElement(Module_748.a, {
     mouseLeaveDelay: 0,
     placement: "bottom",
     trigger: ["hover", "click"],
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "help"
     }),
     overlayInnerStyle: {
@@ -954,7 +954,7 @@ var En = React.memo(function (e) {
       value: "STAGE_RULER"
     }, React.createElement("div", {
       className: Classnames(Styles_module_css.itemContent, L && Styles_module_css.disabled)
-    }, Module_710$a$formatMessage(y ? {
+    }, useIntl$formatMessage(y ? {
       id: "HeaderDropdown.hideRuler"
     } : {
       id: "HeaderDropdown.showRuler"
@@ -962,7 +962,7 @@ var En = React.memo(function (e) {
       value: "STAGE_AREA"
     }, React.createElement("div", {
       className: Classnames(Styles_module_css.itemContent, L && Styles_module_css.disabled)
-    }, Module_710$a$formatMessage(w ? {
+    }, useIntl$formatMessage(w ? {
       id: "HeaderDropdown.hideWidgetAndStage"
     } : {
       id: "HeaderDropdown.showWidgetAndStage"
@@ -971,7 +971,7 @@ var En = React.memo(function (e) {
     mouseLeaveDelay: 0,
     placement: "bottom",
     trigger: ["hover", "click"],
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "setting"
     }),
     overlayInnerStyle: {
@@ -987,7 +987,7 @@ var En = React.memo(function (e) {
   }))))), !le && oe.cloudDBManager === Module_18.j.Show && React.createElement(Module_748.a, {
     mouseLeaveDelay: 0,
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "cloudDBManager"
     }),
     trigger: ["hover", "click"],
@@ -1019,7 +1019,7 @@ var En = React.memo(function (e) {
   }, React.createElement(Module_748.a, {
     mouseLeaveDelay: 0,
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: "Publish.share"
     }),
     trigger: ["hover", "click"],
@@ -1038,7 +1038,7 @@ var En = React.memo(function (e) {
     placement: "bottom",
     title: function () {
       if (!D) {
-        return Module_710$a$formatMessage({
+        return useIntl$formatMessage({
           id: "MyProject.notSaved"
         })
       }
@@ -1050,55 +1050,55 @@ var En = React.memo(function (e) {
       var a = Shared_tools_index.G(t, -2)
       var s = new Date(e)
       var c = ""
-      var l = "".concat(Module_710$a$formatMessage({
+      var l = "".concat(useIntl$formatMessage({
         id: "MyProject.lastSaved"
       }), " ")
       if (n < 6e4) {
-        c = "".concat(Module_710$a$formatMessage({
+        c = "".concat(useIntl$formatMessage({
           id: "MyProject.justSaved"
         }))
       } else if (n < 36e5) {
         var u = Math.ceil(n / 60 / 1e3)
         u = Math.max(u, 1)
         u = Math.min(u, 59)
-        c = l + (c = "".concat(u).concat(Module_710$a$formatMessage({
+        c = l + (c = "".concat(u).concat(useIntl$formatMessage({
           id: "MyProject.minute"
-        })).concat(Module_710$a$formatMessage({
+        })).concat(useIntl$formatMessage({
           id: "MyProject.ago"
         })))
       } else if (n < 216e5 || e > o) {
         var d = Math.floor(n / 36e5)
         var p = Math.floor(n % 36e5 / 6e4)
         if (d) {
-          c += "".concat(d).concat(Module_710$a$formatMessage({
+          c += "".concat(d).concat(useIntl$formatMessage({
             id: "MyProject.hour"
           }))
         }
         if (p) {
-          c += "".concat(p).concat(Module_710$a$formatMessage({
+          c += "".concat(p).concat(useIntl$formatMessage({
             id: "MyProject.minute"
           }))
         }
-        c = l + (c += Module_710$a$formatMessage({
+        c = l + (c += useIntl$formatMessage({
           id: "MyProject.ago"
         }))
       } else if (e > i) {
-        c = l + (c = Module_710$a$formatMessage({
+        c = l + (c = useIntl$formatMessage({
           id: "MyProject.yesterday"
         }) + Shared_tools_index.K(s))
       } else {
         if (e > a) {
-          c = l + (c = Module_710$a$formatMessage({
+          c = l + (c = useIntl$formatMessage({
             id: "MyProject.theDayBeforeYesterday"
           }) + Shared_tools_index.K(s))
         } else {
-          c = "".concat(s.getFullYear()).concat(Module_710$a$formatMessage({
+          c = "".concat(s.getFullYear()).concat(useIntl$formatMessage({
             id: "MyProject.year"
           }))
-          c += "".concat(s.getMonth() + 1).concat(Module_710$a$formatMessage({
+          c += "".concat(s.getMonth() + 1).concat(useIntl$formatMessage({
             id: "MyProject.month"
           }))
-          c = l + (c += "".concat(s.getDate()).concat(Module_710$a$formatMessage({
+          c = l + (c += "".concat(s.getDate()).concat(useIntl$formatMessage({
             id: "MyProject.day"
           })))
         }
@@ -1117,7 +1117,7 @@ var En = React.memo(function (e) {
     className: Classnames(Styles_module_css.saveBtn, g && Styles_module_css.saving)
   }, React.createElement("span", {
     className: Styles_module_css.saveText
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "save"
   })), React.createElement("span", {
     className: Styles_module_css.savingIcon
@@ -1127,11 +1127,11 @@ var En = React.memo(function (e) {
     className: Styles_module_css.packageBtn,
     onClick: _e,
     disabled: T$isPackaging
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "package"
   })), T$packageDialogVisible && React.createElement(Dt, null), T$packageQrCodeVisible && React.createElement(Gt, null), !le && oe.userInfo === Module_18.j.Show && React.createElement(Ze, null), React.createElement("div", {
     className: Classnames(Styles_module_css.saveTipsWrapper, W !== Module_18.d.OTHER && ne && !U && Styles_module_css.show)
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "MyProject.newSaveTips"
   }), React.createElement("div", {
     className: Styles_module_css.closeSaveTips,
@@ -1142,7 +1142,7 @@ var En = React.memo(function (e) {
     type: "icon-close"
   }))), pe && React.createElement(ot, {
     type: Xe.ERROR,
-    message: Module_710$a$formatMessage({
+    message: useIntl$formatMessage({
       id: "MyProject.autoSaveErrorTips"
     }),
     onClose: function () {

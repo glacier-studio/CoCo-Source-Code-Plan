@@ -12,13 +12,13 @@ import * as /* [auto-meaningful-name] */Module_37 from /* 37 */"./37/index"
 import * as /* [auto-meaningful-name] */Module_20 from /* 20 */"./20/index"
 import /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"./47"
 import * as /* [auto-meaningful-name] */Module_190 from /* 190 */"./190"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"./25/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"./710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"./748/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"./7"
 import /* [auto-meaningful-name] */RegeneratorRuntime from /* 1 */"regenerator-runtime"
@@ -35,7 +35,7 @@ import /* [auto-meaningful-name] */Module_4961 from /* 496 */"./496"
 import * as /* [auto-meaningful-name] */Module_384 from /* 384 */"./384"
 import /* [auto-meaningful-name] */Module_3841 from /* 384 */"./384"
 var QS = function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$watchItem = e.watchItem
   var r = useSelector(function (e) {
     return e.project.playing
@@ -139,7 +139,7 @@ var QS = function (e) {
       e = React.createElement(Module_748.a, {
         placement: "bottom",
         trigger: ["hover"],
-        title: Module_710$a$formatMessage({
+        title: useIntl$formatMessage({
           id: "resetData"
         })
       }, React.createElement("div", {
@@ -198,7 +198,7 @@ var QS = function (e) {
 var ZS = function (e) {
   var /* [auto-meaningful-name] */e$watchItem = e.watchItem
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var o = useSelector(function (e) {
     return e.project.screens
   })
@@ -264,7 +264,7 @@ var ZS = function (e) {
     m = React.createElement(Module_748.a, {
       placement: "bottom",
       trigger: ["hover"],
-      title: Module_710$a$formatMessage({
+      title: useIntl$formatMessage({
         id: "resetData"
       })
     }, React.createElement("div", {
@@ -373,7 +373,7 @@ var ZS = function (e) {
   }))
 }
 var JS = function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useSelector(function (e) {
     return e.dataWatch.variableList
   })
@@ -429,7 +429,7 @@ var JS = function () {
       type: a.class
     })), React.createElement("div", {
       className: Module_5681.categoryText
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: a.text
     }))), i.map(function (e) {
       return React.createElement(ZS, {
@@ -445,7 +445,7 @@ var JS = function () {
     }
   }, React.createElement(we, null), React.createElement("span", {
     className: Module_5681.emptyText
-  }, Module_710$a$formatMessage({
+  }, useIntl$formatMessage({
     id: "DataWatch.unable"
   }))) : 0 === t.filter(function (e) {
     return e.isWatching
@@ -456,7 +456,7 @@ var JS = function () {
       }
     }, React.createElement(we, null), React.createElement("span", {
       className: Module_5681.emptyText
-    }, Module_710$a$formatMessage({
+    }, useIntl$formatMessage({
       id: "DataWatch.empty"
     }))) : React.createElement("div", {
       className: Classnames(Module_5681.list)

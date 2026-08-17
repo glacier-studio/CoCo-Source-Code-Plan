@@ -7,15 +7,15 @@
 "use strict"
 
 import { we } from "../../../../../unrestored/shared/1571/2636/index__part-6"
-import { Rn } from "../../../../../unrestored/shared/1571/2636/index__part-23"
-import { to } from "../screen-list/index"
+import { Rn } from "../Player/index"
+import { to } from "../ScreenList/index"
 import { lo } from "../../../../../unrestored/shared/1571/2636/index__part-27"
-import { zd } from "../../../../../unrestored/shared/1571/2636/index__part-33"
+import { zd } from "../stage/index"
 import { sv, gv } from "./item"
-import * as /* [auto-meaningful-name] */Shared_ui_components_iconfont_index from /* 94 */"../../../../shared/ui/components/iconfont/index"
-import /* [auto-meaningful-name] */Module_196 from /* 196 */"../../../../../unrestored/shared/1571/2636/196"
-import /* [auto-meaningful-name] */Style_css from /* 279 */"../style.css"
-import * as /* [auto-meaningful-name] */Module_1512 from /* 1512 */"../../../../../unrestored/shared/1571/2636/1512"
+import * as /* [auto-meaningful-name] */Shared_ui_components_Iconfont_index from /* 94 */"../../../../shared/ui/components/Iconfont/index"
+import /* [auto-meaningful-name] */Styles_module_css from /* 196 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css1 from /* 279 */"../styles.module.css"
+import * as /* [auto-meaningful-name] */ContextMenu_index from /* 1512 */"../ContextMenu/index"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../unrestored/shared/1571/2636/238"
 import * as /* [auto-meaningful-name] */Module_75 from /* 75 */"../../../../../unrestored/shared/1571/2636/75"
 import * as /* [auto-meaningful-name] */Module_90 from /* 90 */"../../../../../unrestored/shared/1571/2636/90"
@@ -26,7 +26,7 @@ import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../u
 import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../../redux/common/actions"
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_748 from /* 748 */"../../../../../unrestored/shared/1571/2636/748/index"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import * as /* [auto-meaningful-name] */Module_7 from /* 7 */"../../../../../unrestored/shared/1571/2636/7"
@@ -38,13 +38,13 @@ import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_1514 from /* 1514 */"../../../../../unrestored/shared/1571/2636/1514"
 import /* [auto-meaningful-name] */Module_15141 from /* 1514 */"../../../../../unrestored/shared/1571/2636/1514"
 var bv = memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.common.userInfo
   })
   var r = useDispatch()
   return React.createElement(Shared_ui_components_index.d, {
-    className: Module_196.widgetMallBtn,
+    className: Styles_module_css.widgetMallBtn,
     onClick: function () {
       var e = function () {
         r(Redux_common_actions.gj(true))
@@ -55,10 +55,10 @@ var bv = memo(function (e) {
         r(Redux_common_actions.Ch(e))
       }
     }
-  }, React.createElement(Shared_ui_components_iconfont_index.a, {
+  }, React.createElement(Shared_ui_components_Iconfont_index.a, {
     type: "icon-shop",
-    className: Module_196.shopIcon
-  }), !e.singleColumn && React.createElement("span", null, Module_710$a$formatMessage({
+    className: Styles_module_css.shopIcon
+  }), !e.singleColumn && React.createElement("span", null, useIntl$formatMessage({
     id: "Widget.widgetMall"
   })))
 })
@@ -90,7 +90,7 @@ var Ev = React.memo(function (e) {
       o.push(a(e))
     }
   })
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var c = useState(false)
   var l = Module_10.a(c, 2)
   var u = l[0]
@@ -140,16 +140,16 @@ var Ev = React.memo(function (e) {
     }
   }, [y, o, i])
   return React.createElement(React.Fragment, null, React.createElement("div", {
-    className: Module_196.scrollExtension
+    className: Styles_module_css.scrollExtension
   }, !u && g && React.createElement("div", {
-    className: Module_196.noExtensionWidgets
+    className: Styles_module_css.noExtensionWidgets
   }, React.createElement("div", {
-    className: Module_196.noExtensionWidgetsWrapper
+    className: Styles_module_css.noExtensionWidgetsWrapper
   }, !e.singleColumn && React.createElement(we, {
     type: "image-text",
-    text: React.createElement(React.Fragment, null, Module_710$a$formatMessage({
+    text: React.createElement(React.Fragment, null, useIntl$formatMessage({
       id: "Widget.emptyTip1"
-    }), React.createElement("br", null), Module_710$a$formatMessage({
+    }), React.createElement("br", null), useIntl$formatMessage({
       id: "Widget.emptyTip2"
     }))
   }), React.createElement(bv, {
@@ -165,7 +165,7 @@ var Ev = React.memo(function (e) {
     configList: y,
     title: "ExtensionWidget.category.extension"
   })), u && React.createElement("div", {
-    className: Module_196.loading,
+    className: Styles_module_css.loading,
     style: {
       height: "100%"
     }
@@ -173,7 +173,7 @@ var Ev = React.memo(function (e) {
     src: Module_15141,
     alt: "loading"
   }))), React.createElement("div", {
-    className: Module_196.widgetMallBtnContainer
+    className: Styles_module_css.widgetMallBtnContainer
   }, !g && React.createElement(bv, {
     singleColumn: e.singleColumn
   })))
@@ -183,7 +183,7 @@ var Ev = React.memo(function (e) {
   e.EXTENSION = "EXTENSION"
 }(yv || (yv = {}))
 var Ov = React.memo(function (e) {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useSelector(function (e) {
     return e.uiConfig.widgetEditor
   }) === Module_18.j.ReadOnly
@@ -195,31 +195,31 @@ var Ov = React.memo(function (e) {
   var a = i[0]
   var s = i[1]
   return React.createElement("div", {
-    className: Classnames(Module_196.tabContainer, e.singleColumn ? Module_196.singleColumn : Module_196.doubleColumn, n && Module_196.readonly)
+    className: Classnames(Styles_module_css.tabContainer, e.singleColumn ? Styles_module_css.singleColumn : Styles_module_css.doubleColumn, n && Styles_module_css.readonly)
   }, React.createElement("div", {
-    className: Module_196.tabNav
+    className: Styles_module_css.tabNav
   }, React.createElement("div", {
     onClick: function () {
       s(yv.BASIC)
     },
-    className: Classnames(Module_196.tab, a === yv.BASIC && Module_196.activeTab)
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+    className: Classnames(Styles_module_css.tab, a === yv.BASIC && Styles_module_css.activeTab)
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "Widget.basic"
   }))), React.createElement("div", {
     onClick: function () {
       s(yv.EXTENSION)
     },
-    className: Classnames(Module_196.tab, a === yv.EXTENSION && Module_196.activeTab)
-  }, React.createElement("div", null, Module_710$a$formatMessage({
+    className: Classnames(Styles_module_css.tab, a === yv.EXTENSION && Styles_module_css.activeTab)
+  }, React.createElement("div", null, useIntl$formatMessage({
     id: "Widget.extension"
   })))), React.createElement("div", {
-    className: Module_196.tabContent
+    className: Styles_module_css.tabContent
   }, React.createElement("div", {
-    className: Classnames(Module_196.tabContentBox, a !== yv.BASIC && Module_196.hide)
+    className: Classnames(Styles_module_css.tabContentBox, a !== yv.BASIC && Styles_module_css.hide)
   }, React.createElement(gv, {
     isOT: r
   })), React.createElement("div", {
-    className: Classnames(Module_196.tabContentBox, a !== yv.EXTENSION && Module_196.hide)
+    className: Classnames(Styles_module_css.tabContentBox, a !== yv.EXTENSION && Styles_module_css.hide)
   }, React.createElement(Ev, {
     singleColumn: e.singleColumn
   }))))
@@ -246,18 +246,18 @@ var wv = React.memo(function () {
     }
   }, [a, e$visible, r])
   return e$visible ? React.createElement("div", {
-    className: Style_css.toastWrapper
+    className: Styles_module_css1.toastWrapper
   }, React.createElement("span", {
-    className: Style_css.toast
+    className: Styles_module_css1.toast
   }, i && React.createElement(Shared_ui_components_index.j, {
     type: "icon-alert-success",
-    className: Style_css.icon
+    className: Styles_module_css1.icon
   }), r)) : null
 })
 var Cv = window.innerWidth > 1300 ? 144 : 92
 var Tv = 92 === Cv
 var Sv = React.memo(function () {
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var t = useDispatch()
   var n = useRef(null)
   var r = useRef(null)
@@ -322,8 +322,8 @@ var Sv = React.memo(function () {
       if (n.current) {
         var /* [auto-meaningful-name] */n$current$offsetWidth = n.current.offsetWidth
         var /* [auto-meaningful-name] */n$current$offsetHeight = n.current.offsetHeight
-        var a = .8 * n$current$offsetWidth / Module_75.e
-        var s = (n$current$offsetHeight - 80) / Module_75.d
+        var a = .8 * o / Module_75.e
+        var s = (i - 80) / Module_75.d
         var c = Math.min(a, s, 1)
         c = Math.max(c, .7)
         t(Redux_common_actions.Xi(c))
@@ -344,31 +344,31 @@ var Sv = React.memo(function () {
   }, [])
   return React.createElement("div", {
     id: "previewAreaWrapper",
-    className: Style_css.wrapper,
+    className: Styles_module_css1.wrapper,
     ref: r,
     style: {
       marginLeft: i || o ? 0 : -l
     }
   }, React.createElement("section", {
-    className: Style_css.body
+    className: Styles_module_css1.body
   }, React.createElement(React.Fragment, null, React.createElement("aside", {
     style: {
       width: "".concat(Cv, "px")
     },
-    className: Style_css.side
+    className: Styles_module_css1.side
   }, React.createElement(Ov, {
     singleColumn: Tv
   })), React.createElement(to, null), React.createElement("main", {
-    className: Style_css.main,
+    className: Styles_module_css1.main,
     ref: n
-  }, React.createElement(zd, null), React.createElement(wv, null), React.createElement(Module_1512.a, null)), !o && React.createElement(Module_748.a, {
+  }, React.createElement(zd, null), React.createElement(wv, null), React.createElement(ContextMenu_index.a, null)), !o && React.createElement(Module_748.a, {
     placement: "bottom",
-    title: Module_710$a$formatMessage({
+    title: useIntl$formatMessage({
       id: i ? "HeaderDropdown.hideWidgetAndStage" : "HeaderDropdown.showWidgetAndStage"
     }),
     trigger: ["hover", "click"]
   }, React.createElement("div", {
-    className: Classnames(Style_css.foldBtn, i ? Style_css.hide : Style_css.show, (m || a) && Style_css.visible),
+    className: Classnames(Styles_module_css1.foldBtn, i ? Styles_module_css1.hide : Styles_module_css1.show, (m || a) && Styles_module_css1.visible),
     onClick: function () {
       t(Redux_common_actions.Yi(!i))
     },

@@ -8,7 +8,7 @@
 
 import { Pn } from "../../../../../unrestored/shared/1571/2636/index__part-24"
 import { Xn, Zn, Jn, er, tr, nr, rr, or, ar, sr, cr, lr, ur, dr, pr, hr, mr, gr, wr, Nr, Rr, kr, xr, Dr, Mr, Lr, Pr, Br, Fr, Gr, Wr } from "../../../../../unrestored/shared/1571/2636/index__part-25"
-import { Cv } from "../widget-list/index"
+import { Cv } from "../WidgetList/index"
 import /* [auto-meaningful-name] */Module_702 from /* 702 */"../../../../../unrestored/shared/1571/2636/702"
 import * as /* [auto-meaningful-name] */Module_142 from /* 142 */"../../../../../unrestored/shared/1571/2636/142"
 import * as /* [auto-meaningful-name] */Module_120 from /* 120 */"../../../../../unrestored/shared/1571/2636/120"
@@ -29,7 +29,7 @@ import * as /* [auto-meaningful-name] */Redux_common_actions from /* 2 */"../../
 import * as /* [auto-meaningful-name] */Shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../../unrestored/shared/1571/2636/11"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_710 from /* 710 */"../../../../../unrestored/shared/1571/2636/710"
+import { useIntl } from /* 710 */"react-intl"
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import { useDispatch, useSelector, batch } from /* 16 */"react-redux"
 import * as /* [auto-meaningful-name] */ReactDom from /* 80 */"react-dom"
@@ -38,14 +38,14 @@ import { useRef, useState, useImperativeHandle, useEffect, createRef, createElem
 import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_553 from /* 553 */"../../../../../unrestored/shared/1571/2636/553"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../unrestored/shared/1571/2636/238"
-import * as /* [auto-meaningful-name] */Module_212 from /* 212 */"./styles.module.css"
-import /* [auto-meaningful-name] */Module_2121 from /* 212 */"./styles.module.css"
+import * as /* [auto-meaningful-name] */Styles_module_css from /* 212 */"./styles.module.css"
+import /* [auto-meaningful-name] */Styles_module_css1 from /* 212 */"./styles.module.css"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"../../../../../unrestored/shared/1571/2636/53"
 import * as /* [auto-meaningful-name] */Module_1511 from /* 1511 */"../../../../../unrestored/shared/1571/2636/1511"
 import /* [auto-meaningful-name] */Module_15111 from /* 1511 */"../../../../../unrestored/shared/1571/2636/1511"
 var Xr = React.forwardRef(function (e, t) {
   var n = useDispatch()
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var /* [auto-meaningful-name] */e$onChange = e.onChange
   var /* [auto-meaningful-name] */e$checkValueIsRepeat = e.checkValueIsRepeat
   var /* [auto-meaningful-name] */e$renameInputValue = e.renameInputValue
@@ -95,36 +95,36 @@ var Xr = React.forwardRef(function (e, t) {
   var T = function () {
     if (w.current) {
       var /* [auto-meaningful-name] */w$current$value = w.current.value
-      var t = Module_190.b(w$current$value)
+      var t = Module_190.b(e)
       if (t > Module_53.i) {
         C()
       }
       if (O.current) {
-        if (!w$current$value.match(Module_53.D)) {
+        if (!e.match(Module_53.D)) {
           m(l.current)
           return void C()
         }
         y(false)
         var /* [auto-meaningful-name] */l$current = l.current
-        var r = Module_190.b(l$current)
+        var r = Module_190.b(n)
         if (t <= Module_53.i || t < r) {
-          m(w$current$value)
-          return void (l.current = w$current$value)
+          m(e)
+          return void (l.current = e)
         }
         if (t > r && r >= Module_53.i) {
           m(l.current)
           return void C()
         }
         y(false)
-        for (var o = -1, i = 0; i < w$current$value.length; i++) {
-          if (w$current$value[i] !== l$current[i]) {
+        for (var o = -1, i = 0; i < e.length; i++) {
+          if (e[i] !== n[i]) {
             o = i
             break
           }
         }
         if (o > -1) {
-          for (var a = l$current, s = o; s < w$current$value.length; s++) {
-            var c = l$current.slice(0, o) + w$current$value.slice(o, s) + l$current.slice(o)
+          for (var a = n, s = o; s < e.length; s++) {
+            var c = n.slice(0, o) + e.slice(o, s) + n.slice(o)
             if (Module_190.b(c) > Module_53.i) {
               break
             }
@@ -134,7 +134,7 @@ var Xr = React.forwardRef(function (e, t) {
           l.current = a
         }
       } else {
-        m(w$current$value)
+        m(e)
       }
     }
   }
@@ -160,7 +160,7 @@ var Xr = React.forwardRef(function (e, t) {
         }
       } else {
         n(Redux_common_actions.mj({
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "blankInputValue"
           }),
           type: "error",
@@ -214,7 +214,7 @@ var Qr = function (e) {
     return e.nickname
   }).join(" ")
   return React.createElement("div", {
-    className: Module_2121.collaboration,
+    className: Styles_module_css1.collaboration,
     title: c
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-collaborate"
@@ -271,13 +271,13 @@ var Zr = function (e) {
   var /* [auto-meaningful-name] */e$title = e.title
   var o = useDispatch()
   return React.createElement("div", {
-    className: Module_2121.snapshotContainer,
+    className: Styles_module_css1.snapshotContainer,
     onClick: function () {
       o(Redux_common_actions.vg(e$index))
     }.bind(null, e$index)
   }, e$screen.snapshot && React.createElement("img", {
     src: e$screen.snapshot,
-    className: Module_2121.snapshot,
+    className: Styles_module_css1.snapshot,
     alt: e$title,
     draggable: false
   }))
@@ -298,7 +298,7 @@ var Jr = React.memo(function (e) {
     return e.oTState.collWorkId
   })
   var /* [auto-meaningful-name] */e$screen$title = e$screen.title
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var m = useDispatch()
   var g = useRef(null)
   var v = useRef(null)
@@ -321,16 +321,16 @@ var Jr = React.memo(function (e) {
   }, [e$canEdit])
   return React.createElement("div", {
     ref: v,
-    className: Classnames(Module_2121.item, Module_11.a({}, Module_2121.selected, e$selected)),
+    className: Classnames(Styles_module_css1.item, Module_11.a({}, Styles_module_css1.selected, e$selected)),
     key: e$screen.id
   }, React.createElement("div", {
-    className: Module_2121.view
+    className: Styles_module_css1.view
   }, React.createElement(Zr, {
     screen: e$screen,
     index: c,
     title: e$screen$title
   }), React.createElement(React.Fragment, null, !e$canEdit && React.createElement(React.Fragment, null, e$showDeleteIcon && !e$readonly && React.createElement("div", {
-    className: Module_2121.delete,
+    className: Styles_module_css1.delete,
     onClick: function (e) {
       e.stopPropagation()
       e$onDeleteIconClick(e$screen)
@@ -338,12 +338,12 @@ var Jr = React.memo(function (e) {
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-delete-bold"
   })), !e$readonly && React.createElement("div", {
-    className: Module_2121.copy,
+    className: Styles_module_css1.copy,
     onClick: function (e) {
       if (l.size > 98) {
         m(Redux_common_actions.mj({
           showPrefixIcon: false,
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "screeMaxSize"
           })
         }))
@@ -358,9 +358,9 @@ var Jr = React.memo(function (e) {
   })), !!u && React.createElement(Qr, {
     screenId: e$screen.id
   })), React.createElement("div", {
-    className: Module_2121.index
+    className: Styles_module_css1.index
   }, c + 1))), React.createElement("div", {
-    className: Module_2121.titleBox
+    className: Styles_module_css1.titleBox
   }, e$canEdit && !e$readonly ? React.createElement(Xr, {
     value: e$screen$title,
     checkValueIsRepeat: function (e) {
@@ -386,7 +386,7 @@ var Jr = React.memo(function (e) {
     onBlur: function () {
       e$updateCanEdit(false)
     },
-    className: Module_2121.editName
+    className: Styles_module_css1.editName
   }) : React.createElement("p", {
     onClick: function (e) {
       if (!e$readonly) {
@@ -396,7 +396,7 @@ var Jr = React.memo(function (e) {
     style: {
       display: e$canEdit ? "none" : "block"
     },
-    className: Module_2121.canNotEdit
+    className: Styles_module_css1.canNotEdit
   }, e$screen$title)))
 })
 var $r = function (e) {
@@ -540,17 +540,17 @@ var eo = function (e) {
           if (i && i.sortableInfo && t.nodeIsChild(i) && !t.state.sorting) {
             var /* [auto-meaningful-name] */t$props$useDragHandle = t.props.useDragHandle
             var /* [auto-meaningful-name] */i$sortableInfo = i.sortableInfo
-            var /* [auto-meaningful-name] */i$sortableInfo$index = i$sortableInfo.index
-            var /* [auto-meaningful-name] */i$sortableInfo$collection = i$sortableInfo.collection
-            if (i$sortableInfo.disabled) {
+            var /* [auto-meaningful-name] */s$index = s.index
+            var /* [auto-meaningful-name] */s$collection = s.collection
+            if (s.disabled) {
               return
             }
-            if (t$props$useDragHandle && !rr(e.target, Rr)) {
+            if (a && !rr(e.target, Rr)) {
               return
             }
             t.manager.active = {
-              collection: i$sortableInfo$collection,
-              index: i$sortableInfo$index
+              collection: l,
+              index: c
             }
             if (!(ur(e) || e.target.tagName !== wr)) {
               e.preventDefault()
@@ -611,16 +611,16 @@ var eo = function (e) {
           var r = function () {
             if (n) {
               var r = function () {
-                var /* [auto-meaningful-name] */n$node$sortableInfo$index = n$node.sortableInfo.index
-                var r = ar(n$node)
+                var /* [auto-meaningful-name] */p$sortableInfo$index = p.sortableInfo.index
+                var r = ar(p)
                 var o = gr(t.container)
                 var l = t.scrollContainer.getBoundingClientRect()
-                var m = t$props$getHelperDimensions({
-                  index: n$node$sortableInfo$index,
-                  node: n$node,
-                  collection: n$collection
+                var m = a({
+                  index: p$sortableInfo$index,
+                  node: p,
+                  collection: React1
                 })
-                t.node = n$node
+                t.node = p
                 t.margin = r
                 t.gridGap = o
                 t.width = m.width
@@ -629,16 +629,16 @@ var eo = function (e) {
                   x: t.margin.left + t.margin.right + t.gridGap.x,
                   y: Math.max(t.margin.top, t.margin.bottom, t.gridGap.y)
                 }
-                t.boundingClientRect = n$node.getBoundingClientRect()
+                t.boundingClientRect = p.getBoundingClientRect()
                 t.containerBoundingRect = l
-                t.index = n$node$sortableInfo$index
-                t.newIndex = n$node$sortableInfo$index
+                t.index = p$sortableInfo$index
+                t.newIndex = p$sortableInfo$index
                 t.axis = {
-                  x: t$props$axis.indexOf("x") >= 0,
-                  y: t$props$axis.indexOf("y") >= 0
+                  x: i.indexOf("x") >= 0,
+                  y: i.indexOf("y") >= 0
                 }
-                t.offsetEdge = dr(n$node, t.container)
-                t.initialOffset = lr(t$manager$isKeySorting ? Pn({}, e, {
+                t.offsetEdge = dr(p, t.container)
+                t.initialOffset = lr(React ? Pn({}, e, {
                   pageX: t.boundingClientRect.left,
                   pageY: t.boundingClientRect.top
                 }) : e)
@@ -650,7 +650,7 @@ var eo = function (e) {
                   left: window.pageXOffset,
                   top: window.pageYOffset
                 }
-                t.helper = t.helperContainer.appendChild(Nr(n$node))
+                t.helper = t.helperContainer.appendChild(Nr(p))
                 er(t.helper, {
                   boxSizing: "border-box",
                   height: "".concat(t.height, "px"),
@@ -660,20 +660,20 @@ var eo = function (e) {
                   top: "".concat(t.boundingClientRect.top - r.top, "px"),
                   width: "".concat(t.width, "px")
                 })
-                if (t$manager$isKeySorting) {
+                if (React) {
                   t.helper.focus()
                 }
-                if (t$props$hideSortableGhost) {
-                  t.sortableGhost = n$node
-                  er(n$node, {
+                if (c) {
+                  t.sortableGhost = p
+                  er(p, {
                     opacity: 0,
                     visibility: "hidden"
                   })
                 }
                 t.minTranslate = {}
                 t.maxTranslate = {}
-                if (t$manager$isKeySorting) {
-                  var g = t$props$useWindowAsScrollContainer ? {
+                if (React) {
+                  var g = d ? {
                     top: 0,
                     left: 0,
                     width: t.contentWindow.innerWidth,
@@ -682,33 +682,33 @@ var eo = function (e) {
                   var /* [auto-meaningful-name] */g$top = g.top
                   var /* [auto-meaningful-name] */g$left = g.left
                   var /* [auto-meaningful-name] */g$width = g.width
-                  var y = g$top + g.height
-                  var E = g$left + g$width
+                  var y = _ + g.height
+                  var E = v + b
                   if (t.axis.x) {
-                    t.minTranslate.x = g$left - t.boundingClientRect.left
+                    t.minTranslate.x = v - t.boundingClientRect.left
                     t.maxTranslate.x = E - (t.boundingClientRect.left + t.width)
                   }
                   if (t.axis.y) {
-                    t.minTranslate.y = g$top - t.boundingClientRect.top
+                    t.minTranslate.y = _ - t.boundingClientRect.top
                     t.maxTranslate.y = y - (t.boundingClientRect.top + t.height)
                   }
                 } else {
                   if (t.axis.x) {
-                    t.minTranslate.x = (t$props$useWindowAsScrollContainer ? 0 : l.left) - t.boundingClientRect.left - t.width / 2
-                    t.maxTranslate.x = (t$props$useWindowAsScrollContainer ? t.contentWindow.innerWidth : l.left + l.width) - t.boundingClientRect.left - t.width / 2
+                    t.minTranslate.x = (d ? 0 : l.left) - t.boundingClientRect.left - t.width / 2
+                    t.maxTranslate.x = (d ? t.contentWindow.innerWidth : l.left + l.width) - t.boundingClientRect.left - t.width / 2
                   }
                   if (t.axis.y) {
-                    t.minTranslate.y = (t$props$useWindowAsScrollContainer ? 0 : l.top) - t.boundingClientRect.top - t.height / 2
-                    t.maxTranslate.y = (t$props$useWindowAsScrollContainer ? t.contentWindow.innerHeight : l.top + l.height) - t.boundingClientRect.top - t.height / 2
+                    t.minTranslate.y = (d ? 0 : l.top) - t.boundingClientRect.top - t.height / 2
+                    t.maxTranslate.y = (d ? t.contentWindow.innerHeight : l.top + l.height) - t.boundingClientRect.top - t.height / 2
                   }
                 }
-                if (t$props$helperClass) {
-                  t$props$helperClass.split(" ").forEach(function (e) {
+                if (s) {
+                  s.split(" ").forEach(function (e) {
                     return t.helper.classList.add(e)
                   })
                 }
                 t.listenerNode = e.touches ? e.target : t.contentWindow
-                if (t$manager$isKeySorting) {
+                if (React) {
                   t.listenerNode.addEventListener("wheel", t.handleKeyEnd, true)
                   t.listenerNode.addEventListener("mousedown", t.handleKeyEnd, true)
                   t.listenerNode.addEventListener("keydown", t.handleKeyDown)
@@ -722,43 +722,43 @@ var eo = function (e) {
                 }
                 t.setState({
                   sorting: true,
-                  sortingIndex: n$node$sortableInfo$index
+                  sortingIndex: p$sortableInfo$index
                 })
-                if (t$props$onSortStart) {
-                  t$props$onSortStart({
-                    node: n$node,
-                    index: n$node$sortableInfo$index,
-                    collection: n$collection,
-                    isKeySorting: t$manager$isKeySorting,
+                if (u) {
+                  u({
+                    node: p,
+                    index: p$sortableInfo$index,
+                    collection: React1,
+                    isKeySorting: React,
                     nodes: t.manager.getOrderedRefs(),
                     helper: t.helper
                   }, e)
                 }
-                if (t$manager$isKeySorting) {
+                if (React) {
                   t.keyMove(0)
                 }
               }
               var /* [auto-meaningful-name] */t$props = t.props
-              var /* [auto-meaningful-name] */t$props$axis = t$props.axis
-              var /* [auto-meaningful-name] */t$props$getHelperDimensions = t$props.getHelperDimensions
-              var /* [auto-meaningful-name] */t$props$helperClass = t$props.helperClass
-              var /* [auto-meaningful-name] */t$props$hideSortableGhost = t$props.hideSortableGhost
-              var /* [auto-meaningful-name] */t$props$updateBeforeSortStart = t$props.updateBeforeSortStart
-              var /* [auto-meaningful-name] */t$props$onSortStart = t$props.onSortStart
-              var /* [auto-meaningful-name] */t$props$useWindowAsScrollContainer = t$props.useWindowAsScrollContainer
+              var /* [auto-meaningful-name] */o$axis = o.axis
+              var /* [auto-meaningful-name] */o$getHelperDimensions = o.getHelperDimensions
+              var /* [auto-meaningful-name] */o$helperClass = o.helperClass
+              var /* [auto-meaningful-name] */o$hideSortableGhost = o.hideSortableGhost
+              var /* [auto-meaningful-name] */o$updateBeforeSortStart = o.updateBeforeSortStart
+              var /* [auto-meaningful-name] */o$onSortStart = o.onSortStart
+              var /* [auto-meaningful-name] */o$useWindowAsScrollContainer = o.useWindowAsScrollContainer
               var /* [auto-meaningful-name] */n$node = n.node
               var /* [auto-meaningful-name] */n$collection = n.collection
               var /* [auto-meaningful-name] */t$manager$isKeySorting = t.manager.isKeySorting
               var m = function () {
-                if ("function" === typeof t$props$updateBeforeSortStart) {
+                if ("function" === typeof l) {
                   t._awaitingUpdateBeforeSortStart = true
                   var n = Br(function () {
-                    var /* [auto-meaningful-name] */n$node$sortableInfo$index = n$node.sortableInfo.index
-                    return Promise.resolve(t$props$updateBeforeSortStart({
-                      collection: n$collection,
-                      index: n$node$sortableInfo$index,
-                      node: n$node,
-                      isKeySorting: t$manager$isKeySorting
+                    var /* [auto-meaningful-name] */p$sortableInfo$index = p.sortableInfo.index
+                    return Promise.resolve(l({
+                      collection: React1,
+                      index: p$sortableInfo$index,
+                      node: p,
+                      isKeySorting: React
                     }, e)).then(function () {})
                   }, function (e, n) {
                     t._awaitingUpdateBeforeSortStart = false
@@ -826,8 +826,8 @@ var eo = function (e) {
           var /* [auto-meaningful-name] */d$node = d.node
           d.edgeOffset = null
           d.boundingClientRect = null
-          tr(d$node, null)
-          nr(d$node, null)
+          tr(p, null)
+          nr(p, null)
           d.translate = null
         }
         t.autoScroller.clear()
@@ -945,16 +945,16 @@ var eo = function (e) {
           })
           var /* [auto-meaningful-name] */s$node = s.node
           var /* [auto-meaningful-name] */t$containerScrollDelta = t.containerScrollDelta
-          var u = s.boundingClientRect || cr(s$node, t$containerScrollDelta)
+          var u = s.boundingClientRect || cr(c, l)
           var d = s.translate || {
             x: 0,
             y: 0
           }
-          var p = u.top + d.y - t$containerScrollDelta.top
-          var f = u.left + d.x - t$containerScrollDelta.left
+          var p = u.top + d.y - l.top
+          var f = u.left + d.x - l.left
           var h = t$newIndex < o
-          var m = h && t.axis.x ? s$node.offsetWidth - t.width : 0
-          var g = h && t.axis.y ? s$node.offsetHeight - t.height : 0
+          var m = h && t.axis.x ? c.offsetWidth - t.width : 0
+          var g = h && t.axis.y ? c.offsetHeight - t.height : 0
           t.handleSortMove({
             pageX: f + m,
             pageY: p + g,
@@ -1103,25 +1103,25 @@ var eo = function (e) {
           this.newIndex = null
           for (var d = 0, /* [auto-meaningful-name] */a$length = a.length; d < a$length; d++) {
             var /* [auto-meaningful-name] */aD$node = a[d].node
-            var /* [auto-meaningful-name] */aD$node$sortableInfo$index = aD$node.sortableInfo.index
-            var /* [auto-meaningful-name] */aD$node$offsetWidth = aD$node.offsetWidth
-            var /* [auto-meaningful-name] */aD$node$offsetHeight = aD$node.offsetHeight
+            var /* [auto-meaningful-name] */React1$sortableInfo$index = React1.sortableInfo.index
+            var /* [auto-meaningful-name] */React1$offsetWidth = React1.offsetWidth
+            var /* [auto-meaningful-name] */React1$offsetHeight = React1.offsetHeight
             var _ = {
-              height: this.height > aD$node$offsetHeight ? aD$node$offsetHeight / 2 : this.height / 2,
-              width: this.width > aD$node$offsetWidth ? aD$node$offsetWidth / 2 : this.width / 2
+              height: this.height > g ? g / 2 : this.height / 2,
+              width: this.width > ReactDom ? ReactDom / 2 : this.width / 2
             }
-            var v = this$manager$isKeySorting && aD$node$sortableInfo$index > this.index && aD$node$sortableInfo$index <= this$newIndex
-            var b = this$manager$isKeySorting && aD$node$sortableInfo$index < this.index && aD$node$sortableInfo$index >= this$newIndex
+            var v = this$manager$isKeySorting && React > this.index && React <= this$newIndex
+            var b = this$manager$isKeySorting && React < this.index && React >= this$newIndex
             var y = {
               x: 0,
               y: 0
             }
             var /* [auto-meaningful-name] */aD$edgeOffset = a[d].edgeOffset
-            if (!aD$edgeOffset) {
-              aD$edgeOffset = dr(aD$node, this.container)
-              a[d].edgeOffset = aD$edgeOffset
+            if (!E) {
+              E = dr(React1, this.container)
+              a[d].edgeOffset = E
               if (this$manager$isKeySorting) {
-                a[d].boundingClientRect = cr(aD$node, this$containerScrollDelta)
+                a[d].boundingClientRect = cr(React1, this$containerScrollDelta)
               }
             }
             var O = d < a.length - 1 && a[d + 1]
@@ -1132,65 +1132,65 @@ var eo = function (e) {
                 O.boundingClientRect = cr(O.node, this$containerScrollDelta)
               }
             }
-            if (aD$node$sortableInfo$index !== this.index) {
+            if (React !== this.index) {
               if (this$props$transitionDuration) {
-                nr(aD$node, this$props$transitionDuration)
+                nr(React1, this$props$transitionDuration)
               }
               if (this.axis.x) {
                 if (this.axis.y) {
-                  if (b || aD$node$sortableInfo$index < this.index && (s + this$windowScrollDelta.left - _.width <= aD$edgeOffset.left && c + this$windowScrollDelta.top <= aD$edgeOffset.top + _.height || c + this$windowScrollDelta.top + _.height <= aD$edgeOffset.top)) {
+                  if (b || React < this.index && (s + this$windowScrollDelta.left - _.width <= E.left && c + this$windowScrollDelta.top <= E.top + _.height || c + this$windowScrollDelta.top + _.height <= E.top)) {
                     y.x = this.width + this.marginOffset.x
-                    if (aD$edgeOffset.left + y.x > this.containerBoundingRect.width - _.width && O) {
-                      y.x = O.edgeOffset.left - aD$edgeOffset.left
-                      y.y = O.edgeOffset.top - aD$edgeOffset.top
+                    if (E.left + y.x > this.containerBoundingRect.width - _.width && O) {
+                      y.x = O.edgeOffset.left - E.left
+                      y.y = O.edgeOffset.top - E.top
                     }
                     if (null === this.newIndex) {
-                      this.newIndex = aD$node$sortableInfo$index
+                      this.newIndex = React
                     }
                   } else {
-                    if (v || aD$node$sortableInfo$index > this.index && (s + this$windowScrollDelta.left + _.width >= aD$edgeOffset.left && c + this$windowScrollDelta.top + _.height >= aD$edgeOffset.top || c + this$windowScrollDelta.top + _.height >= aD$edgeOffset.top + aD$node$offsetHeight)) {
+                    if (v || React > this.index && (s + this$windowScrollDelta.left + _.width >= E.left && c + this$windowScrollDelta.top + _.height >= E.top || c + this$windowScrollDelta.top + _.height >= E.top + g)) {
                       y.x = -(this.width + this.marginOffset.x)
-                      if (aD$edgeOffset.left + y.x < this.containerBoundingRect.left + _.width && w) {
-                        y.x = w.edgeOffset.left - aD$edgeOffset.left
-                        y.y = w.edgeOffset.top - aD$edgeOffset.top
+                      if (E.left + y.x < this.containerBoundingRect.left + _.width && w) {
+                        y.x = w.edgeOffset.left - E.left
+                        y.y = w.edgeOffset.top - E.top
                       }
-                      this.newIndex = aD$node$sortableInfo$index
+                      this.newIndex = React
                     }
                   }
                 } else {
-                  if (v || aD$node$sortableInfo$index > this.index && s + this$windowScrollDelta.left + _.width >= aD$edgeOffset.left) {
+                  if (v || React > this.index && s + this$windowScrollDelta.left + _.width >= E.left) {
                     y.x = -(this.width + this.marginOffset.x)
-                    this.newIndex = aD$node$sortableInfo$index
+                    this.newIndex = React
                   } else {
-                    if (b || aD$node$sortableInfo$index < this.index && s + this$windowScrollDelta.left <= aD$edgeOffset.left + _.width) {
+                    if (b || React < this.index && s + this$windowScrollDelta.left <= E.left + _.width) {
                       y.x = this.width + this.marginOffset.x
                       if (null == this.newIndex) {
-                        this.newIndex = aD$node$sortableInfo$index
+                        this.newIndex = React
                       }
                     }
                   }
                 }
               } else {
                 if (this.axis.y) {
-                  if (v || aD$node$sortableInfo$index > this.index && c + this$windowScrollDelta.top + _.height >= aD$edgeOffset.top) {
+                  if (v || React > this.index && c + this$windowScrollDelta.top + _.height >= E.top) {
                     y.y = -(this.height + this.marginOffset.y)
-                    this.newIndex = aD$node$sortableInfo$index
+                    this.newIndex = React
                   } else {
-                    if (b || aD$node$sortableInfo$index < this.index && c + this$windowScrollDelta.top <= aD$edgeOffset.top + _.height) {
+                    if (b || React < this.index && c + this$windowScrollDelta.top <= E.top + _.height) {
                       y.y = this.height + this.marginOffset.y
                       if (null == this.newIndex) {
-                        this.newIndex = aD$node$sortableInfo$index
+                        this.newIndex = React
                       }
                     }
                   }
                 }
               }
-              tr(aD$node, y)
+              tr(React1, y)
               a[d].translate = y
             } else {
               if (this$props$hideSortableGhost) {
-                this.sortableGhost = aD$node
-                er(aD$node, {
+                this.sortableGhost = React1
+                er(React1, {
                   opacity: 0,
                   visibility: "hidden"
                 })
@@ -1301,13 +1301,13 @@ var eo = function (e) {
       o.current.addEventListener("scroll", a)
       o.current.addEventListener("wheel", s)
       return function () {
-        o$current.removeEventListener("scroll", a)
-        o$current.removeEventListener("wheel", s)
+        e.removeEventListener("scroll", a)
+        e.removeEventListener("wheel", s)
       }
     }
   })
   return React.createElement("div", {
-    className: Module_2121.list,
+    className: Styles_module_css1.list,
     ref: o
   }, e$screens.map(function (e, t) {
     return React.createElement($r, Object.assign({
@@ -1321,7 +1321,7 @@ var eo = function (e) {
 })
 var to = memo(function () {
   var /* [auto-meaningful-name] */n$current
-  var /* [auto-meaningful-name] */Module_710$a$formatMessage = Module_710.a().formatMessage
+  var /* [auto-meaningful-name] */useIntl$formatMessage = useIntl().formatMessage
   var n = useRef(null)
   var r = useSelector(function (e) {
     return e.project.screens
@@ -1386,7 +1386,7 @@ var to = memo(function () {
       var /* [auto-meaningful-name] */n$current2
       var /* [auto-meaningful-name] */e$target = e.target
       var i = null === (n$current1 = n.current) || undefined === n$current1 ? undefined : n$current1.target
-      if (i && !(i.contains(e$target) || e$target.closest(".".concat(Module_2121.deleteScreenDialog)) || e$target.closest(".".concat(Module_2121.snapshotContainer)))) {
+      if (i && !(i.contains(e$target) || e$target.closest(".".concat(Styles_module_css1.deleteScreenDialog)) || e$target.closest(".".concat(Styles_module_css1.snapshotContainer)))) {
         if (!(null === (n$current2 = n.current) || undefined === n$current2)) {
           n$current2.hideContent()
         }
@@ -1431,8 +1431,8 @@ var to = memo(function () {
       T.current.addEventListener("scroll", D)
       T.current.addEventListener("wheel", M)
       return function () {
-        T$current.removeEventListener("scroll", D)
-        T$current.removeEventListener("wheel", M)
+        n$current.removeEventListener("scroll", D)
+        n$current.removeEventListener("wheel", M)
       }
     }
   })
@@ -1446,7 +1446,7 @@ var to = memo(function () {
     if (n) {
       C.current = n
       var o = n.get("title")
-      var i = Module_710$a$formatMessage({
+      var i = useIntl$formatMessage({
         id: "deleteScreen"
       }) + "“" + Module_190.f(o, 10) + "”?"
       x(Redux_common_actions.zh({
@@ -1454,13 +1454,13 @@ var to = memo(function () {
         onConfirm: F,
         title: i,
         isDangerous: true,
-        content: Module_710$a$formatMessage({
+        content: useIntl$formatMessage({
           id: "deleteScreenTips"
         }),
-        allowText: Module_710$a$formatMessage({
+        allowText: useIntl$formatMessage({
           id: "delete"
         }),
-        className: Module_2121.deleteScreenDialog
+        className: Styles_module_css1.deleteScreenDialog
       }))
     }
   }
@@ -1478,7 +1478,7 @@ var to = memo(function () {
     }
   }
   var G = React.createElement(React.Fragment, null, React.createElement("div", {
-    className: Module_2121.closeIconBox,
+    className: Styles_module_css1.closeIconBox,
     onClick: function () {
       var /* [auto-meaningful-name] */n$current1
       if (!(null === (n$current1 = n.current) || undefined === n$current1)) {
@@ -1488,7 +1488,7 @@ var to = memo(function () {
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-close"
   })), React.createElement("section", {
-    className: Module_2121.popoverBody,
+    className: Styles_module_css1.popoverBody,
     style: {
       width: v + 2
     },
@@ -1531,16 +1531,16 @@ var to = memo(function () {
         }
       })
     },
-    helperClass: Module_2121.dragItem,
+    helperClass: Styles_module_css1.dragItem,
     helperContainer: document.getElementById("_cocoScreenListDragContainer") || document.body,
     useDragHandle: true
   }), !k && React.createElement("div", {
-    className: Module_2121.addScreen,
+    className: Styles_module_css1.addScreen,
     onClick: function () {
       if (r.size > 98) {
         x(Redux_common_actions.mj({
           showPrefixIcon: false,
-          message: Module_710$a$formatMessage({
+          message: useIntl$formatMessage({
             id: "screeMaxSize"
           })
         }))
@@ -1551,19 +1551,19 @@ var to = memo(function () {
     }
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-add2",
-    className: Module_2121.addBtn
+    className: Styles_module_css1.addBtn
   }))))
   var W = function (e) {
     x(Redux_common_actions.vg(e))
   }
   return React.createElement("div", {
-    className: Module_2121.wrapper,
+    className: Styles_module_css1.wrapper,
     style: {
       left: j ? 0 : Cv,
       width: v
     }
   }, React.createElement("div", {
-    className: Classnames(Module_2121.stageMask, O && Module_2121.visible)
+    className: Classnames(Styles_module_css1.stageMask, O && Styles_module_css1.visible)
   }), React.createElement(Shared_ui_components_index.r, {
     content: G,
     onOpen: function () {
@@ -1575,18 +1575,18 @@ var to = memo(function () {
     autoClose: false,
     ref: n
   }, React.createElement("div", {
-    className: Classnames(Module_2121.screenIconBox, !j && Module_2121.line)
+    className: Classnames(Styles_module_css1.screenIconBox, !j && Styles_module_css1.line)
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-screen-manage",
-    className: Module_2121.screenIcon
+    className: Styles_module_css1.screenIcon
   }), React.createElement("span", {
-    className: Module_2121.screenText
-  }, Module_710$a$formatMessage({
+    className: Styles_module_css1.screenText
+  }, useIntl$formatMessage({
     id: "screenManage"
   })))), !j && React.createElement("div", {
-    className: Module_2121.screenIndexBox
+    className: Styles_module_css1.screenIndexBox
   }, React.createElement("div", {
-    className: Classnames(Module_2121.prev, d <= 0 && Module_2121.hide),
+    className: Classnames(Styles_module_css1.prev, d <= 0 && Styles_module_css1.hide),
     onClick: function () {
       var /* [auto-meaningful-name] */T$current
       if (!(null === (T$current = T.current) || undefined === T$current)) {
@@ -1598,9 +1598,9 @@ var to = memo(function () {
     }
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-pick-up",
-    className: Module_2121.prevIcon
+    className: Styles_module_css1.prevIcon
   })), React.createElement("div", {
-    className: Classnames(Module_2121.next, d + v - 108 >= 38 * r.size && Module_2121.hide),
+    className: Classnames(Styles_module_css1.next, d + v - 108 >= 38 * r.size && Styles_module_css1.hide),
     onClick: function () {
       var /* [auto-meaningful-name] */T$current
       if (!(null === (T$current = T.current) || undefined === T$current)) {
@@ -1612,14 +1612,14 @@ var to = memo(function () {
     }
   }, React.createElement(Shared_ui_components_index.j, {
     type: "icon-pick-up",
-    className: Module_2121.nextIcon
+    className: Styles_module_css1.nextIcon
   })), React.createElement("div", {
-    className: Module_2121.screenIndexList,
+    className: Styles_module_css1.screenIndexList,
     ref: T
   }, r.map(function (e, t) {
     return React.createElement("div", {
       id: "screen_index_".concat(t),
-      className: Classnames(Module_2121.index, A === t && Module_2121.active),
+      className: Classnames(Styles_module_css1.index, A === t && Styles_module_css1.active),
       key: t,
       onClick: W.bind(null, t)
     }, t + 1)

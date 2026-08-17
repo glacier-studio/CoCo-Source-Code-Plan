@@ -15,16 +15,16 @@ import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../unre
 import * as /* [auto-meaningful-name] */Module_11 from /* 11 */"../../../../unrestored/shared/1571/2636/11"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../unrestored/shared/1571/2636/6"
 import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../unrestored/shared/1571/2636/25/index"
-import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../unrestored/shared/1571/2636/47/index"
+import * as /* [auto-meaningful-name] */Module_47 from /* 47 */"../../../../unrestored/shared/1571/2636/47"
 import * as /* [auto-meaningful-name] */Module_42 from /* 42 */"../../../../unrestored/shared/1571/2636/42/index"
 import * as /* [auto-meaningful-name] */BuiltIn_types from /* 5 */"../built-in/types"
-import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../unrestored/shared/1571/2636/64"
+import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"../../../../unrestored/shared/1571/2636/64/index"
 import * as /* [auto-meaningful-name] */Shared_tools_index from /* 15 */"../../../shared/tools/index"
 import * as /* [auto-meaningful-name] */Module_83 from /* 83 */"../../../../unrestored/shared/1571/2636/83"
 import * as /* [auto-meaningful-name] */Module_314 from /* 314 */"../../../../unrestored/shared/1571/2636/314"
 import * as /* [auto-meaningful-name] */Module_95 from /* 95 */"../../../../unrestored/shared/1571/2636/95"
 import * as /* [auto-meaningful-name] */Module_190 from /* 190 */"../../../../unrestored/shared/1571/2636/190"
-import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../../unrestored/shared/1571/2636/133"
+import * as /* [auto-meaningful-name] */Module_133 from /* 133 */"../../../../unrestored/shared/1571/2636/133/index"
 import * as /* [auto-meaningful-name] */Module_75 from /* 75 */"../../../../unrestored/shared/1571/2636/75"
 import * as /* [auto-meaningful-name] */Module_37 from /* 37 */"../../../../unrestored/shared/1571/2636/37/index"
 import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"../../../../unrestored/shared/1571/2636/26/index"
@@ -137,7 +137,7 @@ function L(e) {
   var t = Se(e)
   if (t && (t.type === BuiltIn_types.y || t.type === BuiltIn_types.B || t.type === BuiltIn_types.l)) {
     var /* [auto-meaningful-name] */t$attributes$fields = t.attributes.fields
-    return undefined === t$attributes$fields ? [] : t$attributes$fields
+    return undefined === n ? [] : n
   }
   return []
 }
