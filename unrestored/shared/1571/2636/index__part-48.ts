@@ -9,7 +9,7 @@
 import { df } from "./index__part-46"
 import { ff } from "./index__part-47"
 import * as /* [auto-meaningful-name] */Module_61 from /* 61 */"./61"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./46/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../src/editor/block/declare/index"
 import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"./4"
 import * as /* [auto-meaningful-name] */Module_33 from /* 33 */"./33"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"

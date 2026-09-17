@@ -5,11 +5,11 @@
  */
 
 var E
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../unrestored/shared/1571/2636/4"
-import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
-import * as /* [auto-meaningful-name] */Shared_packages_Crc_blink_src_index from "../../../../shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../unrestored/shared/1571/2636/25/index"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../../unrestored/shared/1571/2636/4"
+import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../../unrestored/shared/1571/2636/9"
+import * as /* [auto-meaningful-name] */Shared_packages_Crc_blink_src_index from "../../../../../shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../index"
 function w(e, t) {
   var /* [auto-meaningful-name] */BKY_BLOCK_TAB_ICON = "%{BKY_BLOCK_TAB_ICON}"
   e.insertBlockProfile("screen_on_open", {

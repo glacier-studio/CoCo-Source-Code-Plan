@@ -16,7 +16,7 @@ import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index 
 import * as /* [auto-meaningful-name] */Module_736 from /* 736 */"./736"
 import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../18"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../46/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../src/editor/block/declare/index"
 var f = function (e) {
   Module_58.a(n, e)
   var t = Module_59.a(n)

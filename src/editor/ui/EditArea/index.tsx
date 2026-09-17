@@ -6,7 +6,7 @@
 
 import { WidgetPanel } from "./WidgetPanel"
 import { WidgetEditor } from "./WidgetEditor"
-import { xT } from "../../../../unrestored/shared/1571/2636/index__part-150"
+import { BlockEditor } from "./BlockEditor"
 import { KT } from "../../../../unrestored/shared/1571/2636/index__part-152"
 import { QT } from "../../../../unrestored/shared/1571/2636/index__part-153"
 import { $T } from "../../../../unrestored/shared/1571/2636/index__part-154"
@@ -47,8 +47,8 @@ export const EditArea = React.memo(() => {
     <WidgetPanel />
     <WidgetEditor />
     <div className={classNames(styles.toolboxMask, !widgetAttributeVisible && styles.hide)} />
-    {React.createElement(xT, null)}
-    <RightSideMenu/>
+    <BlockEditor/>
+    <RightSideMenu />
     {packageProgressVisible && <KT />}
     <PS/>
     <$T onToggle={() => { setConsoleVisible(!consoleVisible) }} />

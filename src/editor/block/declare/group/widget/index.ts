@@ -5,15 +5,16 @@
  */
 
 import { getCustomWidgetBlockParamShadow, he } from "./utils"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../unrestored/shared/1571/2636/34/85"
-import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../../../../../unrestored/shared/1571/2636/118/index"
-import * as LoadCustomWidget from "../../../../shared/widget/custom/load"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../unrestored/shared/1571/2636/4"
-import * as /* [auto-meaningful-name] */Shared_packages_Crc_blink_src_index from "../../../../shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_544 from /* 544 */"../../../../../unrestored/shared/1571/2636/301/544"
-import * as /* [auto-meaningful-name] */Module_658 from /* 658 */"../../../../../unrestored/shared/1571/2636/301/658"
-function setBlockGroupProfile(e, Blink) {
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../../unrestored/shared/1571/2636/34/85"
+import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../../../../../../unrestored/shared/1571/2636/118/index"
+import * as LoadCustomWidget from "../../../../../shared/widget/custom/load"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../index"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../../unrestored/shared/1571/2636/4"
+import * as /* [auto-meaningful-name] */Shared_packages_Crc_blink_src_index from "../../../../../shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Module_544 from /* 544 */"../../../../../../unrestored/shared/1571/2636/301/544"
+import * as /* [auto-meaningful-name] */Module_658 from /* 658 */"../../../../../../unrestored/shared/1571/2636/301/658"
+
+function setBlockGroupProfile(manager, Blink) {
   {
     const mutator = {
       event: "event",
@@ -553,7 +554,7 @@ function setBlockGroupProfile(e, Blink) {
     ])
   }
   {
-    const n = {
+    const mutator = {
       method: "method",
       widgetType: "",
       isAnyWidget: false,
@@ -697,7 +698,7 @@ function setBlockGroupProfile(e, Blink) {
         return element
       }
     }
-    Blink.extensions.register_mutator("widget_method_mutator", n)
+    Blink.extensions.register_mutator("widget_method_mutator", mutator)
     Blink.define_blocks_with_json_array([
       {
         type: "widget_method",

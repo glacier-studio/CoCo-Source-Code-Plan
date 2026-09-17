@@ -1,3 +1,10 @@
+import type React from "react"
+
+import type { IBlockDeclareGroup } from "../../block/declare/group"
+import type * as CustomWidget from "../../../shared/widget/custom/types"
+
+type FirstParam<T extends (param0: any, ...args: any[]) => any> = T extends (param0: infer T) => any ? T : never
+
 export interface Widget {
   type: string
   icon: string
@@ -5,7 +12,10 @@ export interface Widget {
   contentTextField?: string
   hasAnyWidget?: boolean
   previewAreaWidgetTitle: string
-  component: (new (props: Attributes) => {}) | (() => null)
+  /**
+   * 控件组件。对内置控件而言是一个 React 组建，对自定义控件而言则是控件实体
+   */
+  component: FirstParam<typeof React.createElement> | CustomWidget.Widget
   widget: {
     size: Size
     isGlobalWidget: boolean
@@ -41,16 +51,20 @@ export interface BlockConfig {
     iconId: string
     blocks: string
   }
+  /**
+   * 获取积木模板，即积木盒中的积木
+   * @param widgetId 控件实例 sID
+   */
   getTemplate(widgetId: string): string[]
-  blockDeclareGroup: {
-    setBlockGroupSnippet(/** TODO */...args: unknown[]): (/** TODO */any)
-    setBlockGroupProfile(/** TODO */...args: unknown[]): (/** TODO */any)
-  }
+  blockDeclareGroup: IBlockDeclareGroup
   renameBlocksInfo: {
     blocksList: string[]
     fieldName: string
   }
-  topBlocks: (/** TODO */any)[]
+  /**
+   * 事件类积木
+   */
+  topBlocks: string[]
   categoryClass: {
     text: string
     iconId: string

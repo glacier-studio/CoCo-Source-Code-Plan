@@ -6,10 +6,10 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../25/index"
-import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../../src/shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../4"
+import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../unrestored/shared/1571/2636/25/index"
+import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../unrestored/shared/1571/2636/9"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../unrestored/shared/1571/2636/4"
 function v(e) {
   e.insertBlockProfile("phone_vibrate", {
     type: "phone_vibrate",

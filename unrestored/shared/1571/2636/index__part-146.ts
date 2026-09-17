@@ -7,7 +7,7 @@
 "use strict"
 
 import { Ag } from "./index__part-79"
-import /* [auto-meaningful-name] */Module_99 from /* 99 */"./99"
+import /* [auto-meaningful-name] */Module_99 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_135 from /* 135 */"./135"
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../src/shared/packages/@crc/blink/src/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"

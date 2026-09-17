@@ -12,7 +12,7 @@ var Gp
 import * as /* [auto-meaningful-name] */Module_76 from /* 76 */"./76"
 import * as /* [auto-meaningful-name] */Module_95 from /* 95 */"./95"
 import * as /* [auto-meaningful-name] */Module_61 from /* 61 */"./61"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./46/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../src/editor/block/declare/index"
 import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"./4"
 import * as /* [auto-meaningful-name] */Module_33 from /* 33 */"./33"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"

@@ -6,7 +6,7 @@
 
 "use strict"
 
-import /* [auto-meaningful-name] */Module_99 from /* 99 */"./99"
+import /* [auto-meaningful-name] */Module_99 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"./238"
 import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"./26/index"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"

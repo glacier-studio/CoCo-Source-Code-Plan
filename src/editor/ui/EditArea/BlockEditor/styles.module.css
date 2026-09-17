@@ -1,0 +1,540 @@
+/**
+ * 由 CoCo 源代码计划解包器解包
+ *
+ * 模块 ID：99
+ */
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+}
+
+:global(.blocklyFlyout) :global(.pinButton) {
+    cursor: pointer;
+    pointer-events: bounding-box;
+}
+
+:global(.blocklyFlyout) :global(.pinButton:hover) {
+    cursor: pointer;
+    fill: #6e4ff4;
+}
+
+.blocklyWorkspace {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fcfcfc;
+    fill: #fcfcfc;
+}
+
+.blocklyWorkspace.readonly {
+    cursor: not-allowed;
+}
+
+.blocklyWorkspace.readonly :global(.blocklyBlockCanvas) {
+    pointer-events: none;
+}
+
+.upper {
+    z-index: 1;
+}
+
+.nameDialog :global(.coco-dialog-content) {
+    padding: 40px 36px 30px 40px;
+    width: 392px;
+}
+
+.nameDialog .confirmBox {
+    margin: 12px auto 0 38px;
+    display: flex;
+    justify-content: space-between;
+    width: 244px;
+}
+
+.nameDialog .confirmBox button {
+    width: 112px;
+    height: 34px;
+}
+
+.nameDialog .warningTips {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 12px;
+    color: #ff472e;
+}
+
+.nameDialog .inputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding-bottom: 28px;
+}
+
+.nameDialog .inputWrapper>span {
+    color: #61626b;
+    margin-right: 12px;
+    white-space: nowrap;
+}
+
+.nameDialog .inputWrapper :global(.coco-input) {
+    border-width: 1px;
+    height: 36px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.nameDialog .inputWrapper ::placeholder {
+    color: #a0a2b3;
+}
+
+.nameDialog .bottomTips {
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nameDialog .propertyBox {
+    display: flex;
+    justify-content: center;
+}
+
+.nameDialog .propertyBox button {
+    width: 115px;
+    height: 36px;
+    margin-right: 14px;
+    border: 1px solid #ddd8f3;
+    background-color: #fff;
+    color: #61626b;
+}
+
+.nameDialog .propertyBox button :global(.coco-iconfont) {
+    display: none;
+}
+
+.nameDialog .propertyBox button :global(.coco-iconfont-screen-bg) {
+    font-size: 16px;
+    display: inline-block;
+    color: #babdd2;
+    position: static;
+}
+
+.nameDialog .active {
+    color: #6e4ff4 !important;
+    background-color: #f5f3fe !important;
+    border-color: #6e4ff4 !important;
+    overflow: hidden;
+}
+
+.nameDialog .active :global(.coco-iconfont) {
+    font-size: 10px;
+    color: #fff;
+    display: inline-block !important;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    z-index: 1;
+}
+
+.nameDialog .active :global(.coco-iconfont-screen-bg) {
+    color: #6e4ff4 !important;
+}
+
+.nameDialog .active:after {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #6e4ff4;
+}
+
+.haveBottomTips :global(.coco-dialog-content) {
+    padding-bottom: 20px;
+}
+
+.haveBottomTips .warningTips {
+    left: 0;
+}
+
+.editDialog :global(.coco-dialog-content) {
+    padding-bottom: 20px;
+}
+
+.editDialog .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.editDialog .summary>span {
+    display: block;
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.editDialog .summary .count {
+    display: flex;
+    align-items: center;
+    height: 34px;
+}
+
+.editDialog .summary .count .input {
+    width: 49px;
+    height: 28px;
+    margin: 0 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.editDialog .summary .count button {
+    width: 28px;
+    height: 28px;
+    background: #e2dbff;
+    border-radius: 6px;
+    line-height: 28px;
+    border: none;
+    color: #6e4ff4;
+}
+
+.editDialog .summary .count :global(.coco-input) {
+    background-color: var(--primary-color-7);
+}
+
+.editDialog .summary .count :global(.coco-input-focus) {
+    background-color: #fff;
+}
+
+.editDialog .list {
+    width: 300px;
+    height: 260px;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding: 5px 8px 3px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--primary-color-9);
+}
+
+.editDialog .save {
+    display: block;
+    width: 120px;
+    height: 36px;
+    margin: 30px auto 0;
+}
+
+.editDialog .emptyContent {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editDialog .emptyContent .image {
+    width: 86px;
+    height: 68px;
+    margin-bottom: 10px;
+}
+
+.editDialog .emptyContent .label {
+    font-weight: 400;
+    color: #82778c;
+    font-size: 12px;
+}
+
+.editListDialog .list ul {
+    padding: 0;
+}
+
+.editListDialog .listItem {
+    display: flex;
+    margin: 3px 0;
+    position: relative;
+    width: 100%;
+    height: 36px;
+}
+
+.editListDialog .listItem:hover .inputClose {
+    opacity: 1;
+}
+
+.editListDialog .listItem input {
+    padding-left: 10px;
+}
+
+.editListDialog .listItem :global(.coco-input) {
+    background-color: var(--primary-color-7);
+}
+
+.editListDialog .listItem :global(.coco-input-focus) {
+    background-color: #fff;
+}
+
+.editListDialog .inputClose {
+    opacity: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--primary-color-0);
+}
+
+.editListDialog .listInput {
+    width: 100%;
+    height: 100%;
+}
+
+.editListDialog .inputLabel {
+    width: 34px;
+    height: 38px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c5159;
+    cursor: pointer;
+    border-right: 1px solid var(--primary-color-9);
+}
+
+.dialogTitle {
+    height: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-text-color-t);
+    line-height: 18px;
+    margin-bottom: 14px;
+}
+
+.blockDropdown {
+    min-width: 112px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 6px 0 rgba(177, 163, 191, .3);
+}
+
+.blockDropdown :global(.coco-select-options) {
+    box-shadow: none;
+}
+
+.dynamicDataList {
+    width: 100%;
+    height: 100%;
+}
+
+.dynamicDataList .addOption {
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #6e4ff4;
+}
+
+.dynamicDataList .addOption :global(.coco-iconfont) {
+    margin-right: 4px;
+}
+
+.dynamicDataList .optionTips {
+    padding: 12px 0;
+    color: #82778c;
+    font-size: 12px;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+.dynamicDataList .optionTips .btn {
+    padding-top: 2px;
+    color: #1c7edf;
+    cursor: pointer;
+}
+
+.dynamicDataList :global(.coco-select-selector) {
+    display: none;
+}
+
+.dynamicDataList :global(.coco-select-options) {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 112px;
+    max-width: 500px;
+}
+
+.dynamicDataList :global(.coco-option) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 0 8px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.dynamicDataList :global(.coco-option span) {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dynamicDataList .nullItem {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a3aebf;
+    cursor: not-allowed;
+}
+
+.dropdownIconBox {
+    width: 16px;
+    font-size: 16px;
+    margin-right: 2px;
+    color: #babdd2;
+    position: relative;
+}
+
+.showCurrentScreenBg {
+    width: 24px;
+    position: relative;
+}
+
+.imageTextDataList .dropdownImageBox {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    background: #f3f6fa;
+    border-radius: 6px;
+}
+
+.imageTextDataList .dropdownImageBox .image {
+    max-width: 36px;
+    max-height: 36px;
+}
+
+.imageTextDataList .dropdownOption:hover .dropdownImageBox {
+    background: #fff;
+}
+
+.imageTextDataList :global(.coco-option) {
+    height: 56px;
+    padding: 0 40px 0 16px;
+}
+
+.imageEntryList {
+    background: #fff;
+    min-width: 132px;
+    width: 100%;
+    color: var(--dark-text-color-t7);
+    padding: 5px 0;
+    margin: 0;
+}
+
+.imageEntryList li {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.imageEntryList li:hover {
+    background-color: #f5f3fe;
+}
+
+.imageEntryList .borderTop {
+    border-top: 1px solid var(--primary-color-7);
+}
+
+.imageEntryList :global(.coco-button) {
+    border-radius: 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgba(11, 24, 38, .1);
+    margin: 4px 0;
+}
+
+.lintErrorTips {
+    position: fixed;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 4px 0 rgba(119, 105, 85, .3);
+    border-radius: 4px;
+    transform: translate(-50%, calc(-100% - 15px));
+    background: #fff;
+    color: #f24a5f;
+    max-width: 250px;
+}
+
+.lintErrorTips:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: 2px 2px 2px 0 rgba(119, 105, 85, .3);
+}
+
+.errorAnimation {
+    animation: errorAnimationFrames 1s infinite;
+}
+
+@keyframes errorAnimationFrames {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    };
+}
+
+.screenIconBox {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenIconBox .screenIconText {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    transform: scale(.5);
+    color: #fff;
+}

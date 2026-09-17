@@ -16,8 +16,8 @@ import * as /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
 import /* [auto-meaningful-name] */Classnames1 from /* 8 */"classnames"
 import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Module_99 from /* 99 */"./99"
-import /* [auto-meaningful-name] */Module_991 from /* 99 */"./99"
+import * as /* [auto-meaningful-name] */Module_99 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
+import /* [auto-meaningful-name] */Module_991 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
 import * as /* [auto-meaningful-name] */Module_188 from /* 188 */"./188"
 var _a
 _a = memo(function () {

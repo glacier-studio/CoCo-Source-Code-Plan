@@ -4,9 +4,9 @@
  * 模块 ID：301__part-4
  */
 
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../unrestored/shared/1571/2636/4"
-import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../unrestored/shared/1571/2636/25/index"
-import * as /* [auto-meaningful-name] */Module_173 from /* 173 */"../../../../../unrestored/shared/1571/2636/1058/173"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../../unrestored/shared/1571/2636/4"
+import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../../../../unrestored/shared/1571/2636/25/index"
+import * as /* [auto-meaningful-name] */Module_173 from /* 173 */"../../../../../../unrestored/shared/1571/2636/1058/173"
 function setBlockGroupProfile(e) {
   e.insertBlockProfile("procedures_2_param_block", {
     type: "procedures_2_param_block",

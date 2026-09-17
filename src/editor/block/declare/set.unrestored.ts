@@ -7,10 +7,10 @@
 "use strict"
 
 import { i } from "./index__part-0"
-import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../39"
-import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../27"
-import * as /* [auto-meaningful-name] */Module_613 from /* 613 */"./613/index"
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../4"
+import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../../../../unrestored/shared/1571/2636/39"
+import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../../../../unrestored/shared/1571/2636/27"
+import * as /* [auto-meaningful-name] */Module_613 from /* 613 */"../../../../unrestored/shared/1571/2636/46/613/index"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../unrestored/shared/1571/2636/4"
 var c = function () {
   function e() {
     var t = this

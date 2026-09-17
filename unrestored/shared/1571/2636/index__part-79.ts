@@ -6,7 +6,7 @@
 
 "use strict"
 
-import { yg } from "./index__part-150"
+import { yg } from "../../../../src/editor/ui/EditArea/BlockEditor"
 import * as /* [auto-meaningful-name] */Module_64 from /* 64 */"./64/index"
 import * as /* [auto-meaningful-name] */Module_53 from /* 53 */"./53"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"

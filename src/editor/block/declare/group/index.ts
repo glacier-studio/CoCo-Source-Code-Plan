@@ -4,11 +4,24 @@
  * 模块 ID：301__part-0
  */
 
-import { v, b, y } from "../../../../unrestored/shared/1571/2636/301/index__part-1"
+import type { Blink as Blink_0 } from "../../../../shared/packages/@crc/blink/src"
+import type { BlockProfileManager } from "../manager/profile"
+import type { BlockSnippetManager } from "../manager/snippet"
+import type { BlockXMLManager } from "../manager/xml"
+
+import { v, b, y } from "../../index__part-1"
 import { w, C, T, S, A, I, j, N, R, k } from "./toolbox/index-1"
 import { Y, K, q, X, Q, Z, J, $, ee, te, ne } from "./toolbox/index-2"
 import { oe, ie, ae, se, ce } from "./toolbox/index-3"
 import { _e, ve } from "./widget"
+
+export interface IBlockDeclareGroup {
+  setBlockGroupProfile(manager: BlockProfileManager, Blink: typeof Blink_0, dropdownField): void
+  setBlockGroupSnippet?(manager: BlockSnippetManager): void
+  setBlockGroupXML?(manager: BlockXMLManager, Blink: typeof Blink_0): void
+  setBlockGroupExtra?(Blink: typeof Blink_0, dropdownField): void
+}
+
 var r = {}
 Object.defineProperty(r, "setBlockGroupProfile", {
   get: function () {

@@ -6,16 +6,16 @@
 
 "use strict"
 
-import { r, o, i, a, s, c, l, u, d, p, f } from "../../../../../src/editor/block/generate/index"
-import { be } from "../../../../../src/editor/block/generate/widget/index"
+import { r, o, i, a, s, c, l, u, d, p, f } from "./generate"
+import { be } from "./generate/widget/index"
 import { Ne } from "./index__part-7"
 var We
-import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../118/index"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../46/index"
-import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
-import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../../src/shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../25/index"
-import * as /* [auto-meaningful-name] */Module_20 from /* 20 */"../20/index"
+import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../../../unrestored/shared/1571/2636/118/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../unrestored/shared/1571/2636/46/index"
+import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../unrestored/shared/1571/2636/9"
+import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Module_25 from /* 25 */"../../../unrestored/shared/1571/2636/25/index"
+import * as /* [auto-meaningful-name] */Module_20 from /* 20 */"../../../unrestored/shared/1571/2636/20/index"
 function He() {
   var e = this
   this.set_on_block_change(function (t) {

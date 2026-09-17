@@ -11,7 +11,7 @@ import { Ag } from "./index__part-79"
 import { l_ } from "./index__part-80"
 var u_
 import * as /* [auto-meaningful-name] */Module_61 from /* 61 */"./61"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./46/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../src/editor/block/declare/index"
 import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"./4"
 import * as /* [auto-meaningful-name] */Module_33 from /* 33 */"./33"
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../src/shared/packages/@crc/blink/src/index"

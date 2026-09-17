@@ -6,8 +6,8 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../27"
-import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../39"
+import * as /* [auto-meaningful-name] */Module_27 from /* 27 */"../../../../../unrestored/shared/1571/2636/27"
+import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../../../../../unrestored/shared/1571/2636/39"
 var i = function () {
   function e() {
     Module_27.a(this, e)
