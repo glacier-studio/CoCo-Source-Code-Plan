@@ -21,9 +21,9 @@ import * as /* [auto-meaningful-name] */React1 from "react"
 import * as /* [auto-meaningful-name] */Module_1205 from /* 1205 */"./1205/index"
 import * as /* [auto-meaningful-name] */Module_1058 from /* 1058 */"./1058/index"
 import * as /* [auto-meaningful-name] */Module_1022 from /* 1022 */"./1022/index"
-import * as /* [auto-meaningful-name] */Module_99 from /* 99 */"./99"
-import /* [auto-meaningful-name] */Module_991 from /* 99 */"./99"
-import * as /* [auto-meaningful-name] */Module_301 from /* 301 */"./301/index"
+import * as /* [auto-meaningful-name] */Module_99 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
+import /* [auto-meaningful-name] */Module_991 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
+import * as /* [auto-meaningful-name] */Module_301 from /* 301 */"../../../../src/editor/block/index"
 var QC = ["addPrimitiveVariableName", "addArrayVariableName", "object.createNewObject", "addDocKey"]
 var ZC = memo(function () {
   var e = useSelector(function (e) {

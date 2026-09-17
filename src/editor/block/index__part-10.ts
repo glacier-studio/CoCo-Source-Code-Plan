@@ -6,11 +6,11 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../../src/shared/tools/index"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../46/index"
-import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../../src/shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_735 from /* 735 */"./735"
+import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../redux/common/actions"
+import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../shared/tools/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./declare/index"
+import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Module_735 from /* 735 */"../../../unrestored/shared/1571/2636/301/735"
 Module_735.FieldColour.prototype.show_editor = function () {
   var /* [auto-meaningful-name] */this$source_block
   var t = this

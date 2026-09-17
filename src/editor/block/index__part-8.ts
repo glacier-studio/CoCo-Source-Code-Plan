@@ -6,10 +6,10 @@
 
 "use strict"
 
-import * as /* [auto-meaningful-name] */Module_327 from /* 327 */"./327"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../46/index"
-import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../../src/shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_135 from /* 135 */"../135"
+import * as /* [auto-meaningful-name] */Module_327 from /* 327 */"../../../unrestored/shared/1571/2636/301/327"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./declare/index"
+import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Module_135 from /* 135 */"../../../unrestored/shared/1571/2636/135"
 var /* [auto-meaningful-name] */Module_327$FieldNumber$prototype$show_editor = Module_327.FieldNumber.prototype.show_editor
 Module_327.FieldNumber.prototype.show_editor = function () {
   var e = this

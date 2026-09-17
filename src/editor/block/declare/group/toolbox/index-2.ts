@@ -11,9 +11,9 @@ var L
 var M
 var D
 var x
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../unrestored/shared/1571/2636/4"
-import * as /* [auto-meaningful-name] */Module_323 from /* 323 */"../../../../../unrestored/shared/1571/2636/323"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../index"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../../unrestored/shared/1571/2636/4"
+import * as /* [auto-meaningful-name] */Module_323 from /* 323 */"../../../../../../unrestored/shared/1571/2636/323"
 
 function Y(e, t) {
   e.insertBlockProfile("object_get", {

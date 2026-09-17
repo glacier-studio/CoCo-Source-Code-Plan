@@ -11,7 +11,7 @@ export { TOOLBOXES as f }
 export { l as e }
 export { u as d }
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../unrestored/shared/1571/2636/9"
-import * as generate from "../../../unrestored/shared/1571/2636/301/index"
+import * as generate from "./index"
 
 export const FLYOUT_COMPONENTS_LABEL = {
   PRIMITIVE: "PRIMITIVE",

@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Module_39 from /* 39 */"../39"
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../../src/shared/packages/@crc/blink/src/index"
 import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../9"
 import * as /* [auto-meaningful-name] */Src_shared_ui_language from /* 23 */"../../../../../src/shared/ui/language"
-import * as /* [auto-meaningful-name] */Module_301 from /* 301 */"../301/index"
+import * as /* [auto-meaningful-name] */Module_301 from /* 301 */"../../../../../src/editor/block/index"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../../src/shared/tools/index"
 var h = new (function () {

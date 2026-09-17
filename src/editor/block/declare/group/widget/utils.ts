@@ -4,11 +4,11 @@
  * 模块 ID：301__part-5
  */
 
-import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
-import * as /* [auto-meaningful-name] */Shared_tools from "../../../../shared/tools"
-import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../unrestored/shared/1571/2636/34/85"
+import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../../unrestored/shared/1571/2636/9"
+import * as /* [auto-meaningful-name] */Shared_tools from "../../../../../shared/tools"
+import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../../unrestored/shared/1571/2636/34/85"
 
-import * as CustomWidgetTypes from "../../../../shared/widget/custom/types"
+import * as CustomWidgetTypes from "../../../../../shared/widget/custom/types"
 
 export function getCustomWidgetBlockParamShadow(valueType: CustomWidgetTypes.ValueType, defaultValue: number | string | boolean) {
   let defaultValueType

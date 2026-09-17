@@ -8,7 +8,7 @@
 
 import { tT } from "./index__part-144"
 import /* [auto-meaningful-name] */Module_1040 from /* 1040 */"./1040"
-import /* [auto-meaningful-name] */Module_99 from /* 99 */"./99"
+import /* [auto-meaningful-name] */Module_99 from /* 99 */"../../../../src/editor/ui/EditArea/BlockEditor/styles.module.css"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
 import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"./238"
 import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"./26/index"

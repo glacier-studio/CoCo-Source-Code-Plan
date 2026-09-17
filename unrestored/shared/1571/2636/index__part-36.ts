@@ -14,7 +14,7 @@ import * as /* [auto-meaningful-name] */Module_60 from /* 60 */"./60"
 import * as /* [auto-meaningful-name] */Src_editor_widget_builtIn_types from /* 5 */"../../../../src/editor/widget/built-in/types"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"./6"
 import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"./4"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./46/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../src/editor/block/declare/index"
 import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"./118/index"
 import * as /* [auto-meaningful-name] */Module_61 from /* 61 */"./61"
 var op = {

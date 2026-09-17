@@ -6,41 +6,43 @@
 
 "use strict"
 
-import { jg, Ng, Rg, kg, xg, Dg, Mg, Bg, Fg, Gg, Wg, Ug, Hg, Vg, zg, Yg, Kg, qg, Xg, Qg, Zg, Jg, $g } from "./index__part-79"
-import { ZC } from "./index__part-143"
-import { nT } from "./index__part-144"
-import { iT } from "./index__part-145"
-import { pT } from "./index__part-146"
-import { ST } from "./index__part-148"
-import { kT } from "../../../../src/editor/ui/EditArea/BlockEditor/FlyoutComponents/index"
-import * as /* [auto-meaningful-name] */Module_43 from /* 43 */"./43"
-import * as /* [auto-meaningful-name] */Module_1523 from /* 1523 */"./1523/index"
-import * as /* [auto-meaningful-name] */Module_207 from /* 207 */"./207/index"
-import * as /* [auto-meaningful-name] */Module_1522 from /* 1522 */"./1522"
-import * as /* [auto-meaningful-name] */Module_301 from /* 301 */"./301/index"
-import /* [auto-meaningful-name] */Module_99 from /* 99 */"./99"
-import * as /* [auto-meaningful-name] */Module_1022 from /* 1022 */"./1022/index"
-import * as /* [auto-meaningful-name] */Module_1058 from /* 1058 */"./1058/index"
-import * as /* [auto-meaningful-name] */Module_1205 from /* 1205 */"./1205/index"
+import { jg, Ng, Rg, kg, xg, Dg, Mg, Bg, Fg, Gg, Wg, Ug, Hg, Vg, zg, Yg, Kg, qg, Xg, Qg, Zg, Jg, $g } from "../../../../../unrestored/shared/1571/2636/index__part-79"
+import { ZC } from "../../../../../unrestored/shared/1571/2636/index__part-143"
+import { nT } from "../../../../../unrestored/shared/1571/2636/index__part-144"
+import { iT } from "../../../../../unrestored/shared/1571/2636/index__part-145"
+import { pT } from "../../../../../unrestored/shared/1571/2636/index__part-146"
+import { ST } from "../../../../../unrestored/shared/1571/2636/index__part-148"
+import { kT } from "./FlyoutComponents/index"
+import * as /* [auto-meaningful-name] */Module_43 from /* 43 */"../../../../../unrestored/shared/1571/2636/43"
+import * as /* [auto-meaningful-name] */Module_1523 from /* 1523 */"../../../../../unrestored/shared/1571/2636/1523/index"
+import * as /* [auto-meaningful-name] */Module_207 from /* 207 */"../../../../../unrestored/shared/1571/2636/207/index"
+import * as /* [auto-meaningful-name] */Module_1522 from /* 1522 */"../../../../../unrestored/shared/1571/2636/1522"
+import * as /* [auto-meaningful-name] */Module_301 from /* 301 */"../../../block/index"
+import { blinkInit } from "../../../block/index"
+import styles from /* 99 */"./styles.module.css"
+import * as /* [auto-meaningful-name] */Module_1022 from /* 1022 */"../../../../../unrestored/shared/1571/2636/1022/index"
+import * as /* [auto-meaningful-name] */Module_1058 from /* 1058 */"../../../../../unrestored/shared/1571/2636/1058/index"
+import * as /* [auto-meaningful-name] */Module_1205 from /* 1205 */"../../../../../unrestored/shared/1571/2636/1205/index"
 var yg
-import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../src/shared/packages/@crc/blink/src/index"
+import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../shared/packages/@crc/blink/src/index"
 import * as /* [auto-meaningful-name] */Lodash from /* 30 */"lodash"
-import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"./238"
-import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"./9"
-import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"./26/index"
-import * as /* [auto-meaningful-name] */Module_24 from /* 24 */"./24/index"
-import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../src/shared/tools/index"
-import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"./18"
-import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../../src/editor/redux/common/actions"
-import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../src/shared/ui/components/index"
+import * as /* [auto-meaningful-name] */Module_238 from /* 238 */"../../../../../unrestored/shared/1571/2636/238"
+import * as /* [auto-meaningful-name] */Module_9 from /* 9 */"../../../../../unrestored/shared/1571/2636/9"
+import * as /* [auto-meaningful-name] */Module_26 from /* 26 */"../../../../../unrestored/shared/1571/2636/26/index"
+import * as /* [auto-meaningful-name] */Module_24 from /* 24 */"../../../../../unrestored/shared/1571/2636/24/index"
+import * as /* [auto-meaningful-name] */Src_shared_tools_index from /* 15 */"../../../../shared/tools/index"
+import * as /* [auto-meaningful-name] */Module_18 from /* 18 */"../../../../../unrestored/shared/1571/2636/18"
+import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../../../redux/common/actions"
+import * as /* [auto-meaningful-name] */Src_shared_ui_components_index from /* 13 */"../../../../shared/ui/components/index"
 import /* [auto-meaningful-name] */Classnames from /* 8 */"classnames"
-import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
+import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"../../../../../unrestored/shared/1571/2636/10/index"
 import { useStore, useDispatch, useSelector, batch } from /* 16 */"react-redux"
 import /* [auto-meaningful-name] */React from /* 0 */"react"
 import { memo, useRef, useState, useLayoutEffect, useEffect } from /* 0 */"react"
 import * as /* [auto-meaningful-name] */React1 from "react"
-import /* 2611 */"./2611"
-var xT = memo(function () {
+import /* 2611 */"../../../../../unrestored/shared/1571/2636/2611"
+
+export const BlockEditor = memo(() => {
   var e = useStore()
   var t = useDispatch()
   var n = useSelector(function (e) {
@@ -109,7 +111,7 @@ var xT = memo(function () {
     Src_shared_packages_Crc_blink_src_index$Blink.theme.apply("cocoBlinkTheme")
     Module_1205.init_extensions(Src_shared_packages_Crc_blink_src_index.Blink)
     Module_1205.init_basic_blocks(Src_shared_packages_Crc_blink_src_index.Blink)
-    Module_301.d()
+    blinkInit()
     Module_26.u()
     var a = document.getElementById("coco_workspace")
     if (a) {
@@ -343,12 +345,12 @@ var xT = memo(function () {
     }
   }, [v, t])
   return React.createElement("div", {
-    className: Module_99.wrapper
+    className: styles.wrapper
   }, React.createElement("div", {
-    className: Classnames(!d && Module_99.upper)
+    className: Classnames(!d && styles.upper)
   }), React.createElement("div", {
     id: "coco_workspace",
-    className: Classnames(Module_99.blocklyWorkspace, c && Module_99.readonly),
+    className: Classnames(styles.blocklyWorkspace, c && styles.readonly),
     onWheel: function () {
       if (e.getState().block.dropdown.visible) {
         t(Src_editor_redux_common_actions.gh())
@@ -372,4 +374,3 @@ var xT = memo(function () {
   }), React.createElement(kT, null), React.createElement(ST, null), React.createElement(ZC, null), React.createElement(nT, null), React.createElement(iT, null), React.createElement(Module_1522.a, null), React.createElement(Module_1523.a, null), React.createElement(pT, null))
 })
 export { yg }
-export { xT }

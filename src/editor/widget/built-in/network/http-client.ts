@@ -1,6 +1,6 @@
 import { Yh } from "../../../../../unrestored/shared/1571/2636/index__part-68"
 import * as /* [auto-meaningful-name] */Module_61 from /* 61 */"../../../../../unrestored/shared/1571/2636/61"
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../block/declare/index"
 import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../unrestored/shared/1571/2636/4"
 import * as Types from "../types"
 import * as /* [auto-meaningful-name] */Module_6 from /* 6 */"../../../../../unrestored/shared/1571/2636/6"
@@ -32,7 +32,7 @@ const blockConfig: Widget.BlockConfig = {
     blocks: Types.HTTP_CLIENT_WIDGET
   },
   getTemplate(widgetId) {
-    var widgetIdField = "<field name=\"WIDGET_ID\">".concat(widgetId, "</field>")
+    const widgetIdField = `<field name="WIDGET_ID">${widgetId}</field>`
     return [
       `<block type="http_on_client_success" uncache="true">${widgetIdField}</block>`,
       `<block type="http_on_client_error" uncache="true">${widgetIdField}</block>`,
@@ -75,99 +75,99 @@ const blockConfig: Widget.BlockConfig = {
     ]
   },
   blockDeclareGroup: {
-    setBlockGroupSnippet(e) {
+    setBlockGroupSnippet(manager) {
       function t(t, n, r, o) {
         var i = t.blocks[n]
-        var a = e.getFieldValue(i, "WIDGET_ID") || ""
+        var a = manager.getFieldValue(i, "WIDGET_ID") || ""
         if (!a) {
           return ""
         }
         var s = ""
         if (o) {
-          s = e.valueToCode(t, n, "VALUE", e.ORDER_FUNCTION_CALL) || ""
+          s = manager.valueToCode(t, n, "VALUE", manager.ORDER_FUNCTION_CALL) || ""
         }
-        return Module_4.l(Module_4.n("httpClientSendRequest", [Module_4.o(a), Module_4.o(r), s]), i, e)
+        return Module_4.l(Module_4.n("httpClientSendRequest", [Module_4.o(a), Module_4.o(r), s]), i, manager)
       }
-      e.insertBlockSnippetGenerator("http_on_client_success", function (t, n) {
+      manager.insertBlockSnippetGenerator("http_on_client_success", function (t, n) {
         var r = t.blocks[n]
-        var o = e.getFieldValue(r, "WIDGET_ID") || ""
-        var i = e.statementToCode(t, n, "DO")
-        var a = e.valueToCode(t, n, "HTTP_CODE", e.ORDER_ATOMIC)
-        var s = e.valueToCode(t, n, "RESPONSE", e.ORDER_ATOMIC)
+        var o = manager.getFieldValue(r, "WIDGET_ID") || ""
+        var i = manager.statementToCode(t, n, "DO")
+        var a = manager.valueToCode(t, n, "HTTP_CODE", manager.ORDER_ATOMIC)
+        var s = manager.valueToCode(t, n, "RESPONSE", manager.ORDER_ATOMIC)
         return i && o ? Module_4.n("argsOnHttpClientSuccess", [Module_4.o(o)], i, [a, s]) : ""
       })
-      e.insertBlockSnippetGenerator("http_on_client_success_code", function () {
+      manager.insertBlockSnippetGenerator("http_on_client_success_code", function () {
         return "successCode"
       })
-      e.insertBlockSnippetGenerator("http_on_client_success_response", function () {
+      manager.insertBlockSnippetGenerator("http_on_client_success_response", function () {
         return "successResponse"
       })
-      e.insertBlockSnippetGenerator("http_on_client_error_code", function () {
+      manager.insertBlockSnippetGenerator("http_on_client_error_code", function () {
         return "errorCode"
       })
-      e.insertBlockSnippetGenerator("http_on_client_error_response", function () {
+      manager.insertBlockSnippetGenerator("http_on_client_error_response", function () {
         return "errorResponse"
       })
-      e.insertBlockSnippetGenerator("http_on_client_error", function (t, n) {
+      manager.insertBlockSnippetGenerator("http_on_client_error", function (t, n) {
         var r = t.blocks[n]
-        var o = e.getFieldValue(r, "WIDGET_ID") || ""
-        var i = e.statementToCode(t, n, "DO")
-        var a = e.valueToCode(t, n, "HTTP_CODE", e.ORDER_ATOMIC)
-        var s = e.valueToCode(t, n, "MESSAGE", e.ORDER_ATOMIC)
+        var o = manager.getFieldValue(r, "WIDGET_ID") || ""
+        var i = manager.statementToCode(t, n, "DO")
+        var a = manager.valueToCode(t, n, "HTTP_CODE", manager.ORDER_ATOMIC)
+        var s = manager.valueToCode(t, n, "MESSAGE", manager.ORDER_ATOMIC)
         return i && o ? Module_4.n("argsOnHttpClientError", [Module_4.o(o)], i, [a, s]) : ""
       })
-      e.insertBlockSnippetGenerator("room_create_room_name", function () {
+      manager.insertBlockSnippetGenerator("room_create_room_name", function () {
         return "room_name"
       })
-      e.insertBlockSnippetGenerator("http_on_client_error_response", function () {
+      manager.insertBlockSnippetGenerator("http_on_client_error_response", function () {
         return "response"
       })
-      e.insertBlockSnippetGenerator("http_set_client_url", function (t, n) {
+      manager.insertBlockSnippetGenerator("http_set_client_url", function (t, n) {
         var r = t.blocks[n]
-        var o = e.getFieldValue(r, "WIDGET_ID") || ""
-        var i = e.valueToCode(t, n, "VALUE", e.ORDER_FUNCTION_CALL) || ""
+        var o = manager.getFieldValue(r, "WIDGET_ID") || ""
+        var i = manager.valueToCode(t, n, "VALUE", manager.ORDER_FUNCTION_CALL) || ""
         return o ? Module_4.n("setHttpClientUrl", [Module_4.o(o), i]) : ""
       })
-      e.insertBlockSnippetGenerator("http_set_client_header", function (t, n) {
+      manager.insertBlockSnippetGenerator("http_set_client_header", function (t, n) {
         var r = t.blocks[n]
-        var o = e.getFieldValue(r, "WIDGET_ID") || ""
-        var i = e.valueToCode(t, n, "VALUE", e.ORDER_FUNCTION_CALL) || ""
+        var o = manager.getFieldValue(r, "WIDGET_ID") || ""
+        var i = manager.valueToCode(t, n, "VALUE", manager.ORDER_FUNCTION_CALL) || ""
         return o ? Module_4.n("setHttpClientHeader", [Module_4.o(o), i]) : ""
       })
-      e.insertBlockSnippetGenerator("http_send_get_request", function (e, n) {
+      manager.insertBlockSnippetGenerator("http_send_get_request", function (e, n) {
         return t(e, n, "get", false)
       })
-      e.insertBlockSnippetGenerator("http_send_delete_request", function (e, n) {
+      manager.insertBlockSnippetGenerator("http_send_delete_request", function (e, n) {
         return t(e, n, "delete", false)
       })
-      e.insertBlockSnippetGenerator("http_send_post_request", function (e, n) {
+      manager.insertBlockSnippetGenerator("http_send_post_request", function (e, n) {
         return t(e, n, "post", true)
       })
-      e.insertBlockSnippetGenerator("http_send_put_request", function (e, n) {
+      manager.insertBlockSnippetGenerator("http_send_put_request", function (e, n) {
         return t(e, n, "put", true)
       })
-      e.insertBlockSnippetGenerator("http_send_patch_request", function (e, n) {
+      manager.insertBlockSnippetGenerator("http_send_patch_request", function (e, n) {
         return t(e, n, "patch", true)
       })
-      e.insertBlockSnippetGenerator("http_get_client_url", function (t, n) {
+      manager.insertBlockSnippetGenerator("http_get_client_url", function (t, n) {
         var r = t.blocks[n]
-        var o = e.getFieldValue(r, "WIDGET_ID") || ""
+        var o = manager.getFieldValue(r, "WIDGET_ID") || ""
         return o ? Module_4.s("getHttpClientUrl", [Module_4.o(o)]) : ""
       })
-      e.insertBlockSnippetGenerator("object_json_parse", function (t, n) {
-        var r = e.valueToCode(t, n, "TEXT", e.ORDER_FUNCTION_CALL)
+      manager.insertBlockSnippetGenerator("object_json_parse", function (t, n) {
+        var r = manager.valueToCode(t, n, "TEXT", manager.ORDER_FUNCTION_CALL)
         return Module_4.s("jsonParseToObject", [r])
       })
-      e.insertBlockSnippetGenerator("object_get_value", function (t, n) {
-        var r = e.valueToCode(t, n, "OBJECT", e.ORDER_FUNCTION_CALL)
+      manager.insertBlockSnippetGenerator("object_get_value", function (t, n) {
+        var r = manager.valueToCode(t, n, "OBJECT", manager.ORDER_FUNCTION_CALL)
         if (!r || r === Module_61.c) {
           return ""
         }
-        var o = e.valueToCode(t, n, "KEY", e.ORDER_FUNCTION_CALL)
+        var o = manager.valueToCode(t, n, "KEY", manager.ORDER_FUNCTION_CALL)
         return o ? Module_4.s("objectGetValue", [r, o]) : ""
       })
     },
-    setBlockGroupProfile(e, t) {
+    setBlockGroupProfile(manager, Blink) {
       var n = {
         type: "field_coco_dropdown",
         name: "WIDGET_ID",
@@ -176,7 +176,7 @@ const blockConfig: Widget.BlockConfig = {
           return Module_46.c().getWidgetListByType(Types.HTTP_CLIENT_WIDGET)
         }
       }
-      e.insertBlockProfile("http_on_client_success", {
+      manager.insertBlockProfile("http_on_client_success", {
         type: "http_on_client_success",
         message0: "%{BKY_HTTP_CLIENT_ON_SUCCESS}",
         args0: [
@@ -203,23 +203,23 @@ const blockConfig: Widget.BlockConfig = {
         inputsInline: true,
         tooltip: "%{BKY_HTTP_CLIENT_ON_SUCCESS_TOOLTIP}"
       })
-      e.insertBlockProfile("http_on_client_success_code", {
+      manager.insertBlockProfile("http_on_client_success_code", {
         type: "http_on_client_success_code",
-        message0: "".concat(t.Msg.HTTP_CLIENT_STATUS),
+        message0: "".concat(Blink.Msg.HTTP_CLIENT_STATUS),
         output: "Number",
         required_context: "http_on_client_success_DO",
         colour: "%{BKY_PARAM_BLOCK_COLOR}",
         extensions: ["param_block"]
       })
-      e.insertBlockProfile("http_on_client_success_response", {
+      manager.insertBlockProfile("http_on_client_success_response", {
         type: "http_on_client_success_response",
-        message0: "".concat(t.Msg.HTTP_CLIENT_RESPONSE),
+        message0: "".concat(Blink.Msg.HTTP_CLIENT_RESPONSE),
         output: "String",
         required_context: "http_on_client_success_DO",
         colour: "%{BKY_PARAM_BLOCK_COLOR}",
         extensions: ["param_block"]
       })
-      e.insertBlockProfile("http_on_client_error", {
+      manager.insertBlockProfile("http_on_client_error", {
         type: "http_on_client_error",
         message0: "%{BKY_HTTP_CLIENT_ON_ERROR}",
         args0: [
@@ -246,23 +246,23 @@ const blockConfig: Widget.BlockConfig = {
         inputsInline: true,
         tooltip: "%{BKY_HTTP_CLIENT_ON_ERROR_TOOLTIP}"
       })
-      e.insertBlockProfile("http_on_client_error_code", {
+      manager.insertBlockProfile("http_on_client_error_code", {
         type: "http_on_client_error_code",
-        message0: "".concat(t.Msg.HTTP_CLIENT_ERROR_STATUS),
+        message0: "".concat(Blink.Msg.HTTP_CLIENT_ERROR_STATUS),
         output: "Number",
         required_context: "http_on_client_error_DO",
         colour: "%{BKY_PARAM_BLOCK_COLOR}",
         extensions: ["param_block"]
       })
-      e.insertBlockProfile("http_on_client_error_response", {
+      manager.insertBlockProfile("http_on_client_error_response", {
         type: "http_on_client_error_response",
-        message0: "".concat(t.Msg.HTTP_CLIENT_ERROR_RESPONSE),
+        message0: "".concat(Blink.Msg.HTTP_CLIENT_ERROR_RESPONSE),
         output: "String",
         required_context: "http_on_client_error_DO",
         colour: "%{BKY_PARAM_BLOCK_COLOR}",
         extensions: ["param_block"]
       })
-      e.insertBlockProfile("http_set_client_url", {
+      manager.insertBlockProfile("http_set_client_url", {
         type: "http_set_client_url",
         message0: "%{BKY_HTTP_CLIENT_SET_URL}",
         args0: [
@@ -278,7 +278,7 @@ const blockConfig: Widget.BlockConfig = {
         colour: "%{BKY_CONTROL_HUE}",
         inputsInline: true
       })
-      e.insertBlockProfile("http_set_client_header", {
+      manager.insertBlockProfile("http_set_client_header", {
         type: "http_set_client_header",
         message0: "%{BKY_HTTP_CLIENT_SET_HEADER}",
         args0: [
@@ -294,7 +294,7 @@ const blockConfig: Widget.BlockConfig = {
         colour: "%{BKY_CONTROL_HUE}",
         inputsInline: true
       })
-      e.insertBlockProfile("http_send_get_request", {
+      manager.insertBlockProfile("http_send_get_request", {
         type: "http_send_get_request",
         message0: "%{BKY_HTTP_CLIENT_SEND_WITH_GET_REQUEST}",
         args0: [Module_6.a({}, n)],
@@ -304,7 +304,7 @@ const blockConfig: Widget.BlockConfig = {
         colour: "%{BKY_CONTROL_HUE}",
         tooltip: "%{BKY_HTTP_CLIENT_SEND_WITH_GET_REQUEST_TOOLTIP}"
       })
-      e.insertBlockProfile("http_send_delete_request", {
+      manager.insertBlockProfile("http_send_delete_request", {
         type: "http_send_delete_request",
         message0: "%{BKY_HTTP_CLIENT_SEND_DELETE_REQUEST}",
         args0: [Module_6.a({}, n)],
@@ -313,7 +313,7 @@ const blockConfig: Widget.BlockConfig = {
         nextStatement: true,
         colour: "%{BKY_CONTROL_HUE}"
       })
-      e.insertBlockProfile("http_send_post_request", {
+      manager.insertBlockProfile("http_send_post_request", {
         type: "http_send_post_request",
         message0: "%{BKY_HTTP_CLIENT_SEND_WITH_POST_REQUEST}",
         args0: [
@@ -330,7 +330,7 @@ const blockConfig: Widget.BlockConfig = {
         colour: "%{BKY_CONTROL_HUE}",
         tooltip: "%{BKY_HTTP_CLIENT_SEND_WITH_POST_REQUEST_TOOLTIP}"
       })
-      e.insertBlockProfile("http_send_put_request", {
+      manager.insertBlockProfile("http_send_put_request", {
         type: "http_send_put_request",
         message0: "%{BKY_HTTP_CLIENT_SEND_PUT_REQUEST}",
         args0: [
@@ -346,7 +346,7 @@ const blockConfig: Widget.BlockConfig = {
         nextStatement: true,
         colour: "%{BKY_CONTROL_HUE}"
       })
-      e.insertBlockProfile("http_send_patch_request", {
+      manager.insertBlockProfile("http_send_patch_request", {
         type: "http_send_patch_request",
         message0: "%{BKY_HTTP_CLIENT_SEND_PATCH_REQUEST}",
         args0: [
@@ -362,7 +362,7 @@ const blockConfig: Widget.BlockConfig = {
         nextStatement: true,
         colour: "%{BKY_CONTROL_HUE}"
       })
-      e.insertBlockProfile("http_get_client_url", {
+      manager.insertBlockProfile("http_get_client_url", {
         type: "http_get_client_url",
         message0: "%{BKY_HTTP_CLIENT_GET_URL}",
         args0: [Module_6.a({}, n)],
@@ -370,7 +370,7 @@ const blockConfig: Widget.BlockConfig = {
         colour: "%{BKY_CONTROL_HUE}",
         inputsInline: true
       })
-      e.insertBlockProfile("object_json_parse", {
+      manager.insertBlockProfile("object_json_parse", {
         type: "object_json_parse",
         message0: "%{BKY_OBJECT_JSON_PARSE}",
         args0: [
@@ -386,7 +386,7 @@ const blockConfig: Widget.BlockConfig = {
         inputsInline: true,
         tooltip: "%{BKY_OBJECT_JSON_PARSE_TOOLTIP}"
       })
-      e.insertBlockProfile("object_get_value", {
+      manager.insertBlockProfile("object_get_value", {
         type: "object_get_value",
         message0: "%{BKY_OBJECT_GET_VALUE}",
         args0: [

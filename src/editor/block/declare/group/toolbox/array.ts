@@ -1,6 +1,6 @@
-import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../../../../unrestored/shared/1571/2636/46/index"
-import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../unrestored/shared/1571/2636/4"
-import * as /* [auto-meaningful-name] */Module_323 from /* 323 */"../../../../../unrestored/shared/1571/2636/323"
+import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"../../index"
+import * as /* [auto-meaningful-name] */Module_4 from /* 4 */"../../../../../../unrestored/shared/1571/2636/4"
+import * as /* [auto-meaningful-name] */Module_323 from /* 323 */"../../../../../../unrestored/shared/1571/2636/323"
 
 var /* [auto-meaningful-name] */ShadowTypeMath_numberFieldNameNUMConstraints111_field_shadow = "<shadow type=\"math_number\"><field name=\"NUM\" constraints=\"1,,1\">1</field></shadow>"
 export function setBlockGroupProfile(e, Blink) {
