@@ -13,7 +13,7 @@ exports.ScrollbarPair = exports.Scrollbar = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 258 */"@kitten-team/gl-matrix")
-var a = require(/* 125 */"../../1058/125")
+var a = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var s = require(/* 195 */"../../123/195/index")
 var c = require(/* 123 */"../../123/index")
 var u = function () {

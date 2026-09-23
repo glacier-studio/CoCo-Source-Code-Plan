@@ -13,7 +13,7 @@ exports.DeleteEvent = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 195 */"../../../123/195/index")
-var a = require(/* 125 */"../../../1058/125")
+var a = require(/* 125 */"../../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var s = (0, r.__importStar)(require(/* 499 */"../../499/index"))
 var c = function (e) {
   function t(t) {

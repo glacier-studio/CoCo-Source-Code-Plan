@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
 })
 exports.ProcedureManager = exports.register_procedure_json_generator = exports.register_procedure_generator = exports.PROCEDURE_BLOCK_FIELD_NAMES = exports.PROCEDURE_BLOCK_INPUT_NAMES = exports.PROCEDURE_BLOCK_TYPES = undefined
 var r = require(/* 93 */"tslib")
-var i = require(/* 125 */"../../1058/125")
+var i = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var o = require(/* 387 */"../734/387")
 var a = require(/* 732 */"../../../../../../src/shared/packages/@crc/blink/src/procedure/blocks")
 var s = require(/* 173 */"../../1058/173")

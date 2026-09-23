@@ -4,12 +4,12 @@
  * 模块 ID：2309
  */
 
-var t
+var FieldImage
 var r
 var /* [auto-meaningful-name] */require_1378_$_1378_index$parseType
 var o
 var a
-t = require(/* 2310 */"./2310/index")
+FieldImage = require(/* 2310 */"./2310/index")
 r = require(/* 2316 */"./2316")
 require_1378_$_1378_index$parseType = require(/* 1378 */"./1378/index").parseType
 o = function (e, n, i) {
@@ -22,7 +22,7 @@ o = function (e, n, i) {
   if (null == i.customTypes) {
     i.customTypes = {}
   }
-  return r(t(e, n, i), e, i)
+  return r(FieldImage(e, n, i), e, i)
 }
 a = function (e, t, n) {
   return o(require_1378_$_1378_index$parseType(e), t, n)

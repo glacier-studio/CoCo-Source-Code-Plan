@@ -7,7 +7,7 @@
 import * as inversify from /* 134 */"inversify"
 import * as gl_matrix from /* 258 */"@kitten-team/gl-matrix"
 // eslint-disable-next-line transform/use-meaningful-var-name
-import * as di from /* 125 */"../../../../../../../../unrestored/shared/1571/2636/1058/125"
+import * as di from /* 125 */"../di"
 import * as interfaces from /* 195 */"../../../../../../../../unrestored/shared/1571/2636/123/195/index"
 import * as dom from /* 123 */"../../../../../../../../unrestored/shared/1571/2636/123/index"
 import type { Events } from "../singletons/events"

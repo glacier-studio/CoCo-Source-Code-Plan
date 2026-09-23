@@ -4,7 +4,7 @@
  * 模块 ID：2318
  */
 
-var t
+var FieldImage
 var /* [auto-meaningful-name] */t$any
 var /* [auto-meaningful-name] */t$all
 var /* [auto-meaningful-name] */t$isItNaN
@@ -88,10 +88,10 @@ function d(e, t) {
     return f(e, t)
   }, t)
 }
-t = require(/* 1377 */"../2310/1377/index")
-t$any = t.any
-t$all = t.all
-t$isItNaN = t.isItNaN
+FieldImage = require(/* 1377 */"../2310/1377/index")
+t$any = FieldImage.any
+t$all = FieldImage.all
+t$isItNaN = FieldImage.isItNaN
 a = {
   Number: {
     typeOf: "Number",

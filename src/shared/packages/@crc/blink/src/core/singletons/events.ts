@@ -5,8 +5,8 @@
  */
 
 import { injectable } from "inversify"
-import * as di_symbols from/* 646 */"../../../../../../../../unrestored/shared/1571/2636/17/646"
-import { lazy_inject } from/* 644 */"../../../../../../../../unrestored/shared/1571/2636/17/644"
+import * as di_symbols from/* 646 */"../di/di_symbols"
+import { lazy_inject } from/* 644 */"../di/container"
 import * as interfaces from/* 195 */"../../../../../../../../unrestored/shared/1571/2636/123/195/index"
 import * as maths from/* 293 */"../../../../../../../../unrestored/shared/1571/2636/123/293"
 

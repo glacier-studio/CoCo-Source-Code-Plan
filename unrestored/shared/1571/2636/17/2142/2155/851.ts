@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
 })
 exports.BaseEvent = undefined
 var r = require(/* 93 */"tslib")
-var i = require(/* 125 */"../../../1058/125")
+var i = require(/* 125 */"../../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var o = function () {
   function e() {
     this._workspace_id = ""

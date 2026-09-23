@@ -14,8 +14,8 @@ var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 214 */"../../1022/214")
 var a = require(/* 478 */"../../123/478")
-var s = require(/* 644 */"../644")
-var c = require(/* 646 */"../646")
+var s = require(/* 644 */"../../../../../../src/shared/packages/@crc/blink/src/core/di/container")
+var c = require(/* 646 */"../../../../../../src/shared/packages/@crc/blink/src/core/di/di_symbols")
 var u = require(/* 195 */"../../123/195/index")
 var l = function () {
   function e(e) {

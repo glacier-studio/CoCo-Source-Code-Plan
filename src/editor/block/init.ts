@@ -7,9 +7,8 @@
 "use strict"
 
 import { r, o, i, a, s, c, l, u, d, p, f } from "./declare/group"
-import { be } from "./declare/group/widget/index"
+import { BLOCK_MESSAGES } from "./declare/messages"
 import { Ne } from "./index__part-7"
-var We
 import * as /* [auto-meaningful-name] */Module_118 from /* 118 */"../../../unrestored/shared/1571/2636/118/index"
 import * as /* [auto-meaningful-name] */Module_46 from /* 46 */"./declare/index"
 import { setBlockGroups, getBlockProfileList } from "./declare/index"
@@ -115,13 +114,13 @@ function Xe() {
 }
 
 export function blinkInit() {
-  Blink.extensions.register(We.UPDATE_KEY_AFTER_SELECTING_DOC, He)
-  Blink.extensions.register(We.UPDATE_KEY_AFTER_SELECTING_CLOUD_DOC, Ve)
-  Blink.extensions.register(We.UPDATE_COLUMN_AFTER_SELECT_CLOUD_DB, ze)
-  Blink.extensions.register(We.UPDATE_COLUMN_AFTER_SELECT_TABLE_DATA, Ye)
-  Blink.extensions.register(We.UPDATE_ACTION_AFTER_SELECT_ACTOR, Ke)
-  Blink.extensions.register(We.UPDATE_KEYS_AFTER_SELECT_CLOUD_DICT, qe)
-  Blink.extensions.register(We.UPDATE_COLUMNS_AFTER_SELECT_CLOUD_TABLE, Xe)
+  Blink.extensions.register(EPlugin.UPDATE_KEY_AFTER_SELECTING_DOC, He)
+  Blink.extensions.register(EPlugin.UPDATE_KEY_AFTER_SELECTING_CLOUD_DOC, Ve)
+  Blink.extensions.register(EPlugin.UPDATE_COLUMN_AFTER_SELECT_CLOUD_DB, ze)
+  Blink.extensions.register(EPlugin.UPDATE_COLUMN_AFTER_SELECT_TABLE_DATA, Ye)
+  Blink.extensions.register(EPlugin.UPDATE_ACTION_AFTER_SELECT_ACTOR, Ke)
+  Blink.extensions.register(EPlugin.UPDATE_KEYS_AFTER_SELECT_CLOUD_DICT, qe)
+  Blink.extensions.register(EPlugin.UPDATE_COLUMNS_AFTER_SELECT_CLOUD_TABLE, Xe)
   Blink.registry.field.register(Module_118.a.field_type, Module_118.a)
   Blink.registry.field.register(Ne.field_type, Ne)
   setBlockGroups.apply(undefined, [Blink, Module_118.a, s, c, o, i, u, r, a, d, l, p, f].concat(Module_25.a(Module_9.M())))
@@ -129,18 +128,19 @@ export function blinkInit() {
   Blink.define_blocks_with_json_array(blockProfileList)
 }
 
-function Ze() {
-  var e = arguments.length > 0 && undefined !== arguments[0] ? arguments[0] : "zh-CN"
-  return be[e]
+function Ze(locate: "zh-CN" = "zh-CN") {
+  return BLOCK_MESSAGES[locate]
 }
-!function (e) {
-  e.UPDATE_KEY_AFTER_SELECTING_DOC = "UPDATE_KEY_AFTER_SELECTING_DOC"
-  e.UPDATE_KEY_AFTER_SELECTING_CLOUD_DOC = "UPDATE_KEY_AFTER_SELECTING_CLOUD_DOC"
-  e.UPDATE_COLUMN_AFTER_SELECT_CLOUD_DB = "UPDATE_COLUMN_AFTER_SELECT_CLOUD_DB"
-  e.UPDATE_COLUMN_AFTER_SELECT_TABLE_DATA = "UPDATE_COLUMN_AFTER_SELECT_TABLE_DATA"
-  e.UPDATE_ACTION_AFTER_SELECT_ACTOR = "UPDATE_ACTION_AFTER_SELECT_ACTOR"
-  e.UPDATE_KEYS_AFTER_SELECT_CLOUD_DICT = "UPDATE_KEYS_AFTER_SELECT_CLOUD_DICT"
-  e.UPDATE_COLUMNS_AFTER_SELECT_CLOUD_TABLE = "UPDATE_COLUMNS_AFTER_SELECT_CLOUD_TABLE"
-}(We || (We = {}))
+
+enum EPlugin {
+  UPDATE_KEY_AFTER_SELECTING_DOC = "UPDATE_KEY_AFTER_SELECTING_DOC",
+  UPDATE_KEY_AFTER_SELECTING_CLOUD_DOC = "UPDATE_KEY_AFTER_SELECTING_CLOUD_DOC",
+  UPDATE_COLUMN_AFTER_SELECT_CLOUD_DB = "UPDATE_COLUMN_AFTER_SELECT_CLOUD_DB",
+  UPDATE_COLUMN_AFTER_SELECT_TABLE_DATA = "UPDATE_COLUMN_AFTER_SELECT_TABLE_DATA",
+  UPDATE_ACTION_AFTER_SELECT_ACTOR = "UPDATE_ACTION_AFTER_SELECT_ACTOR",
+  UPDATE_KEYS_AFTER_SELECT_CLOUD_DICT = "UPDATE_KEYS_AFTER_SELECT_CLOUD_DICT",
+  UPDATE_COLUMNS_AFTER_SELECT_CLOUD_TABLE = "UPDATE_COLUMNS_AFTER_SELECT_CLOUD_TABLE"
+}
+
 export { blinkInit as Qe }
 export { Ze }

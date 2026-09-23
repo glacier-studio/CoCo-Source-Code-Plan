@@ -4,7 +4,7 @@
  * 模块 ID：2317
  */
 
-var t
+var FieldImage
 var n
 function r(e) {
   var t
@@ -16,7 +16,7 @@ function r(e) {
 function i(e) {
   var n
   n = r(e)
-  if (!t.test(n)) {
+  if (!FieldImage.test(n)) {
     throw new Error("Expected text, got '" + n + "' instead.")
   }
   return e.shift()
@@ -104,7 +104,7 @@ function u(e) {
   var a
   var s
   var u
-  if ((a = "*" === (n = r(e))) || t.test(n)) {
+  if ((a = "*" === (n = r(e))) || FieldImage.test(n)) {
     s = a ? o(e, "*") : i(e)
     return (u = c(e)) ? (u.type = s, u) : {
       type: s
@@ -138,8 +138,8 @@ function l(e) {
   }
   return n
 }
-t = /[\$\w]+/
-n = RegExp("\\.\\.\\.|::|->|" + t.source + "|\\S", "g")
+FieldImage = /[\$\w]+/
+n = RegExp("\\.\\.\\.|::|->|" + FieldImage.source + "|\\S", "g")
 module.exports = function (e) {
   var t
   if (!e.length) {

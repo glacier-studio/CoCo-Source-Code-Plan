@@ -13,7 +13,7 @@ import * as /* [auto-meaningful-name] */Module_225 from /* 225 */"../../../unres
 import * as /* [auto-meaningful-name] */Module_203 from /* 203 */"../../../unrestored/shared/1571/2636/301/203"
 import * as /* [auto-meaningful-name] */Module_58 from /* 58 */"../../../unrestored/shared/1571/2636/58/index"
 import * as /* [auto-meaningful-name] */Module_59 from /* 59 */"../../../unrestored/shared/1571/2636/59/index"
-import * as /* [auto-meaningful-name] */Module_327 from /* 327 */"../../../unrestored/shared/1571/2636/301/327"
+import * as /* [auto-meaningful-name] */Module_327 from /* 327 */"../../shared/packages/@crc/blink/src/core/workspace_element/block/input/field/field_number"
 import * as /* [auto-meaningful-name] */Module_123 from /* 123 */"../../../unrestored/shared/1571/2636/123/index"
 import * as /* [auto-meaningful-name] */Module_484 from /* 484 */"../../../unrestored/shared/1571/2636/301/484"
 var Ne = function (e) {

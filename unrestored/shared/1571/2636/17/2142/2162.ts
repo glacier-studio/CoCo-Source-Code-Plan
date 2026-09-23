@@ -13,7 +13,7 @@ exports.BlockDragger = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 258 */"@kitten-team/gl-matrix")
-var a = require(/* 125 */"../../1058/125")
+var a = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var s = function (e) {
   function t(t) {
     var n = e.call(this, t.target, t.workspace) || this

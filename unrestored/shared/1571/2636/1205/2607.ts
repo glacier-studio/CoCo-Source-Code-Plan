@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 })
 exports.init_text_blocks = undefined
-var r = require(/* 125 */"../1058/125")
+var r = require(/* 125 */"../../../../../src/shared/packages/@crc/blink/src/core/di")
 var o = require(/* 537 */"../123/537")
 var i = require(/* 293 */"../123/293")
 var a = require(/* 123 */"../123/index")

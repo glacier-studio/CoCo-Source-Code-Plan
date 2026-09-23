@@ -4,13 +4,7 @@
  * 模块 ID：646
  */
 
-"use strict"
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-})
-exports.BINDING = undefined
-exports.BINDING = {
+export const BINDING = {
   Blink: Symbol("Blink"),
   block_animations: Symbol("block_animations"),
   touch_manager: Symbol("touch_manager"),

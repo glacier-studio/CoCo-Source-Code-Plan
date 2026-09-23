@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.onKeyDown_ = exports.Inject = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 258 */"@kitten-team/gl-matrix")
-var o = require(/* 125 */"../../../../1058/125")
+var o = require(/* 125 */"../../../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var a = require(/* 195 */"../../../../123/195/index")
 var s = require(/* 763 */"../../2169/763")
 var c = require(/* 1351 */"../../2188/1351")

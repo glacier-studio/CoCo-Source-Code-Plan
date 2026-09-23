@@ -11,44 +11,64 @@ import * as /* [auto-meaningful-name] */Module_85 from /* 85 */"../../../../../.
 import * as CustomWidgetTypes from "../../../../../shared/widget/custom/types"
 
 export function getCustomWidgetBlockParamShadow(valueType: CustomWidgetTypes.ValueType, defaultValue: number | string | boolean) {
-  let defaultValueType
+  let defaultValueType: CustomWidgetTypes.SignalValueType
   if (Array.isArray(valueType)) {
     const typeofDefaultValue = typeof defaultValue
-    defaultValueType = "number" === typeofDefaultValue || "string" === typeofDefaultValue || "boolean" === typeofDefaultValue && valueType.includes(typeofDefaultValue) ? typeofDefaultValue : valueType[0]
+    defaultValueType =
+      typeofDefaultValue === "number" ||
+      typeofDefaultValue === "string" ||
+      typeofDefaultValue === "boolean" &&
+      valueType.includes(typeofDefaultValue) ? typeofDefaultValue : valueType[0]!
   } else {
     defaultValueType = valueType
   }
-  let shadow = `<shadow type="text">\n    <field name="TEXT">${defaultValue}</field>\n  </shadow>`
+  let shadow = `<shadow type="text">
+    <field name="TEXT">${defaultValue}</field>
+  </shadow>`
   switch (defaultValueType) {
     case "number":
-      shadow = `<shadow type="math_number">\n      <field name="NUM">${defaultValue}</field>\n    </shadow>`
+      shadow = `<shadow type="math_number">
+        <field name="NUM">${defaultValue}</field>
+      </shadow>`
       break
     case "boolean":
-      shadow = `<shadow type="widget_boolean">\n      <field name="BOOL">${defaultValue ? "TRUE" : "FALSE"}</field>\n    </shadow>`
+      shadow = `<shadow type="widget_boolean">
+        <field name="BOOL">${defaultValue ? "TRUE" : "FALSE"}</field>
+      </shadow>`
       break
     case "color":
-      shadow = `<shadow type="color_picker">\n      <field name="COLOR_PALETTE">${Shared_tools.i(defaultValue) ? "#ffffff" : defaultValue}</field>\n    </shadow>`
+      shadow = `<shadow type="color_picker">
+        <field name="COLOR_PALETTE">${Shared_tools.i(defaultValue) ? "#ffffff" : defaultValue}</field>
+      </shadow>`
       break
     case "image":
-      shadow = `<shadow type="image_file_list_dropdown">\n        <field name="IMAGE_FILE_ID">${Module_9.h}</field>\n      </shadow>`
+      shadow = `<shadow type="image_file_list_dropdown">
+        <field name="IMAGE_FILE_ID">${Module_9.h}</field>
+      </shadow>`
       break
     case "icon":
-      shadow = `<shadow type="icon_file_list_dropdown">\n          <field name="ICON_FILE_ID">${Module_9.h}</field>\n        </shadow>`
+      shadow = `<shadow type="icon_file_list_dropdown">
+        <field name="ICON_FILE_ID">${Module_9.h}</field>
+      </shadow>`
       break
     case "multilineString":
-      shadow = `<shadow type="text_multiline">\n        <field name="TEXT">${defaultValue}</field>\n      </shadow>`
+      shadow = `<shadow type="text_multiline">
+        <field name="TEXT">${defaultValue}</field>
+      </shadow>`
       break
     case "richTextString":
-      shadow = `<shadow type="text_rich_text">\n          <field name="TEXT">${((defaultValue) => {
-        const ESCAPE_MAP = {
-          "&": "&amp;",
-          "\"": "&quot;",
-          "'": "&apos;",
-          "<": "&lt;",
-          ">": "&gt;"
-        }
-        return defaultValue.replace(/[&"'<>]/g, (char) => ESCAPE_MAP[char as keyof typeof ESCAPE_MAP])
-      })(defaultValue as string)}</field>\n        </shadow>`
+      shadow = `<shadow type="text_rich_text">
+        <field name="TEXT">${((defaultValue) => {
+          const ESCAPE_MAP = {
+            "&": "&amp;",
+            "\"": "&quot;",
+            "'": "&apos;",
+            "<": "&lt;",
+            ">": "&gt;"
+          }
+          return defaultValue.replace(/[&"'<>]/g, (char) => ESCAPE_MAP[char as keyof typeof ESCAPE_MAP])
+        })(defaultValue as string)}</field>
+      </shadow>`
   }
   return shadow
 }
