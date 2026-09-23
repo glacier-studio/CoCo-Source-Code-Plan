@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.DARK_THEME_CONFIG = exports.DEFAULT_THEME_CONFIG = exports.RendererParams = exports.Theme = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../1058/125")
+var o = require(/* 125 */"../../../../../src/shared/packages/@crc/blink/src/core/di")
 var a = require(/* 214 */"./214")
 var s = require(/* 579 */"./579")
 var c = function () {

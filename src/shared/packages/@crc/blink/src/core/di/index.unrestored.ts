@@ -10,14 +10,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 })
 exports.lazy_inject = exports.get_instance = exports.BINDING = undefined
-var r = require(/* 646 */"../17/646")
+var r = require(/* 646 */"./di_symbols")
 Object.defineProperty(exports, "BINDING", {
   enumerable: true,
   get: function () {
     return r.BINDING
   }
 })
-var i = require(/* 644 */"../17/644")
+var i = require(/* 644 */"./container")
 Object.defineProperty(exports, "get_instance", {
   enumerable: true,
   get: function () {

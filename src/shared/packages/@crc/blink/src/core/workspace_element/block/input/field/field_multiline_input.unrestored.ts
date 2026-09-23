@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.FieldMultilineInput = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 123 */"../../123/index")
+var o = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
 var a = function (e) {
   function t(t) {
     var n = e.call(this, t) || this
@@ -116,5 +116,5 @@ var a = function (e) {
     }
   }
   return t = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 374 */"../../301/374").FieldTextInput)
+}(require(/* 374 */"./field_textinput").FieldTextInput)
 exports.FieldMultilineInput = a

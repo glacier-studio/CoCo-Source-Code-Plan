@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
 })
 exports.register_default_procedure_events = undefined
 var r = require(/* 93 */"tslib")
-var i = require(/* 125 */"../../1058/125")
+var i = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var o = (0, r.__importStar)(require(/* 536 */"../../17/536"))
 var a = require(/* 387 */"../../207/734/387")
 var s = require(/* 214 */"../../1022/214")

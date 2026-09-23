@@ -12,10 +12,10 @@ Object.defineProperty(exports, "__esModule", {
 exports.FieldTextInput = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../1058/125")
-var a = require(/* 293 */"../123/293")
-var s = require(/* 123 */"../123/index")
-var c = require(/* 478 */"../123/478")
+var o = require(/* 125 */"../../../../../../../../../../../unrestored/shared/1571/2636/1058/125")
+var a = require(/* 293 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/293")
+var s = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
+var c = require(/* 478 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/478")
 var u = function (e) {
   function t(t) {
     var n = e.call(this, t.text, t.opt_validator) || this
@@ -302,5 +302,5 @@ var u = function (e) {
   t.FONTSIZE = 12;
   (0, r.__decorate)([(0, o.lazy_inject)(o.BINDING.widget_div)], t.prototype, "widget_div", undefined)
   return t = n = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 503 */"./503").Field)
+}(require(/* 503 */"./field").Field)
 exports.FieldTextInput = u

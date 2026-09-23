@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.FieldDefaultValue = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../../1058/125")
-var a = require(/* 123 */"../../123/index")
+var o = require(/* 125 */"../../../../../../../../../../../unrestored/shared/1571/2636/1058/125")
+var a = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
 var s = function (e) {
   function t(t) {
     var n = e.call(this, {
@@ -83,5 +83,5 @@ var s = function (e) {
   };
   (0, r.__decorate)([(0, o.lazy_inject)(o.BINDING.widget_div)], t.prototype, "widget_div", undefined)
   return t = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 374 */"../../301/374").FieldTextInput)
+}(require(/* 374 */"./field_textinput").FieldTextInput)
 exports.FieldDefaultValue = s

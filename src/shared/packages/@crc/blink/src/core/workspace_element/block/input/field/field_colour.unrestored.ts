@@ -12,11 +12,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.FieldColour = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../1058/125")
-var a = require(/* 123 */"../123/index")
-var s = require(/* 214 */"../1022/214")
-var c = require(/* 723 */"../123/723")
-var u = require(/* 293 */"../123/293")
+var o = require(/* 125 */"../../../../../../../../../../../unrestored/shared/1571/2636/1058/125")
+var a = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
+var s = require(/* 214 */"../../../../../../../../../../../unrestored/shared/1571/2636/1022/214")
+var c = require(/* 723 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/723")
+var u = require(/* 293 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/293")
 var l = function (e) {
   function t(t) {
     var r = e.call(this, t.colour, t.opt_validator) || this
@@ -163,5 +163,5 @@ var l = function (e) {
   t.COLOURS = ["#ffffff", "#cccccc", "#c0c0c0", "#999999", "#666666", "#333333", "#000000", "#ffcccc", "#ff6666", "#ff0000", "#cc0000", "#990000", "#660000", "#330000", "#ffcc99", "#ff9966", "#ff9900", "#ff6600", "#cc6600", "#993300", "#663300", "#ffff99", "#ffff66", "#ffcc66", "#ffcc33", "#cc9933", "#996633", "#663333", "#ffffcc", "#ffff33", "#ffff00", "#ffcc00", "#999900", "#666600", "#333300", "#99ff99", "#66ff99", "#33ff33", "#33cc00", "#009900", "#006600", "#003300", "#99ffff", "#33ffff", "#66cccc", "#00cccc", "#339999", "#336666", "#003333", "#ccffff", "#66ffff", "#33ccff", "#3366ff", "#3333ff", "#000099", "#000066", "#ccccff", "#9999ff", "#6666cc", "#6633ff", "#6600cc", "#333399", "#330099", "#ffccff", "#ff99ff", "#cc66cc", "#cc33cc", "#993399", "#663366", "#330033"];
   (0, r.__decorate)([(0, o.lazy_inject)(o.BINDING.widget_div)], t.prototype, "widget_div", undefined)
   return t = n = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 503 */"./503").Field)
+}(require(/* 503 */"./field").Field)
 exports.FieldColour = l

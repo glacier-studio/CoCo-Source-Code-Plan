@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.WorkspaceDragSurfaceSvg = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../../1058/125")
+var o = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var a = require(/* 123 */"../../123/index")
 var s = require(/* 537 */"../../123/537")
 var c = function () {

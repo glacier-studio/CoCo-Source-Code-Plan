@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.GlobalCommentPlugin = undefined
 var r = require(/* 93 */"tslib")
 var i = (0, r.__importStar)(require(/* 536 */"../../../../../17/536"))
-var o = require(/* 644 */"../../../../../17/644")
-var a = require(/* 646 */"../../../../../17/646")
+var o = require(/* 644 */"../../../../../../../../../src/shared/packages/@crc/blink/src/core/di/container")
+var a = require(/* 646 */"../../../../../../../../../src/shared/packages/@crc/blink/src/core/di/di_symbols")
 var s = function (e) {
   function t() {
     return null !== e && e.apply(this, arguments) || this

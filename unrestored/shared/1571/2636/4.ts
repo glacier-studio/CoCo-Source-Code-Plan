@@ -28,7 +28,7 @@ export { T as b }
 export { S as t }
 import * as /* [auto-meaningful-name] */Module_10 from /* 10 */"./10/index"
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../../../src/shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_125 from /* 125 */"./1058/125"
+import * as /* [auto-meaningful-name] */Module_125 from /* 125 */"../../../../src/shared/packages/@crc/blink/src/core/di"
 function a(e) {
   var t = arguments.length > 1 && undefined !== arguments[1] && arguments[1]
   return {

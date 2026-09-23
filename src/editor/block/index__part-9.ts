@@ -7,8 +7,8 @@
 "use strict"
 
 import * as /* [auto-meaningful-name] */Src_shared_packages_Crc_blink_src_index from /* 17 */"../../shared/packages/@crc/blink/src/index"
-import * as /* [auto-meaningful-name] */Module_374 from /* 374 */"../../../unrestored/shared/1571/2636/301/374"
-import * as /* [auto-meaningful-name] */Module_503 from /* 503 */"../../../unrestored/shared/1571/2636/301/503"
+import * as /* [auto-meaningful-name] */Module_374 from /* 374 */"../../shared/packages/@crc/blink/src/core/workspace_element/block/input/field/field_textinput"
+import * as /* [auto-meaningful-name] */Module_503 from /* 503 */"../../shared/packages/@crc/blink/src/core/workspace_element/block/input/field/field"
 import * as /* [auto-meaningful-name] */Module_37 from /* 37 */"../../../unrestored/shared/1571/2636/37/index"
 import * as /* [auto-meaningful-name] */Src_editor_redux_common_actions from /* 2 */"../redux/common/actions"
 import * as /* [auto-meaningful-name] */Module_28 from /* 28 */"../../../unrestored/shared/1571/2636/28/index"

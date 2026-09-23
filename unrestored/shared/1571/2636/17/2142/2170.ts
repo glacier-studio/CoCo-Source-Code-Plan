@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.ContextMenu = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../../1058/125")
+var o = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var a = require(/* 195 */"../../123/195/index")
 var s = require(/* 123 */"../../123/index")
 var c = require(/* 723 */"../../123/723")

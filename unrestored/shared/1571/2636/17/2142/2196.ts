@@ -14,7 +14,7 @@ var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 123 */"../../123/index")
 var a = require(/* 478 */"../../123/478")
-var s = require(/* 125 */"../../1058/125")
+var s = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var c = function () {
   function e(e) {
     this.last_sound_ = undefined

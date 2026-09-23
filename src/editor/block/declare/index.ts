@@ -4,11 +4,9 @@
  * 模块 ID：46
  */
 
-import { d, p } from "./set"
-export { d as c }
-export { p as f }
-
 export {
+    getBlockResources, getBlockResources as c,
+    setBlockResources, setBlockResources as f,
     setBlockGroups, setBlockGroups as e,
     getBlockProfileList, getBlockProfileList as a,
     getBlockXMLRecord, getBlockXMLRecord as b,

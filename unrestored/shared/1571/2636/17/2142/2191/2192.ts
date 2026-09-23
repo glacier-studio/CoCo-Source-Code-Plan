@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", {
 })
 exports.TreeNode = undefined
 var r = require(/* 93 */"tslib")
-var i = require(/* 125 */"../../../1058/125")
+var i = require(/* 125 */"../../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var o = require(/* 214 */"../../../1022/214")
 var a = require(/* 123 */"../../../123/index")
 var s = function (e) {

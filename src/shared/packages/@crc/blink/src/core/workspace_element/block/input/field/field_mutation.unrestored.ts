@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.MutationRemoveButton = exports.MutationAddButton = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 123 */"../../123/index")
+var o = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
 var a = function (e) {
   function t(t, n, r) {
     if (undefined === r) {
@@ -130,7 +130,7 @@ var a = function (e) {
     this.index_ = e
   }
   return t
-}(require(/* 544 */"../../301/544").FieldImage)
+}(require(/* 544 */"./field_image").FieldImage)
 var s = function (e) {
   function t() {
     return e.call(this, true) || this

@@ -10,7 +10,7 @@ import { BlockXMLManager } from "./manager/xml"
 import type { IBlockDeclareGroup } from "./group"
 import type { Blink  as Blink_0 } from "../../../shared/packages/@crc/blink/src"
 
-var u = {
+let blockResources = {
   getWidgetListByType: function (e, t) {
     return []
   },
@@ -86,12 +86,12 @@ var u = {
   }
 }
 
-function d() {
-  return u
+export function getBlockResources() {
+  return blockResources
 }
 
-function p(e) {
-  u = e
+export function setBlockResources(newBlockResources) {
+  blockResources = newBlockResources
 }
 
 let profileManager = new BlockProfileManager()
@@ -126,6 +126,3 @@ export function getBlockXMLRecord() {
 export function getBlockSnippetManager() {
   return snippetManager
 }
-
-export { d }
-export { p }

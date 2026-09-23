@@ -8,7 +8,7 @@ import * as inversify from "inversify"
 import * as gl_matrix from "@kitten-team/gl-matrix"
 import * as interfaces from /* 195 */"../../../../../../../../unrestored/shared/1571/2636/123/195"
 // eslint-disable-next-line transform/use-meaningful-var-name
-import * as di from /* 125 */"../../../../../../../../unrestored/shared/1571/2636/1058/125"
+import * as di from /* 125 */"../di"
 import * as base from /* 214 */"../../../../../../../../unrestored/shared/1571/2636/1022/214"
 import * as event from /* 1126 */"../../../../../../../../unrestored/shared/1571/2636/17/499/1126"
 import * as string from /* 852 */"../../../../../../../../unrestored/shared/1571/2636/17/499/852"

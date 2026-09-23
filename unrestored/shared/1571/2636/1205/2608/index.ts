@@ -14,7 +14,7 @@ var r = require(/* 93 */"tslib")
 var o = require(/* 579 */"../../1022/579")
 var i = require(/* 484 */"../../301/484")
 var a = (0, r.__importStar)(require(/* 536 */"../../17/536"))
-var s = require(/* 125 */"../../1058/125")
+var s = require(/* 125 */"../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var c = require(/* 581 */"../2610/581")
 var l = require(/* 1466 */"./1466")
 function u(e, t) {

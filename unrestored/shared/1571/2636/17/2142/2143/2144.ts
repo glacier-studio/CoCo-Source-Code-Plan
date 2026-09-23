@@ -14,7 +14,7 @@ var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 195 */"../../../123/195/index")
 var a = (0, r.__importStar)(require(/* 499 */"../../499/index"))
-var s = require(/* 125 */"../../../1058/125")
+var s = require(/* 125 */"../../../../../../../src/shared/packages/@crc/blink/src/core/di")
 var c = function (e) {
   function t(t) {
     var n = e.call(this, t.block) || this

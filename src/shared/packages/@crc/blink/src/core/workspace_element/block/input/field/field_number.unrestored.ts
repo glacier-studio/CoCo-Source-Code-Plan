@@ -12,12 +12,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.FieldNumber = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 125 */"../1058/125")
-var a = require(/* 195 */"../123/195/index")
-var s = require(/* 537 */"../123/537")
-var c = require(/* 293 */"../123/293")
-var u = require(/* 123 */"../123/index")
-var l = require(/* 499 */"../17/499/index")
+var o = require(/* 125 */"../../../../../../../../../../../unrestored/shared/1571/2636/1058/125")
+var a = require(/* 195 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/195/index")
+var s = require(/* 537 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/537")
+var c = require(/* 293 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/293")
+var u = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
+var l = require(/* 499 */"../../../../../../../../../../../unrestored/shared/1571/2636/17/499/index")
 var f = function (e) {
   function t(t) {
     var n = e.call(this, {
@@ -290,5 +290,5 @@ var f = function (e) {
   (0, r.__decorate)([(0, o.lazy_inject)(o.BINDING.angle_controller)], t.prototype, "angle_controller", undefined);
   (0, r.__decorate)([(0, o.lazy_inject)(o.BINDING.color_controller)], t.prototype, "color_controller", undefined)
   return t = n = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 374 */"./374").FieldTextInput)
+}(require(/* 374 */"./field_textinput").FieldTextInput)
 exports.FieldNumber = f

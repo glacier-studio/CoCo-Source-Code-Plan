@@ -13,11 +13,11 @@ exports.Field = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
 var o = require(/* 258 */"@kitten-team/gl-matrix")
-var a = require(/* 125 */"../1058/125")
-var s = require(/* 195 */"../123/195/index")
-var c = require(/* 293 */"../123/293")
-var u = require(/* 123 */"../123/index")
-var l = require(/* 499 */"../17/499/index")
+var a = require(/* 125 */"../../../../../../../../../../../unrestored/shared/1571/2636/1058/125")
+var s = require(/* 195 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/195/index")
+var c = require(/* 293 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/293")
+var u = require(/* 123 */"../../../../../../../../../../../unrestored/shared/1571/2636/123/index")
+var l = require(/* 499 */"../../../../../../../../../../../unrestored/shared/1571/2636/17/499/index")
 var f = function () {
   function e(e, t) {
     var /* [auto-meaningful-name] */this$workspace_db$current
@@ -147,7 +147,7 @@ var f = function () {
     }
     var e = this.source_block.get_workspace()
     if (undefined == e) {
-      throw new ReferenceError("Field's source block has not been insert to workspace.")
+      throw new ReferenceError("Field"s source block has not been insert to workspace.")
     }
     if (!this.field_group) {
       return new c.Size(0, 0)

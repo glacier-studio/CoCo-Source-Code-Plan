@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.ConflictResolver = undefined
 var r
 var i = require(/* 93 */"tslib")
-var o = require(/* 644 */"../../../../../17/644")
-var a = require(/* 646 */"../../../../../17/646")
+var o = require(/* 644 */"../../../../../../../../../src/shared/packages/@crc/blink/src/core/di/container")
+var a = require(/* 646 */"../../../../../../../../../src/shared/packages/@crc/blink/src/core/di/di_symbols")
 var s = (0, i.__importStar)(require(/* 536 */"../../../../../17/536"))
 var c = require(/* 214 */"../../../../../1022/214")
 var u = function (e) {

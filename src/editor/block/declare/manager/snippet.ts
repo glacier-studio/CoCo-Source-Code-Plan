@@ -16,7 +16,7 @@ export class BlockSnippetManager {
   public readonly getFieldValue: (block, filedID: string) => string | undefined
   quote
   registerDelegate
-  public readonly insertBlockSnippetGenerator: (type: string, generator: (workspaceJson: Record<string, { blocks, comments, connections }>, id: string) => string | [string, number]) => void
+  public readonly insertBlockSnippetGenerator: (type: string, generator: (workspaceJson: { blocks, comments, connections }, id: string) => string | [string, number]) => void
   public readonly statementToCode: (workspaceJson, id: string, statementID: string) => string
   public readonly valueToCode: (workspaceJson, id: string, valueID: string, older:number) => string
   public workspaceToCode

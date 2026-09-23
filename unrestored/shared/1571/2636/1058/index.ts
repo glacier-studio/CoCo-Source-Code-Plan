@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.effect_of_update_disabled = exports.effect_of_update_param = exports.effect_of_rename_proc = exports.update_after_set_disabled = exports.update_after_set_field_value = exports.update_after_mutation = undefined
 var r = require(/* 31 */"ot-json1")
 var o = require(/* 1393 */"./1393/index")
-var i = require(/* 125 */"./125")
+var i = require(/* 125 */"../../../../../src/shared/packages/@crc/blink/src/core/di")
 var a = require(/* 173 */"./173")
 var s = require(/* 762 */"./762")
 function c(e, t, n, a, s, c) {

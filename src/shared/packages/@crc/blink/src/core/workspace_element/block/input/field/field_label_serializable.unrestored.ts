@@ -28,5 +28,5 @@ var o = function (e) {
     return this$text_ = this$text_.replace(/\s/g, " ")
   }
   return t = (0, r.__decorate)([(0, i.injectable)()], t)
-}(require(/* 658 */"../../301/658").FieldLabel)
+}(require(/* 658 */"./field_label").FieldLabel)
 exports.FieldLabelSerializable = o

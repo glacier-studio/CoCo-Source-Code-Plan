@@ -6,7 +6,7 @@
 
 import * as tslib_1 from "tslib"
 import * as asserts_1 from "../../../../../../../unrestored/shared/1571/2636/207/734/387"
-import * as di_1 from "../../../../../../../unrestored/shared/1571/2636/1058/125"
+import * as di_1 from "../core/di"
 import * as base_1 from "../../../../../../../unrestored/shared/1571/2636/1022/214"
 import * as util_1 from "../../../../../../../unrestored/shared/1571/2636/1058/762"
 import * as constants_1 from "../../../../../../../unrestored/shared/1571/2636/1058/173"

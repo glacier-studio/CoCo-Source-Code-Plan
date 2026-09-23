@@ -12,16 +12,16 @@ Object.defineProperty(exports, "__esModule", {
 exports.Blink = undefined
 var r = require(/* 93 */"tslib")
 var i = require(/* 134 */"inversify")
-var o = require(/* 1349 */"../../../1205/1349")
-var a = require(/* 1350 */"../2181/1350")
-var s = require(/* 2167 */"./2167/index")
-var c = require(/* 644 */"../../644")
-var u = require(/* 125 */"../../../1058/125")
+var o = require(/* 1349 */"../../../../../../../../unrestored/shared/1571/2636/1205/1349")
+var a = require(/* 1350 */"../../../../../../../../unrestored/shared/1571/2636/17/2142/2181/1350")
+var s = require(/* 2167 */"../../../../../../../../unrestored/shared/1571/2636/17/2142/2166/2167/index")
+var c = require(/* 644 */"../di/container")
+var u = require(/* 125 */"../di")
 var l = function () {
   function e() {
     this.Blocks = Object.create(null)
     this.blocks_xml = {}
-    this.version = require(/* 1352 */"../../../../../../../src/shared/packages/@crc/blink/package.json").version
+    this.version = require(/* 1352 */"../../../package.json").version
     this.inject = s.Inject.bind(this)
     Object.assign(this.Msg, a.zh_hans);
     (0, o.init_shadows)(this)
